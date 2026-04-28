@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useGame } from '../state/GameContext';
 import { getEndingCount, getNode, getScenario } from '../data/scenarios';
 import { showInterstitialAd } from '../ads/interstitial';
+import { PersonalityResult } from '../components/PersonalityResult';
 
 interface Props {
   onReturnToTitle: () => void;
@@ -97,8 +98,17 @@ export function EndingScreen({ onReturnToTitle, onRetryScenario }: Props) {
           {node?.text}
         </p>
 
-        <div style={{ marginTop: 32, fontSize: 12, color: '#555' }}>
+        <div style={{ marginTop: 28, fontSize: 12, color: '#555' }}>
           이 시나리오 결말: {clearedCount} / {totalEndings}
+        </div>
+
+        {/* 성격 결과 */}
+        <div style={{ maxWidth: 560, margin: '32px auto 0', textAlign: 'left' }}>
+          <PersonalityResult
+            traitCounts={current?.traitCounts ?? {}}
+            variant="full"
+            title="이 이야기에서 당신은"
+          />
         </div>
       </div>
 

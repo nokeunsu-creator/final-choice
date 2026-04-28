@@ -1,4 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useReducer, type ReactNode } from 'react';
+import type { Trait, TraitCounts } from '../data/types';
 
 const STORAGE_KEY = 'finalchoice:save:v2';
 const START_NODE_ID = 1;
@@ -8,6 +9,8 @@ export interface ScenarioState {
   inventory: string[];
   visitedNodes: number[];
   endingsCleared: string[];
+  /** 이 시나리오에서 누적된 성격 트레이트 점수 */
+  traitCounts: TraitCounts;
 }
 
 export interface SaveState {
@@ -17,7 +20,7 @@ export interface SaveState {
 
 type Action =
   | { type: 'SELECT_SCENARIO'; scenarioId: string }
-  | { type: 'GO_TO'; nodeId: number; grantItem?: string | null }
+  | { type: 'GO_TO'; nodeId: number; grantItem?: string | null; traits?: Trait[] }
   | { type: 'RESET_CURRENT_SCENARIO' }
   | { type: 'EXIT_TO_TITLE' }
   | { type: 'RECORD_ENDING'; endingTitle: string }
@@ -28,6 +31,7 @@ const emptyScenarioState: ScenarioState = {
   inventory: [],
   visitedNodes: [START_NODE_ID],
   endingsCleared: [],
+  traitCounts: {},
 };
 
 const initialState: SaveState = {
@@ -47,10 +51,18 @@ function withScenario(
   };
 }
 
+function addTraits(prev: TraitCounts, traits: Trait[] | undefined): TraitCounts {
+  if (!traits || traits.length === 0) return prev;
+  const next = { ...prev };
+  for (const t of traits) {
+    next[t] = (next[t] ?? 0) + 1;
+  }
+  return next;
+}
+
 function reducer(state: SaveState, action: Action): SaveState {
   switch (action.type) {
     case 'SELECT_SCENARIO': {
-      // 기존 진행도 유지. 처음 선택이면 빈 상태로 초기화
       const existing = state.byScenario[action.scenarioId];
       const byScenario = existing
         ? state.byScenario
@@ -67,7 +79,13 @@ function reducer(state: SaveState, action: Action): SaveState {
         const visited = s.visitedNodes.includes(action.nodeId)
           ? s.visitedNodes
           : [...s.visitedNodes, action.nodeId];
-        return { ...s, currentNodeId: action.nodeId, inventory: inv, visitedNodes: visited };
+        return {
+          ...s,
+          currentNodeId: action.nodeId,
+          inventory: inv,
+          visitedNodes: visited,
+          traitCounts: addTraits(s.traitCounts ?? {}, action.traits),
+        };
       });
     }
     case 'RESET_CURRENT_SCENARIO': {
@@ -77,6 +95,7 @@ function reducer(state: SaveState, action: Action): SaveState {
         inventory: [],
         visitedNodes: [START_NODE_ID],
         endingsCleared: s.endingsCleared,
+        traitCounts: {}, // 재시작 시 트레이트 초기화 (엔딩 누적은 보존)
       }));
     }
     case 'EXIT_TO_TITLE':
@@ -89,7 +108,16 @@ function reducer(state: SaveState, action: Action): SaveState {
       });
     }
     case 'HYDRATE':
-      return action.state;
+      // v1 → v2 마이그레이션: traitCounts 누락 시 기본값
+      return {
+        ...action.state,
+        byScenario: Object.fromEntries(
+          Object.entries(action.state.byScenario ?? {}).map(([id, s]) => [
+            id,
+            { ...s, traitCounts: s.traitCounts ?? {} },
+          ]),
+        ),
+      };
     default:
       return state;
   }
@@ -99,7 +127,7 @@ interface GameContextValue {
   save: SaveState;
   current: ScenarioState | null;
   selectScenario: (scenarioId: string) => void;
-  goTo: (nodeId: number, grantItem?: string | null) => void;
+  goTo: (nodeId: number, grantItem?: string | null, traits?: Trait[]) => void;
   resetCurrentScenario: () => void;
   exitToTitle: () => void;
   recordEnding: (endingTitle: string) => void;
@@ -111,7 +139,6 @@ const GameContext = createContext<GameContextValue | undefined>(undefined);
 export function GameProvider({ children }: { children: ReactNode }) {
   const [save, dispatch] = useReducer(reducer, initialState);
 
-  // localStorage 복원
   useEffect(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -125,7 +152,6 @@ export function GameProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  // 자동 저장
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(save));
@@ -137,8 +163,8 @@ export function GameProvider({ children }: { children: ReactNode }) {
   const selectScenario = useCallback((scenarioId: string) => {
     dispatch({ type: 'SELECT_SCENARIO', scenarioId });
   }, []);
-  const goTo = useCallback((nodeId: number, grantItem?: string | null) => {
-    dispatch({ type: 'GO_TO', nodeId, grantItem });
+  const goTo = useCallback((nodeId: number, grantItem?: string | null, traits?: Trait[]) => {
+    dispatch({ type: 'GO_TO', nodeId, grantItem, traits });
   }, []);
   const resetCurrentScenario = useCallback(() => {
     dispatch({ type: 'RESET_CURRENT_SCENARIO' });

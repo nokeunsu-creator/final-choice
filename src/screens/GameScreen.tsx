@@ -133,7 +133,7 @@ export function GameScreen({ onExit }: Props) {
                 label={choice.label}
                 disabled={lacks}
                 hint={lacks ? `${choice.requiredItem} 필요` : null}
-                onClick={() => goTo(choice.nextNodeId, choice.grantItem ?? null)}
+                onClick={() => goTo(choice.nextNodeId, choice.grantItem ?? null, choice.traits)}
               />
             );
           })}

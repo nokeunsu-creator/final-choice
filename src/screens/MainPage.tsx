@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 import { useGame } from '../state/GameContext';
 import { SCENARIOS, getEndingCount } from '../data/scenarios';
+import { aggregateCounts } from '../data/archetypes';
+import { PersonalityResult } from '../components/PersonalityResult';
 
 interface Props {
   onStart: () => void;
@@ -41,6 +43,13 @@ export function MainPage({ onStart }: Props) {
       }),
     [save.byScenario],
   );
+
+  // 누적 트레이트 (모든 시나리오 합산)
+  const cumulativeTraits = useMemo(
+    () => aggregateCounts(SCENARIOS.map((s) => save.byScenario[s.id]?.traitCounts)),
+    [save.byScenario],
+  );
+  const totalChoicesMade = Object.values(cumulativeTraits).reduce((s, v) => s + (v ?? 0), 0);
 
   return (
     <div
@@ -133,6 +142,24 @@ export function MainPage({ onStart }: Props) {
             <div>달성</div>
           </div>
         </div>
+
+        {/* 누적 성격 (한 번이라도 선택했을 때만) */}
+        {totalChoicesMade > 0 && (
+          <div style={{ marginTop: 28, width: '100%', maxWidth: 420 }}>
+            <div
+              style={{
+                fontSize: 10,
+                letterSpacing: 3,
+                color: '#7a7e92',
+                marginBottom: 8,
+                textAlign: 'center',
+              }}
+            >
+              지금까지 당신은
+            </div>
+            <PersonalityResult traitCounts={cumulativeTraits} variant="compact" />
+          </div>
+        )}
       </main>
 
       <footer
