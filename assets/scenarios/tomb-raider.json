@@ -1,0 +1,101 @@
+[
+  {
+    "nodeId": 1,
+    "text": "이집트 왕가의 골짜기, 아직 발굴되지 않은 무덤. 동료 둘과 함께 입구 발견 직후 갈등. 그들은 도굴 — 당신은 학술. 그들이 먼저 들어갔다.",
+    "choices": [
+      { "label": "들어가 막는다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "당국에 신고하러 캠프로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "입구 봉인 — 그들도 못 나오게", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "들어간다. 첫 통로 — 함정 표지: 바닥 발판. 동료들이 이미 통과한 듯 한쪽이 깨져있다.",
+    "choices": [
+      { "label": "조심스럽게 통과", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "되돌아 나간다", "nextNodeId": 1, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "캠프. 무전기로 카이로. \"위치 확인. 1시간 안에 도착.\" 1시간.",
+    "choices": [
+      { "label": "1시간 무덤 입구에서 대기", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
+      { "label": "그 사이 들어가 동료들 막는다", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "입구 봉인. 동료들이 안에 갇힌다. 그러나 당신도 — 그들이 발굴 도구를 다 가져갔다 — 들어갈 수 없다.",
+    "choices": [
+      { "label": "당국 호출", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "통로 너머. 두 번째 방 — 보석 더미. 동료들이 챙기고 있다. 한 명이 보석 위에서 비명, 손이 검게 변한다.",
+    "choices": [
+      { "label": "보석을 만지지 말라 외친다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "도망친다", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
+      { "label": "유혹에 한 알 만진다", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
+      { "label": "혼자 더 깊이 — 학술 봉인", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "1시간 대기. 당국 도착. 그 사이 동료 둘이 비명과 함께 입구 쪽으로 도망쳐 나온다 — 손과 얼굴이 검다.",
+    "choices": [
+      { "label": "함께 캠프로", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "외친다. 한 명은 멈췄지만 다른 한 명은 더 챙긴다. 그가 곧 검게.",
+    "choices": [
+      { "label": "멈춘 한 명 끌고 도망", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
+      { "label": "둘 다 설득해 함께 빠져나간다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "도망. 그러나 함정 통로에서 발판을 밟는다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "함정의 발판"
+  },
+  {
+    "nodeId": 9,
+    "text": "당국이 검은 손의 동료들을 즉시 격리. 당신만 무사. 무덤은 봉인되고 학술 발굴로 전환.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "1시간의 신고"
+  },
+  {
+    "nodeId": 10,
+    "text": "한 명을 끌고 도망. 통로 함정을 우회해 입구. 의료팀에 인계. 다른 한 명은 무덤 안에 남는다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "한 명의 구원"
+  },
+  {
+    "nodeId": 11,
+    "text": "보석을 만지지 않고 동료를 설득. 셋이 함께 빠져나와 발견 신고. 학술적 발굴.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "셋의 합의"
+  },
+  {
+    "nodeId": 12,
+    "text": "당신도 보석 하나만 — 손이 검게 변한다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "유혹의 한 알"
+  },
+  {
+    "nodeId": 13,
+    "text": "혼자 무덤 깊이. 마지막 방. 파라오의 관 — 그러나 관 위에 \"열지 마라\". 학술적으로 봉인된 채 보고서만.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "열지 않은 관"
+  }
+]

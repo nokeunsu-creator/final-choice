@@ -1,0 +1,120 @@
+[
+  {
+    "nodeId": 1,
+    "text": "교도소 14년차. 어머니 위독 소식 — 면회 거부. 결심한다. 오늘 밤 탈출. 동료 죄수 둘이 함께. 옥상 / 세탁실 / 식당 셋 중 하나.",
+    "choices": [
+      { "label": "옥상 — 송전탑 라인", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "세탁실 — 차량 빨래 카트", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "식당 — 배달 차량", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "옥상. 송전탑까지 거리 — 30m, 와이어 한 줄. 손도구 필요.",
+    "choices": [
+      { "label": "손도구 챙기러 작업장", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "맨손으로 시도", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "세탁실. 빨래 카트가 트럭으로. 트럭은 22:00 출발. 21:50 잠입.",
+    "choices": [
+      { "label": "그대로 잠입", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "동료 둘과 함께", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "식당. 배달 차량이 폐기물 출구로 23:00. 동료 한 명이 그 차 운전사 매수.",
+    "choices": [
+      { "label": "23:00 — 폐기물 차 잠입", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "작업장. 손도구 챙김. 옥상으로 돌아간다.",
+    "choices": [
+      { "label": "옥상 — 와이어 통과", "nextNodeId": 10, "requiredItem": null, "grantItem": "손도구" }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "맨손 30m 와이어. 절반에서 손이 미끄러진다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "맨손의 와이어"
+  },
+  {
+    "nodeId": 7,
+    "text": "혼자 잠입. 트럭 출발. 검문소까지 무사. 검문소에서 무게 점검 — 평소보다 무겁다.",
+    "choices": [
+      { "label": "잠시 숨 멈춘다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "셋이 잠입. 트럭 무게가 너무 늘어 검문소에서 즉시 의심.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "세 명의 무게"
+  },
+  {
+    "nodeId": 9,
+    "text": "23:00. 폐기물 차. 그러나 운전사가 마음 변함 — 신고. 동료 둘 잡힘.",
+    "choices": [
+      { "label": "당신만 빠져나간다", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
+      { "label": "함께 돌아간다", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "손도구로 와이어 강화. 30m 통과. 송전탑 → 사다리 → 외부.",
+    "choices": [
+      { "label": "외부 — 어머니 병원으로", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "숨 멈춤. 검문관이 \"빨래 무게가 평소 같다\" 한 마디 — 매수된 검문관이었다. 통과. 외부.",
+    "choices": [
+      { "label": "어머니 병원으로", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "당신만 — 동료를 두고 도망. 외부 어머니 병원에 도착하지만 평생 그 무게.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "두고 온 동료"
+  },
+  {
+    "nodeId": 13,
+    "text": "함께 돌아간다. 셋 모두 자수. 어머니는 못 본다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "함께 돌아간 자수"
+  },
+  {
+    "nodeId": 14,
+    "text": "어머니 병원 도착. 마지막 한 시간 함께한다. 그 후 — 결정.",
+    "choices": [
+      { "label": "그 자리에서 자수", "nextNodeId": 16, "requiredItem": null, "grantItem": null },
+      { "label": "한 달 더 도주 시도", "nextNodeId": 15, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "병원에서 자수. 어머니 임종 직후 경찰이 도착. 형은 늘어나지만 마음은 한결 가볍다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "마지막 한 시간"
+  },
+  {
+    "nodeId": 15,
+    "text": "어머니를 만난 후 다시 도주 시도. 한 달 후 잡힌다. 어머니 임종은 못 봤다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "한 달의 도주"
+  }
+]

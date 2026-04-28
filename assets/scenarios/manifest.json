@@ -35,6 +35,20 @@
     { "id": "eclipse-night", "title": "일식의 밤", "subtitle": "100년 만의 개기일식", "description": "검은 거울 같은 눈들", "icon": "🌑", "accent": "#581c87" },
     { "id": "masquerade", "title": "가면무도회", "subtitle": "베네치아 자정", "description": "빨간 장미를 든 자", "icon": "🎭", "accent": "#be185d" },
     { "id": "bat-cave", "title": "박쥐 동굴", "subtitle": "동료가 끼었다", "description": "박쥐 폭풍을 피해", "icon": "🦇", "accent": "#3f3f46" },
-    { "id": "vanished-station", "title": "사라진 기차역", "subtitle": "지도에 없는 연선역", "description": "어제로 가는 차표", "icon": "🛤️", "accent": "#0d9488" }
+    { "id": "vanished-station", "title": "사라진 기차역", "subtitle": "지도에 없는 연선역", "description": "어제로 가는 차표", "icon": "🛤️", "accent": "#0d9488" },
+    { "id": "foggy-village", "title": "안개 낀 마을", "subtitle": "같은 얼굴들", "description": "정북의 산봉", "icon": "🌫️", "accent": "#9ca3af" },
+    { "id": "astrologer-tower", "title": "점성술사의 탑", "subtitle": "별빛·달빛·태양 자물쇠", "description": "내 별을 내줄까", "icon": "🔮", "accent": "#6366f1" },
+    { "id": "closed-stadium", "title": "폐쇄된 경기장", "subtitle": "5년 전 9회 말", "description": "마지막 한 타석", "icon": "🏟️", "accent": "#0891b2" },
+    { "id": "drifting-boat", "title": "표류 보트", "subtitle": "남태평양 5일째", "description": "엔진 부품 vs 동료", "icon": "🚤", "accent": "#0e7490" },
+    { "id": "desert-caravan", "title": "사막 캐러밴", "subtitle": "사하라 모래 폭풍", "description": "오아시스까지 30km", "icon": "🐪", "accent": "#ca8a04" },
+    { "id": "abandoned-amusement", "title": "폐쇄된 놀이공원", "subtitle": "혼자 도는 회전목마", "description": "20년 전 사고", "icon": "🎠", "accent": "#ec4899" },
+    { "id": "secret-agent", "title": "비밀 요원", "subtitle": "베를린 30분 작전", "description": "USB 회수와 공항 게이트 22", "icon": "💼", "accent": "#525252" },
+    { "id": "detective-case", "title": "탐정 사건", "subtitle": "재벌 회장 펜트하우스", "description": "립스틱과 위조 유서", "icon": "🔍", "accent": "#854d0e" },
+    { "id": "tomb-raider", "title": "무덤 도굴꾼", "subtitle": "왕가의 골짜기", "description": "보석을 만지지 말라", "icon": "👑", "accent": "#b45309" },
+    { "id": "bomb-defusal", "title": "시한 폭탄", "subtitle": "강남 지하상가 14분", "description": "빨간선·파란선·검은선", "icon": "💣", "accent": "#b91c1c" },
+    { "id": "subway-trapped", "title": "지하철 갇힘", "subtitle": "2호선 막차", "description": "옆 선로의 빛", "icon": "🚇", "accent": "#10b981" },
+    { "id": "warzone", "title": "전쟁터 한복판", "subtitle": "종군기자", "description": "프레스 차량과 검문소", "icon": "🪖", "accent": "#65a30d" },
+    { "id": "hostage-negotiation", "title": "인질 협상", "subtitle": "은행 강도 12명 인질", "description": "공감 vs 강압", "icon": "🎲", "accent": "#7c3aed" },
+    { "id": "prison-escape", "title": "탈옥수", "subtitle": "어머니 위독", "description": "옥상·세탁실·식당", "icon": "⛓️", "accent": "#52525b" }
   ]
 }

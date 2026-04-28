@@ -1,0 +1,110 @@
+[
+  {
+    "nodeId": 1,
+    "text": "지하철 2호선 막차. 터널 한가운데서 정전 + 정지. 비상등만. 객실엔 당신 포함 일곱. 차장 무전 끊김.",
+    "choices": [
+      { "label": "차장 칸으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "비상 문을 연다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "다른 승객들 진정시킨다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "차장 칸. 차장이 의식 없이. 무전기와 비상 키. 비상등 케이블이 끊겨있다.",
+    "choices": [
+      { "label": "무전기 챙김", "nextNodeId": 5, "requiredItem": null, "grantItem": "무전기" },
+      { "label": "비상 키 챙김", "nextNodeId": 5, "requiredItem": null, "grantItem": "비상키" },
+      { "label": "차장 응급 처치만 하고 대기", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "비상 문. 발 아래 깊이 어둠. 옆 터널 벽에 비상등이 가물가물.",
+    "choices": [
+      { "label": "내려가서 비상등 따라", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
+      { "label": "객실 안에서 대기", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "다른 승객들. 한 노인이 \"내려서 걸으면 안 돼. 옆 선로에 다른 차.\" 한 청년이 \"여기 갇혀있을 수 없어.\" 두 의견.",
+    "choices": [
+      { "label": "노인 의견대로 대기", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "청년 따라 내린다", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
+      { "label": "청년이 강제로 비상 문 연다", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "장비.",
+    "choices": [
+      { "label": "비상 문 열기", "nextNodeId": 3, "requiredItem": "비상키", "grantItem": null },
+      { "label": "무전 송출", "nextNodeId": 8, "requiredItem": "무전기", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "터널 안. 비상등 따라 50m. 갑자기 진동 — 옆 선로 차가 빠르게 지나간다.",
+    "choices": [
+      { "label": "벽에 붙어 멈춘다", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
+      { "label": "그래도 비상등으로", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "객실에서 대기. 30분 후 구조대 도착. 한 시간 후 모두 안전 후송.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "차장의 자리"
+  },
+  {
+    "nodeId": 8,
+    "text": "무전 송출. \"강남역 동측 터널 — 정지 차량.\" 응답: \"15분 안에 구조.\" 15분.",
+    "choices": [
+      { "label": "객실에서 대기", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "비상 키로 문 열고 신호", "nextNodeId": 11, "requiredItem": "비상키", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "벽에 붙는다. 차가 지나가는 사이 한 발자국씩. 비상등까지 도달.",
+    "choices": [
+      { "label": "비상등 옆 비상구로", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "비상등 강행. 옆 선로 차가 빠르게.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "옆 선로의 빛"
+  },
+  {
+    "nodeId": 11,
+    "text": "비상 키로 문 열고 손전등으로 신호. 구조대가 7분 만에 합류. 모두 안전.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "7분의 신호"
+  },
+  {
+    "nodeId": 12,
+    "text": "비상구. 계단을 따라 지상. 시민이 119 신고. 다른 승객들도 무전 덕에 무사 후송.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "비상구의 빛"
+  },
+  {
+    "nodeId": 13,
+    "text": "객실 안에서 청년이 비상 문을 강제로 연다. 한 명이 옆 선로로 떨어진다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "강제로 연 문"
+  },
+  {
+    "nodeId": 14,
+    "text": "차장 응급 처치. 진정시키는 동안 객실 안 다른 승객들이 자체 대기. 무전 안 됐지만 30분 후 점검팀 발견.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "기다린 30분"
+  }
+]

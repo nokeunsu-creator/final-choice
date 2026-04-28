@@ -1,0 +1,115 @@
+[
+  {
+    "nodeId": 1,
+    "text": "현지 분쟁 지역, 종군기자. 호텔 엔진 룸에서 동료 카메라맨과 갇혔다. 폭발음이 점점 가까워진다. 호텔까진 폭격 표적.",
+    "choices": [
+      { "label": "지하 터널로 — 외곽으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "옥상 — 헬기 무전", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "프레스 차량으로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "지하 터널. 길 모름. 동료 카메라맨이 위성 지도를 꺼낸다.",
+    "choices": [
+      { "label": "지도 보고 외곽까지", "nextNodeId": 5, "requiredItem": null, "grantItem": "지도" },
+      { "label": "지도 없이 감", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "옥상. 무전기로 \"프레스 — 구조 요청.\" 그러나 호텔 자체가 폭격 표적. 이미 헬기는 못 옴.",
+    "choices": [
+      { "label": "차량으로 — 외곽 검문소", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
+      { "label": "옥상에서 끝까지 기다린다", "nextNodeId": 15, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "프레스 차량. 흰 깃발과 \"PRESS\" 큰 글씨. 도로 검문소 두 개 통과 필요.",
+    "choices": [
+      { "label": "정공법 — 검문소 진입", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "옆길 — 위험하지만 빠름", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "지도 따라 터널 → 외곽 폐허 → 적십자 차량 발견.",
+    "choices": [
+      { "label": "적십자 차량 합류", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "지도 없이. 막다른 갱도. 폭격으로 천장 일부 무너짐.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "막다른 갱도"
+  },
+  {
+    "nodeId": 7,
+    "text": "정공법. 첫 검문소 통과. 두 번째 — 의심 받는다. \"PRESS 신원 확인.\"",
+    "choices": [
+      { "label": "프레스 카드 보임", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
+      { "label": "동료 카메라 영상 보임", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "옆길. 빠르지만 지뢰밭 표지. 동료 카메라맨이 \"이전에 와봤어. 이쪽 따라.\"",
+    "choices": [
+      { "label": "동료 따라", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
+      { "label": "정공법으로 돌아간다", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "적십자 차량. 외국인 기자 우선 후송. 외곽 안전 지대로.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "적십자의 차"
+  },
+  {
+    "nodeId": 10,
+    "text": "프레스 카드. 검문대장이 한참 본다. 통과. 외곽 검문소까지 30분.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "프레스 카드"
+  },
+  {
+    "nodeId": 11,
+    "text": "카메라 영상. 검문대장 \"이거 우리 부대 — 너무 자세히 찍었군.\" 동료 카메라가 압수.",
+    "choices": [
+      { "label": "카메라 양보", "nextNodeId": 13, "requiredItem": null, "grantItem": null },
+      { "label": "거부", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "동료 따라. 그러나 새벽 폭격으로 길이 변했다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "변한 옆길"
+  },
+  {
+    "nodeId": 13,
+    "text": "카메라 양보. 통과. 그러나 한 달간의 영상이 사라진다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "한 달의 영상"
+  },
+  {
+    "nodeId": 14,
+    "text": "거부. 검문대장이 짜증을 낸다. 동료 카메라맨이 \"가시오\" 한 마디로 영상 카드만 넘긴다 — 카메라는 지킨다. 통과.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "카드 한 장"
+  },
+  {
+    "nodeId": 15,
+    "text": "옥상에서 헬기 끝까지 기다리다 호텔 폭격.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "옥상의 끝"
+  }
+]

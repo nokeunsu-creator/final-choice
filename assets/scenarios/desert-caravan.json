@@ -1,0 +1,111 @@
+[
+  {
+    "nodeId": 1,
+    "text": "사하라 한가운데. 가이드를 잃고 낙타 한 마리, 물 한 통, 지도 한 장. 모래 폭풍이 다가온다.",
+    "choices": [
+      { "label": "동쪽 — 옛 캐러밴 길", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "북쪽 — 알려진 마을", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "그 자리에서 폭풍 대비", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
+      { "label": "지도만으로 강행", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "동쪽. 옛 길의 표지석들. 폭풍이 더 가까워진다. 한 표지 옆에 옛 가이드의 가방.",
+    "choices": [
+      { "label": "가방을 연다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "계속 동쪽으로", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "북쪽. 폭풍이 정면. 낙타가 멈춰서 더 못 간다.",
+    "choices": [
+      { "label": "낙타와 함께 엎드린다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "낙타를 두고 혼자 강행", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
+      { "label": "북쪽 마을까지 직진", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "그 자리. 낙타와 함께 모래에 엎드려 천을 머리 위로. 30분 후 폭풍 통과.",
+    "choices": [
+      { "label": "다음 행보 — 동쪽", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "다음 행보 — 북쪽", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "가방 안. 나침반, 비상 식량, 그리고 가이드의 마지막 메모: \"동쪽 30km — 오아시스. 폭풍 후에만 보인다.\"",
+    "choices": [
+      { "label": "나침반 들고 동쪽으로", "nextNodeId": 9, "requiredItem": null, "grantItem": "나침반" },
+      { "label": "식량만 챙기고 북쪽으로", "nextNodeId": 3, "requiredItem": null, "grantItem": "식량" },
+      { "label": "신기루를 본다", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "동쪽 강행. 폭풍에 휩쓸려 방향을 잃는다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "방향 잃은 자"
+  },
+  {
+    "nodeId": 7,
+    "text": "낙타와 엎드림. 폭풍 통과 후 다시 일어선다. 낙타가 코로 어딘가를 가리킨다 — 물 냄새.",
+    "choices": [
+      { "label": "낙타를 따라간다", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
+      { "label": "낙타와 함께 끝까지", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "낙타 두고 혼자. 폭풍 한가운데. 물도 식량도 부족.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "혼자의 폭풍"
+  },
+  {
+    "nodeId": 9,
+    "text": "나침반 정확히 동 30km. 폭풍 통과 후 — 오아시스 발견. 베두인 캐러밴이 휴식 중.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "오아시스의 캐러밴"
+  },
+  {
+    "nodeId": 10,
+    "text": "낙타가 물 있는 곳까지 — 작은 우물. 그리고 우물 옆 베두인 마을.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "낙타의 후각"
+  },
+  {
+    "nodeId": 11,
+    "text": "지도만으로 강행. 지도가 정확하지 않다. 한 시간 후 같은 자리.",
+    "choices": [
+      { "label": "그래도 동쪽 강행", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
+      { "label": "그 자리에서 폭풍 대비", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "북쪽 마을 도착 — 그러나 폐허. 30년 전 폐쇄된 마을이라는 표지.",
+    "choices": [
+      { "label": "다시 동쪽으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "사흘을 헤맨 끝에 신기루를 본다. 그 안에서 한 발자국.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "신기루의 한 발"
+  },
+  {
+    "nodeId": 14,
+    "text": "낙타가 죽은 후 그의 등에서 마지막 물을 마신다. 살아남는다 — 그러나 다시는 사막을 못 본다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "낙타의 마지막"
+  }
+]

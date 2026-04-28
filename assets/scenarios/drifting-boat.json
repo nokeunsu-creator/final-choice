@@ -1,0 +1,116 @@
+[
+  {
+    "nodeId": 1,
+    "text": "남태평양 어딘가. 보트의 엔진이 죽고 5일째. 식량 이틀치, 물 사흘치. 다른 두 명은 한 명은 잠들었고, 한 명은 점점 헛소리.",
+    "choices": [
+      { "label": "엔진을 다시 손본다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "구조 신호 만든다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "헛소리 동료를 본다", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
+      { "label": "아무것도 안 한 채 5일 더", "nextNodeId": 15, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "엔진실. 부품 하나만 바꾸면 가동. 그러나 그 부품은 옆 동료의 도구함에.",
+    "choices": [
+      { "label": "도구함을 연다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "그냥 두고 신호로", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "구조 신호. 거울로 햇빛 반사 / 흰 깃발 / 신호탄 셋 중 하나.",
+    "choices": [
+      { "label": "거울 반사", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
+      { "label": "흰 깃발", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "신호탄 (마지막 한 발)", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "헛소리 동료. 발열, 탈수. 약상자엔 진통제 두 알 남았다.",
+    "choices": [
+      { "label": "진통제 준다", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
+      { "label": "물만 더 준다", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "도구함. 부품과 함께 동료의 일기. \"엔진은 사실 고장 안 났다. 우리 셋, 누가 살아남을지 봐야 한다.\"",
+    "choices": [
+      { "label": "부품만 챙기고 엔진 가동", "nextNodeId": 11, "requiredItem": null, "grantItem": "부품" },
+      { "label": "동료를 깨워 따진다", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "거울 반사. 한 시간 뒤 멀리 어선의 응답. 두 시간 뒤 합류.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "거울의 빛"
+  },
+  {
+    "nodeId": 7,
+    "text": "흰 깃발. 바람이 약해 보이지 않는다. 종일 보이지 않는다.",
+    "choices": [
+      { "label": "거울 반사로 시도", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "신호탄. 하늘에 짧고 높게. 30분 뒤 군함 한 척 도착.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "한 발의 신호탄"
+  },
+  {
+    "nodeId": 9,
+    "text": "진통제 — 두 알. 동료가 잠든다. 회복 가능성 있다.",
+    "choices": [
+      { "label": "구조 신호 만든다", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "물 더 — 동료의 헛소리는 가라앉지만 약 없이 회복은 어렵다.",
+    "choices": [
+      { "label": "구조 신호 만든다", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "부품으로 엔진 가동. 그러나 동료가 깨어나 \"나만 두고 가다니\" 하며 운전대를 잡는다. 보트는 엉뚱한 방향으로.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "엉뚱한 방향"
+  },
+  {
+    "nodeId": 12,
+    "text": "동료를 깨워 따진다. 그가 칼을 든다.",
+    "choices": [
+      { "label": "맞선다", "nextNodeId": 13, "requiredItem": null, "grantItem": null },
+      { "label": "협상한다", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "맞선다. 보트 위 격투. 한 명이 떨어진다. 누구든.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "보트 위 격투"
+  },
+  {
+    "nodeId": 14,
+    "text": "협상. 셋 중 한 명만 식량을 더 받는다 — 가장 약한 자. 모두 회복 가능. 다음날 군함 발견.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "셋의 균형"
+  },
+  {
+    "nodeId": 15,
+    "text": "구조 신호 만들지 않은 채 5일 더. 식량 떨어지고 물 떨어지고.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "표류의 끝"
+  }
+]

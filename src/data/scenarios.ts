@@ -35,6 +35,20 @@ import eclipseNightRaw from '../../assets/scenarios/eclipse-night.json';
 import masqueradeRaw from '../../assets/scenarios/masquerade.json';
 import batCaveRaw from '../../assets/scenarios/bat-cave.json';
 import vanishedStationRaw from '../../assets/scenarios/vanished-station.json';
+import foggyVillageRaw from '../../assets/scenarios/foggy-village.json';
+import astrologerTowerRaw from '../../assets/scenarios/astrologer-tower.json';
+import closedStadiumRaw from '../../assets/scenarios/closed-stadium.json';
+import driftingBoatRaw from '../../assets/scenarios/drifting-boat.json';
+import desertCaravanRaw from '../../assets/scenarios/desert-caravan.json';
+import abandonedAmusementRaw from '../../assets/scenarios/abandoned-amusement.json';
+import secretAgentRaw from '../../assets/scenarios/secret-agent.json';
+import detectiveCaseRaw from '../../assets/scenarios/detective-case.json';
+import tombRaiderRaw from '../../assets/scenarios/tomb-raider.json';
+import bombDefusalRaw from '../../assets/scenarios/bomb-defusal.json';
+import subwayTrappedRaw from '../../assets/scenarios/subway-trapped.json';
+import warzoneRaw from '../../assets/scenarios/warzone.json';
+import hostageNegotiationRaw from '../../assets/scenarios/hostage-negotiation.json';
+import prisonEscapeRaw from '../../assets/scenarios/prison-escape.json';
 import type { ScenarioMeta, StoryNode } from './types';
 
 const manifest = manifestRaw as { scenarios: ScenarioMeta[] };
@@ -76,6 +90,20 @@ const DATA: Record<string, StoryNode[]> = {
   masquerade: masqueradeRaw as StoryNode[],
   'bat-cave': batCaveRaw as StoryNode[],
   'vanished-station': vanishedStationRaw as StoryNode[],
+  'foggy-village': foggyVillageRaw as StoryNode[],
+  'astrologer-tower': astrologerTowerRaw as StoryNode[],
+  'closed-stadium': closedStadiumRaw as StoryNode[],
+  'drifting-boat': driftingBoatRaw as StoryNode[],
+  'desert-caravan': desertCaravanRaw as StoryNode[],
+  'abandoned-amusement': abandonedAmusementRaw as StoryNode[],
+  'secret-agent': secretAgentRaw as StoryNode[],
+  'detective-case': detectiveCaseRaw as StoryNode[],
+  'tomb-raider': tombRaiderRaw as StoryNode[],
+  'bomb-defusal': bombDefusalRaw as StoryNode[],
+  'subway-trapped': subwayTrappedRaw as StoryNode[],
+  warzone: warzoneRaw as StoryNode[],
+  'hostage-negotiation': hostageNegotiationRaw as StoryNode[],
+  'prison-escape': prisonEscapeRaw as StoryNode[],
 };
 
 const NODE_INDEX: Record<string, Map<number, StoryNode>> = Object.fromEntries(

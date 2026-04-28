@@ -1,0 +1,115 @@
+[
+  {
+    "nodeId": 1,
+    "text": "은행 강도 인질 12명. 당신은 협상관. 한 시간 안에 결과를 내야 한다. 강도는 한 명, 무전기로 통화 가능.",
+    "choices": [
+      { "label": "공감대 — 그의 사정 듣기", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "강압 — 위협으로 자수", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "거래 — 인질 한 명씩", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
+      { "label": "결정 못 한 채 한 시간 흐른다", "nextNodeId": 15, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "공감. 그가 한참 침묵 후 \"제 어머니 — 병원비 ... \" 그의 사정이 나온다.",
+    "choices": [
+      { "label": "병원비 지원 약속", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "더 듣고 — 다른 동기 찾기", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "강압. \"30분 안에 자수 안 하면 SWAT.\" 그가 인질 한 명을 화면 앞에 끌고 온다.",
+    "choices": [
+      { "label": "강압 유지", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "공감으로 전환", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "거래. 임산부 인질 우선. 그가 \"그래, 한 명 — 그 대신 돈 1억.\"",
+    "choices": [
+      { "label": "1억 약속하고 임산부 풀기", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
+      { "label": "다른 인질로 협상", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "병원비 지원 약속. 그가 잠시 침묵 후 \"진짜? 정말 — 도와줄 수 있어요?\" 변화.",
+    "choices": [
+      { "label": "정말 도와주겠다 단언", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
+      { "label": "조건 — 인질 풀기 먼저", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "더 듣는다. 그가 \"사실 — 어제 어머니가 돌아가셨어요. 빚만 남아서.\" 분노가 가라앉는 듯.",
+    "choices": [
+      { "label": "위로 + 자수 권유", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "강압 유지. 30분. 그가 \"내가 잃을 게 없어\" 한 마디. 인질 첫 발사 시도.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "잃을 게 없는 자"
+  },
+  {
+    "nodeId": 8,
+    "text": "1억 약속. 임산부 풀려난다. 그러나 1억 못 줄 것을 그도 안다 — 단지 시간을 산다.",
+    "choices": [
+      { "label": "그 시간에 SWAT 진입", "nextNodeId": 13, "requiredItem": null, "grantItem": null },
+      { "label": "공감으로 전환", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "다른 인질로. 그가 \"나는 임산부 먼저 풀고 싶다\" 한다 — 그가 사람이라는 증거.",
+    "choices": [
+      { "label": "공감으로 전환", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "정말 도와주겠다. 그가 인질 모두 풀어주고 자수. SWAT 진입 없이 평화로운 종결.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "공감의 끝"
+  },
+  {
+    "nodeId": 11,
+    "text": "조건. 그가 \"그렇게 해보고 싶었지만 — 못 믿어\" 한다. 다시 무력 행사 시도.",
+    "choices": [
+      { "label": "약속 무조건", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "위로 + 자수 권유. 그가 \"진짜 — 자수해도 ... 살 수 있을까요?\" 가능성. \"네, 약속드립니다.\"",
+    "choices": [
+      { "label": "약속한다", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "SWAT 진입. 강도 사살. 인질 11명 무사 — 임산부 한 명. 그러나 강도의 어린 자녀 ...",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "두 명의 어머니"
+  },
+  {
+    "nodeId": 14,
+    "text": "약속. 그가 무기 내려놓고 인질 모두 풀고 자수. 평생 가져갈 무게이지만, 모두 살았다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "한 마디의 무게"
+  },
+  {
+    "nodeId": 15,
+    "text": "한 시간 만료, 결과 없이. SWAT 강행. 사상자 발생.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "결과 없는 시간"
+  }
+]

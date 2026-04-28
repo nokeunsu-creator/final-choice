@@ -1,0 +1,109 @@
+[
+  {
+    "nodeId": 1,
+    "text": "20년 전 폐장한 놀이공원. 입장료 없는 입구. 회전목마가 혼자 돌아가고, 음악이 멈추지 않는다.",
+    "choices": [
+      { "label": "회전목마로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "유령의 집으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "관제실로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "회전목마. 한 마리 백마에 어린아이가 앉아있다. 20년 전 그 모습 그대로. 미소.",
+    "choices": [
+      { "label": "다가가 인사", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "조용히 빠져나간다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "유령의 집 입구. 안에서 깔깔거리는 어린 웃음소리. 입장 카운터에 마스터키.",
+    "choices": [
+      { "label": "마스터키 챙김", "nextNodeId": 7, "requiredItem": null, "grantItem": "마스터키" },
+      { "label": "그냥 들어간다", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "관제실. 모든 놀이기구가 실시간으로 가동되고 있다 — 사람이 없는데. 비상 정지 버튼.",
+    "choices": [
+      { "label": "정지 버튼", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
+      { "label": "기록 컴퓨터 본다", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "아이: \"여기 갇혀 있어요. 20년이나. 누가 회전목마 멈춰주면 나갈 수 있어요.\"",
+    "choices": [
+      { "label": "관제실로 — 멈추러", "nextNodeId": 4, "requiredItem": null, "grantItem": "약속" },
+      { "label": "회전목마 코드 직접 뽑는다", "nextNodeId": 11, "requiredItem": null, "grantItem": null },
+      { "label": "약속만 하고 떠난다", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "조용히 빠져나가려 하자 회전목마 음악이 점점 빨라진다.",
+    "choices": [
+      { "label": "관제실로 달린다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "마스터키. 모든 비상 정지 자물쇠를 열 수 있다.",
+    "choices": [
+      { "label": "관제실로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "유령의 집. 조명 없이 들어가자 어두운 복도. 어린 웃음이 사방에서.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "끝없는 웃음"
+  },
+  {
+    "nodeId": 9,
+    "text": "정지 버튼. 모든 기구가 한꺼번에 정지. 그러나 회전목마는 계속 돈다 — 자물쇠가 따로.",
+    "choices": [
+      { "label": "마스터키로 회전목마 자물쇠", "nextNodeId": 12, "requiredItem": "마스터키", "grantItem": null },
+      { "label": "코드 직접 뽑는다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "기록 컴퓨터. \"2003년 회전목마 사고. 어린이 한 명 사망. 영혼이 묶임.\" 관리 일지.",
+    "choices": [
+      { "label": "정지 버튼 누르고 회전목마", "nextNodeId": 9, "requiredItem": null, "grantItem": "지식" },
+      { "label": "마스터키로 영구 정지 + 위로", "nextNodeId": 14, "requiredItem": "마스터키", "grantItem": "지식" }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "회전목마 코드. 손이 닿는 순간 감전. 코드가 뜯어지지만 음악은 계속.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "감전된 손"
+  },
+  {
+    "nodeId": 12,
+    "text": "마스터키로 회전목마 자물쇠. 음악이 천천히 멎는다. 백마의 아이가 눈 앞에서 흩어진다 — 평안하게.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "20년의 정지"
+  },
+  {
+    "nodeId": 13,
+    "text": "약속만 하고 그대로 떠나려 하자 회전목마 음악이 사이렌처럼 변한다. 모든 기구가 당신을 향해.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "약속 깬 자"
+  },
+  {
+    "nodeId": 14,
+    "text": "지식과 마스터키 — 영혼을 위로하고 회전목마도 영구 정지. 공원 전체가 잠든다. 평화롭게 빠져나간다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "공원의 잠"
+  }
+]
