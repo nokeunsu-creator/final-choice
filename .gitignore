@@ -19,3 +19,5 @@ android/*.apk.idsig
 
 # Personal notes
 정보.txt
+
+.vercel

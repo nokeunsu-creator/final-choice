@@ -8,7 +8,9 @@
 ## 프로젝트 개요
 서버 없이 동작하는 텍스트 기반 생존 어드벤처 게임. 무인도에 표류한 주인공이 100개의 분기 노드를 거쳐 25개의 다양한 결말 중 하나에 도달한다.
 
+- **라이브 URL**: https://final-choice.vercel.app
 - **배포**: Vercel (정적 호스팅) → TWA로 Android Play Store 래핑 예정 (ChonMap과 동일 파이프라인)
+- **GitHub**: https://github.com/nokeunsu-creator/final-choice
 - **데이터**: 진행도(현재 노드 / 인벤토리 / 방문 노드 / 달성 결말) localStorage 저장
 
 ## 기술 스택
