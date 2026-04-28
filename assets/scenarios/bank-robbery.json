@@ -3,41 +3,133 @@
     "nodeId": 1,
     "text": "오전 10시 14분, 한국상호은행 강남지점. 마스크와 권총. 인질 다섯, 직원 셋. 동료가 금고 카운트다운을 시작한다 — 6분.",
     "choices": [
-      { "label": "지점장에게 금고 강요", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "인질 한 명을 풀어준다 (협상 카드)", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "전화선부터 끊는다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "지점장에게 금고 강요",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      },
+      {
+        "label": "인질 한 명을 풀어준다 (협상 카드)",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "전화선부터 끊는다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "지점장은 떨리는 손으로 1차 잠금만 풀 수 있다고 말한다. 2차는 시간 잠금 — 5분 대기.",
     "choices": [
-      { "label": "5분을 기다린다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "비상 코드를 강요", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "5분을 기다린다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "비상 코드를 강요",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "임산부 인질을 풀어준다. 경찰 무전: \"양심 있는 범인 — 협상 가능합니다.\"",
     "choices": [
-      { "label": "협상한다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "협상 거부하고 강행", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+      {
+        "label": "협상한다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "협상 거부하고 강행",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "전화선 절단. 그러나 직원 한 명이 무릎 아래 비상 버튼을 이미 눌렀다. 4분 후 경찰 도착.",
     "choices": [
-      { "label": "재빨리 1차 금고만 털고 탈출", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
-      { "label": "예정대로 6분 풀 작업", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+      {
+        "label": "재빨리 1차 금고만 털고 탈출",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "실용"
+        ]
+      },
+      {
+        "label": "예정대로 6분 풀 작업",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "자기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "5분 대기. 시간 잠금 풀림. 금고 안 30억. 동료가 가방에 챙긴다.",
     "choices": [
-      { "label": "정문으로 탈출", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
-      { "label": "지하 주차장으로", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "정문으로 탈출",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "지하 주차장으로",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
@@ -51,15 +143,39 @@
     "nodeId": 7,
     "text": "협상관과 통화. 인질 전원 안전 보장 + 자수 시 형량 협의. 동료의 만류를 뿌리치고.",
     "choices": [
-      { "label": "자수한다", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
-      { "label": "협상 결렬 통보 후 강행", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+      {
+        "label": "자수한다",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "협상 결렬 통보 후 강행",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "1차 금고만 — 8억. 정문 도주, 대기 중인 도주차로.",
     "choices": [
-      { "label": "도주차에 탑승", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+      {
+        "label": "도주차에 탑승",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
@@ -73,15 +189,40 @@
     "nodeId": 10,
     "text": "정문. 인질을 방패로. 그러나 인질이 갑자기 휘청, 발이 꺾인다.",
     "choices": [
-      { "label": "그대로 두고 달린다", "nextNodeId": 14, "requiredItem": null, "grantItem": null },
-      { "label": "끌고 간다", "nextNodeId": 15, "requiredItem": null, "grantItem": null }
+      {
+        "label": "그대로 두고 달린다",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "자기"
+        ]
+      },
+      {
+        "label": "끌고 간다",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 11,
     "text": "지하 주차장. 동료가 차에서 시동을 걸어둔다. 출구 차단막은 아직 올라가 있다.",
     "choices": [
-      { "label": "차로 빠져나간다", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+      {
+        "label": "차로 빠져나간다",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {

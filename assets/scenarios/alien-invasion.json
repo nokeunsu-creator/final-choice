@@ -3,33 +3,109 @@
     "nodeId": 1,
     "text": "서울 한복판, 거대 비행체 침공 D+3. 가족과 흩어진 채 지하 대피소를 찾는다. 하늘엔 외계 드론이 깜빡이고, 거리는 비어있다.",
     "choices": [
-      { "label": "지하철역 출구로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "주차장 지하 1층으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "근처 편의점 — 보급", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "지하철역 출구로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "신중"
+        ]
+      },
+      {
+        "label": "주차장 지하 1층으로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "근처 편의점 — 보급",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "지하철 입구. 사람들이 안쪽 깊이 모여 있다. 군 부사관이 신분증과 음료 한 캔을 건넨다.",
     "choices": [
-      { "label": "지하 깊은 대피소로", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "다시 거리로 — 가족 찾으러", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "지하 깊은 대피소로",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "협력"
+        ]
+      },
+      {
+        "label": "다시 거리로 — 가족 찾으러",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "주차장 지하 1층. 차들 사이에서 외계 드론 한 대 — 떨어진 듯 — 깜빡인다.",
     "choices": [
-      { "label": "드론을 가까이 본다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "지하 2층으로 더", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+      {
+        "label": "드론을 가까이 본다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "지하 2층으로 더",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "편의점. 라디오와 생수 + 통조림. 출구로 나갈 때 외계 드론이 머리 위 지나간다.",
     "choices": [
-      { "label": "라디오 챙김", "nextNodeId": 9, "requiredItem": null, "grantItem": "라디오" },
-      { "label": "생수+통조림 챙김", "nextNodeId": 9, "requiredItem": null, "grantItem": "식량" }
+      {
+        "label": "라디오 챙김",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "라디오",
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "생수+통조림 챙김",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "식량",
+        "traits": [
+          "자기"
+        ]
+      }
     ]
   },
   {
@@ -50,34 +126,118 @@
     "nodeId": 7,
     "text": "추락한 드론. 옆구리에서 작은 코어 — 깜빡임. 챙기면 추적당할 수 있다.",
     "choices": [
-      { "label": "코어를 챙긴다", "nextNodeId": 10, "requiredItem": null, "grantItem": "코어" },
-      { "label": "그대로 두고 떠난다", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+      {
+        "label": "코어를 챙긴다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": "코어",
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "그대로 두고 떠난다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "지하 2층. 군 임시 본부. 신분 등록.",
     "choices": [
-      { "label": "등록하고 합류", "nextNodeId": 11, "requiredItem": null, "grantItem": null },
-      { "label": "코어를 정보장교에게", "nextNodeId": 12, "requiredItem": "코어", "grantItem": null }
+      {
+        "label": "등록하고 합류",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "코어를 정보장교에게",
+        "nextNodeId": 12,
+        "requiredItem": "코어",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "보급 챙김. 다음 행보.",
     "choices": [
-      { "label": "지하철역으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "주차장 지하로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "라디오에 귀 기울인다", "nextNodeId": 13, "requiredItem": "라디오", "grantItem": null }
+      {
+        "label": "지하철역으로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "주차장 지하로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "라디오에 귀 기울인다",
+        "nextNodeId": 13,
+        "requiredItem": "라디오",
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "코어를 잡은 순간 손이 화끈. 드론 무리가 좌표를 받고 모인다.",
     "choices": [
-      { "label": "지하 2층으로 달린다", "nextNodeId": 8, "requiredItem": null, "grantItem": "코어" },
-      { "label": "코어 버리고 도망", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
-      { "label": "코어를 끌어안고 머문다", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+      {
+        "label": "지하 2층으로 달린다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": "코어",
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "코어 버리고 도망",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "코어를 끌어안고 머문다",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관",
+          "용기"
+        ]
+      }
     ]
   },
   {

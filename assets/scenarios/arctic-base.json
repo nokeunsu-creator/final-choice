@@ -3,73 +3,230 @@
     "nodeId": 1,
     "text": "북극 연구기지 NORD-9. 영하 47도. 6주 만에 정기 보급선 도착 예정이었지만 두절. 동료 12명 중 살아있는 건 당신과 무전기뿐.",
     "choices": [
-      { "label": "통신실로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "발전기실 점검", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "식량 창고로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "통신실로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "발전기실 점검",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "식량 창고로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "통신실. 본부 응답 없음. 옆에 동료의 메모: \"기지 안에 다른 무언가가 있다. 영구 동토에서 깨어났다.\"",
     "choices": [
-      { "label": "메모 무시 — 비상 송신", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "메모를 챙긴다", "nextNodeId": 6, "requiredItem": null, "grantItem": "메모" }
+      {
+        "label": "메모 무시 — 비상 송신",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "메모를 챙긴다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": "메모",
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "발전기실. 발전기는 정상이지만 한구석 봉인 해제된 보관함 — 옛 동토 시료 컨테이너가 비어있다.",
     "choices": [
-      { "label": "컨테이너 라벨 확인", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "그냥 떠난다", "nextNodeId": 1, "requiredItem": null, "grantItem": null }
+      {
+        "label": "컨테이너 라벨 확인",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "그냥 떠난다",
+        "nextNodeId": 1,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "식량 창고. 비상 식량 + 신호탄 + 사이드아암 권총.",
     "choices": [
-      { "label": "권총 챙김", "nextNodeId": 8, "requiredItem": null, "grantItem": "권총" },
-      { "label": "신호탄 챙김", "nextNodeId": 8, "requiredItem": null, "grantItem": "신호탄" }
+      {
+        "label": "권총 챙김",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": "권총",
+        "traits": [
+          "정면",
+          "자기"
+        ]
+      },
+      {
+        "label": "신호탄 챙김",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": "신호탄",
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "비상 송신. 본부: \"수신 양호. 헬기 14시간 후 도착. 그때까지 격리 유지.\"",
     "choices": [
-      { "label": "객실에서 격리", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
-      { "label": "기지 더 살핀다", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+      {
+        "label": "객실에서 격리",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      },
+      {
+        "label": "기지 더 살핀다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "메모: \"옛 영구 동토 시료 — 무언가 살아있었다. 동료들을 하나씩 ...\" 손글씨가 끊긴다.",
     "choices": [
-      { "label": "비상 송신", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "발전기실로", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+      {
+        "label": "비상 송신",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "발전기실로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "라벨: \"M-22 시료, 4만 년 전 영구 동토. 절대 해동 금지.\" 해동된 지 며칠.",
     "choices": [
-      { "label": "통신실로 — 본부 보고", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "통신실로 — 본부 보고",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "장비 챙김. 통신실 또는 발전기실로.",
     "choices": [
-      { "label": "통신실로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "발전기실로", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+      {
+        "label": "통신실로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "발전기실로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "격리 객실. 14시간. 한 시간이 지나자 복도에서 발걸음. 사람이 아니다.",
     "choices": [
-      { "label": "권총으로 문을 막는다", "nextNodeId": 11, "requiredItem": "권총", "grantItem": null },
-      { "label": "신호탄으로 시야 차단", "nextNodeId": 12, "requiredItem": "신호탄", "grantItem": null },
-      { "label": "조용히 숨는다", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+      {
+        "label": "권총으로 문을 막는다",
+        "nextNodeId": 11,
+        "requiredItem": "권총",
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      },
+      {
+        "label": "신호탄으로 시야 차단",
+        "nextNodeId": 12,
+        "requiredItem": "신호탄",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "조용히 숨는다",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
@@ -83,8 +240,25 @@
     "nodeId": 11,
     "text": "권총으로 문을 막다 두 발 — 그러나 14시간이 너무 길다. 탄약이 떨어진다.",
     "choices": [
-      { "label": "신호탄 마지막 한 발", "nextNodeId": 12, "requiredItem": "신호탄", "grantItem": null },
-      { "label": "맨손으로 끝까지", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+      {
+        "label": "신호탄 마지막 한 발",
+        "nextNodeId": 12,
+        "requiredItem": "신호탄",
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "맨손으로 끝까지",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "자기"
+        ]
+      }
     ]
   },
   {

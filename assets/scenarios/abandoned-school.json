@@ -3,93 +3,265 @@
     "nodeId": 1,
     "text": "30년 전 폐교된 모교. 동창 셋이 함께 들어왔지만 한 명이 사라졌다. 운동장은 안개. 4층 옛 우리 반 교실에서 가느다란 빛.",
     "choices": [
-      { "label": "본관 정문으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "후문, 보건실 쪽으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "옛 음악실 창문으로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "본관 정문으로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "후문, 보건실 쪽으로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "분석"
+        ]
+      },
+      {
+        "label": "옛 음악실 창문으로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "정문. 자물쇠는 녹슬어 떨어진다. 복도 끝에서 분필 긁히는 소리.",
     "choices": [
-      { "label": "소리 쪽으로", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "교무실로", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "소리 쪽으로",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "교무실로",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "보건실. 창백한 형광등. 약품장 안에 손전등과 옛 학교 마스터키.",
     "choices": [
-      { "label": "손전등을 챙긴다", "nextNodeId": 7, "requiredItem": null, "grantItem": "손전등" },
-      { "label": "마스터키를 챙긴다", "nextNodeId": 7, "requiredItem": null, "grantItem": "마스터키" }
+      {
+        "label": "손전등을 챙긴다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "손전등",
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "마스터키를 챙긴다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "마스터키",
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "음악실. 깨진 피아노 위에 졸업앨범. 사라진 동창의 이름에 빨간 동그라미.",
     "choices": [
-      { "label": "졸업앨범을 챙긴다", "nextNodeId": 8, "requiredItem": null, "grantItem": "졸업앨범" }
+      {
+        "label": "졸업앨범을 챙긴다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": "졸업앨범",
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "1학년 1반 교실. 칠판에 분필로 \"오늘부터 한 명 부족.\" 분필을 든 손이 사라지는 모습.",
     "choices": [
-      { "label": "교실에 들어간다", "nextNodeId": 9, "requiredItem": "손전등", "grantItem": null },
-      { "label": "복도로 도망", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "교실에 들어간다",
+        "nextNodeId": 9,
+        "requiredItem": "손전등",
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "복도로 도망",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "교무실. 옛 출석부, 학적부, 그리고 오래된 카메라.",
     "choices": [
-      { "label": "학적부에서 사라진 동창 찾기", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
-      { "label": "카메라를 챙긴다", "nextNodeId": 11, "requiredItem": null, "grantItem": "카메라" }
+      {
+        "label": "학적부에서 사라진 동창 찾기",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "카메라를 챙긴다",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": "카메라",
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "장비를 갖췄다. 4층 그 교실로 가기로.",
     "choices": [
-      { "label": "본관 정문으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "음악실로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "본관 정문으로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "음악실로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "앨범 페이지에 손가락 자국. 사라진 친구의 이름 옆에 \"4-2 1995\" 메모.",
     "choices": [
-      { "label": "4학년 2반으로 — 4층", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "4학년 2반으로 — 4층",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "교실 안. 분필이 칠판에 \"4-2 와\" 까지 쓰고 멈췄다. 책상 위 옛 사진.",
     "choices": [
-      { "label": "사진을 챙기고 4-2로", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "사진을 챙기고 4-2로",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "학적부에 그 친구는 \"1995년 봄 실종\"으로 기록. 우리 셋과 같은 반이었다.",
     "choices": [
-      { "label": "4학년 2반으로", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "4학년 2반으로",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 11,
     "text": "카메라 안 필름이 그대로. 무언가 찍을 수 있을 듯.",
     "choices": [
-      { "label": "4학년 2반으로", "nextNodeId": 12, "requiredItem": null, "grantItem": "카메라" }
+      {
+        "label": "4학년 2반으로",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": "카메라",
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 12,
     "text": "4층 4-2 교실. 사라진 동창이 책상에 엎드려 있다. 1995년 그 모습 그대로. 살아있다.",
     "choices": [
-      { "label": "어깨를 흔든다", "nextNodeId": 13, "requiredItem": null, "grantItem": null },
-      { "label": "사진을 찍는다", "nextNodeId": 14, "requiredItem": "카메라", "grantItem": null },
-      { "label": "마스터키로 교실 밖에서 잠근다", "nextNodeId": 15, "requiredItem": "마스터키", "grantItem": null }
+      {
+        "label": "어깨를 흔든다",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "사진을 찍는다",
+        "nextNodeId": 14,
+        "requiredItem": "카메라",
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      },
+      {
+        "label": "마스터키로 교실 밖에서 잠근다",
+        "nextNodeId": 15,
+        "requiredItem": "마스터키",
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "실용"
+        ]
+      }
     ]
   },
   {

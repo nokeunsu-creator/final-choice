@@ -3,55 +3,161 @@
     "nodeId": 1,
     "text": "지리산 깊은 골, 폐사찰 청정암. 일주문 앞에서 세 사람의 일행을 잃고 혼자가 됐다. 종소리가 사람 없는 종루에서 일정한 간격으로 울린다.",
     "choices": [
-      { "label": "본전으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "종루로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "요사채(스님 거처)로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "본전으로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "종루로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "요사채(스님 거처)로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "본전. 부처님 좌상 앞에 누군가가 두고 간 향이 타고 있다. 단상 아래 작은 함.",
     "choices": [
-      { "label": "함을 연다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "향만 본다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "함을 연다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "향만 본다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "종루. 종은 혼자 흔들린다. 종 줄 옆에 부적 한 장.",
     "choices": [
-      { "label": "부적을 챙긴다", "nextNodeId": 7, "requiredItem": null, "grantItem": "부적" },
-      { "label": "종을 멈춘다", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+      {
+        "label": "부적을 챙긴다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "부적",
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "종을 멈춘다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "요사채. 노승이 좌선 자세로 앉아 있다. 그러나 숨이 없다. 옆에 일기와 염주.",
     "choices": [
-      { "label": "일기를 읽는다", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
-      { "label": "염주를 챙긴다", "nextNodeId": 10, "requiredItem": null, "grantItem": "염주" }
+      {
+        "label": "일기를 읽는다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "염주를 챙긴다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": "염주",
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "함 안. 묶인 종이가 있고, 그 위 \"종 멈추는 자, 길 잃으리.\"",
     "choices": [
-      { "label": "종이를 챙긴다", "nextNodeId": 11, "requiredItem": null, "grantItem": "경고문" }
+      {
+        "label": "종이를 챙긴다",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": "경고문",
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "타고 있는 향. 한 사람이 방금 자리를 떴다는 뜻. 발자국이 종루 쪽으로.",
     "choices": [
-      { "label": "발자국을 따른다", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+      {
+        "label": "발자국을 따른다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "부적 손에. 글자가 빛나며 손바닥 위에 따뜻하다.",
     "choices": [
-      { "label": "본전으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "요사채로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "본전으로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "요사채로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
@@ -65,31 +171,88 @@
     "nodeId": 9,
     "text": "일기: \"산 너머에서 올라온 것을 종으로 묶어 둔 지 백 년. 종 멈추지 마라. 부적은 본전 함 안에 또 하나 있다.\"",
     "choices": [
-      { "label": "본전 함을 다시 본다", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+      {
+        "label": "본전 함을 다시 본다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "염주가 손목을 감자 마음이 가라앉는다. 산속의 무엇과 맞설 때 의지가 된다.",
     "choices": [
-      { "label": "종루로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "본전으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "종루로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "본전으로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 11,
     "text": "경고문 손에. 종은 절대 멈추면 안 된다.",
     "choices": [
-      { "label": "종루를 지키러 간다", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "종루를 지키러 간다",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 12,
     "text": "종루. 종 줄을 잡고 직접 흔든다. 안개가 가까이 오지만 종이 울리는 한 가까이 못 온다.",
     "choices": [
-      { "label": "부적을 종에 묶는다", "nextNodeId": 13, "requiredItem": "부적", "grantItem": null },
-      { "label": "염주로 손목을 감고 종 줄 고정", "nextNodeId": 14, "requiredItem": "염주", "grantItem": null },
-      { "label": "맨손으로 밤을 새운다", "nextNodeId": 15, "requiredItem": null, "grantItem": null }
+      {
+        "label": "부적을 종에 묶는다",
+        "nextNodeId": 13,
+        "requiredItem": "부적",
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "염주로 손목을 감고 종 줄 고정",
+        "nextNodeId": 14,
+        "requiredItem": "염주",
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "맨손으로 밤을 새운다",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {

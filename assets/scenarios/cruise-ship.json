@@ -3,57 +3,184 @@
     "nodeId": 1,
     "text": "지중해 7박 크루즈. 새벽 3시 충격음에 깨어났다. 선체가 살짝 기울었고, 객실 복도에 사람들. 선장 방송 없음.",
     "choices": [
-      { "label": "갑판으로 — 상황 파악", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "구명조끼부터 챙긴다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "조타실로 향한다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "갑판으로 — 상황 파악",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "구명조끼부터 챙긴다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "자기"
+        ]
+      },
+      {
+        "label": "조타실로 향한다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "갑판. 선미 쪽이 물에 잠기고 있다. 구명정은 좌우 8척.",
     "choices": [
-      { "label": "왼쪽 구명정 줄에", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "오른쪽 구명정 줄에", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
-      { "label": "구명정 포기 — 바다로 다이빙", "nextNodeId": 13, "requiredItem": null, "grantItem": null },
-      { "label": "구명조끼만 입고 다이빙", "nextNodeId": 14, "requiredItem": "구명조끼", "grantItem": null }
+      {
+        "label": "왼쪽 구명정 줄에",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "오른쪽 구명정 줄에",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "구명정 포기 — 바다로 다이빙",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "자기"
+        ]
+      },
+      {
+        "label": "구명조끼만 입고 다이빙",
+        "nextNodeId": 14,
+        "requiredItem": "구명조끼",
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "객실 옷장 위 구명조끼. 입고 복도로.",
     "choices": [
-      { "label": "갑판으로", "nextNodeId": 2, "requiredItem": null, "grantItem": "구명조끼" }
+      {
+        "label": "갑판으로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": "구명조끼",
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "조타실. 선장 부재, 부선장 한 명. \"빙산 충돌. 30분 안에 침몰. 모든 승객 갑판으로.\"",
     "choices": [
-      { "label": "조난 무전 도와준다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "갑판으로 달린다", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "조난 무전 도와준다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "갑판으로 달린다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "왼쪽 구명정 줄. 가족 단위 우선. 빈 자리는 두 칸.",
     "choices": [
-      { "label": "그대로 탑승", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
-      { "label": "노인 우선 양보", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+      {
+        "label": "그대로 탑승",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "노인 우선 양보",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "오른쪽 구명정. 줄이 더 길지만 비교적 천천히. 옆에 휘발유 통.",
     "choices": [
-      { "label": "휘발유 통 — 무게 버리고 다 같이", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
-      { "label": "그냥 탑승 차례", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "휘발유 통 — 무게 버리고 다 같이",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "그냥 탑승 차례",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "조난 무전. SOS + 좌표 송출. 부선장과 함께 마지막 순간까지 송신.",
     "choices": [
-      { "label": "갑판으로 — 마지막 구명정", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "갑판으로 — 마지막 구명정",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {

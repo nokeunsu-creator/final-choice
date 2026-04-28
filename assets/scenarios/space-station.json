@@ -3,86 +3,250 @@
     "nodeId": 1,
     "text": "지구 저궤도 정거장 헬리오스. 12명 탑승, 지금은 당신뿐이다. 한 시간 전 식당에서 모두 의식을 잃었다. 본부와의 통신은 두절. 산소 잔량 5시간.",
     "choices": [
-      { "label": "식당으로 — 동료 상태 확인", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "통신실로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "거주 모듈로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "식당으로 — 동료 상태 확인",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "통신실로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "거주 모듈로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "식당. 모두 잠든 듯 의자에 앉아있다. 호흡은 있다. 식탁 위 마시다 만 음료수, 그리고 의무관 카프리의 명찰.",
     "choices": [
-      { "label": "음료를 분석한다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "카프리 명찰을 챙긴다", "nextNodeId": 6, "requiredItem": null, "grantItem": "명찰" }
+      {
+        "label": "음료를 분석한다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "카프리 명찰을 챙긴다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": "명찰",
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "통신실. 콘솔이 죽었다. 옆에 비상 송신기, 작동 코드는 의무관 권한 필요.",
     "choices": [
-      { "label": "송신기 시도 (코드 없음)", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "명찰로 시도", "nextNodeId": 8, "requiredItem": "명찰", "grantItem": null }
+      {
+        "label": "송신기 시도 (코드 없음)",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "명찰로 시도",
+        "nextNodeId": 8,
+        "requiredItem": "명찰",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "거주 모듈. 동료의 사물함 — 지구의 가족 사진, 그리고 약 한 통.",
     "choices": [
-      { "label": "약통을 본다", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
-      { "label": "사진은 두고 떠난다", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+      {
+        "label": "약통을 본다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "사진은 두고 떠난다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "음료에 진정제 성분. 누군가 식당 음료에 약을 탔다. 식당 한쪽 카메라 영상에 자국. 의무관 카프리.",
     "choices": [
-      { "label": "의무실로 향한다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "의무실로 향한다",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "의무관 카프리는 여기 잠들어 있다. 명찰엔 의무관 권한.",
     "choices": [
-      { "label": "통신실로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "의무실로", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "통신실로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "의무실로",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "코드 없는 송신은 차단. 콘솔에 \"권한 없음 — 1회 더 시도 시 영구 잠금\".",
     "choices": [
-      { "label": "포기, 다른 곳으로", "nextNodeId": 1, "requiredItem": null, "grantItem": null }
+      {
+        "label": "포기, 다른 곳으로",
+        "nextNodeId": 1,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "명찰을 인식. 송신기 가동. SOS 송신.",
     "choices": [
-      { "label": "본부 응답을 기다린다", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
-      { "label": "추가로 식당 영상까지 송신", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+      {
+        "label": "본부 응답을 기다린다",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "추가로 식당 영상까지 송신",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "약통: 진정제. 의무관이 아닌 일반 동료의 사물함이다. 누군가 그에게 진정제를 미리 줬다.",
     "choices": [
-      { "label": "의무실로", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "의무실로",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "사진을 두고 떠난다. 동료들에게 미안함을 갖고.",
     "choices": [
-      { "label": "통신실로", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+      {
+        "label": "통신실로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 11,
     "text": "의무실. 카프리의 일지: \"본부 명령. 해당 정거장 폐기 결정. 모든 승조원 진정제 후 비상 캡슐로 송환. 단 한 명 — 신호 송출용 — 깨어 있어야 한다.\" 그게 당신이다.",
     "choices": [
-      { "label": "통신실 — 송신 시도", "nextNodeId": 8, "requiredItem": "명찰", "grantItem": null },
-      { "label": "비상 캡슐로 동료들과 함께 송환", "nextNodeId": 14, "requiredItem": null, "grantItem": null },
-      { "label": "결정 못 하고 시간이 흐른다", "nextNodeId": 15, "requiredItem": null, "grantItem": null }
+      {
+        "label": "통신실 — 송신 시도",
+        "nextNodeId": 8,
+        "requiredItem": "명찰",
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "비상 캡슐로 동료들과 함께 송환",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "자기"
+        ]
+      },
+      {
+        "label": "결정 못 하고 시간이 흐른다",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "자기"
+        ]
+      }
     ]
   },
   {

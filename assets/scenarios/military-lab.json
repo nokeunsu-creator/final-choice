@@ -3,61 +3,168 @@
     "nodeId": 1,
     "text": "비밀 군사 연구소 실험실 7. 코드명 작전 봉인 직전 침투. 연구원으로 위장. 카드 키와 가짜 ID. 표적은 B-3 격리실의 USB.",
     "choices": [
-      { "label": "정문 — 카드 인증", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "후문 — 청소부 통로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "환기구 — 옥상에서", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "정문 — 카드 인증",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "후문 — 청소부 통로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "환기구 — 옥상에서",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "정문. 카드 통과. 그러나 입장 시점에 \"오늘은 격리실 출입 제한일\" 안내.",
     "choices": [
-      { "label": "그래도 B-3로", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "로비에서 정보 수집", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "그래도 B-3로",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "로비에서 정보 수집",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "후문 청소부 통로. 청소부 옷과 카트. 가짜 ID 위에 청소부 명찰.",
     "choices": [
-      { "label": "청소부로 위장", "nextNodeId": 7, "requiredItem": null, "grantItem": "청소부복" }
+      {
+        "label": "청소부로 위장",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "청소부복",
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "옥상 환기구. 좁고 어둡다. 손전등 없이 들어가면 길 잃기 쉽다.",
     "choices": [
-      { "label": "손전등으로 진입", "nextNodeId": 8, "requiredItem": "손전등", "grantItem": null },
-      { "label": "그래도 진입", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+      {
+        "label": "손전등으로 진입",
+        "nextNodeId": 8,
+        "requiredItem": "손전등",
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "그래도 진입",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "B-3 격리실. 안은 수동 잠금. 안에서 무전기 소리가 새어 나온다.",
     "choices": [
-      { "label": "강제로 연다", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
-      { "label": "옆 정비실로 우회", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "강제로 연다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "옆 정비실로 우회",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "로비 정보. 격리실은 점심 시간 1시간 비어있다. 정확히 12:30.",
     "choices": [
-      { "label": "12:30까지 화장실에서 대기", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "12:30까지 화장실에서 대기",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "청소부 카트로 B-3까지 — 자연스럽게.",
     "choices": [
-      { "label": "B-3에서 USB 회수", "nextNodeId": 13, "requiredItem": null, "grantItem": "USB" }
+      {
+        "label": "B-3에서 USB 회수",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": "USB",
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "환기구 따라 정확히 B-3 격리실 위. 천장 그릴을 열고 소리없이 내려간다.",
     "choices": [
-      { "label": "USB 회수", "nextNodeId": 13, "requiredItem": null, "grantItem": "USB" }
+      {
+        "label": "USB 회수",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": "USB",
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
@@ -71,29 +178,72 @@
     "nodeId": 10,
     "text": "강제 진입. 즉시 알람. 5분 안에 보안.",
     "choices": [
-      { "label": "USB만 잡고 5분 도망", "nextNodeId": 14, "requiredItem": null, "grantItem": "USB" }
+      {
+        "label": "USB만 잡고 5분 도망",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": "USB",
+        "traits": [
+          "정면",
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 11,
     "text": "정비실 우회. 작은 환기구로 격리실 안.",
     "choices": [
-      { "label": "USB 회수", "nextNodeId": 13, "requiredItem": null, "grantItem": "USB" }
+      {
+        "label": "USB 회수",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": "USB",
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 12,
     "text": "12:30. 격리실 비어있다. 카드 통과.",
     "choices": [
-      { "label": "USB 회수", "nextNodeId": 13, "requiredItem": null, "grantItem": "USB" }
+      {
+        "label": "USB 회수",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": "USB",
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 13,
     "text": "USB 손에. 빠져나가는 길.",
     "choices": [
-      { "label": "왔던 길로", "nextNodeId": 15, "requiredItem": null, "grantItem": null },
-      { "label": "비상 탈출구로", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+      {
+        "label": "왔던 길로",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      },
+      {
+        "label": "비상 탈출구로",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {

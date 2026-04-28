@@ -3,33 +3,110 @@
     "nodeId": 1,
     "text": "분화구 가까이 등반 중 폭발. 발 아래 산이 흔들리고 검은 연기가 솟구친다. 일행 셋과 떨어졌다. 마을까지 12km.",
     "choices": [
-      { "label": "능선을 따라 빠르게 하산", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "동굴로 일단 피신", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "분화구 옆 대피소로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "능선을 따라 빠르게 하산",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "동굴로 일단 피신",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "회피"
+        ]
+      },
+      {
+        "label": "분화구 옆 대피소로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "능선. 화산재가 시야를 가린다. 마스크와 물이 필요하다.",
     "choices": [
-      { "label": "그냥 달린다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "옷을 찢어 마스크", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "그냥 달린다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "옷을 찢어 마스크",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "동굴. 안에서 한 등산가 — 부상 — 옆에 마스크와 물병.",
     "choices": [
-      { "label": "마스크 받고 함께 하산", "nextNodeId": 7, "requiredItem": null, "grantItem": "마스크" },
-      { "label": "물병 받고 떠난다", "nextNodeId": 8, "requiredItem": null, "grantItem": "물병" }
+      {
+        "label": "마스크 받고 함께 하산",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "마스크",
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "물병 받고 떠난다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": "물병",
+        "traits": [
+          "자기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "분화구 옆 대피소. 비상 무전기, 신호탄, 헬멧.",
     "choices": [
-      { "label": "헬멧 + 무전기", "nextNodeId": 9, "requiredItem": null, "grantItem": "무전기" },
-      { "label": "헬멧 + 신호탄", "nextNodeId": 9, "requiredItem": null, "grantItem": "신호탄" }
+      {
+        "label": "헬멧 + 무전기",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "무전기",
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "헬멧 + 신호탄",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "신호탄",
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
@@ -43,37 +120,95 @@
     "nodeId": 6,
     "text": "옷 마스크. 임시방편. 능선 끝에서 마을 입구가 보인다.",
     "choices": [
-      { "label": "마지막 5km", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+      {
+        "label": "마지막 5km",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "부상 등산가의 마스크. 그를 부축하며 능선으로.",
     "choices": [
-      { "label": "함께 마지막 5km", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "함께 마지막 5km",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "물병만 받고 떠난다. 부상자는 동굴에 남는다. 죄책감.",
     "choices": [
-      { "label": "마지막 5km", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+      {
+        "label": "마지막 5km",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "장비 챙김.",
     "choices": [
-      { "label": "능선으로 하산", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "능선으로 하산",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "마지막 5km. 용암 흐름이 길을 갈랐다. 우회 길은 시간 부족.",
     "choices": [
-      { "label": "신호탄으로 헬기 호출", "nextNodeId": 12, "requiredItem": "신호탄", "grantItem": null },
-      { "label": "무전으로 구조 요청", "nextNodeId": 13, "requiredItem": "무전기", "grantItem": null },
-      { "label": "용암 옆 좁은 길로 강행", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+      {
+        "label": "신호탄으로 헬기 호출",
+        "nextNodeId": 12,
+        "requiredItem": "신호탄",
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "무전으로 구조 요청",
+        "nextNodeId": 13,
+        "requiredItem": "무전기",
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "용암 옆 좁은 길로 강행",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {
