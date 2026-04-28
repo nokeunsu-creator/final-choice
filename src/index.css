@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
 
 :root {
   color-scheme: dark;
@@ -10,13 +11,29 @@ html, body, #root {
   min-height: 100vh;
   background: #16171f;
   color: #e0e0e0;
-  font-family: 'D2Coding', 'Cascadia Code', 'Consolas', 'Menlo', 'Courier New', monospace;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+    'Segoe UI', sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 
 button {
   font-family: inherit;
   cursor: pointer;
+}
+
+/* 키보드 포커스 가시성 — Tab 키로 이동 시에만 표시, 마우스 클릭 시엔 안 보임 */
+button:focus,
+[role='button']:focus,
+a:focus {
+  outline: none;
+}
+button:focus-visible,
+[role='button']:focus-visible,
+a:focus-visible {
+  outline: 2px solid #ffaa00;
+  outline-offset: 3px;
+  border-radius: 6px;
 }
 
 @keyframes blink {
