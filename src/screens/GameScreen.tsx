@@ -5,28 +5,14 @@ import { TypewriterText } from '../components/TypewriterText';
 import { ChoiceButton } from '../components/ChoiceButton';
 import { Inventory } from '../components/Inventory';
 
-interface Props {
-  onReachEnding: () => void;
-}
-
-export function GameScreen({ onReachEnding }: Props) {
-  const { state, goTo, recordEnding } = useGame();
+export function GameScreen() {
+  const { state, goTo } = useGame();
   const node = getNode(state.currentNodeId);
   const [textDone, setTextDone] = useState(false);
 
   useEffect(() => {
     setTextDone(false);
   }, [state.currentNodeId]);
-
-  useEffect(() => {
-    if (node && isEnding(node) && node.endingTitle) {
-      recordEnding(node.endingTitle);
-      // 텍스트 출력이 끝난 뒤 엔딩 화면으로 이동
-      const t = window.setTimeout(() => onReachEnding(), 1500);
-      return () => window.clearTimeout(t);
-    }
-    return;
-  }, [node, recordEnding, onReachEnding]);
 
   if (!node) {
     return (
