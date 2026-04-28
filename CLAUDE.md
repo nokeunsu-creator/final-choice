@@ -92,9 +92,9 @@ npm run preview   # 빌드 결과 미리보기
 ```
 
 ## 배포
-```bash
-npx vercel --prod --yes
-```
+- **자동 배포**: `git push origin main` 시 Vercel이 자동으로 production 배포 실행
+- **수동 배포** (긴급/로컬에서): `npx vercel --prod --yes`
+- **PR 미리보기**: 다른 브랜치 푸시 / PR 생성 시 자동으로 preview URL 생성
 
 ## 주의사항
 - 새 노드 추가 시 반드시 도달 가능성 확인 (`node -e` 스크립트로 BFS 검증)
