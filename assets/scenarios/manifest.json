@@ -21,6 +21,20 @@
     { "id": "zombie-airplane", "title": "좀비 항공기", "subtitle": "인천발 LA행 6시간 차", "description": "조종실 vs 후방 봉쇄", "icon": "✈️", "accent": "#60a5fa" },
     { "id": "abandoned-school", "title": "폐교", "subtitle": "30년 전 모교", "description": "사라진 동창과 4-2 교실", "icon": "🏫", "accent": "#71717a" },
     { "id": "old-temple", "title": "옛 절", "subtitle": "지리산 청정암", "description": "종은 절대 멈추면 안 된다", "icon": "⛩️", "accent": "#dc2626" },
-    { "id": "burning-hotel", "title": "화재 호텔", "subtitle": "23층 새벽 3시", "description": "사다리차는 18층까지", "icon": "🔥", "accent": "#f97316" }
+    { "id": "burning-hotel", "title": "화재 호텔", "subtitle": "23층 새벽 3시", "description": "사다리차는 18층까지", "icon": "🔥", "accent": "#f97316" },
+    { "id": "old-mine", "title": "옛 광산", "subtitle": "북갱 7번 채굴장", "description": "광부의 곡괭이를 피해", "icon": "⛏️", "accent": "#a16207" },
+    { "id": "jungle-expedition", "title": "정글 탐험", "subtitle": "아마존 탐사대 5명 실종", "description": "강 / 산 / 늪지", "icon": "🌴", "accent": "#16a34a" },
+    { "id": "arctic-base", "title": "북극 기지", "subtitle": "보급선 두절 6주차", "description": "영구 동토에서 깨어난 무엇", "icon": "❄️", "accent": "#bae6fd" },
+    { "id": "volcano", "title": "화산 분출", "subtitle": "분화구 옆에서", "description": "마을까지 12km", "icon": "🌋", "accent": "#dc2626" },
+    { "id": "witch-castle", "title": "마녀의 성", "subtitle": "동생을 구하러", "description": "거울의 천 년", "icon": "🏰", "accent": "#7c3aed" },
+    { "id": "alien-invasion", "title": "외계인 침공", "subtitle": "서울 D+3", "description": "지하 대피소까지", "icon": "👽", "accent": "#22c55e" },
+    { "id": "military-lab", "title": "군사 연구소", "subtitle": "B-3 격리실 USB", "description": "잠입과 빠져나오기", "icon": "🧪", "accent": "#475569" },
+    { "id": "cruise-ship", "title": "크루즈선", "subtitle": "지중해 새벽 3시", "description": "구명정 8척 우선권", "icon": "🚢", "accent": "#0284c7" },
+    { "id": "virus-lab", "title": "바이러스 연구소", "subtitle": "BSL-4 봉쇄 60분", "description": "백신 5병 vs 봉쇄 유지", "icon": "🦠", "accent": "#dc2626" },
+    { "id": "graveyard", "title": "외딴 묘지", "subtitle": "외할아버지의 회중시계", "description": "한 마디만 전하면", "icon": "🪦", "accent": "#737373" },
+    { "id": "eclipse-night", "title": "일식의 밤", "subtitle": "100년 만의 개기일식", "description": "검은 거울 같은 눈들", "icon": "🌑", "accent": "#581c87" },
+    { "id": "masquerade", "title": "가면무도회", "subtitle": "베네치아 자정", "description": "빨간 장미를 든 자", "icon": "🎭", "accent": "#be185d" },
+    { "id": "bat-cave", "title": "박쥐 동굴", "subtitle": "동료가 끼었다", "description": "박쥐 폭풍을 피해", "icon": "🦇", "accent": "#3f3f46" },
+    { "id": "vanished-station", "title": "사라진 기차역", "subtitle": "지도에 없는 연선역", "description": "어제로 가는 차표", "icon": "🛤️", "accent": "#0d9488" }
   ]
 }

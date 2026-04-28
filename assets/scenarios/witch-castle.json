@@ -1,0 +1,109 @@
+[
+  {
+    "nodeId": 1,
+    "text": "동화 속 검은 성. 마녀에게 잡힌 동생을 구하러 들어왔다. 거대한 정문이 닫히는 소리. 안엔 세 갈래의 복도와 한 마리 까마귀.",
+    "choices": [
+      { "label": "왼쪽 — 부엌의 복도", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "오른쪽 — 도서관 복도", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "정면 — 탑의 계단", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "거대한 부엌. 솥이 끓고 있다. 옆 선반에 소금 한 통, 마늘 한 다발.",
+    "choices": [
+      { "label": "소금 챙김", "nextNodeId": 5, "requiredItem": null, "grantItem": "소금" },
+      { "label": "마늘 챙김", "nextNodeId": 5, "requiredItem": null, "grantItem": "마늘" }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "도서관. 천장까지 책. 한 책상 위 펼쳐진 \"마녀의 약점\" 페이지.",
+    "choices": [
+      { "label": "페이지를 외운다", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
+      { "label": "책을 통째로 챙긴다", "nextNodeId": 7, "requiredItem": null, "grantItem": "마법서" }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "탑의 계단. 위에서 동생의 비명. 까마귀가 따라 올라온다.",
+    "choices": [
+      { "label": "그대로 뛰어 올라간다", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
+      { "label": "까마귀를 먼저 처리", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "부엌 통로 끝. 까마귀가 앞을 막는다. 마녀의 눈이다.",
+    "choices": [
+      { "label": "마늘을 던진다", "nextNodeId": 10, "requiredItem": "마늘", "grantItem": null },
+      { "label": "소금을 뿌린다", "nextNodeId": 10, "requiredItem": "소금", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "약점: \"마녀는 자신의 거울 속 모습을 보면 늙는다.\" 외웠다.",
+    "choices": [
+      { "label": "탑으로", "nextNodeId": 4, "requiredItem": null, "grantItem": "약점지식" }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "마법서. 들고 다니기엔 무겁다. 그래도 페이지의 약점은 외운 셈.",
+    "choices": [
+      { "label": "탑으로", "nextNodeId": 4, "requiredItem": null, "grantItem": "약점지식" }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "탑 꼭대기 직행. 마녀가 동생을 솥에 넣으려 한다.",
+    "choices": [
+      { "label": "거울을 마녀 앞에", "nextNodeId": 11, "requiredItem": "약점지식", "grantItem": null },
+      { "label": "맨주먹으로 달려든다", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
+      { "label": "마녀가 먼저 거울을 부순다", "nextNodeId": 13, "requiredItem": null, "grantItem": null },
+      { "label": "동생을 새로 변신시킨다", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "까마귀를 잡으려 손을 뻗는다. 까마귀가 손등을 쪼고 마녀에게 알린다.",
+    "choices": [
+      { "label": "그래도 위로", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "까마귀가 비명과 함께 흩어진다. 통로가 열린다.",
+    "choices": [
+      { "label": "탑으로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "벽의 거울을 마녀 앞으로. 마녀가 자기 모습을 본 순간 천 년의 늙음이 한꺼번에. 동생을 구한다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "거울의 천 년"
+  },
+  {
+    "nodeId": 12,
+    "text": "맨주먹은 마법 앞에 무력하다. 마녀가 손짓 한 번으로.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "맨주먹의 용기"
+  },
+  {
+    "nodeId": 13,
+    "text": "마녀가 약점지식을 가진 자를 알아본다. 그녀가 먼저 거울을 부순다. 약점은 사라진다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "부서진 거울"
+  },
+  {
+    "nodeId": 14,
+    "text": "마녀가 \"네 동생은 이미 새가 되었다\" 한 마디. 까마귀 한 마리가 어깨에 앉는다. 함께 성을 빠져나가는 것뿐.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "어깨의 까마귀"
+  }
+]

@@ -1,0 +1,109 @@
+[
+  {
+    "nodeId": 1,
+    "text": "강원 정선 폐광. 사라진 작업반장의 가족 의뢰로 단독 진입. 입구에서 30분, 갱도가 두 갈래로 나뉜다.",
+    "choices": [
+      { "label": "왼쪽 — 옛 채광 갱도", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "오른쪽 — 환기 갱도", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "입구 사무실 먼저", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "옛 채광 갱도. 칸델라가 깜빡이고 벽엔 검은 손자국. 곡괭이와 안전모.",
+    "choices": [
+      { "label": "곡괭이를 챙긴다", "nextNodeId": 5, "requiredItem": null, "grantItem": "곡괭이" },
+      { "label": "안전모를 쓴다", "nextNodeId": 5, "requiredItem": null, "grantItem": "안전모" }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "환기 갱도. 바람이 멎었다. 일산화탄소 경보등이 노랗다.",
+    "choices": [
+      { "label": "되돌아 다른 갱도로", "nextNodeId": 1, "requiredItem": null, "grantItem": null },
+      { "label": "그래도 들어간다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "사무실. 작업 일지에 \"북갱 7번 채굴장 — 무엇이 묻혀있다.\" 가스 탐지기와 무전기.",
+    "choices": [
+      { "label": "가스 탐지기 챙김", "nextNodeId": 7, "requiredItem": null, "grantItem": "가스탐지기" },
+      { "label": "무전기 챙김", "nextNodeId": 7, "requiredItem": null, "grantItem": "무전기" }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "갱도 안쪽 7번 채굴장 표지. 가까이 갈수록 한기.",
+    "choices": [
+      { "label": "들어간다", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
+      { "label": "되돌아 사무실로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "환기 갱도 깊은 곳. 머리가 아프고 시야가 흐려진다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "보이지 않는 가스"
+  },
+  {
+    "nodeId": 7,
+    "text": "장비를 갖췄다. 북갱 7번으로.",
+    "choices": [
+      { "label": "옛 채광 갱도로", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "7번 채굴장. 무너진 천장 아래 작업반장의 안전모. 그러나 시신은 없다.",
+    "choices": [
+      { "label": "곡괭이로 잔해를 판다", "nextNodeId": 9, "requiredItem": "곡괭이", "grantItem": null },
+      { "label": "무전으로 외부 호출", "nextNodeId": 10, "requiredItem": "무전기", "grantItem": null },
+      { "label": "그냥 살핀다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "잔해 아래에서 작업반장의 일지. \"광부 영혼들이 깨어났다. 안전모를 벗으면 그들 눈에 띈다.\"",
+    "choices": [
+      { "label": "안전모를 더 단단히", "nextNodeId": 12, "requiredItem": "안전모", "grantItem": null },
+      { "label": "일지를 들고 입구로", "nextNodeId": 13, "requiredItem": null, "grantItem": "일지" }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "무전: \"입구 사고팀 도착 30분. 그 자리에 머무세요.\" 30분.",
+    "choices": [
+      { "label": "기다린다", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "한가운데 서서 살핀다. 등 뒤에서 수십 개의 곡괭이 소리. 가까워진다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "광부의 곡괭이"
+  },
+  {
+    "nodeId": 12,
+    "text": "안전모를 단단히. 영혼들이 옆을 지나치지만 보지 못한다. 그 사이 입구로.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "보이지 않는 광부"
+  },
+  {
+    "nodeId": 13,
+    "text": "일지를 가지고 입구. 사고팀 도착. 작업반장의 행방은 끝내 못 찾았지만 가족에게 일지를 전한다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "남겨진 일지"
+  },
+  {
+    "nodeId": 14,
+    "text": "30분. 사고팀이 갱도를 따라 들어와 당신을 데려간다. 무사히.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "사고팀 합류"
+  }
+]

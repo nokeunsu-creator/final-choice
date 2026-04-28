@@ -1,0 +1,107 @@
+[
+  {
+    "nodeId": 1,
+    "text": "베네치아 가면무도회. 초대장에 \"한 명만 가면을 벗어야 한다.\" 자정의 종이 울리면 마지막 한 명이 누군지 결정된다.",
+    "choices": [
+      { "label": "주최자에게 인사", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "발코니로 — 정보 수집", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "춤에 섞여 든다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "주최자, 검은 가면. \"규칙은 단 하나 — 자정에 손에 빨간 장미를 든 자가 가면을 벗는다.\" 빨간 장미는 처음엔 그의 손에.",
+    "choices": [
+      { "label": "장미를 받는다", "nextNodeId": 5, "requiredItem": null, "grantItem": "장미" },
+      { "label": "거절한다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "발코니. 한 여인이 \"이 무도회는 매년 한 명을 잃어요. 가면을 벗는 사람은 사라져요.\"",
+    "choices": [
+      { "label": "더 묻는다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "발코니에서 도망", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "춤. 누군가가 당신 손에 빨간 장미를 슬쩍 쥐어준다. 모두 그 장미를 본다.",
+    "choices": [
+      { "label": "다른 손에 장미를 넘긴다", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
+      { "label": "그대로 든다", "nextNodeId": 10, "requiredItem": null, "grantItem": "장미" }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "장미를 받은 자. 모두의 시선. 자정까지 1시간.",
+    "choices": [
+      { "label": "다른 사람 손에 슬쩍", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
+      { "label": "끝까지 든다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "거절. 주최자가 미소. \"오늘 밤은 흥미로워지겠군.\" 누군가 당신 등에 빨간 장미를 꽂는다.",
+    "choices": [
+      { "label": "장미를 떼어낸다", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "여인: \"가면을 벗는 자는 자신의 진짜 모습을 잃어요. 사라지는 게 아니라 — 거기 그대로 있지만, 누구도 알아보지 못해요.\"",
+    "choices": [
+      { "label": "춤에 섞여 든다", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
+      { "label": "발코니에서 자정 기다림", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "발코니에서 도망. 정원으로. 정원 끝의 문은 자정에 잠긴다 — 11:55.",
+    "choices": [
+      { "label": "달려서 문 통과", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "장미를 슬쩍 다른 손에. 받은 사람이 놀라지만 무대에 끌려간다.",
+    "choices": [
+      { "label": "발코니에서 자정 기다림", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "그대로 든다. 자정 종. 가면을 벗는다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "잊혀진 자"
+  },
+  {
+    "nodeId": 11,
+    "text": "끝까지. 자정 종. 가면을 벗는다. 모두가 박수를 친다 — 그러나 다음날 누구도 당신을 기억하지 못한다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "기억되지 않은 자"
+  },
+  {
+    "nodeId": 12,
+    "text": "장미를 떼어낸다. 그러나 등에 새겨진 장미 자국은 사라지지 않는다. 자정 종.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "지워지지 않은 자국"
+  },
+  {
+    "nodeId": 13,
+    "text": "발코니. 자정. 무도회장에서 가면을 벗은 자가 있다. 그러나 그건 당신이 아니다. 무사히 새벽까지.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "발코니의 자정"
+  },
+  {
+    "nodeId": 14,
+    "text": "정원 문이 닫히기 1초 전 통과. 베네치아 골목으로. 무도회는 영원히 그 안.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정원의 끝"
+  }
+]

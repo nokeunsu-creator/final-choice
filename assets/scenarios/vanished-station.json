@@ -1,0 +1,102 @@
+[
+  {
+    "nodeId": 1,
+    "text": "지도에 없는 기차역, '연선'. 마지막 차를 놓치고 새벽까지 기다리던 중 시계가 거꾸로 돈다. 역사 안엔 당신뿐.",
+    "choices": [
+      { "label": "매표소로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "승강장으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "역장실 노크", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "매표소. 창구엔 늙은 매표원. \"마지막 차 — 출발했어요. 다음 차는 어제예요.\" 그가 차표 한 장을 내민다.",
+    "choices": [
+      { "label": "차표를 받는다", "nextNodeId": 5, "requiredItem": null, "grantItem": "차표" },
+      { "label": "거절한다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "승강장. 1번 선로에 차 한 대 멈춰있다. 객실 안 빈 좌석들. 출입문이 열려 있다.",
+    "choices": [
+      { "label": "탑승한다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "역으로 돌아간다", "nextNodeId": 1, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "역장실. 노역장이 시계를 만지고 있다. \"여긴 어제로 가는 역이야. 정거장 안 머물면 — 어제로 끌려가.\"",
+    "choices": [
+      { "label": "더 묻는다", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
+      { "label": "차표 없이 떠나려 한다", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "차표 — 출발지: 어제. 도착지: 오늘. 매표원이 \"이게 돌아갈 표예요.\" 한다.",
+    "choices": [
+      { "label": "승강장으로", "nextNodeId": 10, "requiredItem": "차표", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "거절하자 매표원이 한숨. \"그럼 영영 못 돌아가겠네.\" 차표 없이는 시간을 못 거슬러 간다.",
+    "choices": [
+      { "label": "다시 받겠다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "차에 그냥 탄다", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "차에 탑승. 출입문이 닫히고 차가 출발. 차창 밖으로 어제의 풍경이 흐른다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "어제로 가는 차"
+  },
+  {
+    "nodeId": 8,
+    "text": "역장: \"매표소의 그 표가 — 돌아갈 유일한 길이야.\"",
+    "choices": [
+      { "label": "매표소로", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "역장실을 나와 출구로. 역사 출구가 사라졌다. 이제 승강장만 남아있다.",
+    "choices": [
+      { "label": "승강장 — 차에 탑승", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "매표소로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "표 없이 강제 탑승 시도", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
+      { "label": "역장실 시계를 만진다", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "승강장. 차표를 든 자만 탈 수 있는 1번 선로 차에 탑승.",
+    "choices": [
+      { "label": "탑승", "nextNodeId": 11, "requiredItem": "차표", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "차표를 검표원이 받는다. 차창 밖으로 어제와 오늘의 풍경이 같이 흐른다. 일출과 함께 익숙한 역에 정확히 내린다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "돌아가는 표"
+  },
+  {
+    "nodeId": 12,
+    "text": "차표 없이 탑승하려 하자 검표원이 길을 막는다. \"표 없는 자는 못 탑니다.\" 그 사이 차가 출발.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "남겨진 자"
+  },
+  {
+    "nodeId": 13,
+    "text": "역장실에서 시계를 만지작대다 시계가 멈춘다. 영원히 새벽 4:14.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "멈춘 시계"
+  }
+]

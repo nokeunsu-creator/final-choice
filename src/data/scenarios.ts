@@ -21,6 +21,20 @@ import zombieAirplaneRaw from '../../assets/scenarios/zombie-airplane.json';
 import abandonedSchoolRaw from '../../assets/scenarios/abandoned-school.json';
 import oldTempleRaw from '../../assets/scenarios/old-temple.json';
 import burningHotelRaw from '../../assets/scenarios/burning-hotel.json';
+import oldMineRaw from '../../assets/scenarios/old-mine.json';
+import jungleExpeditionRaw from '../../assets/scenarios/jungle-expedition.json';
+import arcticBaseRaw from '../../assets/scenarios/arctic-base.json';
+import volcanoRaw from '../../assets/scenarios/volcano.json';
+import witchCastleRaw from '../../assets/scenarios/witch-castle.json';
+import alienInvasionRaw from '../../assets/scenarios/alien-invasion.json';
+import militaryLabRaw from '../../assets/scenarios/military-lab.json';
+import cruiseShipRaw from '../../assets/scenarios/cruise-ship.json';
+import virusLabRaw from '../../assets/scenarios/virus-lab.json';
+import graveyardRaw from '../../assets/scenarios/graveyard.json';
+import eclipseNightRaw from '../../assets/scenarios/eclipse-night.json';
+import masqueradeRaw from '../../assets/scenarios/masquerade.json';
+import batCaveRaw from '../../assets/scenarios/bat-cave.json';
+import vanishedStationRaw from '../../assets/scenarios/vanished-station.json';
 import type { ScenarioMeta, StoryNode } from './types';
 
 const manifest = manifestRaw as { scenarios: ScenarioMeta[] };
@@ -48,6 +62,20 @@ const DATA: Record<string, StoryNode[]> = {
   'abandoned-school': abandonedSchoolRaw as StoryNode[],
   'old-temple': oldTempleRaw as StoryNode[],
   'burning-hotel': burningHotelRaw as StoryNode[],
+  'old-mine': oldMineRaw as StoryNode[],
+  'jungle-expedition': jungleExpeditionRaw as StoryNode[],
+  'arctic-base': arcticBaseRaw as StoryNode[],
+  volcano: volcanoRaw as StoryNode[],
+  'witch-castle': witchCastleRaw as StoryNode[],
+  'alien-invasion': alienInvasionRaw as StoryNode[],
+  'military-lab': militaryLabRaw as StoryNode[],
+  'cruise-ship': cruiseShipRaw as StoryNode[],
+  'virus-lab': virusLabRaw as StoryNode[],
+  graveyard: graveyardRaw as StoryNode[],
+  'eclipse-night': eclipseNightRaw as StoryNode[],
+  masquerade: masqueradeRaw as StoryNode[],
+  'bat-cave': batCaveRaw as StoryNode[],
+  'vanished-station': vanishedStationRaw as StoryNode[],
 };
 
 const NODE_INDEX: Record<string, Map<number, StoryNode>> = Object.fromEntries(

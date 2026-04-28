@@ -1,0 +1,107 @@
+[
+  {
+    "nodeId": 1,
+    "text": "강원 박쥐 동굴 학술 탐사. 동료 둘과 함께 들어왔다 한 명을 잃었다. 동굴 깊은 곳에서 그의 외침이 들린다.",
+    "choices": [
+      { "label": "외침을 따라 깊이", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "남은 동료와 작전 협의", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "동굴 깊이. 천장에 박쥐 수천 마리. 빛을 비추면 일제히 깨어난다.",
+    "choices": [
+      { "label": "손전등 끈 채로", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
+      { "label": "손전등 켜고 강행", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "남은 동료와 협의. 그가 무전기와 빛탐지기 중 하나를 건넨다.",
+    "choices": [
+      { "label": "무전기 받는다", "nextNodeId": 6, "requiredItem": null, "grantItem": "무전기" },
+      { "label": "빛탐지기 받는다", "nextNodeId": 6, "requiredItem": null, "grantItem": "탐지기" }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "손전등 끈 채. 발 아래 작은 빛이 점점 강해진다 — 동료의 헬멧 라이트.",
+    "choices": [
+      { "label": "조용히 다가간다", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "손전등. 천장 박쥐 수천 마리가 일제히. 검은 폭풍.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "박쥐 폭풍"
+  },
+  {
+    "nodeId": 6,
+    "text": "장비 챙김.",
+    "choices": [
+      { "label": "외침을 따라 깊이", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "동료. 다리가 끼인 채 신음. 옆에 무너진 잔해. 잔해를 들어 올려야 한다.",
+    "choices": [
+      { "label": "맨손으로 든다", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
+      { "label": "탐지기 봉으로 받침대", "nextNodeId": 9, "requiredItem": "탐지기", "grantItem": null },
+      { "label": "무전으로 외부 도움", "nextNodeId": 10, "requiredItem": "무전기", "grantItem": null },
+      { "label": "두고 혼자 빠져나간다", "nextNodeId": 13, "requiredItem": null, "grantItem": null },
+      { "label": "맨손 + 손전등 켠 채로", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "맨손. 잔해는 무겁다. 들다 떨어뜨린다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "맨손의 무게"
+  },
+  {
+    "nodeId": 9,
+    "text": "탐지기 봉으로 지렛대. 잔해가 들리고 동료가 빠져나온다. 함께 출구.",
+    "choices": [
+      { "label": "출구로", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "무전: \"구조대 30분.\" 30분 대기.",
+    "choices": [
+      { "label": "구조대 도착 — 모두 무사", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "출구까지. 박쥐를 깨우지 않게 천천히. 새벽 출구.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "조용한 새벽"
+  },
+  {
+    "nodeId": 12,
+    "text": "구조대 합류. 모두 무사 후송.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "30분의 약속"
+  },
+  {
+    "nodeId": 13,
+    "text": "동료를 두고 혼자 빠져나간다. 평생 그 외침이 따라온다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "두고 온 외침"
+  },
+  {
+    "nodeId": 14,
+    "text": "동료를 들어 올리는 데 성공하지만 박쥐들이 깨어난다. 둘 다 검은 폭풍 속.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "함께 깨운 폭풍"
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "nodeId": 1,
+    "text": "외할아버지의 묘. 자정. 어머니의 부탁으로 외할아버지가 소중히 여긴 회중시계를 묘 옆에 묻어드리러 왔다. 안개 속에 묘가 줄지어 있다.",
+    "choices": [
+      { "label": "곧장 묘 앞으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "관리실 먼저 — 위치 확인", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "묘 앞. 묘비 옆에서 한 노인이 등돌리고 서 있다. \"늦었구나.\"",
+    "choices": [
+      { "label": "노인에게 말을 건다", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
+      { "label": "조용히 회중시계를 묻는다", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "관리실. 노감독: \"오늘 자정엔 가지 마쇼. 한식 다음 날엔 ... 그분이 돌아와 자기 자리를 찾으니까.\"",
+    "choices": [
+      { "label": "그래도 간다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "감독에게 부적을 받는다", "nextNodeId": 6, "requiredItem": null, "grantItem": "부적" },
+      { "label": "감독을 무시하고 안쪽 깊이", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
+      { "label": "회중시계 챙겨 도망", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "노인이 천천히 돌아본다. 외할아버지의 얼굴. \"그것을 묻기 전에 — 손녀에게 한 마디만.\"",
+    "choices": [
+      { "label": "한 마디 듣는다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "회중시계만 두고 돌아선다", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "조용히 시계를 묻는다. 노인이 한숨처럼 사라진다. 임무 완수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "조용한 의식"
+  },
+  {
+    "nodeId": 6,
+    "text": "부적을 손에. 안개 속에서도 발끝이 빛난다.",
+    "choices": [
+      { "label": "묘 앞 — 부적 든 채로", "nextNodeId": 10, "requiredItem": "부적", "grantItem": null },
+      { "label": "부적 두고 묘 앞으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "\"네 어미에게 — 내 첫 시계는 진짜였다고. 두 번째는 가짜였지만, 그 가짜가 더 사랑이었다고.\" 그가 사라진다.",
+    "choices": [
+      { "label": "회중시계를 묻고 돌아간다", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "회중시계만 두고 돌아선다. 등 뒤에서 노인의 목소리: \"그래도 — 따뜻했다.\" 안개가 걷힌다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "전하지 못한 말"
+  },
+  {
+    "nodeId": 9,
+    "text": "회중시계를 묻고 돌아온다. 어머니에게 외할아버지의 마지막 말을 전한다. 어머니가 처음으로 운다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "전한 한 마디"
+  },
+  {
+    "nodeId": 10,
+    "text": "부적과 함께 묘 앞. 노인의 형상은 부적 빛에 가까이 못 온다.",
+    "choices": [
+      { "label": "회중시계를 묻고 떠난다", "nextNodeId": 11, "requiredItem": "부적", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "회중시계를 묻고 부적도 함께. 노인은 평안히 사라지고, 안개도 걷힌다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "부적과 시계"
+  },
+  {
+    "nodeId": 12,
+    "text": "관리실 노감독을 무시하고 한밤 깊은 곳까지. 길을 잃는다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "길 잃은 묘지"
+  },
+  {
+    "nodeId": 13,
+    "text": "회중시계를 챙겨 그대로 도망친다. 어머니에게 못 다 한 채로.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "끝나지 못한 의식"
+  }
+]
