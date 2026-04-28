@@ -1,0 +1,84 @@
+{
+  "scenarios": [
+    {
+      "id": "desert-island",
+      "title": "무인도 생존",
+      "subtitle": "비행기가 추락했다",
+      "description": "100개 노드, 25개 결말",
+      "icon": "🏝️",
+      "accent": "#ffaa00"
+    },
+    {
+      "id": "haunted-house",
+      "title": "폐가 탈출",
+      "subtitle": "버려진 저택의 새벽",
+      "description": "동트기 전에 빠져나가야 한다",
+      "icon": "🕯️",
+      "accent": "#a78bfa"
+    },
+    {
+      "id": "zombie-city",
+      "title": "좀비 도시",
+      "subtitle": "감염은 하룻밤 사이에",
+      "description": "구조 거점까지 살아서",
+      "icon": "🧟",
+      "accent": "#ef4444"
+    },
+    {
+      "id": "spaceship",
+      "title": "우주선 표류",
+      "subtitle": "고요한 진공 속에서",
+      "description": "산소가 떨어지기 전에",
+      "icon": "🛰️",
+      "accent": "#22d3ee"
+    },
+    {
+      "id": "dungeon",
+      "title": "지하 던전",
+      "subtitle": "잊혀진 신전의 입구",
+      "description": "보물과 함정 사이",
+      "icon": "🗝️",
+      "accent": "#d4a017"
+    },
+    {
+      "id": "snow-mountain",
+      "title": "설산 조난",
+      "subtitle": "눈사태 이후",
+      "description": "베이스캠프까지 하강",
+      "icon": "🏔️",
+      "accent": "#93c5fd"
+    },
+    {
+      "id": "cyberpunk",
+      "title": "사이버 도시",
+      "subtitle": "네온이 모든 것을 비춘다",
+      "description": "타워 50층까지 잠입",
+      "icon": "🌃",
+      "accent": "#f472b6"
+    },
+    {
+      "id": "hotel-mystery",
+      "title": "외딴 호텔",
+      "subtitle": "투숙객이 사라졌다",
+      "description": "진실은 305호에",
+      "icon": "🏨",
+      "accent": "#dc2626"
+    },
+    {
+      "id": "deep-sea",
+      "title": "심해 잠수정",
+      "subtitle": "수심 4000m",
+      "description": "지상으로 돌아갈 수 있을까",
+      "icon": "🌊",
+      "accent": "#3b82f6"
+    },
+    {
+      "id": "time-traveler",
+      "title": "시간 여행자",
+      "subtitle": "1923년의 그림자",
+      "description": "역사를 바꾸지 않고 돌아가기",
+      "icon": "⏳",
+      "accent": "#eab308"
+    }
+  ]
+}

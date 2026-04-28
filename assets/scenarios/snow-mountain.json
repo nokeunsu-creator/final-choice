@@ -1,0 +1,170 @@
+[
+  {
+    "nodeId": 1,
+    "text": "거대한 굉음. 눈사태. 정신을 차리니 무릎까지 눈에 묻힌 채 능선 중턱. 일행은 사라졌다. 베이스캠프까진 표고 1800m 하강. 손은 이미 감각이 없다.",
+    "choices": [
+      { "label": "남쪽 능선을 따라 내려간다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "동쪽 빙벽 쪽으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "묻힌 짐을 먼저 찾는다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "남쪽 능선. 시야 확보는 좋지만 강풍. 곧 화이트아웃이 올 것 같다.",
+    "choices": [
+      { "label": "지금 빠르게 내려간다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "바위 그늘에서 기다린다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "동쪽 빙벽. 거의 수직. 빙도끼와 아이젠 없이는 자살행위.",
+    "choices": [
+      { "label": "그래도 시도한다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "되돌아간다", "nextNodeId": 1, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "눈을 파헤친다. 일행의 가방 두 개가 나온다. 하나엔 빙도끼와 아이젠, 다른 하나엔 텐트와 비상식량.",
+    "choices": [
+      { "label": "빙도끼+아이젠을 챙긴다", "nextNodeId": 8, "requiredItem": null, "grantItem": "아이젠" },
+      { "label": "텐트+식량을 챙긴다", "nextNodeId": 9, "requiredItem": null, "grantItem": "텐트" },
+      { "label": "둘 다 끌고 간다", "nextNodeId": 10, "requiredItem": null, "grantItem": "아이젠" }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "능선을 빠르게 내려가다 화이트아웃이 덮친다. 눈앞 한 발자국도 안 보인다.",
+    "choices": [
+      { "label": "텐트를 친다", "nextNodeId": 11, "requiredItem": "텐트", "grantItem": null },
+      { "label": "감으로 계속 내려간다", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
+      { "label": "혼자 능선 끝까지 밀어붙인다", "nextNodeId": 20, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "바위 그늘에서 기다리는 사이 폭설이 그쳤다. 시야가 트이고 베이스캠프 깃발이 멀리 보인다.",
+    "choices": [
+      { "label": "능선을 따라 하강", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "장비 없이 빙벽 십 미터. 손이 미끄러지고, 떨어진다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "빙벽의 추락"
+  },
+  {
+    "nodeId": 8,
+    "text": "아이젠과 빙도끼. 이제 어떤 길도 도전할 수 있다.",
+    "choices": [
+      { "label": "남쪽 능선으로", "nextNodeId": 2, "requiredItem": null, "grantItem": "빙도끼" },
+      { "label": "동쪽 빙벽으로", "nextNodeId": 14, "requiredItem": null, "grantItem": "빙도끼" }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "텐트와 식량. 어디서든 한 번은 안전하게 밤을 보낼 수 있다.",
+    "choices": [
+      { "label": "남쪽 능선으로", "nextNodeId": 2, "requiredItem": null, "grantItem": "식량" }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "둘 다 메니 어깨가 무겁다. 그래도 모든 옵션이 열린다.",
+    "choices": [
+      { "label": "남쪽 능선으로", "nextNodeId": 2, "requiredItem": null, "grantItem": "텐트" },
+      { "label": "동쪽 빙벽으로", "nextNodeId": 14, "requiredItem": null, "grantItem": "텐트" }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "텐트 안. 식량을 조금씩 먹으며 폭풍이 지나가길 기다린다. 새벽, 시야가 트인다.",
+    "choices": [
+      { "label": "능선 하강 시작", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "감으로 내려가다 절벽 끝을 헛디딘다. 무릎부터 떨어지는 시간이 길다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "보이지 않는 절벽"
+  },
+  {
+    "nodeId": 13,
+    "text": "능선 끝. 베이스캠프까지 한 시간. 마지막 구간은 가파른 사면.",
+    "choices": [
+      { "label": "아이젠을 신고 정공법", "nextNodeId": 15, "requiredItem": "아이젠", "grantItem": null },
+      { "label": "그냥 미끄러져 내려간다", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "빙벽. 빙도끼를 박고 한 발씩. 손가락 끝이 얼어붙는다.",
+    "choices": [
+      { "label": "끝까지 내려간다", "nextNodeId": 17, "requiredItem": "빙도끼", "grantItem": null },
+      { "label": "중간 협곡에서 야영", "nextNodeId": 18, "requiredItem": "텐트", "grantItem": null },
+      { "label": "옆 사면으로 길을 바꾼다", "nextNodeId": 22, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "아이젠이 단단히 박힌다. 사면을 안전하게 하강. 베이스캠프 텐트 사이로 동료의 실루엣.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "안전한 하강"
+  },
+  {
+    "nodeId": 16,
+    "text": "사면을 미끄러져 내려간다. 처음엔 즐겁고, 다음엔 멈출 수 없고, 마지막엔 바위.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "통제를 잃다"
+  },
+  {
+    "nodeId": 17,
+    "text": "빙벽을 다 내려와 평지. 베이스캠프 깃발이 보인다. 동료들이 달려 나온다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "빙벽 너머"
+  },
+  {
+    "nodeId": 18,
+    "text": "협곡 안 텐트. 밤사이 또 한 차례 눈사태. 아침엔 무사했지만 길이 모두 막혔다.",
+    "choices": [
+      { "label": "구조 신호를 보낸다", "nextNodeId": 19, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 19,
+    "text": "거울 반사로 햇빛 신호. 두 시간 뒤 헬기가 협곡 위로 뜬다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "협곡의 거울"
+  },
+  {
+    "nodeId": 20,
+    "text": "혼자 능선 끝까지. 눈보라에 시야가 다시 닫히고, 한 발 한 발이 천 근.",
+    "choices": [
+      { "label": "마지막 힘으로 깃발까지", "nextNodeId": 15, "requiredItem": null, "grantItem": null },
+      { "label": "주저앉는다", "nextNodeId": 21, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 21,
+    "text": "주저앉아 눈을 본다. 눈은 차갑지 않다. 아주 따뜻하다. 그게 마지막 감각이다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "따뜻한 잠"
+  },
+  {
+    "nodeId": 22,
+    "text": "능선과 빙벽 사이에서 길을 잃다 작은 산장을 발견. 노부부가 그 안에 살고 있다. 따뜻한 차와 라디오.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "산장의 노부부"
+  }
+]

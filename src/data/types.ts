@@ -14,3 +14,12 @@ export interface StoryNode {
   endingType?: EndingType;
   endingTitle?: string;
 }
+
+export interface ScenarioMeta {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  icon: string;
+  accent: string;
+}

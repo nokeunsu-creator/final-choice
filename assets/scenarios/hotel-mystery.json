@@ -1,0 +1,171 @@
+[
+  {
+    "nodeId": 1,
+    "text": "산 중턱의 외딴 호텔, 비수기. 친구가 305호 투숙객으로 들어간 뒤 사흘째 연락이 없다. 당신은 같은 호텔에 체크인하고 있다.",
+    "choices": [
+      { "label": "프론트에 친구를 묻는다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "조용히 305호로 향한다", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "프론트 직원: \"305호 손님은 아직 체크아웃 안 하셨는데, 외출 중인 것 같습니다.\" 시선이 잠시 떨린다.",
+    "choices": [
+      { "label": "더 캐묻는다", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
+      { "label": "방으로 올라간다", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "복도. 305호 앞. 문 손잡이엔 청소 안 함 표지. 발 아래 카펫에 작은 핏자국 같은 흔적.",
+    "choices": [
+      { "label": "노크한다", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
+      { "label": "복도 끝의 청소 카트로", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "프론트 직원이 말을 흐린다. 카운터 아래에서 무언가 떨리는 소리. 직원의 손이 슬그머니 무전기를 잡는다.",
+    "choices": [
+      { "label": "그대로 자리를 뜬다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "직원의 책상을 본다", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "내 방. 408호. 침대 위엔 호텔 안내문. 옆방에서 뭔가가 끌리는 소리가 새벽 내내.",
+    "choices": [
+      { "label": "복도 청소 카트로", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "옆방 308호를 엿본다", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "노크 — 응답 없음. 손잡이는 잠겼다.",
+    "choices": [
+      { "label": "마스터키를 구한다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "잠금을 따본다", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "청소 카트. 마스터키와 청소 일지가 있다. 일지 마지막 줄: \"305호 청소 금지 — 매니저 지시.\"",
+    "choices": [
+      { "label": "마스터키를 챙긴다", "nextNodeId": 11, "requiredItem": null, "grantItem": "마스터키" },
+      { "label": "일지를 챙긴다", "nextNodeId": 11, "requiredItem": null, "grantItem": "일지" }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "직원 책상 서랍. 친구의 신분증 사본. \"본인 확인 완료\"라는 도장. 그리고 작은 진정제 병.",
+    "choices": [
+      { "label": "신분증 사본을 챙긴다", "nextNodeId": 12, "requiredItem": null, "grantItem": "신분증사본" },
+      { "label": "진정제를 챙긴다", "nextNodeId": 12, "requiredItem": null, "grantItem": "진정제" }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "308호 문틈. 누군가 중얼거리는 목소리. 친구의 목소리 같다. \"제발… 누구든…\"",
+    "choices": [
+      { "label": "문을 두드린다", "nextNodeId": 13, "requiredItem": null, "grantItem": null },
+      { "label": "조용히 마스터키를 구하러", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "잠금을 따본다. 도구도 기술도 부족. 시도하는 사이 복도 끝 카메라가 천천히 회전.",
+    "choices": [
+      { "label": "포기하고 자리를 뜬다", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "카트에서 떠난다. 어디로 갈지 결정해야 한다.",
+    "choices": [
+      { "label": "305호로", "nextNodeId": 14, "requiredItem": "마스터키", "grantItem": null },
+      { "label": "308호로", "nextNodeId": 15, "requiredItem": "마스터키", "grantItem": null },
+      { "label": "지하 보일러실로", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "프론트를 빠져나온다. 직원이 무전을 한다. \"고객 한 분이 책상을 봤습니다.\"",
+    "choices": [
+      { "label": "차로 도망친다", "nextNodeId": 17, "requiredItem": null, "grantItem": null },
+      { "label": "그래도 305호로", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "두드린 순간 안의 목소리가 멈춘다. 잠시 후 문이 열리고, 그 안엔 호텔 매니저와 두 명의 직원, 그리고 결박된 친구.",
+    "choices": [
+      { "label": "진정제로 매니저 제압", "nextNodeId": 18, "requiredItem": "진정제", "grantItem": null },
+      { "label": "맨몸으로 달려든다", "nextNodeId": 19, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "305호 안. 깨끗하게 정돈된 방, 침대 시트엔 한 방울의 핏자국. 욕실 거울에 립스틱으로 \"308호\".",
+    "choices": [
+      { "label": "308호로 달려간다", "nextNodeId": 15, "requiredItem": "마스터키", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "308호. 묶여 있는 친구. 그리고 카메라를 든 매니저.",
+    "choices": [
+      { "label": "진정제로 제압", "nextNodeId": 18, "requiredItem": "진정제", "grantItem": null },
+      { "label": "일지를 던져 시선 끌고 도망", "nextNodeId": 20, "requiredItem": "일지", "grantItem": null },
+      { "label": "그냥 달려든다", "nextNodeId": 19, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "지하 보일러실. 손글씨로 가득한 노트, 그리고 십수 개의 폴라로이드 사진. 사라진 투숙객들.",
+    "choices": [
+      { "label": "노트 사진을 챙겨 신고하러", "nextNodeId": 21, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 17,
+    "text": "차로 산을 내려간다. 구불구불한 도로 끝에서 검문이 뒤따른다. 매니저의 차다.",
+    "choices": [
+      { "label": "그대로 마을 경찰서로 돌진", "nextNodeId": 22, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 18,
+    "text": "진정제가 매니저의 목덜미에. 직원들은 도망치고, 친구를 풀어 함께 탈출. 마을 경찰서에 도착.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "조용한 제압"
+  },
+  {
+    "nodeId": 19,
+    "text": "맨몸으로는 셋을 이길 수 없다. 천장의 거친 손이 마지막 의식 위로 떨어진다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "수적 열세"
+  },
+  {
+    "nodeId": 20,
+    "text": "일지가 매니저의 발 앞에. 일지를 줍는 그 사이 친구를 풀고 비상구로. 산 아래 마을까지 그대로 달린다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "한 장의 미끼"
+  },
+  {
+    "nodeId": 21,
+    "text": "신고. 경찰이 호텔을 급습. 친구는 무사히 구출되고 매니저는 체포된다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "지하의 증거"
+  },
+  {
+    "nodeId": 22,
+    "text": "헤드라이트 너머 마을 입구. 매니저의 차가 도로를 막는다. 부딪힘.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "헤드라이트의 충돌"
+  }
+]

@@ -1,0 +1,168 @@
+[
+  {
+    "nodeId": 1,
+    "text": "회중시계가 멈췄다. 1923년, 경성. 골목 어귀에 떨어진 당신을 보는 사람들의 눈빛이 묘하다. 돌아가는 시계태엽은 시간 여행자의 마지막 연결고리. 한 번이라도 역사를 비틀면 돌아갈 수 없다.",
+    "choices": [
+      { "label": "큰 길로 나간다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "골목 안으로 더 간다", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "큰 길. 전차가 지나간다. 신문팔이 소년이 호외를 외친다. 외투 안에 들어 있는 미래의 동전 한 닢.",
+    "choices": [
+      { "label": "신문을 산다 (지폐가 없다)", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
+      { "label": "신문을 그냥 듣는다", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "골목 안 작은 다방. 안에서 누가 울고 있다. 한 청년이 노트를 책상에 두고 자리를 비웠다.",
+    "choices": [
+      { "label": "노트를 본다 (만지지 않음)", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
+      { "label": "노트를 챙긴다", "nextNodeId": 7, "requiredItem": null, "grantItem": "노트" }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "미래 동전을 주자 신문팔이가 멈칫. 동전이 \"낯설다\". 주변 사람들이 모인다.",
+    "choices": [
+      { "label": "동전을 회수하고 도망", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
+      { "label": "그냥 가져가라 한다", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "신문팔이의 외침. \"시국 전환! 만세!\" 그 말 하나가 모든 분위기를 설명한다.",
+    "choices": [
+      { "label": "다방 골목으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "기차역으로 향한다", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "노트를 보지 않고 자리를 뜬다. 지나치는 청년의 어깨와 부딪힌 순간, 시계태엽이 살짝 떨린다. 사소하지만 변형 없음.",
+    "choices": [
+      { "label": "시장으로", "nextNodeId": 11, "requiredItem": null, "grantItem": null },
+      { "label": "기차역으로", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "노트엔 이름과 날짜. 1923년 9월. 그 청년은 역사의 인물이었다. 노트를 가지면 그의 미래가 흔들린다.",
+    "choices": [
+      { "label": "노트를 다시 둔다", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
+      { "label": "그래도 가져간다", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "동전을 회수. 사람들의 시선을 피해 골목으로. 시계태엽이 다시 안정된다.",
+    "choices": [
+      { "label": "다방 골목으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "동전을 두고 떠난다. 1923년에 미래 금속이 남았다. 시계태엽이 거꾸로 돌기 시작.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "남겨진 미래"
+  },
+  {
+    "nodeId": 10,
+    "text": "기차역. 한쪽에 모자를 깊게 눌러쓴 사내가 당신을 물끄러미 본다. 그가 다가와 말한다. \"당신, 여기 사람 아니죠.\"",
+    "choices": [
+      { "label": "부정한다", "nextNodeId": 13, "requiredItem": null, "grantItem": null },
+      { "label": "솔직히 말한다", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "시장. 굶주린 사람들. 한 노파가 떨어뜨린 동전 하나를 줍는다. 미래의 동전이 아니라 1920년대의 동전. 다행이다.",
+    "choices": [
+      { "label": "노파에게 돌려준다", "nextNodeId": 15, "requiredItem": null, "grantItem": null },
+      { "label": "동전을 챙긴다", "nextNodeId": 16, "requiredItem": null, "grantItem": "옛동전" }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "노트는 가져갔다. 청년의 미래가 비뚤어지고, 역사의 한 줄이 사라진다. 시계태엽이 돌기 시작하지만, 돌아가지 못한다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "사라진 한 줄"
+  },
+  {
+    "nodeId": 13,
+    "text": "사내는 웃는다. \"그렇다면, 행운을 빈다. 골목 끝에 회중시계 수리공이 있다. 그가 도울 거야.\"",
+    "choices": [
+      { "label": "수리공을 찾는다", "nextNodeId": 17, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "사내가 미간을 찌푸린다. \"당신 같은 사람을 본 적 있다. 모두 돌아갈 수는 없었어. 따라오게.\"",
+    "choices": [
+      { "label": "따라간다", "nextNodeId": 18, "requiredItem": null, "grantItem": null },
+      { "label": "거절하고 도망", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "노파의 손에 동전을 쥐어준다. 노파의 시선이 잠시 당신의 외투에 머문다. \"고맙소, 외지인.\" 시계태엽이 약간 따뜻해진다.",
+    "choices": [
+      { "label": "수리공을 찾으러", "nextNodeId": 17, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "옛 동전을 챙긴다. 사소한 변형. 노파는 그날 굶었다. 시계태엽이 살짝 어긋난다.",
+    "choices": [
+      { "label": "수리공을 찾는다", "nextNodeId": 19, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 17,
+    "text": "회중시계 수리공. 백발의 노인이다. 시계를 한참 들여다본 뒤 말한다. \"태엽 하나가 어긋났네. 1923의 흔적을 하나만 남겼다면 돌아갈 수 있어.\"",
+    "choices": [
+      { "label": "동전을 흔적으로 남긴다", "nextNodeId": 20, "requiredItem": "옛동전", "grantItem": null },
+      { "label": "노트를 흔적으로 남긴다", "nextNodeId": 21, "requiredItem": "노트", "grantItem": null },
+      { "label": "아무것도 남기지 않는다", "nextNodeId": 22, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 18,
+    "text": "사내는 폐옥으로 안내한다. 안엔 다른 시간 여행자들의 일기. 모두 돌아가지 못한 사람들. 하지만 시계는 여전히 따뜻하다.",
+    "choices": [
+      { "label": "일기를 읽고 떠난다", "nextNodeId": 17, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 19,
+    "text": "수리공이 시계를 보고 고개를 젓는다. \"태엽이 너무 어긋났어. 흔적 하나로는 부족해.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "남은 사람"
+  },
+  {
+    "nodeId": 20,
+    "text": "옛 동전을 시계 안 작은 홈에 끼운다. 똑딱. 시계태엽이 정확히 돌아간다. 다음 호흡에 21세기의 자기 방.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "흔적의 동전"
+  },
+  {
+    "nodeId": 21,
+    "text": "노트를 흔적으로. 1923의 그 청년이 자신의 노트 없이도 길을 찾았다는 사실을 시계가 인지한다. 돌아간다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "양보된 한 페이지"
+  },
+  {
+    "nodeId": 22,
+    "text": "아무것도 남기지 않으려는 자에게 시간은 돌아갈 곳을 잊는다. 1923의 거리에서 영원히.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "1923의 시민"
+  }
+]

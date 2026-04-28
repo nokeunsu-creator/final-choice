@@ -1,0 +1,172 @@
+[
+  {
+    "nodeId": 1,
+    "text": "콜드 슬립에서 깨어났다. 화성-목성 항로의 화물선 카리오페호. 선체 알람이 붉게 깜빡인다. 동료 두 명은 캡슐 안에 죽어 있다. 선내 산소 잔량 8시간.",
+    "choices": [
+      { "label": "조타실로 향한다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "엔진실을 점검한다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "구급실로 향한다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "조타실. 메인 컴퓨터는 죽었다. 보조 패널엔 \"외부 운석 충돌, 1번 추진기 손상\". 옆엔 동료의 데이터팩.",
+    "choices": [
+      { "label": "데이터팩을 챙긴다", "nextNodeId": 5, "requiredItem": null, "grantItem": "데이터팩" },
+      { "label": "보조 패널을 더 만진다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "엔진실 진입을 위한 통로. 통로 절반이 진공이다. 우주복 없이는 통과 불가.",
+    "choices": [
+      { "label": "우주복을 찾으러 간다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "그래도 무리한다", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "구급실. 동료 카프리가 찢어진 부상 위에 비상 키트를 들고 있다. 의료 키트와 산소통 한 통이 남아있다.",
+    "choices": [
+      { "label": "산소통을 챙긴다", "nextNodeId": 9, "requiredItem": null, "grantItem": "산소통" },
+      { "label": "비상 키트를 챙긴다", "nextNodeId": 9, "requiredItem": null, "grantItem": "비상키트" }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "데이터팩에 \"비상 탈출 캡슐 좌표 + 잠금 해제 코드\"가 담겨있다.",
+    "choices": [
+      { "label": "엔진실을 점검한다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "탈출 캡슐로 향한다", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
+      { "label": "콜드 슬립으로 다시 들어간다", "nextNodeId": 21, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "보조 패널이 잠시 살아난다. \"긴급 신호 송출 가능 — 안테나 수동 정렬 필요.\" 옆 캐비넷에서 공구 세트.",
+    "choices": [
+      { "label": "공구를 챙긴다", "nextNodeId": 5, "requiredItem": null, "grantItem": "공구" }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "장비실. 우주복은 한 벌만 남아있다. 산소통 잔량 표시는 절반.",
+    "choices": [
+      { "label": "우주복을 입는다", "nextNodeId": 11, "requiredItem": null, "grantItem": "우주복" }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "공기가 휘몰아친다. 한 호흡, 두 호흡. 폐가 얼어붙기 전에 모든 것이 끝난다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "통로의 진공"
+  },
+  {
+    "nodeId": 9,
+    "text": "구급실 밖으로 나오자 통로가 어디로든 이어진다. 시간은 계속 줄어든다.",
+    "choices": [
+      { "label": "조타실로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "엔진실로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "산소 게이지를 확인한다", "nextNodeId": 20, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "탈출 캡슐 도크. 캡슐은 한 좌석. 잠금 해제 패널이 데이터팩을 요구한다.",
+    "choices": [
+      { "label": "데이터팩으로 잠금 해제", "nextNodeId": 12, "requiredItem": "데이터팩", "grantItem": null },
+      { "label": "수동 잠금을 깬다", "nextNodeId": 13, "requiredItem": "공구", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "우주복을 입고 진공 통로를 통과해 엔진실로. 1번 추진기 측 패널이 박살 났다.",
+    "choices": [
+      { "label": "공구로 추진기 임시 수리", "nextNodeId": 14, "requiredItem": "공구", "grantItem": null },
+      { "label": "비상키트로 응급 봉합", "nextNodeId": 15, "requiredItem": "비상키트", "grantItem": null },
+      { "label": "맨손으로 만진다", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "캡슐이 점화한다. 일주일 후 화성 궤도의 구조선이 당신을 거둔다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "탈출 캡슐"
+  },
+  {
+    "nodeId": 13,
+    "text": "패널이 부서지고, 잠금이 풀린다. 그러나 해제 시퀀스가 잘못되어 캡슐이 오작동. 폭발.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "잘못된 시퀀스"
+  },
+  {
+    "nodeId": 14,
+    "text": "추진기가 다시 점화한다. 약하지만 충분하다. 항로 보정 후 자동 항법으로 화성 궤도를 향한다.",
+    "choices": [
+      { "label": "안테나를 정렬한다", "nextNodeId": 17, "requiredItem": "공구", "grantItem": null },
+      { "label": "그냥 잠든다", "nextNodeId": 18, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "응급 봉합으로 산소 누출은 막았지만 추진기는 죽었다. 표류 시작.",
+    "choices": [
+      { "label": "탈출 캡슐로", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
+      { "label": "신호 송출 시도", "nextNodeId": 19, "requiredItem": "공구", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "맨손이 노출된 회로에 닿자 감전. 우주복 안의 비명이 통신을 통해 잠시, 그리고 영원히.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "맨손의 대가"
+  },
+  {
+    "nodeId": 17,
+    "text": "안테나 정렬 후 SOS 송출. 두 시간 만에 화성 궤도 순찰선이 응답한다. 합류.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정확한 신호"
+  },
+  {
+    "nodeId": 18,
+    "text": "임시 수리는 임시였다. 잠든 사이 추진기가 다시 죽고, 산소가 천천히 빠진다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "수리되지 않은 잠"
+  },
+  {
+    "nodeId": 19,
+    "text": "약한 신호. 그러나 화성 궤도의 자율 정거장이 신호를 잡고 무인 견인선을 보낸다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "느린 견인"
+  },
+  {
+    "nodeId": 20,
+    "text": "선체 곳곳을 헤매다 산소 잔량 1시간. 결정해야 한다.",
+    "choices": [
+      { "label": "탈출 캡슐로 달린다", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
+      { "label": "마지막으로 신호 시도", "nextNodeId": 19, "requiredItem": null, "grantItem": null },
+      { "label": "당황 속에서 진공 통로로", "nextNodeId": 22, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 21,
+    "text": "콜드 슬립에 다시 들어가는 위험한 선택. 회복 시점은 보장되지 않는다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "다시 잠들다"
+  },
+  {
+    "nodeId": 22,
+    "text": "당황 속에서 우주복도, 산소도 없이 진공 통로를 향한다. 한 발자국, 마지막.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "공허"
+  }
+]

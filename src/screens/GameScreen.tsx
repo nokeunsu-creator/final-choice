@@ -1,26 +1,34 @@
 import { useEffect, useState } from 'react';
 import { useGame } from '../state/GameContext';
-import { getNode, isEnding } from '../data/nodes';
+import { getNode, getNodeCount, getScenario, isEnding } from '../data/scenarios';
 import { TypewriterText } from '../components/TypewriterText';
 import { ChoiceButton } from '../components/ChoiceButton';
 import { Inventory } from '../components/Inventory';
 
-export function GameScreen() {
-  const { state, goTo } = useGame();
-  const node = getNode(state.currentNodeId);
+interface Props {
+  onExit: () => void;
+}
+
+export function GameScreen({ onExit }: Props) {
+  const { save, current, goTo } = useGame();
+  const scenarioId = save.scenarioId;
+  const node = scenarioId && current ? getNode(scenarioId, current.currentNodeId) : undefined;
+  const scenario = scenarioId ? getScenario(scenarioId) : undefined;
   const [textDone, setTextDone] = useState(false);
 
   useEffect(() => {
     setTextDone(false);
-  }, [state.currentNodeId]);
+  }, [current?.currentNodeId, scenarioId]);
 
-  if (!node) {
+  if (!scenarioId || !current || !node || !scenario) {
     return (
       <div style={{ padding: 24, color: '#ff6666' }}>
-        잘못된 노드: {state.currentNodeId}
+        시나리오를 불러올 수 없습니다.
       </div>
     );
   }
+
+  const totalNodes = getNodeCount(scenarioId);
 
   return (
     <div
@@ -31,10 +39,9 @@ export function GameScreen() {
         background: '#0a0a0a',
       }}
     >
-      {/* 상단 인벤토리 */}
       <header
         style={{
-          padding: '12px 16px',
+          padding: '10px 16px',
           borderBottom: '1px solid #1c1c1c',
           background: '#0c0c0c',
           position: 'sticky',
@@ -50,17 +57,42 @@ export function GameScreen() {
             marginBottom: 4,
           }}
         >
-          <span style={{ fontSize: 11, color: '#444', letterSpacing: 2 }}>
-            NODE {String(node.nodeId).padStart(3, '0')}
-          </span>
-          <span style={{ fontSize: 11, color: '#444' }}>
-            {state.visitedNodes.length} / 100
+          <button
+            onClick={onExit}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: '#666',
+              fontSize: 13,
+              padding: 0,
+              cursor: 'pointer',
+              fontFamily: 'inherit',
+            }}
+          >
+            ← 시나리오 선택
+          </button>
+          <span style={{ fontSize: 11, color: '#666', letterSpacing: 1 }}>
+            {scenario.icon} {scenario.title}
           </span>
         </div>
-        <Inventory items={state.inventory} />
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginTop: 6,
+          }}
+        >
+          <span style={{ fontSize: 10, color: '#555', letterSpacing: 2 }}>
+            NODE {String(node.nodeId).padStart(3, '0')}
+          </span>
+          <span style={{ fontSize: 10, color: '#555' }}>
+            {current.visitedNodes.length} / {totalNodes}
+          </span>
+        </div>
+        <Inventory items={current.inventory} />
       </header>
 
-      {/* 본문 */}
       <main
         className="fade-in"
         style={{
@@ -73,12 +105,11 @@ export function GameScreen() {
       >
         <TypewriterText
           text={node.text}
-          resetKey={node.nodeId}
+          resetKey={`${scenarioId}-${node.nodeId}`}
           onDone={() => setTextDone(true)}
         />
       </main>
 
-      {/* 선택지 (본문과 한 줄 정도 간격) */}
       {!isEnding(node) && (
         <footer
           style={{
@@ -95,7 +126,7 @@ export function GameScreen() {
           {node.choices.map((choice, idx) => {
             const lacks =
               choice.requiredItem !== null &&
-              !state.inventory.includes(choice.requiredItem);
+              !current.inventory.includes(choice.requiredItem);
             return (
               <ChoiceButton
                 key={`${node.nodeId}-${idx}`}

@@ -1,0 +1,171 @@
+[
+  {
+    "nodeId": 1,
+    "text": "네온이 빗물 위에 녹는 도시. 의뢰는 단순했다 — 옴니코프 타워 50층의 데이터 코어에서 파일 하나 추출. 보수는 평생치. 당신은 지금 1층 로비를 마주하고 있다.",
+    "choices": [
+      { "label": "정문으로 — 위조 ID 사용", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "주차장 화물 엘리베이터", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "옥상 — 드론 자기장 우회", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "정문 검색대. 망막 스캔. 위조 ID는 95% 통과율. 사람 줄 뒤에서 차례를 기다린다.",
+    "choices": [
+      { "label": "그대로 통과 시도", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "가짜 ID를 다시 점검", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "지하 화물장. 화물 엘리베이터는 30층까지만 운행. 옆 보안 사무실 책상엔 직원 ID 카드.",
+    "choices": [
+      { "label": "ID 카드를 훔친다", "nextNodeId": 7, "requiredItem": null, "grantItem": "ID카드" },
+      { "label": "그대로 엘리베이터", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "옥상 진입은 드론 자기장이 막는다. 클로킹 장비가 필수.",
+    "choices": [
+      { "label": "장비를 챙기러 안전가옥으로", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "스캔 통과. 하지만 등 뒤 보안요원이 \"잠시만요\" 한다.",
+    "choices": [
+      { "label": "달린다", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
+      { "label": "여유롭게 응답한다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "ID 점검 결과 1자리가 어긋났다. 즉석 패치 필요. 데크가 있다면 가능.",
+    "choices": [
+      { "label": "데크로 패치 (require 해킹덱)", "nextNodeId": 5, "requiredItem": "해킹덱", "grantItem": null },
+      { "label": "그냥 시도한다", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "ID 카드와 보안 통신기까지 챙긴다. 화물 엘리베이터는 이제 50층 직행.",
+    "choices": [
+      { "label": "엘리베이터 탑승", "nextNodeId": 13, "requiredItem": "ID카드", "grantItem": "통신기" }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "30층에서 멈춘 엘리베이터. 그 사이 보안 시스템에 위치가 잡힌다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "낮은 층"
+  },
+  {
+    "nodeId": 9,
+    "text": "안전가옥. 한 가지만 빌릴 수 있다.",
+    "choices": [
+      { "label": "클로킹 슈트", "nextNodeId": 14, "requiredItem": null, "grantItem": "클로킹" },
+      { "label": "해킹 데크", "nextNodeId": 15, "requiredItem": null, "grantItem": "해킹덱" },
+      { "label": "권총", "nextNodeId": 15, "requiredItem": null, "grantItem": "권총" }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "달리는 등 뒤로 펄스건. 의식이 끊긴다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "정문의 펄스"
+  },
+  {
+    "nodeId": 11,
+    "text": "보안요원: \"방문증 출력 안 되셨네요. 카운터에서 다시 받으세요.\" 위기 모면.",
+    "choices": [
+      { "label": "엘리베이터로", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "스캔 즉시 빨간 알람. 사방의 펄스건이 동시에.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "어긋난 한 자리"
+  },
+  {
+    "nodeId": 13,
+    "text": "엘리베이터 50층. 코어 룸은 통신기로 잠금이 풀린다. 안엔 단 한 명, 야간 관리자.",
+    "choices": [
+      { "label": "통신기로 잠금 해제", "nextNodeId": 16, "requiredItem": "통신기", "grantItem": null },
+      { "label": "권총으로 위협", "nextNodeId": 17, "requiredItem": "권총", "grantItem": null },
+      { "label": "클로킹으로 잠입", "nextNodeId": 18, "requiredItem": "클로킹", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "클로킹 슈트로 옥상 자기장 통과. 옥상 → 비상계단 → 50층 직행 가능.",
+    "choices": [
+      { "label": "코어 룸으로", "nextNodeId": 13, "requiredItem": "클로킹", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "장비 챙김. 정문 또는 화물장으로 진입.",
+    "choices": [
+      { "label": "정문으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "화물장으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "통신기로 잠금 해제. 관리자는 휴식 중. 데이터 코어에 데크를 꽂는다.",
+    "choices": [
+      { "label": "해킹덱으로 추출", "nextNodeId": 19, "requiredItem": "해킹덱", "grantItem": null },
+      { "label": "맨손으로 단자 뽑기", "nextNodeId": 20, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 17,
+    "text": "관리자: \"제발… 가족이…\" 떨리는 손으로 코어를 연다. 그러나 비상 알람이 동시에 울린다.",
+    "choices": [
+      { "label": "재빨리 추출하고 도망", "nextNodeId": 21, "requiredItem": "해킹덱", "grantItem": null },
+      { "label": "관리자를 인질로 빠져나간다", "nextNodeId": 22, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 18,
+    "text": "투명한 채로 관리자 옆을 지나 코어 앞에 선다. 한 번의 추출 기회.",
+    "choices": [
+      { "label": "해킹덱으로 정밀 추출", "nextNodeId": 19, "requiredItem": "해킹덱", "grantItem": null },
+      { "label": "그냥 단자를 뽑는다", "nextNodeId": 20, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 19,
+    "text": "데이터가 깨끗이 추출. 클로킹/통신기로 쥐도 새도 모르게 빠져나온다. 의뢰인이 약속한 보수가 입금된다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "깨끗한 추출"
+  },
+  {
+    "nodeId": 20,
+    "text": "단자를 뽑자 코어가 자폭 시퀀스. 폭발이 50층을 휘감는다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "폭발한 코어"
+  },
+  {
+    "nodeId": 21,
+    "text": "추출 성공. 비상계단 36층까지 돌파. 거기서 옥상 드론과 마주친다.",
+    "choices": [
+      { "label": "권총으로 드론 격추", "nextNodeId": 19, "requiredItem": "권총", "grantItem": null },
+      { "label": "클로킹으로 회피", "nextNodeId": 19, "requiredItem": "클로킹", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 22,
+    "text": "관리자를 앞세워 50층 → 1층. 정문에서 보안 부대가 조준 중. 인질 협상 시작.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "협상의 끝"
+  }
+]
