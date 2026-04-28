@@ -3,84 +3,285 @@
     "nodeId": 1,
     "text": "차가 고장 난 그 새벽. 비 속에서 유일하게 보이는 불빛은 산 중턱의 낡은 저택. 문을 두드리자 거짓말처럼 안에서 끼익, 문이 열린다.",
     "choices": [
-      { "label": "안으로 들어간다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "마당을 먼저 둘러본다", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+      {
+        "label": "안으로 들어간다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "마당을 먼저 둘러본다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "현관. 먼지 쌓인 샹들리에가 흔들린다. 좌우로 복도가 갈라지고, 정면 계단은 2층으로 이어진다.",
     "choices": [
-      { "label": "왼쪽 응접실로", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
-      { "label": "오른쪽 주방으로", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "2층 계단을 오른다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "왼쪽 응접실로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "오른쪽 주방으로",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "2층 계단을 오른다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "정원의 우물 옆에 녹슨 손전등이 떨어져 있다. 흙 묻은 비석엔 \"여기, 다시 닫지 못한 문\"이라 새겨져 있다.",
     "choices": [
-      { "label": "손전등을 줍는다", "nextNodeId": 2, "requiredItem": null, "grantItem": "손전등" },
-      { "label": "비석을 더 살핀다", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+      {
+        "label": "손전등을 줍는다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": "손전등",
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "비석을 더 살핀다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "응접실. 벽난로 위 거울에 당신이 아닌 다른 형상이 비친다. 탁자 위엔 누군가의 일기장.",
     "choices": [
-      { "label": "거울을 자세히 본다", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
-      { "label": "일기를 챙긴다", "nextNodeId": 9, "requiredItem": null, "grantItem": "일기장" },
-      { "label": "응접실을 빠져나온다", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "거울을 자세히 본다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "일기를 챙긴다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "일기장",
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "응접실을 빠져나온다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "주방. 냉장고는 굳게 닫혔고, 칼꽂이엔 식칼 하나만 남아 있다. 싱크대 아래에서 누런 소금 통이 보인다.",
     "choices": [
-      { "label": "식칼을 챙긴다", "nextNodeId": 10, "requiredItem": null, "grantItem": "식칼" },
-      { "label": "소금을 챙긴다", "nextNodeId": 10, "requiredItem": null, "grantItem": "소금" },
-      { "label": "냉장고를 연다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "식칼을 챙긴다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": "식칼",
+        "traits": [
+          "정면",
+          "실용"
+        ]
+      },
+      {
+        "label": "소금을 챙긴다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": "소금",
+        "traits": [
+          "원칙",
+          "신중"
+        ]
+      },
+      {
+        "label": "냉장고를 연다",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관",
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "계단 중턱에서 발이 멈춘다. 위에서 아이의 울음소리. 손전등 없이는 더 갈 수 없을 만큼 어둡다.",
     "choices": [
-      { "label": "손전등으로 비춘다", "nextNodeId": 12, "requiredItem": "손전등", "grantItem": null },
-      { "label": "그래도 올라간다", "nextNodeId": 13, "requiredItem": null, "grantItem": null },
-      { "label": "내려간다", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "손전등으로 비춘다",
+        "nextNodeId": 12,
+        "requiredItem": "손전등",
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "분석"
+        ]
+      },
+      {
+        "label": "그래도 올라간다",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "내려간다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "비석 아래 흙을 파니 작은 부적이 나온다. 붉은 실로 묶인 종이.",
     "choices": [
-      { "label": "부적을 챙긴다", "nextNodeId": 2, "requiredItem": null, "grantItem": "부적" }
+      {
+        "label": "부적을 챙긴다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": "부적",
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "거울 속 형상이 점점 가까워진다. 손이 거울 표면을 안에서 두드린다.",
     "choices": [
-      { "label": "거울을 깨뜨린다", "nextNodeId": 14, "requiredItem": "식칼", "grantItem": null },
-      { "label": "부적을 거울에 댄다", "nextNodeId": 15, "requiredItem": "부적", "grantItem": null },
-      { "label": "도망친다", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "거울을 깨뜨린다",
+        "nextNodeId": 14,
+        "requiredItem": "식칼",
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "부적을 거울에 댄다",
+        "nextNodeId": 15,
+        "requiredItem": "부적",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "도망친다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "일기 마지막 페이지. \"305호의 거울이 그것의 입구다. 절대 깨지 마라. 소금으로 덮어라.\"",
     "choices": [
-      { "label": "응접실로 돌아간다", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
-      { "label": "2층으로 올라간다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "응접실로 돌아간다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "2층으로 올라간다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "주방을 빠져나온다. 등 뒤에서 식기들이 일제히 떨어진다.",
     "choices": [
-      { "label": "응접실로", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
-      { "label": "2층으로", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "응접실로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "2층으로",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
@@ -94,7 +295,16 @@
     "nodeId": 12,
     "text": "손전등 빛이 어린아이의 그림자를 비춘다. 아이는 \"305호 거울을 막아주세요\" 속삭이고 사라진다.",
     "choices": [
-      { "label": "305호로 향한다", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+      {
+        "label": "305호로 향한다",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
@@ -115,31 +325,89 @@
     "nodeId": 15,
     "text": "부적이 거울에 닿자 형상이 사라지고, 거울 안에 가느다란 글자가 나타난다. \"305호.\"",
     "choices": [
-      { "label": "2층으로 올라간다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "2층으로 올라간다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 16,
     "text": "305호 앞. 문은 안쪽에서 잠겨있다. 옆 벽에 작은 황동 열쇠가 못에 걸려 있다.",
     "choices": [
-      { "label": "열쇠를 챙긴다", "nextNodeId": 17, "requiredItem": null, "grantItem": "열쇠" }
+      {
+        "label": "열쇠를 챙긴다",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": "열쇠",
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 17,
     "text": "열쇠가 자물쇠에 정확히 맞는다. 안에서 묵직한 한기가 새어나온다.",
     "choices": [
-      { "label": "문을 연다", "nextNodeId": 18, "requiredItem": "열쇠", "grantItem": null },
-      { "label": "되돌아 나간다", "nextNodeId": 22, "requiredItem": null, "grantItem": null }
+      {
+        "label": "문을 연다",
+        "nextNodeId": 18,
+        "requiredItem": "열쇠",
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "되돌아 나간다",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 18,
     "text": "305호 한가운데, 테두리가 검게 그을린 거대한 거울. 표면이 천천히 부풀어 오르고 있다.",
     "choices": [
-      { "label": "소금을 거울에 뿌린다", "nextNodeId": 19, "requiredItem": "소금", "grantItem": null },
-      { "label": "부적을 거울에 붙인다", "nextNodeId": 20, "requiredItem": "부적", "grantItem": null },
-      { "label": "식칼로 거울을 깨뜨린다", "nextNodeId": 21, "requiredItem": "식칼", "grantItem": null }
+      {
+        "label": "소금을 거울에 뿌린다",
+        "nextNodeId": 19,
+        "requiredItem": "소금",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "신중"
+        ]
+      },
+      {
+        "label": "부적을 거울에 붙인다",
+        "nextNodeId": 20,
+        "requiredItem": "부적",
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "식칼로 거울을 깨뜨린다",
+        "nextNodeId": 21,
+        "requiredItem": "식칼",
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      }
     ]
   },
   {

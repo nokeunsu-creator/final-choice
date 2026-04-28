@@ -3,74 +3,240 @@
     "nodeId": 1,
     "text": "20피트 요트 노스타. 친구 셋과의 주말 항해는 갑작스런 폭풍에 휘말렸다. 친구들은 갑판 위에서 의식을 잃었고, 무전기는 침수됐다.",
     "choices": [
-      { "label": "키를 잡고 폭풍을 헤쳐나간다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "닻을 내리고 버틴다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "친구들을 선실로 옮긴다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "키를 잡고 폭풍을 헤쳐나간다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "닻을 내리고 버틴다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "친구들을 선실로 옮긴다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "키를 잡는다. 파도가 갑판을 휩쓸 때마다 시야가 흔들린다. 멀리 등대 불빛이 가물가물.",
     "choices": [
-      { "label": "등대 방향으로 키를 돌린다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "바람을 등지고 항행", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "등대 방향으로 키를 돌린다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "바람을 등지고 항행",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "닻을 내린다. 요트가 일정 위치에 머물지만 파도는 점점 거세진다. 선실 안 비상 키트.",
     "choices": [
-      { "label": "비상 키트를 연다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "친구들을 선실로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "비상 키트를 연다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "친구들을 선실로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "친구들을 선실로 옮긴다. 한 명은 머리에서 피. 다른 한 명은 호흡이 약하다.",
     "choices": [
-      { "label": "비상 키트로 응급 처치", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
-      { "label": "갑판으로 다시 올라간다", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "비상 키트로 응급 처치",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "갑판으로 다시 올라간다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "등대를 향해 키를 돌린다. 파도가 키를 흔들지만 등대는 점점 가까워진다.",
     "choices": [
-      { "label": "그대로 계속", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
-      { "label": "조난 신호탄을 쏜다", "nextNodeId": 10, "requiredItem": "신호탄", "grantItem": null }
+      {
+        "label": "그대로 계속",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "조난 신호탄을 쏜다",
+        "nextNodeId": 10,
+        "requiredItem": "신호탄",
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "바람을 등진다. 등대에서 멀어지지만 파도가 잦아든다. 곧 새벽이 밝을 것 같다.",
     "choices": [
-      { "label": "새벽까지 버틴다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "새벽까지 버틴다",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "비상 키트. 신호탄, 구급 키트, 방수 무전기. 친구들 처치엔 구급 키트가 필요하다.",
     "choices": [
-      { "label": "신호탄을 챙긴다", "nextNodeId": 12, "requiredItem": null, "grantItem": "신호탄" },
-      { "label": "구급 키트로 친구 처치", "nextNodeId": 8, "requiredItem": null, "grantItem": "구급키트" },
-      { "label": "방수 무전기를 시도", "nextNodeId": 13, "requiredItem": null, "grantItem": "무전기" }
+      {
+        "label": "신호탄을 챙긴다",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": "신호탄",
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "구급 키트로 친구 처치",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": "구급키트",
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "방수 무전기를 시도",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": "무전기",
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "구급 키트로 머리 상처를 닦고 압박. 호흡이 안정된다. 친구가 눈을 뜬다.",
     "choices": [
-      { "label": "갑판으로 — 키를 잡는다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "함께 신호탄을 쏜다", "nextNodeId": 10, "requiredItem": "신호탄", "grantItem": null }
+      {
+        "label": "갑판으로 — 키를 잡는다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "함께 신호탄을 쏜다",
+        "nextNodeId": 10,
+        "requiredItem": "신호탄",
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "등대 가까이. 그러나 등대 아래는 암초. 그대로 가면 좌초.",
     "choices": [
-      { "label": "그대로 돌진한다", "nextNodeId": 15, "requiredItem": null, "grantItem": null },
-      { "label": "방향을 미세 조정", "nextNodeId": 14, "requiredItem": null, "grantItem": null },
-      { "label": "닻을 내리고 구조 대기", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "그대로 돌진한다",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "방향을 미세 조정",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "분석"
+        ]
+      },
+      {
+        "label": "닻을 내리고 구조 대기",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
@@ -91,8 +257,25 @@
     "nodeId": 12,
     "text": "신호탄을 챙겼다. 사용처는 결정.",
     "choices": [
-      { "label": "지금 즉시 발사", "nextNodeId": 10, "requiredItem": "신호탄", "grantItem": null },
-      { "label": "갑판으로 — 키를 잡는다", "nextNodeId": 2, "requiredItem": null, "grantItem": "신호탄" }
+      {
+        "label": "지금 즉시 발사",
+        "nextNodeId": 10,
+        "requiredItem": "신호탄",
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "갑판으로 — 키를 잡는다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": "신호탄",
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {

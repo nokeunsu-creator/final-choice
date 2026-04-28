@@ -3,33 +3,107 @@
     "nodeId": 1,
     "text": "신전 입구. 횃불을 든 동료들은 먼저 들어갔다. 한참 기다려도 누구도 돌아오지 않자, 당신만 입구에 남았다. 결심한다.",
     "choices": [
-      { "label": "중앙 통로로 들어간다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "입구 옆 보관함을 살핀다", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+      {
+        "label": "중앙 통로로 들어간다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "입구 옆 보관함을 살핀다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "어두운 통로. 빛이 거의 없다.",
     "choices": [
-      { "label": "횃불을 켠다", "nextNodeId": 4, "requiredItem": "횃불", "grantItem": null },
-      { "label": "더듬으며 나아간다", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+      {
+        "label": "횃불을 켠다",
+        "nextNodeId": 4,
+        "requiredItem": "횃불",
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "더듬으며 나아간다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "보관함엔 횃불 한 자루와 작은 검 한 자루.",
     "choices": [
-      { "label": "횃불을 챙긴다", "nextNodeId": 6, "requiredItem": null, "grantItem": "횃불" },
-      { "label": "검을 챙긴다", "nextNodeId": 6, "requiredItem": null, "grantItem": "검" },
-      { "label": "둘 다 챙긴다 (시간 걸림)", "nextNodeId": 7, "requiredItem": null, "grantItem": "횃불" }
+      {
+        "label": "횃불을 챙긴다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": "횃불",
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "검을 챙긴다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": "검",
+        "traits": [
+          "정면"
+        ]
+      },
+      {
+        "label": "둘 다 챙긴다 (시간 걸림)",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "횃불",
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "횃불 빛이 벽화를 비춘다. \"세 개의 룬을 모아 마지막 문을 열라.\" 통로가 둘로 갈라진다.",
     "choices": [
-      { "label": "왼쪽 — 물의 방", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
-      { "label": "오른쪽 — 불의 방", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+      {
+        "label": "왼쪽 — 물의 방",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "오른쪽 — 불의 방",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
@@ -43,44 +117,110 @@
     "nodeId": 6,
     "text": "한 가지만 챙기고 통로로 향한다.",
     "choices": [
-      { "label": "중앙 통로로", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "중앙 통로로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "두 개를 다 챙기는 동안 입구의 돌문이 닫혔다. 되돌아 나갈 길은 없다. 하지만 손엔 횃불과 검.",
     "choices": [
-      { "label": "검도 챙긴다", "nextNodeId": 2, "requiredItem": null, "grantItem": "검" }
+      {
+        "label": "검도 챙긴다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": "검",
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "물의 방. 발목 깊이의 차가운 물. 중앙 받침대 위에 푸른 룬.",
     "choices": [
-      { "label": "푸른 룬을 집는다", "nextNodeId": 10, "requiredItem": null, "grantItem": "푸른룬" }
+      {
+        "label": "푸른 룬을 집는다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": "푸른룬",
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "불의 방. 천장 구멍에서 떨어지는 불꽃 비. 빠르게 달려 받침대 위 붉은 룬을 잡아야 한다.",
     "choices": [
-      { "label": "방패로 막으며 달린다", "nextNodeId": 11, "requiredItem": "방패", "grantItem": null },
-      { "label": "그냥 달린다", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "방패로 막으며 달린다",
+        "nextNodeId": 11,
+        "requiredItem": "방패",
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "실용"
+        ]
+      },
+      {
+        "label": "그냥 달린다",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "푸른 룬을 잡는 순간 물이 빠진다. 옆 벽이 열리고 새로운 통로.",
     "choices": [
-      { "label": "통로로 — 보석방", "nextNodeId": 13, "requiredItem": null, "grantItem": null },
-      { "label": "되돌아 — 갈림길로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "통로로 — 보석방",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "되돌아 — 갈림길로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 11,
     "text": "방패가 불꽃을 막는다. 붉은 룬을 잡고 무사히 빠져나온다.",
     "choices": [
-      { "label": "받침대 옆 통로로", "nextNodeId": 14, "requiredItem": null, "grantItem": "붉은룬" }
+      {
+        "label": "받침대 옆 통로로",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": "붉은룬",
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
@@ -94,22 +234,54 @@
     "nodeId": 13,
     "text": "보석방. 사방의 보석이 천장에서 빛난다. 한가운데 옛 동료의 시신과 그 옆에 둥근 방패.",
     "choices": [
-      { "label": "방패를 챙긴다", "nextNodeId": 15, "requiredItem": null, "grantItem": "방패" },
-      { "label": "보석을 챙긴다", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+      {
+        "label": "방패를 챙긴다",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": "방패",
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "보석을 챙긴다",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 14,
     "text": "통로 끝. 세 번째 룬이 있는 \"바람의 방\" 입구.",
     "choices": [
-      { "label": "들어간다", "nextNodeId": 17, "requiredItem": null, "grantItem": null }
+      {
+        "label": "들어간다",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 15,
     "text": "방패가 손에 들어왔다. 옆 통로가 열린다.",
     "choices": [
-      { "label": "갈림길로 돌아간다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "갈림길로 돌아간다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
@@ -123,15 +295,41 @@
     "nodeId": 17,
     "text": "바람의 방. 벽에 새겨진 글: \"검 없이는 빠져나갈 수 없다.\" 강풍이 점점 거세진다.",
     "choices": [
-      { "label": "검으로 강풍을 가른다", "nextNodeId": 18, "requiredItem": "검", "grantItem": null },
-      { "label": "맨몸으로 버틴다", "nextNodeId": 19, "requiredItem": null, "grantItem": null }
+      {
+        "label": "검으로 강풍을 가른다",
+        "nextNodeId": 18,
+        "requiredItem": "검",
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "맨몸으로 버틴다",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 18,
     "text": "검이 강풍을 가르고 받침대에 도달. 초록 룬을 손에 쥔다. 룬 셋이 모였다.",
     "choices": [
-      { "label": "마지막 문으로", "nextNodeId": 20, "requiredItem": null, "grantItem": "초록룬" }
+      {
+        "label": "마지막 문으로",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": "초록룬",
+        "traits": [
+          "정면"
+        ]
+      }
     ]
   },
   {
@@ -145,8 +343,25 @@
     "nodeId": 20,
     "text": "마지막 문. 세 룬을 끼우는 자리가 있다.",
     "choices": [
-      { "label": "푸른 → 붉은 → 초록 순서로", "nextNodeId": 21, "requiredItem": "푸른룬", "grantItem": null },
-      { "label": "임의 순서로 끼운다", "nextNodeId": 22, "requiredItem": null, "grantItem": null }
+      {
+        "label": "푸른 → 붉은 → 초록 순서로",
+        "nextNodeId": 21,
+        "requiredItem": "푸른룬",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "임의 순서로 끼운다",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
     ]
   },
   {

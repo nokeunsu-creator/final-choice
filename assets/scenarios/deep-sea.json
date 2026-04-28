@@ -3,57 +3,179 @@
     "nodeId": 1,
     "text": "수심 4000m. 잠수정 베르노스호의 외부 충돌 알람. 무엇과 부딪쳤는지 모르지만, 추진 시스템은 죽었다. 잔여 산소 6시간.",
     "choices": [
-      { "label": "조타실의 시스템을 점검", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "관측창으로 외부를 본다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "비상 장비실로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "조타실의 시스템을 점검",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "관측창으로 외부를 본다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "비상 장비실로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "조타실. 보조 배터리는 살아있다. 무전기는 미작동. 비상 부상 시퀀스도 잠금 상태.",
     "choices": [
-      { "label": "잠금 해제 코드 입력", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "수동 엔진 점검", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "잠금 해제 코드 입력",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "수동 엔진 점검",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "관측창. 어둠 속에서 거대한 형체가 천천히 움직인다. 처음 보는 생물이다.",
     "choices": [
-      { "label": "조명을 끈다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "사진을 남긴다", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+      {
+        "label": "조명을 끈다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "사진을 남긴다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "비상 장비실. 잠수복, 산소통, 공구 박스, 수중 손전등.",
     "choices": [
-      { "label": "잠수복을 입는다", "nextNodeId": 9, "requiredItem": null, "grantItem": "잠수복" },
-      { "label": "공구를 챙긴다", "nextNodeId": 10, "requiredItem": null, "grantItem": "공구" },
-      { "label": "수중 손전등만 챙긴다", "nextNodeId": 10, "requiredItem": null, "grantItem": "수중등" }
+      {
+        "label": "잠수복을 입는다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "잠수복",
+        "traits": [
+          "자기"
+        ]
+      },
+      {
+        "label": "공구를 챙긴다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": "공구",
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "수중 손전등만 챙긴다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": "수중등",
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "잠금 해제 코드는 7자리. 매뉴얼은 어디에?",
     "choices": [
-      { "label": "선실의 매뉴얼을 찾는다", "nextNodeId": 11, "requiredItem": null, "grantItem": null },
-      { "label": "추측으로 입력한다", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "선실의 매뉴얼을 찾는다",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "추측으로 입력한다",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "수동 엔진 점검. 외부 패널이 깨졌다. 외부 점검 필요.",
     "choices": [
-      { "label": "잠수복으로 외부 점검", "nextNodeId": 13, "requiredItem": "잠수복", "grantItem": null },
-      { "label": "관측창에서 더 본다", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+      {
+        "label": "잠수복으로 외부 점검",
+        "nextNodeId": 13,
+        "requiredItem": "잠수복",
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "관측창에서 더 본다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "조명을 끄자 거대 생물은 잠수정에서 멀어진다. 그러나 어둠 속에서 또 다른 형체가 가까워진다.",
     "choices": [
-      { "label": "잠수정을 흔들지 않게 정지", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+      {
+        "label": "잠수정을 흔들지 않게 정지",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
@@ -67,22 +189,54 @@
     "nodeId": 9,
     "text": "잠수복을 입었다. 외부 작업 가능.",
     "choices": [
-      { "label": "공구도 챙긴다", "nextNodeId": 10, "requiredItem": null, "grantItem": "공구" }
+      {
+        "label": "공구도 챙긴다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": "공구",
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "장비를 갖췄다. 다음 행동.",
     "choices": [
-      { "label": "조타실로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "외부 점검", "nextNodeId": 13, "requiredItem": "잠수복", "grantItem": null }
+      {
+        "label": "조타실로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "외부 점검",
+        "nextNodeId": 13,
+        "requiredItem": "잠수복",
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 11,
     "text": "선실의 매뉴얼. 잠금 해제 코드 마지막 페이지. 8 4 1 1 0 9 2.",
     "choices": [
-      { "label": "조타실로 돌아간다", "nextNodeId": 15, "requiredItem": null, "grantItem": "코드" }
+      {
+        "label": "조타실로 돌아간다",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": "코드",
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
@@ -96,30 +250,81 @@
     "nodeId": 13,
     "text": "외부. 추진기 옆에 거대한 발톱 자국. 무언가가 끼어 있다 — 부서진 패널.",
     "choices": [
-      { "label": "공구로 분리한다", "nextNodeId": 16, "requiredItem": "공구", "grantItem": null },
-      { "label": "맨손으로 빼본다", "nextNodeId": 17, "requiredItem": null, "grantItem": null }
+      {
+        "label": "공구로 분리한다",
+        "nextNodeId": 16,
+        "requiredItem": "공구",
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "실용"
+        ]
+      },
+      {
+        "label": "맨손으로 빼본다",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관",
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 14,
     "text": "어둠 속 정지. 두 형체가 서로 부딪히듯 멀어진다. 잠수정은 무사하다.",
     "choices": [
-      { "label": "조명을 켜고 정상화", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "조명을 켜고 정상화",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 15,
     "text": "코드를 입력. 비상 부상 시퀀스 가동. 그러나 추진기가 손상이라 시퀀스 중단.",
     "choices": [
-      { "label": "외부 점검으로", "nextNodeId": 13, "requiredItem": "잠수복", "grantItem": null }
+      {
+        "label": "외부 점검으로",
+        "nextNodeId": 13,
+        "requiredItem": "잠수복",
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 16,
     "text": "공구로 패널 분리. 추진기가 자유로워지고, 보조 배터리로 약하지만 추진력 회복.",
     "choices": [
-      { "label": "조타실 — 부상 시퀀스", "nextNodeId": 18, "requiredItem": "코드", "grantItem": null },
-      { "label": "조타실 — 추측 입력", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "조타실 — 부상 시퀀스",
+        "nextNodeId": 18,
+        "requiredItem": "코드",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "신중"
+        ]
+      },
+      {
+        "label": "조타실 — 추측 입력",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
     ]
   },
   {
@@ -133,8 +338,26 @@
     "nodeId": 18,
     "text": "비상 부상. 4000m → 3000m → 2000m. 천천히, 안전한 속도로.",
     "choices": [
-      { "label": "수동 안정화 (require 공구)", "nextNodeId": 19, "requiredItem": "공구", "grantItem": null },
-      { "label": "자동 시퀀스에 맡긴다", "nextNodeId": 20, "requiredItem": null, "grantItem": null }
+      {
+        "label": "수동 안정화 (require 공구)",
+        "nextNodeId": 19,
+        "requiredItem": "공구",
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "자동 시퀀스에 맡긴다",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관",
+          "회피"
+        ]
+      }
     ]
   },
   {
@@ -148,8 +371,24 @@
     "nodeId": 20,
     "text": "자동 시퀀스. 1500m에서 보조 배터리가 갑자기 끊긴다. 잠시 멈춘다.",
     "choices": [
-      { "label": "수중등으로 신호", "nextNodeId": 21, "requiredItem": "수중등", "grantItem": null },
-      { "label": "기다린다", "nextNodeId": 22, "requiredItem": null, "grantItem": null }
+      {
+        "label": "수중등으로 신호",
+        "nextNodeId": 21,
+        "requiredItem": "수중등",
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "기다린다",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {

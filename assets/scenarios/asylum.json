@@ -3,79 +3,234 @@
     "nodeId": 1,
     "text": "정신을 차리니 흰 가운, 손목에 환자 식별 밴드. 옆 침대는 비어있고 복도엔 비명. 여긴 정신병원 폐쇄병동, 그러나 당신은 환자가 아니었다.",
     "choices": [
-      { "label": "복도로 나간다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "병실 안을 더 살핀다", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+      {
+        "label": "복도로 나간다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "병실 안을 더 살핀다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "복도. 좌측엔 간호사 데스크, 우측엔 굳게 잠긴 출구. 천장 형광등이 깜빡인다.",
     "choices": [
-      { "label": "데스크로", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
-      { "label": "출구를 살핀다", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+      {
+        "label": "데스크로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "출구를 살핀다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "옆 침대 매트리스 아래에 종이 한 장과 클립.",
     "choices": [
-      { "label": "종이를 읽는다", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
-      { "label": "클립을 챙긴다", "nextNodeId": 7, "requiredItem": null, "grantItem": "클립" }
+      {
+        "label": "종이를 읽는다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "클립을 챙긴다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "클립",
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "데스크. 환자 명단 컴퓨터, 마스터키, 통신용 무전기. 의자 뒤엔 누군가의 가운, 명찰: \"한지수\".",
     "choices": [
-      { "label": "마스터키를 챙긴다", "nextNodeId": 8, "requiredItem": null, "grantItem": "마스터키" },
-      { "label": "무전기로 외부 호출", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
-      { "label": "가운으로 갈아입는다", "nextNodeId": 10, "requiredItem": null, "grantItem": "직원가운" }
+      {
+        "label": "마스터키를 챙긴다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": "마스터키",
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "무전기로 외부 호출",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "가운으로 갈아입는다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": "직원가운",
+        "traits": [
+          "직관",
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "출구는 카드 + 비밀번호 이중 잠금. 카드 슬롯 옆에 빨간 비상 버튼.",
     "choices": [
-      { "label": "비상 버튼을 누른다", "nextNodeId": 11, "requiredItem": null, "grantItem": null },
-      { "label": "되돌아 데스크로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "비상 버튼을 누른다",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "되돌아 데스크로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "종이: \"환자 인격이 의사 인격을 지배하면 의사 인격을 가두라 — 폐쇄병동 305호.\" 305호는 당신의 방이었다.",
     "choices": [
-      { "label": "복도로 — 데스크로", "nextNodeId": 4, "requiredItem": null, "grantItem": "메모" }
+      {
+        "label": "복도로 — 데스크로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": "메모",
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "클립으로 무엇이든 따기 좋다.",
     "choices": [
-      { "label": "복도로 나간다", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "복도로 나간다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "마스터키 손에. 출구를 열 수 있다.",
     "choices": [
-      { "label": "출구로 — 카드 슬롯에 댄다", "nextNodeId": 12, "requiredItem": "마스터키", "grantItem": null },
-      { "label": "다른 병실을 마스터키로", "nextNodeId": 13, "requiredItem": "마스터키", "grantItem": null }
+      {
+        "label": "출구로 — 카드 슬롯에 댄다",
+        "nextNodeId": 12,
+        "requiredItem": "마스터키",
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "다른 병실을 마스터키로",
+        "nextNodeId": 13,
+        "requiredItem": "마스터키",
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "무전: \"한지수 선생님? 어디 계세요? 의사 셋이 환자에 의해 갇혔습니다.\" 당신이 환자였다는 사실을 그들은 모른다.",
     "choices": [
-      { "label": "의사인 척 응답", "nextNodeId": 14, "requiredItem": null, "grantItem": null },
-      { "label": "솔직히 말한다", "nextNodeId": 15, "requiredItem": null, "grantItem": null }
+      {
+        "label": "의사인 척 응답",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관",
+          "실용"
+        ]
+      },
+      {
+        "label": "솔직히 말한다",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "직원 가운을 입는다. 다른 환자들의 시선이 변한다 — 그들은 당신을 의사로 본다.",
     "choices": [
-      { "label": "출구로", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
-      { "label": "다른 병실 잠금 해제", "nextNodeId": 13, "requiredItem": "마스터키", "grantItem": null }
+      {
+        "label": "출구로",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "다른 병실 잠금 해제",
+        "nextNodeId": 13,
+        "requiredItem": "마스터키",
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
@@ -96,15 +251,40 @@
     "nodeId": 13,
     "text": "다른 병실. 진짜 한지수 선생이 의자에 묶여 있다.",
     "choices": [
-      { "label": "그를 풀어준다", "nextNodeId": 16, "requiredItem": null, "grantItem": null },
-      { "label": "그대로 두고 떠난다", "nextNodeId": 12, "requiredItem": "마스터키", "grantItem": null }
+      {
+        "label": "그를 풀어준다",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "그대로 두고 떠난다",
+        "nextNodeId": 12,
+        "requiredItem": "마스터키",
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 14,
     "text": "의사인 척. \"중앙 잠금장치 점검 중. 모두 병실에 대기하라.\" 시간을 번다. 출구로.",
     "choices": [
-      { "label": "출구로", "nextNodeId": 12, "requiredItem": "마스터키", "grantItem": null }
+      {
+        "label": "출구로",
+        "nextNodeId": 12,
+        "requiredItem": "마스터키",
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      }
     ]
   },
   {

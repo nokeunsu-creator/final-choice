@@ -3,73 +3,232 @@
     "nodeId": 1,
     "text": "폐선된 산악철도. 안개 속에서 기차가 멈춰 섰다. 객실 안엔 당신뿐. 마지막 역명은 '봉현', 다음 역은 표지판조차 없다.",
     "choices": [
-      { "label": "운전실로 향한다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "다른 객차로 이동", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "선로에 내린다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "운전실로 향한다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "다른 객차로 이동",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "선로에 내린다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "독자"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "운전실. 기관사는 없다. 계기판 위에 손전등 하나, 무전기 하나. 운전대 옆 벽에 \"22:14에 절대 멈추지 마라\" 메모.",
     "choices": [
-      { "label": "손전등을 챙긴다", "nextNodeId": 5, "requiredItem": null, "grantItem": "손전등" },
-      { "label": "무전기를 챙긴다", "nextNodeId": 5, "requiredItem": null, "grantItem": "무전기" }
+      {
+        "label": "손전등을 챙긴다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": "손전등",
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "무전기를 챙긴다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": "무전기",
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "두 칸 뒤 객차. 좌석 사이에 삼십 명 분량의 손가방. 사람들은 사라진 듯하다.",
     "choices": [
-      { "label": "가방을 뒤져 비상 키트 챙김", "nextNodeId": 6, "requiredItem": null, "grantItem": "비상키트" },
-      { "label": "객차 끝까지 더 간다", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+      {
+        "label": "가방을 뒤져 비상 키트 챙김",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": "비상키트",
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "객차 끝까지 더 간다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "선로 위. 발 아래 침목이 묘하게 따뜻하다. 안개 속에서 누군가의 등불이 가까워진다.",
     "choices": [
-      { "label": "다가가 본다", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
-      { "label": "기차로 다시 올라탄다", "nextNodeId": 1, "requiredItem": null, "grantItem": null }
+      {
+        "label": "다가가 본다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "기차로 다시 올라탄다",
+        "nextNodeId": 1,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "운전실의 시계가 22:13을 가리킨다. 곧 22:14.",
     "choices": [
-      { "label": "기차를 출발시킨다", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
-      { "label": "1분만 더 기다린다", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+      {
+        "label": "기차를 출발시킨다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "1분만 더 기다린다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "비상 키트엔 진통제, 작은 칼, 라이터.",
     "choices": [
-      { "label": "운전실로 향한다", "nextNodeId": 2, "requiredItem": null, "grantItem": "라이터" },
-      { "label": "객차 끝까지", "nextNodeId": 7, "requiredItem": null, "grantItem": "라이터" }
+      {
+        "label": "운전실로 향한다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": "라이터",
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "객차 끝까지",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "라이터",
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "마지막 객차. 문이 안에서 잠겨 있다. 손잡이엔 검은 머리카락 한 가닥.",
     "choices": [
-      { "label": "라이터로 손잡이를 태운다", "nextNodeId": 11, "requiredItem": "라이터", "grantItem": null },
-      { "label": "발로 차 부순다", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
-      { "label": "운전실로 돌아간다", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "라이터로 손잡이를 태운다",
+        "nextNodeId": 11,
+        "requiredItem": "라이터",
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "실용"
+        ]
+      },
+      {
+        "label": "발로 차 부순다",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "운전실로 돌아간다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "등불을 든 노인. \"22:14 전에 다음 역까지 가야 해. 안 그러면 모두 안개에 먹혀.\" 그가 객차 좌석 아래 숨겨둔 차표를 건넨다.",
     "choices": [
-      { "label": "차표를 받고 운전실로", "nextNodeId": 5, "requiredItem": null, "grantItem": "차표" }
+      {
+        "label": "차표를 받고 운전실로",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": "차표",
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "22:14. 기차가 굉음을 내며 출발한다. 안개가 창에 들러붙기 시작한다.",
     "choices": [
-      { "label": "무전으로 다음 역에 연락", "nextNodeId": 13, "requiredItem": "무전기", "grantItem": null },
-      { "label": "그저 운전한다", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+      {
+        "label": "무전으로 다음 역에 연락",
+        "nextNodeId": 13,
+        "requiredItem": "무전기",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "그저 운전한다",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
     ]
   },
   {
@@ -83,7 +242,15 @@
     "nodeId": 11,
     "text": "라이터 불꽃에 손잡이가 일그러지고 문이 열린다. 안엔 살아있는 승객 다섯. 그들은 \"고맙다\"며 손을 잡는다.",
     "choices": [
-      { "label": "함께 운전실로", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+      {
+        "label": "함께 운전실로",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
@@ -97,7 +264,15 @@
     "nodeId": 13,
     "text": "무전: \"수신 양호. 다음 역까지 9분, 절대 멈추지 마세요.\"",
     "choices": [
-      { "label": "그대로 끝까지", "nextNodeId": 15, "requiredItem": null, "grantItem": null }
+      {
+        "label": "그대로 끝까지",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
