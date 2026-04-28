@@ -78,11 +78,11 @@ export function GameScreen({ onReachEnding }: Props) {
       <main
         className="fade-in"
         style={{
-          flex: 1,
-          padding: '24px 20px',
+          padding: '24px 20px 12px',
           maxWidth: 720,
           width: '100%',
           margin: '0 auto',
+          boxSizing: 'border-box',
         }}
       >
         <TypewriterText
@@ -92,12 +92,15 @@ export function GameScreen({ onReachEnding }: Props) {
         />
       </main>
 
-      {/* 선택지 */}
+      {/* 선택지 (본문과 한 줄 정도 간격) */}
       {!isEnding(node) && (
         <footer
           style={{
-            padding: '16px 20px 24px',
-            borderTop: '1px solid #1c1c1c',
+            padding: '16px 20px 28px',
+            maxWidth: 720,
+            width: '100%',
+            margin: '0 auto',
+            boxSizing: 'border-box',
             opacity: textDone ? 1 : 0.4,
             transition: 'opacity 0.4s',
             pointerEvents: textDone ? 'auto' : 'none',
