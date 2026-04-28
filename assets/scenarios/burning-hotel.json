@@ -1,0 +1,139 @@
+[
+  {
+    "nodeId": 1,
+    "text": "23층 객실 2305호. 새벽 3시 화재 경보. 문 아래로 검은 연기. 복도는 이미 화염. 창밖은 23층, 지상까지 70미터.",
+    "choices": [
+      { "label": "수건을 적셔 입에 대고 복도로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "비상 계단을 찾는다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "창가로 — 신호 보낸다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "복도는 한 치 앞도 안 보인다. 옆방 문이 열려 있다.",
+    "choices": [
+      { "label": "옆방으로 피신", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "그래도 비상 계단까지", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "비상 계단 표지. 동쪽 끝. 그러나 그쪽 화염이 더 거세다. 서쪽 직원 통로 표지도 보인다.",
+    "choices": [
+      { "label": "동쪽 비상 계단", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
+      { "label": "서쪽 직원 통로", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "창가. 호텔 앞 광장에 소방차 두 대. 그러나 사다리는 18층까지만. 23층에서 흔드는 손은 지상에서 잘 안 보인다.",
+    "choices": [
+      { "label": "흰 시트를 창밖으로 내건다", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
+      { "label": "휴대폰 손전등으로 신호", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "옆방. 문은 열려 있고 안엔 노인 한 명이 의식 없이 침대에. 호흡 약하다.",
+    "choices": [
+      { "label": "노인을 끌고 욕실로", "nextNodeId": 11, "requiredItem": null, "grantItem": null },
+      { "label": "혼자 빠져나간다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "비상 계단. 어둡지만 연기는 적다. 22층까지 내려갔다.",
+    "choices": [
+      { "label": "계속 내려간다", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
+      { "label": "옥상으로 거꾸로 올라간다", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "동쪽 비상 계단. 문을 여는 순간 백드래프트. 화염이 안쪽으로 몰아친다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "백드래프트"
+  },
+  {
+    "nodeId": 8,
+    "text": "서쪽 직원 통로. 비교적 멀쩡. 22층, 21층, 점점 내려간다.",
+    "choices": [
+      { "label": "그대로 1층까지", "nextNodeId": 14, "requiredItem": null, "grantItem": null },
+      { "label": "18층에서 — 사다리차로 탈출", "nextNodeId": 15, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "흰 시트가 23층에서 펄럭. 소방관이 본다. \"23층에 두 명!\" 사다리차 18층까지, 그 위는 공중 사다리 차로.",
+    "choices": [
+      { "label": "구조 대기", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "휴대폰 깜빡임. 그러나 광장에서 못 본다. 시간이 흐르고 객실 안 산소가 줄어든다.",
+    "choices": [
+      { "label": "복도 시도", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "흰 시트 시도", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "노인을 끌고 욕실로. 욕조에 물을 채우고 욕실 문 틈에 젖은 수건. 안에서 구조 대기.",
+    "choices": [
+      { "label": "흰 시트로 창에 신호", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "10층까지 내려간다. 그러나 거기서 화염이 통로를 막았다.",
+    "choices": [
+      { "label": "다른 통로로", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
+      { "label": "옥상으로 거꾸로", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "옥상. 헬리포트엔 헬기가 없다. 옥상 끝에 낡은 라디오와 신호탄 한 발.",
+    "choices": [
+      { "label": "라디오로 구조 요청", "nextNodeId": 17, "requiredItem": null, "grantItem": null },
+      { "label": "신호탄을 발사", "nextNodeId": 18, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "1층 직원 출구. 무사히 빠져나간다. 단, 로비를 통과 못 한 다른 투숙객들은 ...",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "직원 출구"
+  },
+  {
+    "nodeId": 15,
+    "text": "18층 창문. 사다리차 도착. 안전 하강.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "18층의 사다리"
+  },
+  {
+    "nodeId": 16,
+    "text": "공중 사다리차. 23층 창에 닿는다. 노인까지 함께 안전 하강.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "공중의 사다리"
+  },
+  {
+    "nodeId": 17,
+    "text": "옛 라디오. 119 주파수에 \"옥상에 있다\" 송신. 헬기 출동. 30분 뒤 합류.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "옥상 헬기"
+  },
+  {
+    "nodeId": 18,
+    "text": "신호탄. 새벽 하늘에 빨간 줄. 헬기는 도착하지만, 옥상 화염이 헬기 접근을 막는다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "닿지 못한 헬기"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "nodeId": 1,
+    "text": "라스베이거스 한복판, 골든 미라주 카지노. 작전 시작 22:00. 동료 셋이 흩어져 있고, 표적은 VIP 룸 금고. 당신의 위치는 카지노 메인 플로어.",
+    "choices": [
+      { "label": "메인 플로어 — 보안 분산용 베팅", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "직원 통로로 잠입", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "주방으로 — 화재 경보 트리거", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "블랙잭 테이블. 동료 신호로 큰 베팅, 보안이 모인다. 슬롯 머신 뒤에 떨어진 직원 카드.",
+    "choices": [
+      { "label": "카드를 챙긴다", "nextNodeId": 5, "requiredItem": null, "grantItem": "직원카드" },
+      { "label": "그냥 자리를 뜬다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "직원 통로 입구. 카드 인증 필요. 조용한 청소부 한 명이 카트를 밀고 지나간다.",
+    "choices": [
+      { "label": "직원카드로 통과", "nextNodeId": 7, "requiredItem": "직원카드", "grantItem": null },
+      { "label": "청소부에게 부탁", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "주방. 가스 밸브 옆 화재 경보. 누르면 카지노 전체 대피, 보안 공백 4분.",
+    "choices": [
+      { "label": "경보를 누른다", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
+      { "label": "주방 직원의 마스터키만 챙긴다", "nextNodeId": 10, "requiredItem": null, "grantItem": "주방키" }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "직원 카드 손에. VIP 룸 입구까지 갈 수 있다.",
+    "choices": [
+      { "label": "직원 통로로", "nextNodeId": 7, "requiredItem": "직원카드", "grantItem": null },
+      { "label": "엘리베이터로 직행", "nextNodeId": 11, "requiredItem": "직원카드", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "자리를 뜨자 보안이 다시 분산되기 전에 시간이 줄어든다. 동료 중 한 명이 무전: \"카드 못 챙겼어? 그럼 주방으로 가.\"",
+    "choices": [
+      { "label": "주방으로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "직원 통로. 사방 CCTV. 동료 해커가 \"5초 안에 모퉁이 돌아\" 신호.",
+    "choices": [
+      { "label": "신호대로 달린다", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
+      { "label": "잠시 멈춘다", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "청소부에게 100달러. 그가 카트로 통로를 막아주는 사이 들어간다.",
+    "choices": [
+      { "label": "통로를 따라 VIP룸으로", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "경보 발동. 인파가 출구로 쏟아진다. 보안은 인파 통제 우선. 4분의 골든 타임.",
+    "choices": [
+      { "label": "주방키로 직원 통로", "nextNodeId": 7, "requiredItem": "주방키", "grantItem": null },
+      { "label": "혼란 속에 메인 플로어로", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "주방키 손에. 모든 직원 통로가 열린다.",
+    "choices": [
+      { "label": "직원 통로로", "nextNodeId": 7, "requiredItem": "주방키", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "엘리베이터. VIP 층 도착. 그러나 문이 열리자 무장 보안 둘.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "엘리베이터 함정"
+  },
+  {
+    "nodeId": 12,
+    "text": "정확한 타이밍으로 VIP룸 앞. 동료 금고 해커가 이미 작업 중. 30초.",
+    "choices": [
+      { "label": "망보며 기다린다", "nextNodeId": 15, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "한 박자 늦었다. CCTV가 정확히 당신을 잡는다. 무전 너머 동료들의 욕설.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "1초의 차이"
+  },
+  {
+    "nodeId": 14,
+    "text": "혼란 속 메인 플로어. 칩이 사방에 흩어져 있다. 동료 무전: \"VIP 못 가. 칩이라도 챙겨.\"",
+    "choices": [
+      { "label": "칩을 챙기고 인파에 섞여 탈출", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "30초 끝. 금고가 열린다. 현금과 무기명 채권. 가방에 쓸어담고 직원 통로로 빠져나간다. 4분 안에 거리.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "골든 미라주"
+  },
+  {
+    "nodeId": 16,
+    "text": "칩 한 가방. 큰 작업은 실패했지만 손해는 보지 않았다. 동료들과 후일을 기약.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "칩 한 가방"
+  }
+]

@@ -1,132 +1,26 @@
 {
   "scenarios": [
-    {
-      "id": "desert-island",
-      "title": "무인도 생존",
-      "subtitle": "비행기가 추락했다",
-      "description": "100개 노드, 25개 결말",
-      "icon": "🏝️",
-      "accent": "#ffaa00"
-    },
-    {
-      "id": "haunted-house",
-      "title": "폐가 탈출",
-      "subtitle": "버려진 저택의 새벽",
-      "description": "동트기 전에 빠져나가야 한다",
-      "icon": "🕯️",
-      "accent": "#a78bfa"
-    },
-    {
-      "id": "zombie-city",
-      "title": "좀비 도시",
-      "subtitle": "감염은 하룻밤 사이에",
-      "description": "구조 거점까지 살아서",
-      "icon": "🧟",
-      "accent": "#ef4444"
-    },
-    {
-      "id": "spaceship",
-      "title": "우주선 표류",
-      "subtitle": "고요한 진공 속에서",
-      "description": "산소가 떨어지기 전에",
-      "icon": "🛰️",
-      "accent": "#22d3ee"
-    },
-    {
-      "id": "dungeon",
-      "title": "지하 던전",
-      "subtitle": "잊혀진 신전의 입구",
-      "description": "보물과 함정 사이",
-      "icon": "🗝️",
-      "accent": "#d4a017"
-    },
-    {
-      "id": "snow-mountain",
-      "title": "설산 조난",
-      "subtitle": "눈사태 이후",
-      "description": "베이스캠프까지 하강",
-      "icon": "🏔️",
-      "accent": "#93c5fd"
-    },
-    {
-      "id": "cyberpunk",
-      "title": "사이버 도시",
-      "subtitle": "네온이 모든 것을 비춘다",
-      "description": "타워 50층까지 잠입",
-      "icon": "🌃",
-      "accent": "#f472b6"
-    },
-    {
-      "id": "hotel-mystery",
-      "title": "외딴 호텔",
-      "subtitle": "투숙객이 사라졌다",
-      "description": "진실은 305호에",
-      "icon": "🏨",
-      "accent": "#dc2626"
-    },
-    {
-      "id": "deep-sea",
-      "title": "심해 잠수정",
-      "subtitle": "수심 4000m",
-      "description": "지상으로 돌아갈 수 있을까",
-      "icon": "🌊",
-      "accent": "#3b82f6"
-    },
-    {
-      "id": "time-traveler",
-      "title": "시간 여행자",
-      "subtitle": "1923년의 그림자",
-      "description": "역사를 바꾸지 않고 돌아가기",
-      "icon": "⏳",
-      "accent": "#eab308"
-    },
-    {
-      "id": "abandoned-train",
-      "title": "폐선된 열차",
-      "subtitle": "안개 속 마지막 객실",
-      "description": "22:14 전에 다음 역까지",
-      "icon": "🚂",
-      "accent": "#94a3b8"
-    },
-    {
-      "id": "zombie-village",
-      "title": "좀비 시골마을",
-      "subtitle": "할머니의 집",
-      "description": "트랙터와 산탄총",
-      "icon": "🌾",
-      "accent": "#65a30d"
-    },
-    {
-      "id": "storm-yacht",
-      "title": "폭풍우 요트",
-      "subtitle": "친구들은 의식을 잃었다",
-      "description": "등대 불빛까지",
-      "icon": "⛵",
-      "accent": "#0ea5e9"
-    },
-    {
-      "id": "lighthouse",
-      "title": "외딴 등대",
-      "subtitle": "전임자는 사라졌다",
-      "description": "동쪽 동굴의 비밀",
-      "icon": "🗼",
-      "accent": "#fbbf24"
-    },
-    {
-      "id": "asylum",
-      "title": "정신병원",
-      "subtitle": "환자가 아니었다",
-      "description": "가운을 입고 빠져나갈 수 있을까",
-      "icon": "🧠",
-      "accent": "#84cc16"
-    },
-    {
-      "id": "space-station",
-      "title": "우주 정거장",
-      "subtitle": "12명 중 깨어있는 한 명",
-      "description": "본부의 진짜 명령",
-      "icon": "🛸",
-      "accent": "#c4b5fd"
-    }
+    { "id": "desert-island", "title": "무인도 생존", "subtitle": "비행기가 추락했다", "description": "100개 노드, 25개 결말", "icon": "🏝️", "accent": "#ffaa00" },
+    { "id": "haunted-house", "title": "폐가 탈출", "subtitle": "버려진 저택의 새벽", "description": "동트기 전에 빠져나가야 한다", "icon": "🕯️", "accent": "#a78bfa" },
+    { "id": "zombie-city", "title": "좀비 도시", "subtitle": "감염은 하룻밤 사이에", "description": "구조 거점까지 살아서", "icon": "🧟", "accent": "#ef4444" },
+    { "id": "spaceship", "title": "우주선 표류", "subtitle": "고요한 진공 속에서", "description": "산소가 떨어지기 전에", "icon": "🛰️", "accent": "#22d3ee" },
+    { "id": "dungeon", "title": "지하 던전", "subtitle": "잊혀진 신전의 입구", "description": "보물과 함정 사이", "icon": "🗝️", "accent": "#d4a017" },
+    { "id": "snow-mountain", "title": "설산 조난", "subtitle": "눈사태 이후", "description": "베이스캠프까지 하강", "icon": "🏔️", "accent": "#93c5fd" },
+    { "id": "cyberpunk", "title": "사이버 도시", "subtitle": "네온이 모든 것을 비춘다", "description": "타워 50층까지 잠입", "icon": "🌃", "accent": "#f472b6" },
+    { "id": "hotel-mystery", "title": "외딴 호텔", "subtitle": "투숙객이 사라졌다", "description": "진실은 305호에", "icon": "🏨", "accent": "#dc2626" },
+    { "id": "deep-sea", "title": "심해 잠수정", "subtitle": "수심 4000m", "description": "지상으로 돌아갈 수 있을까", "icon": "🌊", "accent": "#3b82f6" },
+    { "id": "time-traveler", "title": "시간 여행자", "subtitle": "1923년의 그림자", "description": "역사를 바꾸지 않고 돌아가기", "icon": "⏳", "accent": "#eab308" },
+    { "id": "abandoned-train", "title": "폐선된 열차", "subtitle": "안개 속 마지막 객실", "description": "22:14 전에 다음 역까지", "icon": "🚂", "accent": "#94a3b8" },
+    { "id": "zombie-village", "title": "좀비 시골마을", "subtitle": "할머니의 집", "description": "트랙터와 산탄총", "icon": "🌾", "accent": "#65a30d" },
+    { "id": "storm-yacht", "title": "폭풍우 요트", "subtitle": "친구들은 의식을 잃었다", "description": "등대 불빛까지", "icon": "⛵", "accent": "#0ea5e9" },
+    { "id": "lighthouse", "title": "외딴 등대", "subtitle": "전임자는 사라졌다", "description": "동쪽 동굴의 비밀", "icon": "🗼", "accent": "#fbbf24" },
+    { "id": "asylum", "title": "정신병원", "subtitle": "환자가 아니었다", "description": "가운을 입고 빠져나갈 수 있을까", "icon": "🧠", "accent": "#84cc16" },
+    { "id": "space-station", "title": "우주 정거장", "subtitle": "12명 중 깨어있는 한 명", "description": "본부의 진짜 명령", "icon": "🛸", "accent": "#c4b5fd" },
+    { "id": "casino-heist", "title": "카지노 강도", "subtitle": "골든 미라주 22:00", "description": "VIP 룸 금고까지 6분", "icon": "🎰", "accent": "#f59e0b" },
+    { "id": "bank-robbery", "title": "은행 강도", "subtitle": "강남지점 10:14", "description": "시간 잠금 5분 vs 협상", "icon": "💰", "accent": "#10b981" },
+    { "id": "zombie-airplane", "title": "좀비 항공기", "subtitle": "인천발 LA행 6시간 차", "description": "조종실 vs 후방 봉쇄", "icon": "✈️", "accent": "#60a5fa" },
+    { "id": "abandoned-school", "title": "폐교", "subtitle": "30년 전 모교", "description": "사라진 동창과 4-2 교실", "icon": "🏫", "accent": "#71717a" },
+    { "id": "old-temple", "title": "옛 절", "subtitle": "지리산 청정암", "description": "종은 절대 멈추면 안 된다", "icon": "⛩️", "accent": "#dc2626" },
+    { "id": "burning-hotel", "title": "화재 호텔", "subtitle": "23층 새벽 3시", "description": "사다리차는 18층까지", "icon": "🔥", "accent": "#f97316" }
   ]
 }

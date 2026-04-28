@@ -1,0 +1,124 @@
+[
+  {
+    "nodeId": 1,
+    "text": "보잉 777, 인천발 LA행. 비행 6시간 차. 후방 화장실에서 한 승객이 동료 승무원의 목을 물었다. 비명, 그리고 또 한 명의 비명. 당신은 12B석에서 일어선다.",
+    "choices": [
+      { "label": "조종실로 — 기장에게 보고", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "후방 — 직접 막는다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "11A석 비상구 옆으로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "조종실 문을 두드린다. 부기장이 인터폰: \"좌석 벨트 매고 자리에. 9.11 이후 함부로 못 엽니다.\"",
+    "choices": [
+      { "label": "사무장 신분증을 빌리려 한다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "그래도 두드린다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "후방. 감염자가 셋으로 늘었다. 사무장이 카트를 방패로 쓰고 있다. 카트엔 와인 한 병, 음료수 통, 안전벨트 절단 가위.",
+    "choices": [
+      { "label": "절단 가위를 챙긴다", "nextNodeId": 7, "requiredItem": null, "grantItem": "가위" },
+      { "label": "와인 병을 무기로", "nextNodeId": 7, "requiredItem": null, "grantItem": "와인병" }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "비상구 옆 11A. 안내문: \"비행 중 절대 열지 말 것.\" 옆에 비상 산소 마스크와 사무장 호출 벨.",
+    "choices": [
+      { "label": "사무장을 호출", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
+      { "label": "마스크를 챙긴다", "nextNodeId": 9, "requiredItem": null, "grantItem": "산소마스크" }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "사무장은 후방에서 카트로 막고 있다. 도와주려면 후방으로 먼저.",
+    "choices": [
+      { "label": "후방으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "조종실 문은 안 열린다. 등 뒤에서 감염자 발걸음.",
+    "choices": [
+      { "label": "후방으로 도망", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "11A석으로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "사무장 옆에 선다. 함께 카트로 후방을 봉쇄.",
+    "choices": [
+      { "label": "사무장에게 신분증 부탁", "nextNodeId": 10, "requiredItem": null, "grantItem": "사무장ID" },
+      { "label": "여기서 끝까지 막는다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "사무장이 호출 알람을 통해 \"감염 객실. 비상구 절대 열지 마세요\" 방송. 어떤 승객이 패닉.",
+    "choices": [
+      { "label": "패닉 승객을 진정", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
+      { "label": "조종실 신분증을 받으러 후방으로", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "산소마스크 챙김. 만약을 대비.",
+    "choices": [
+      { "label": "후방으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "조종실로", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "사무장 신분증. 조종실 인터폰에서 \"앞에 누구냐\" — 신분증 인증.",
+    "choices": [
+      { "label": "조종실로", "nextNodeId": 13, "requiredItem": "사무장ID", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "끝까지 막는다. 카트가 부서질 즈음 김포공항 비상 착륙 방송.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "비상 착륙"
+  },
+  {
+    "nodeId": 12,
+    "text": "패닉 승객이 비상구 손잡이를 잡는다. 막아내지만, 한 명의 손목에 감염자의 이빨 자국이 생긴다.",
+    "choices": [
+      { "label": "감염 의심자 격리", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "조종실. 기장: \"제일 가까운 공항 김포 — 90분. 객실 봉쇄 유지하세요.\"",
+    "choices": [
+      { "label": "객실 봉쇄 유지", "nextNodeId": 15, "requiredItem": "가위", "grantItem": null },
+      { "label": "그냥 대기", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "감염 의심자를 화장실에 격리. 90분 후 김포공항 비상 착륙. 모든 승객 검역.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "조용한 격리"
+  },
+  {
+    "nodeId": 15,
+    "text": "가위로 후방 문 잠금장치를 잘라 영구 봉쇄. 90분 동안 어떤 감염자도 통과 못 한다. 김포 착륙.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "영구 봉쇄"
+  },
+  {
+    "nodeId": 16,
+    "text": "그냥 대기. 30분 뒤 카트가 무너지고 후방의 감염이 객실 전체로 퍼진다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "기다림의 대가"
+  }
+]
