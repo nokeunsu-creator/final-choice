@@ -59,7 +59,7 @@ export function EndingScreen({ onReturnToTitle, onRetryScenario }: Props) {
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        background: '#0a0a0a',
+        background: '#16171f',
         padding: '40px 24px 28px',
       }}
     >

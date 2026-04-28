@@ -36,7 +36,7 @@ export function GameScreen({ onExit }: Props) {
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        background: '#0a0a0a',
+        background: '#16171f',
       }}
     >
       <header

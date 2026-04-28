@@ -1,0 +1,116 @@
+[
+  {
+    "nodeId": 1,
+    "text": "외딴 섬 등대지기 인수인계. 전임자는 사흘 전부터 무전이 끊겼다. 보트에서 내리자 등대 위 깜빡임이 묘하게 불규칙하다.",
+    "choices": [
+      { "label": "등대 본체로 직행", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "관사를 먼저 본다", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "등대 1층. 계기판에 \"램프 OK / 시퀀스 OFF\" 표시. 누군가 시퀀스를 강제로 꺼놨다. 옆에 마스터키.",
+    "choices": [
+      { "label": "마스터키를 챙긴다", "nextNodeId": 4, "requiredItem": null, "grantItem": "마스터키" },
+      { "label": "그대로 위로", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "관사. 식탁 위 식어버린 식사. 책상엔 전임자의 일지. 마지막 페이지: \"섬 동쪽 동굴에서 무언가 올라온다. 아무에게도 말 못 했다.\"",
+    "choices": [
+      { "label": "일지를 챙긴다", "nextNodeId": 6, "requiredItem": null, "grantItem": "일지" },
+      { "label": "관사 뒷마당을 본다", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "마스터키 손에. 각 층의 잠긴 문을 열 수 있다.",
+    "choices": [
+      { "label": "등대 위층으로", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "지하 발전실로", "nextNodeId": 8, "requiredItem": "마스터키", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "등대 위층. 램프 자체는 멀쩡한데 시퀀스 컨트롤러가 분해되어 있다. 부품 하나가 사라짐.",
+    "choices": [
+      { "label": "지하 발전실로", "nextNodeId": 8, "requiredItem": "마스터키", "grantItem": null },
+      { "label": "관사로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "부품 없이 강제 가동 시도", "nextNodeId": 15, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "일지를 읽고 등대로 향하자 등대 외벽에 긴 손톱 자국이 빼곡하다. 사람의 것이 아니다.",
+    "choices": [
+      { "label": "등대로 들어간다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "동쪽 동굴을 확인", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "관사 뒷마당. 사라진 컨트롤러 부품과 신호탄 한 발이 흙에 묻혀 있다.",
+    "choices": [
+      { "label": "둘 다 챙긴다", "nextNodeId": 10, "requiredItem": null, "grantItem": "컨트롤러부품" }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "지하 발전실. 발전기는 정상. 옆 벽에 \"부품은 동쪽 동굴 안 바위 아래\" 손글씨.",
+    "choices": [
+      { "label": "동쪽 동굴로", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
+      { "label": "관사 뒷마당으로", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "동쪽 동굴. 입구는 좁고 안쪽에서 푸르스름한 빛. 가까이 갈수록 한기.",
+    "choices": [
+      { "label": "들어간다", "nextNodeId": 11, "requiredItem": null, "grantItem": null },
+      { "label": "신호탄을 동굴 안에 던진다", "nextNodeId": 12, "requiredItem": "신호탄", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "부품과 신호탄. 등대 시퀀스를 살릴 수 있다.",
+    "choices": [
+      { "label": "등대 위층으로 — 시퀀스 복구", "nextNodeId": 13, "requiredItem": "컨트롤러부품", "grantItem": "신호탄" }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "동굴 깊은 곳. 푸른 빛은 인광. 그 너머에 형체. 인간이 아닌, 그러나 인간을 흉내 내는 무언가.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "동굴이 부른 자"
+  },
+  {
+    "nodeId": 12,
+    "text": "신호탄 폭발. 동굴 안의 무언가가 비명을 지르며 타들어간다. 부품이 입구 모래 속에 모습을 드러낸다.",
+    "choices": [
+      { "label": "부품을 챙긴다", "nextNodeId": 13, "requiredItem": null, "grantItem": "컨트롤러부품" }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "등대 위층. 부품을 끼우자 시퀀스가 정상으로 돌아온다. 1초 5섬광.",
+    "choices": [
+      { "label": "정상 시퀀스로 가동", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "정상화된 등대 빛이 섬 전체를 비춘다. 동쪽 동굴 입구가 무너져 막힌다. 뭍이 다시 안전해진다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "다시 도는 빛"
+  },
+  {
+    "nodeId": 15,
+    "text": "부품 없이 등대를 가동하려다 회로 단락. 폭발. 외딴 섬 위로 검은 연기.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "검은 연기"
+  }
+]

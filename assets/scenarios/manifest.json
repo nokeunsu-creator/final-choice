@@ -79,6 +79,54 @@
       "description": "역사를 바꾸지 않고 돌아가기",
       "icon": "⏳",
       "accent": "#eab308"
+    },
+    {
+      "id": "abandoned-train",
+      "title": "폐선된 열차",
+      "subtitle": "안개 속 마지막 객실",
+      "description": "22:14 전에 다음 역까지",
+      "icon": "🚂",
+      "accent": "#94a3b8"
+    },
+    {
+      "id": "zombie-village",
+      "title": "좀비 시골마을",
+      "subtitle": "할머니의 집",
+      "description": "트랙터와 산탄총",
+      "icon": "🌾",
+      "accent": "#65a30d"
+    },
+    {
+      "id": "storm-yacht",
+      "title": "폭풍우 요트",
+      "subtitle": "친구들은 의식을 잃었다",
+      "description": "등대 불빛까지",
+      "icon": "⛵",
+      "accent": "#0ea5e9"
+    },
+    {
+      "id": "lighthouse",
+      "title": "외딴 등대",
+      "subtitle": "전임자는 사라졌다",
+      "description": "동쪽 동굴의 비밀",
+      "icon": "🗼",
+      "accent": "#fbbf24"
+    },
+    {
+      "id": "asylum",
+      "title": "정신병원",
+      "subtitle": "환자가 아니었다",
+      "description": "가운을 입고 빠져나갈 수 있을까",
+      "icon": "🧠",
+      "accent": "#84cc16"
+    },
+    {
+      "id": "space-station",
+      "title": "우주 정거장",
+      "subtitle": "12명 중 깨어있는 한 명",
+      "description": "본부의 진짜 명령",
+      "icon": "🛸",
+      "accent": "#c4b5fd"
     }
   ]
 }

@@ -4,9 +4,10 @@ import type { ScenarioMeta } from '../data/types';
 
 interface Props {
   onSelectScenario: (scenarioId: string) => void;
+  onBack: () => void;
 }
 
-export function TitleScreen({ onSelectScenario }: Props) {
+export function TitleScreen({ onSelectScenario, onBack }: Props) {
   const { save } = useGame();
 
   return (
@@ -15,30 +16,49 @@ export function TitleScreen({ onSelectScenario }: Props) {
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        background: '#0a0a0a',
-        padding: '40px 20px 24px',
+        background: '#16171f',
+        padding: '20px 20px 24px',
       }}
     >
-      <header style={{ textAlign: 'center', marginBottom: 32 }}>
-        <div style={{ fontSize: 11, letterSpacing: 6, color: '#666', marginBottom: 10 }}>
-          F I N A L C H O I C E
-        </div>
-        <h1
+      <header
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 12,
+          marginBottom: 20,
+          maxWidth: 720,
+          width: '100%',
+          margin: '0 auto 20px',
+        }}
+      >
+        <button
+          onClick={onBack}
           style={{
-            fontSize: 28,
-            color: '#ffaa00',
-            margin: 0,
-            letterSpacing: 1.5,
+            background: 'transparent',
+            border: 'none',
+            color: '#a8acc1',
+            fontSize: 13,
+            padding: '6px 8px',
+            cursor: 'pointer',
+            fontFamily: 'inherit',
           }}
         >
-          어떤 이야기를 살아낼까
-        </h1>
-        <p style={{ color: '#888', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
-          10개의 시나리오. 당신의 선택이 결말을 만든다.
-        </p>
+          ← 메인
+        </button>
+        <h2
+          style={{
+            margin: 0,
+            color: '#e8e8e8',
+            fontSize: 17,
+            fontWeight: 600,
+            letterSpacing: 0.5,
+          }}
+        >
+          이야기 고르기
+        </h2>
       </header>
 
-      <main style={{ display: 'grid', gap: 12, maxWidth: 720, width: '100%', margin: '0 auto' }}>
+      <main style={{ display: 'grid', gap: 12, maxWidth: 720, width: '100%', margin: '0 auto', flex: 1 }}>
         {SCENARIOS.map((scenario) => (
           <ScenarioCard
             key={scenario.id}
@@ -49,7 +69,7 @@ export function TitleScreen({ onSelectScenario }: Props) {
         ))}
       </main>
 
-      <footer style={{ textAlign: 'center', color: '#444', fontSize: 11, marginTop: 32 }}>
+      <footer style={{ textAlign: 'center', color: '#5a5d70', fontSize: 11, marginTop: 24 }}>
         FinalChoice · 텍스트 기반 어드벤처
       </footer>
     </div>
@@ -77,38 +97,51 @@ function ScenarioCard({ scenario, state, onClick }: CardProps) {
         width: '100%',
         textAlign: 'left',
         padding: '16px 18px',
-        background: '#111',
+        background: '#1f2030',
         color: '#e8e8e8',
-        border: '1px solid #222',
+        border: '1px solid #2a2c3a',
         borderLeft: `4px solid ${scenario.accent}`,
-        borderRadius: 8,
+        borderRadius: 10,
         fontFamily: 'inherit',
         cursor: 'pointer',
-        transition: 'background 0.15s, transform 0.06s',
+        transition: 'background 0.15s, transform 0.06s, border-color 0.15s',
       }}
-      onMouseEnter={(e) => (e.currentTarget.style.background = '#161616')}
-      onMouseLeave={(e) => (e.currentTarget.style.background = '#111')}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.background = '#262739';
+        e.currentTarget.style.borderColor = '#383b4d';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.background = '#1f2030';
+        e.currentTarget.style.borderColor = '#2a2c3a';
+      }}
       onMouseDown={(e) => (e.currentTarget.style.transform = 'scale(0.99)')}
       onMouseUp={(e) => (e.currentTarget.style.transform = 'scale(1)')}
     >
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        <div style={{ fontSize: 28, lineHeight: 1 }}>{scenario.icon}</div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+        <div style={{ fontSize: 30, lineHeight: 1 }}>{scenario.icon}</div>
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}>
-            <span style={{ fontSize: 17, fontWeight: 700, color: scenario.accent, letterSpacing: 0.5 }}>
+            <span
+              style={{
+                fontSize: 17,
+                fontWeight: 700,
+                color: scenario.accent,
+                letterSpacing: 0.5,
+              }}
+            >
               {scenario.title}
             </span>
             {inProgress && (
               <span style={{ fontSize: 10, color: '#ffaa00', letterSpacing: 1 }}>· 진행 중</span>
             )}
           </div>
-          <div style={{ fontSize: 12, color: '#888', marginTop: 2 }}>{scenario.subtitle}</div>
-          <div style={{ fontSize: 11, color: '#666', marginTop: 8 }}>
+          <div style={{ fontSize: 12, color: '#a8acc1', marginTop: 2 }}>{scenario.subtitle}</div>
+          <div style={{ fontSize: 11, color: '#7a7e92', marginTop: 8 }}>
             {totalNodes}개 노드 · {totalEndings}개 결말 · 달성 {cleared}/{totalEndings}
             {visited > 1 && ` · 방문 ${visited}`}
           </div>
         </div>
-        <div style={{ color: '#444', fontSize: 18 }}>›</div>
+        <div style={{ color: '#5a5d70', fontSize: 18 }}>›</div>
       </div>
     </button>
   );

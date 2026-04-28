@@ -1,0 +1,126 @@
+[
+  {
+    "nodeId": 1,
+    "text": "외할머니 댁. 강원도 산골 작은 마을. 도착했을 땐 이미 마을 전체가 조용했다. 너무 조용했다.",
+    "choices": [
+      { "label": "할머니 집으로 직행", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
+      { "label": "마을 회관을 본다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
+      { "label": "차에 그대로 남는다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "할머니 집. 마당의 개가 새빨간 눈으로 컹컹. 뒷문이 열려 있다.",
+    "choices": [
+      { "label": "뒷문으로 들어간다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "헛간으로 돌아간다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "마을 회관. 무전기와 산탄총. 그리고 핏자국이 회관 뒤편으로 길게.",
+    "choices": [
+      { "label": "산탄총을 챙긴다", "nextNodeId": 7, "requiredItem": null, "grantItem": "산탄총" },
+      { "label": "무전기를 챙긴다", "nextNodeId": 7, "requiredItem": null, "grantItem": "무전기" }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "차 안. 라디오에서 단속적인 정부 발표. \"산간 지역 주민은 즉시 대피하시기 바랍니다.\" 휘발유 게이지가 거의 비어있다.",
+    "choices": [
+      { "label": "그래도 차를 돌려 도시로", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
+      { "label": "내려서 마을 회관으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "할머니 집 안. 할머니는 부엌 한가운데, 등을 보이고 서 있다. 천천히 돌아본다 — 눈이 새빨갛다.",
+    "choices": [
+      { "label": "도망친다", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
+      { "label": "산탄총으로 막아낸다", "nextNodeId": 10, "requiredItem": "산탄총", "grantItem": null },
+      { "label": "끌어안는다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "헛간. 트랙터 한 대, 휘발유 한 통, 그리고 할아버지의 낫.",
+    "choices": [
+      { "label": "낫을 챙긴다", "nextNodeId": 12, "requiredItem": null, "grantItem": "낫" },
+      { "label": "휘발유를 챙긴다", "nextNodeId": 12, "requiredItem": null, "grantItem": "휘발유" }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "회관을 빠져나오자 마을 입구 쪽에서 무리. 다섯 명. 모두 새빨간 눈.",
+    "choices": [
+      { "label": "산탄총으로 길을 트른다", "nextNodeId": 13, "requiredItem": "산탄총", "grantItem": null },
+      { "label": "무전기로 도움 요청", "nextNodeId": 14, "requiredItem": "무전기", "grantItem": null },
+      { "label": "할머니 집으로 달린다", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "도시로 가는 길에 휘발유가 동난다. 한복판에서 차가 멈추고, 어둠 속에서 수십 개의 발걸음.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "휘발유의 끝"
+  },
+  {
+    "nodeId": 9,
+    "text": "도망. 헛간 쪽으로. 거기 트랙터가 있다.",
+    "choices": [
+      { "label": "트랙터로 마을을 빠져나간다", "nextNodeId": 15, "requiredItem": "휘발유", "grantItem": null },
+      { "label": "낫으로 맞선다", "nextNodeId": 13, "requiredItem": "낫", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "산탄총 한 발. 그 무엇이었던 것이 부엌 바닥에 쓰러진다. 당신은 한참을 울었다. 그리고 마을을 빠져나간다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "할머니의 마지막"
+  },
+  {
+    "nodeId": 11,
+    "text": "끌어안은 그 순간, 할머니의 입이 당신의 어깨에 닿는다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "감염된 포옹"
+  },
+  {
+    "nodeId": 12,
+    "text": "장비를 갖췄다. 다음 행동.",
+    "choices": [
+      { "label": "할머니 집으로", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
+      { "label": "회관으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "한 명, 두 명. 그 너머에 또 더. 끝없이 다가오지만 길은 트인다. 트랙터 키를 잡는다.",
+    "choices": [
+      { "label": "트랙터로 마을을 빠져나간다", "nextNodeId": 15, "requiredItem": "휘발유", "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "무전: \"외할머니 댁이세요? 도시 외곽 검문소에서 헬기 보냅니다. 마을 회관 옥상으로.\"",
+    "choices": [
+      { "label": "옥상으로 올라간다", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "트랙터 굉음. 무리를 가르며 마을을 빠져나간다. 도시 외곽 검문소에서 군인들이 손짓한다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "할아버지의 트랙터"
+  },
+  {
+    "nodeId": 16,
+    "text": "옥상. 십 분 뒤 헬기 회전풍. 줄사다리가 내려온다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "회관 옥상"
+  }
+]

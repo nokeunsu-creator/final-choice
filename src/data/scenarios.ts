@@ -9,6 +9,12 @@ import cyberpunkRaw from '../../assets/scenarios/cyberpunk.json';
 import hotelMysteryRaw from '../../assets/scenarios/hotel-mystery.json';
 import deepSeaRaw from '../../assets/scenarios/deep-sea.json';
 import timeTravelerRaw from '../../assets/scenarios/time-traveler.json';
+import abandonedTrainRaw from '../../assets/scenarios/abandoned-train.json';
+import zombieVillageRaw from '../../assets/scenarios/zombie-village.json';
+import stormYachtRaw from '../../assets/scenarios/storm-yacht.json';
+import lighthouseRaw from '../../assets/scenarios/lighthouse.json';
+import asylumRaw from '../../assets/scenarios/asylum.json';
+import spaceStationRaw from '../../assets/scenarios/space-station.json';
 import type { ScenarioMeta, StoryNode } from './types';
 
 const manifest = manifestRaw as { scenarios: ScenarioMeta[] };
@@ -24,6 +30,12 @@ const DATA: Record<string, StoryNode[]> = {
   'hotel-mystery': hotelMysteryRaw as StoryNode[],
   'deep-sea': deepSeaRaw as StoryNode[],
   'time-traveler': timeTravelerRaw as StoryNode[],
+  'abandoned-train': abandonedTrainRaw as StoryNode[],
+  'zombie-village': zombieVillageRaw as StoryNode[],
+  'storm-yacht': stormYachtRaw as StoryNode[],
+  lighthouse: lighthouseRaw as StoryNode[],
+  asylum: asylumRaw as StoryNode[],
+  'space-station': spaceStationRaw as StoryNode[],
 };
 
 const NODE_INDEX: Record<string, Map<number, StoryNode>> = Object.fromEntries(
