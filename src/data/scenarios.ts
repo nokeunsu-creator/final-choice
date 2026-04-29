@@ -176,6 +176,10 @@ export function getNode(scenarioId: string, nodeId: number): StoryNode | undefin
   return NODE_INDEX[scenarioId]?.get(nodeId);
 }
 
+export function getAllNodes(scenarioId: string): StoryNode[] {
+  return DATA[scenarioId] ?? [];
+}
+
 export function isEnding(node: StoryNode | undefined): boolean {
   if (!node) return false;
   return node.choices.length === 0;

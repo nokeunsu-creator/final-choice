@@ -31,7 +31,7 @@ export function TitleScreen({ onSelectScenario, onBack }: Props) {
         display: 'flex',
         flexDirection: 'column',
         background: '#16171f',
-        padding: '20px 20px 24px',
+        padding: 'clamp(14px, 4vw, 20px) clamp(14px, 4vw, 20px) 24px',
       }}
     >
       <header

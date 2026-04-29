@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useGame } from '../state/GameContext';
-import { getNode } from '../data/scenarios';
+import { getAllNodes, getNode } from '../data/scenarios';
 import { getEndingCount, getScenario } from '../data/scenariosMeta';
 import { scoreArchetypes } from '../data/archetypes';
 import { showInterstitialAd } from '../ads/interstitial';
@@ -10,6 +10,7 @@ import { shareEnding } from '../utils/share';
 interface Props {
   onReturnToTitle: () => void;
   onRetryScenario: () => void;
+  onShowMap: () => void;
 }
 
 const COLORS = {
@@ -24,7 +25,7 @@ const LABELS = {
   neutral: '결말 — 다른 길',
 };
 
-export function EndingScreen({ onReturnToTitle, onRetryScenario }: Props) {
+export function EndingScreen({ onReturnToTitle, onRetryScenario, onShowMap }: Props) {
   const { save, current, resetCurrentScenario, exitToTitle } = useGame();
   const scenarioId = save.scenarioId;
   const scenario = scenarioId ? getScenario(scenarioId) : undefined;
@@ -37,6 +38,31 @@ export function EndingScreen({ onReturnToTitle, onRetryScenario }: Props) {
   const title = node?.endingTitle ?? '???';
   const totalEndings = scenarioId ? getEndingCount(scenarioId) : 0;
   const clearedCount = current?.endingsCleared.length ?? 0;
+  const remainingEndings = Math.max(0, totalEndings - clearedCount);
+
+  // 분기 힌트: 이 엔딩의 부모 노드에서 안 가본 다른 선택지들
+  const untakenSiblings = useMemo<string[]>(() => {
+    if (!scenarioId || !node || !current) return [];
+    const visited = current.visitedNodes;
+    if (visited.length < 2) return [];
+    const parentId = visited[visited.length - 2];
+    const parent = getNode(scenarioId, parentId);
+    if (!parent) return [];
+    return parent.choices
+      .filter((c) => c.nextNodeId !== node.nodeId)
+      .map((c) => c.label);
+  }, [scenarioId, node, current]);
+
+  // 미발견 결말 제목 (스포일러 — 최대 2개만 살짝 노출)
+  const unseenEndingTitles = useMemo<string[]>(() => {
+    if (!scenarioId || !current) return [];
+    const allNodes = getAllNodes(scenarioId);
+    const cleared = new Set(current.endingsCleared);
+    return allNodes
+      .filter((n) => n.choices.length === 0 && n.endingTitle && !cleared.has(n.endingTitle))
+      .map((n) => n.endingTitle!)
+      .slice(0, 2);
+  }, [scenarioId, current]);
 
   const handleReturn = async () => {
     if (loading) return;
@@ -86,7 +112,7 @@ export function EndingScreen({ onReturnToTitle, onRetryScenario }: Props) {
         display: 'flex',
         flexDirection: 'column',
         background: '#16171f',
-        padding: '40px 24px 28px',
+        padding: '40px clamp(14px, 5vw, 24px) 28px',
       }}
     >
       <div style={{ marginTop: '8vh', textAlign: 'center', flex: 1 }}>
@@ -101,7 +127,7 @@ export function EndingScreen({ onReturnToTitle, onRetryScenario }: Props) {
         <h2
           style={{
             color,
-            fontSize: 26,
+            fontSize: 'clamp(22px, 6vw, 26px)',
             margin: '20px 0 8px',
             letterSpacing: 1,
           }}
@@ -127,6 +153,66 @@ export function EndingScreen({ onReturnToTitle, onRetryScenario }: Props) {
           이 시나리오 결말: {clearedCount} / {totalEndings}
         </div>
 
+        {/* 분기 힌트 */}
+        {(untakenSiblings.length > 0 || remainingEndings > 0) && (
+          <div
+            style={{
+              maxWidth: 560,
+              margin: '24px auto 0',
+              padding: '14px 16px',
+              background: '#1a1b25',
+              border: '1px solid #2a2c3a',
+              borderRadius: 8,
+              textAlign: 'left',
+            }}
+          >
+            <div
+              style={{
+                fontSize: 10,
+                letterSpacing: 3,
+                color: '#7a7e92',
+                marginBottom: 10,
+              }}
+            >
+              💡 다음에 시도해볼 길
+            </div>
+            {untakenSiblings.length > 0 && (
+              <div style={{ marginBottom: unseenEndingTitles.length > 0 ? 12 : 0 }}>
+                <div style={{ fontSize: 11, color: '#a8acc1', marginBottom: 6 }}>
+                  마지막 갈림길에서 안 가본 선택:
+                </div>
+                {untakenSiblings.map((label, i) => (
+                  <div
+                    key={i}
+                    style={{
+                      fontSize: 13,
+                      color: '#e8e8e8',
+                      padding: '4px 0',
+                      borderLeft: '2px solid #3a3d50',
+                      paddingLeft: 10,
+                      marginBottom: 4,
+                    }}
+                  >
+                    {label}
+                  </div>
+                ))}
+              </div>
+            )}
+            {remainingEndings > 0 && (
+              <div style={{ fontSize: 11, color: '#a8acc1' }}>
+                아직 발견하지 않은 결말{' '}
+                <span style={{ color: '#ffaa00', fontWeight: 600 }}>{remainingEndings}개</span>
+                {unseenEndingTitles.length > 0 && (
+                  <span style={{ color: '#5a5d70' }}>
+                    {' '}
+                    — 예: {unseenEndingTitles.map((t) => `"${t.charAt(0)}…"`).join(', ')}
+                  </span>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+
         {/* 성격 결과 */}
         <div style={{ maxWidth: 560, margin: '32px auto 0', textAlign: 'left' }}>
           <PersonalityResult
@@ -144,6 +230,13 @@ export function EndingScreen({ onReturnToTitle, onRetryScenario }: Props) {
           style={endingButtonStyle('#a8acc1', loading)}
         >
           📤 공유하기
+        </button>
+        <button
+          onClick={onShowMap}
+          disabled={loading}
+          style={endingButtonStyle('#a8acc1', loading)}
+        >
+          🗺️ 분기 지도 보기
         </button>
         <button
           onClick={handleRetry}

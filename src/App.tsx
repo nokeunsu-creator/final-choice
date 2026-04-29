@@ -2,11 +2,12 @@ import { lazy, Suspense, useState } from 'react';
 import { GameProvider, useGame } from './state/GameContext';
 import { MainPage } from './screens/MainPage';
 import { TitleScreen } from './screens/TitleScreen';
+import { StatsScreen } from './screens/StatsScreen';
 
-// 시나리오 데이터(JSON 70개)를 PlayScreen 모듈에 묶어 별도 청크로 분리
+// 시나리오 데이터(JSON 79개)를 PlayScreen 모듈에 묶어 별도 청크로 분리
 const PlayScreen = lazy(() => import('./screens/PlayScreen'));
 
-type Screen = 'main' | 'select' | 'play';
+type Screen = 'main' | 'select' | 'play' | 'stats';
 
 export function App() {
   return (
@@ -28,8 +29,12 @@ function Router() {
           selectScenario(id);
           setScreen('play');
         }}
+        onShowStats={() => setScreen('stats')}
       />
     );
+  }
+  if (screen === 'stats') {
+    return <StatsScreen onBack={() => setScreen('main')} />;
   }
   if (screen === 'select' || !save.scenarioId) {
     return (

@@ -8,9 +8,10 @@ import { Inventory } from '../components/Inventory';
 
 interface Props {
   onExit: () => void;
+  onShowMap: () => void;
 }
 
-export function GameScreen({ onExit }: Props) {
+export function GameScreen({ onExit, onShowMap }: Props) {
   const { save, current, goTo } = useGame();
   const scenarioId = save.scenarioId;
   const node = scenarioId && current ? getNode(scenarioId, current.currentNodeId) : undefined;
@@ -72,8 +73,25 @@ export function GameScreen({ onExit }: Props) {
           >
             ← 시나리오 선택
           </button>
-          <span style={{ fontSize: 11, color: '#666', letterSpacing: 1 }}>
-            {scenario.icon} {scenario.title}
+          <span style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <button
+              onClick={onShowMap}
+              style={{
+                background: 'transparent',
+                border: 'none',
+                color: '#a8acc1',
+                fontSize: 13,
+                padding: 0,
+                cursor: 'pointer',
+                fontFamily: 'inherit',
+              }}
+              title="분기 지도 보기"
+            >
+              🗺️
+            </button>
+            <span style={{ fontSize: 11, color: '#666', letterSpacing: 1 }}>
+              {scenario.icon} {scenario.title}
+            </span>
           </span>
         </div>
         <div
@@ -97,7 +115,7 @@ export function GameScreen({ onExit }: Props) {
       <main
         className="fade-in"
         style={{
-          padding: '24px 20px 12px',
+          padding: 'clamp(18px, 4vw, 24px) clamp(14px, 4vw, 20px) 12px',
           maxWidth: 720,
           width: '100%',
           margin: '0 auto',
@@ -114,7 +132,7 @@ export function GameScreen({ onExit }: Props) {
       {!isEnding(node) && (
         <footer
           style={{
-            padding: '16px 20px 28px',
+            padding: '16px clamp(14px, 4vw, 20px) 28px',
             maxWidth: 720,
             width: '100%',
             margin: '0 auto',

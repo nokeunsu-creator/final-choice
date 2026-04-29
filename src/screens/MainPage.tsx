@@ -9,9 +9,10 @@ import type { ScenarioMeta } from '../data/types';
 interface Props {
   onStart: () => void;
   onSelectScenario: (scenarioId: string) => void;
+  onShowStats: () => void;
 }
 
-export function MainPage({ onStart, onSelectScenario }: Props) {
+export function MainPage({ onStart, onSelectScenario, onShowStats }: Props) {
   const { save } = useGame();
 
   // 통계
@@ -94,7 +95,7 @@ export function MainPage({ onStart, onSelectScenario }: Props) {
         flexDirection: 'column',
         background:
           'radial-gradient(ellipse at top, #1f2030 0%, #16171f 55%, #0f1018 100%)',
-        padding: '0 24px 32px',
+        padding: '0 clamp(14px, 5vw, 24px) 32px',
       }}
     >
       <main
@@ -109,13 +110,19 @@ export function MainPage({ onStart, onSelectScenario }: Props) {
           paddingTop: '8vh',
         }}
       >
-        <div style={{ fontSize: 11, letterSpacing: 8, color: '#7a7e92' }}>
+        <div
+          style={{
+            fontSize: 'clamp(9px, 2.6vw, 11px)',
+            letterSpacing: 'clamp(3px, 2vw, 8px)',
+            color: '#7a7e92',
+          }}
+        >
           F I N A L C H O I C E
         </div>
 
         <h1
           style={{
-            fontSize: 42,
+            fontSize: 'clamp(32px, 10vw, 42px)',
             fontWeight: 800,
             color: '#ffaa00',
             margin: 0,
@@ -128,7 +135,7 @@ export function MainPage({ onStart, onSelectScenario }: Props) {
         </h1>
 
         <p style={{ color: '#a8acc1', fontSize: 13, maxWidth: 360, lineHeight: 1.7, margin: 0 }}>
-          70개의 이야기, 끝없는 분기.
+          79개의 이야기, 끝없는 분기.
           <br />
           당신의 선택만이 결말을 만든다.
         </p>
@@ -136,7 +143,7 @@ export function MainPage({ onStart, onSelectScenario }: Props) {
         <div
           style={{
             display: 'flex',
-            gap: 24,
+            gap: 'clamp(14px, 5vw, 24px)',
             marginTop: 4,
             color: '#6c6f82',
             fontSize: 12,
@@ -332,12 +339,29 @@ export function MainPage({ onStart, onSelectScenario }: Props) {
           이야기 고르기 ›
         </button>
 
+        <button
+          onClick={onShowStats}
+          style={{
+            width: '100%',
+            padding: '12px',
+            background: 'transparent',
+            color: '#a8acc1',
+            border: '1px solid #2a2c3a',
+            borderRadius: 8,
+            fontSize: 13,
+            cursor: 'pointer',
+            fontFamily: 'inherit',
+          }}
+        >
+          📊 상세 통계
+        </button>
+
         <div
           style={{
             textAlign: 'center',
             color: '#5a5d70',
             fontSize: 10,
-            marginTop: 12,
+            marginTop: 4,
             letterSpacing: 0.5,
           }}
         >

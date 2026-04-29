@@ -15,6 +15,16 @@ html, body, #root {
     system-ui, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
     'Segoe UI', sans-serif;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+/* 좁은 화면(320px 등): 헤더 텍스트 줄바꿈 허용 */
+@media (max-width: 360px) {
+  button, h1, h2, h3 {
+    word-break: keep-all;
+  }
 }
 
 button {
