@@ -1,6 +1,6 @@
 import { CATEGORY_META, CATEGORY_ORDER, type ScenarioCategory } from './types';
 import type { SaveState } from '../state/GameContext';
-import { SCENARIOS, getEndingCount } from './scenarios';
+import { SCENARIOS, getEndingCount } from './scenariosMeta';
 
 export interface Achievement {
   id: string;

@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { GameProvider, useGame } from './state/GameContext';
-import { getNode, isEnding } from './data/scenarios';
 import { MainPage } from './screens/MainPage';
 import { TitleScreen } from './screens/TitleScreen';
-import { GameScreen } from './screens/GameScreen';
-import { EndingScreen } from './screens/EndingScreen';
+
+// 시나리오 데이터(JSON 70개)를 PlayScreen 모듈에 묶어 별도 청크로 분리
+const PlayScreen = lazy(() => import('./screens/PlayScreen'));
 
 type Screen = 'main' | 'select' | 'play';
 
@@ -18,17 +18,7 @@ export function App() {
 
 function Router() {
   const [screen, setScreen] = useState<Screen>('main');
-  const { save, current, selectScenario, recordEnding } = useGame();
-  const node =
-    save.scenarioId && current ? getNode(save.scenarioId, current.currentNodeId) : undefined;
-  const onEnding = !!node && isEnding(node);
-
-  // 엔딩 노드 도달 즉시 결말 기록
-  useEffect(() => {
-    if (onEnding && node?.endingTitle) {
-      recordEnding(node.endingTitle);
-    }
-  }, [onEnding, node, recordEnding]);
+  const { save, selectScenario } = useGame();
 
   if (screen === 'main') {
     return (
@@ -52,15 +42,30 @@ function Router() {
       />
     );
   }
-  if (onEnding) {
-    return (
-      <EndingScreen
-        onReturnToTitle={() => setScreen('select')}
+  return (
+    <Suspense fallback={<LoadingFallback />}>
+      <PlayScreen
+        onExitToSelect={() => setScreen('select')}
         onRetryScenario={() => {
-          /* stay on play screen, state already reset */
+          /* stay on play */
         }}
       />
-    );
-  }
-  return <GameScreen onExit={() => setScreen('select')} />;
+    </Suspense>
+  );
+}
+
+function LoadingFallback() {
+  return (
+    <div
+      style={{
+        minHeight: '100vh',
+        background: '#16171f',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <div style={{ color: '#7a7e92', fontSize: 11, letterSpacing: 6 }}>L O A D I N G</div>
+    </div>
+  );
 }

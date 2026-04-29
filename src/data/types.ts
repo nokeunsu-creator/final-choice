@@ -74,6 +74,9 @@ export interface ScenarioMeta {
   icon: string;
   accent: string;
   category: ScenarioCategory;
+  /** 빌드 스크립트로 manifest에 주입 — TitleScreen에서 데이터 로드 없이 표시 */
+  nodeCount: number;
+  endingCount: number;
 }
 
 export type TraitCounts = Partial<Record<Trait, number>>;

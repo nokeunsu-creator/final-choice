@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useGame } from '../state/GameContext';
-import { getEndingCount, getNode, getScenario } from '../data/scenarios';
+import { getNode } from '../data/scenarios';
+import { getEndingCount, getScenario } from '../data/scenariosMeta';
 import { scoreArchetypes } from '../data/archetypes';
 import { showInterstitialAd } from '../ads/interstitial';
 import { PersonalityResult } from '../components/PersonalityResult';

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useGame } from '../state/GameContext';
-import { SCENARIOS, getEndingCount } from '../data/scenarios';
+import { SCENARIOS, getEndingCount } from '../data/scenariosMeta';
 import { ARCHETYPE_CATEGORIES, aggregateCounts, scoreArchetypes } from '../data/archetypes';
 import { ACHIEVEMENTS, evaluateAchievements, unlockedCount } from '../data/achievements';
 import { PersonalityResult } from '../components/PersonalityResult';

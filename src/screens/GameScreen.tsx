@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useGame } from '../state/GameContext';
-import { getNode, getNodeCount, getScenario, isEnding } from '../data/scenarios';
+import { getNode, isEnding } from '../data/scenarios';
+import { getNodeCount, getScenario } from '../data/scenariosMeta';
 import { TypewriterText } from '../components/TypewriterText';
 import { ChoiceButton } from '../components/ChoiceButton';
 import { Inventory } from '../components/Inventory';

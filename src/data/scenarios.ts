@@ -1,4 +1,10 @@
-import manifestRaw from '../../assets/scenarios/manifest.json';
+/**
+ * 무거운 시나리오 데이터 모듈 — 모든 70개 JSON을 정적 import.
+ * 이 모듈은 GameScreen / EndingScreen에서만 사용. App.tsx의 React.lazy로
+ * 분리되어 메인 페이지/시나리오 선택 화면에서는 로드되지 않는다.
+ *
+ * 메타 정보(개수/제목/카테고리 등)만 필요하면 `scenariosMeta.ts` 사용.
+ */
 import desertIslandRaw from '../../assets/scenarios/desert-island.json';
 import hauntedHouseRaw from '../../assets/scenarios/haunted-house.json';
 import zombieCityRaw from '../../assets/scenarios/zombie-city.json';
@@ -69,9 +75,7 @@ import onepieceImpeldownRaw from '../../assets/scenarios/onepiece-impeldown.json
 import onepieceFishmanRaw from '../../assets/scenarios/onepiece-fishman.json';
 import onepieceWanoRaw from '../../assets/scenarios/onepiece-wano.json';
 import onepieceLaftelRaw from '../../assets/scenarios/onepiece-laftel.json';
-import type { ScenarioMeta, StoryNode } from './types';
-
-const manifest = manifestRaw as { scenarios: ScenarioMeta[] };
+import type { StoryNode } from './types';
 
 const DATA: Record<string, StoryNode[]> = {
   'desert-island': desertIslandRaw as StoryNode[],
@@ -150,12 +154,6 @@ const NODE_INDEX: Record<string, Map<number, StoryNode>> = Object.fromEntries(
   Object.entries(DATA).map(([id, nodes]) => [id, new Map(nodes.map((n) => [n.nodeId, n]))]),
 );
 
-export const SCENARIOS: ScenarioMeta[] = manifest.scenarios;
-
-export function getScenario(id: string): ScenarioMeta | undefined {
-  return SCENARIOS.find((s) => s.id === id);
-}
-
 export function getNode(scenarioId: string, nodeId: number): StoryNode | undefined {
   return NODE_INDEX[scenarioId]?.get(nodeId);
 }
@@ -163,12 +161,4 @@ export function getNode(scenarioId: string, nodeId: number): StoryNode | undefin
 export function isEnding(node: StoryNode | undefined): boolean {
   if (!node) return false;
   return node.choices.length === 0;
-}
-
-export function getNodeCount(scenarioId: string): number {
-  return DATA[scenarioId]?.length ?? 0;
-}
-
-export function getEndingCount(scenarioId: string): number {
-  return DATA[scenarioId]?.filter((n) => n.choices.length === 0).length ?? 0;
 }

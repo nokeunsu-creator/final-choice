@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useGame } from '../state/GameContext';
-import { SCENARIOS, getEndingCount, getNodeCount } from '../data/scenarios';
+import { SCENARIOS, getEndingCount, getNodeCount } from '../data/scenariosMeta';
 import { CATEGORY_META, CATEGORY_ORDER, type ScenarioCategory, type ScenarioMeta } from '../data/types';
 
 interface Props {
