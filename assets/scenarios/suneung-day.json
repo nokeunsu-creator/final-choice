@@ -1,0 +1,100 @@
+[
+  {
+    "nodeId": 1,
+    "text": "수능 당일 아침 6:50. 알람을 끄고 일어났는데 어머니가 \"3분만 더 자\" 한다. 시험장까지 차로 30분, 종소리는 8:40.",
+    "choices": [
+      { "label": "지금 일어나 미역국 거른다", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "3분 더 자고 미역국 한 입", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] },
+      { "label": "미역국까지 다 먹고 출발", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "7:00 출발. 아버지 차. 라디오에서 \"상위권 문제 까다로울 듯\" 분석. 긴장이 솟는다.",
+    "choices": [
+      { "label": "마지막 정리 노트 본다", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "라디오 끄고 명상", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["신중"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "7:10 출발. 아버지가 신호 위반급 운전. 8:25 도착. 5분만 늦었으면 입장 못 했다.",
+    "choices": [
+      { "label": "심호흡 후 입장", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "7:30 출발. 차가 막힌다. 부모님 표정이 굳어간다. 8:38 도착.",
+    "choices": [
+      { "label": "달려서 입장", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "다음 회차 기약하고 포기", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "오답노트. 작년 실수했던 미적분 함수 문제. 풀이가 막혔던 부분 다시 정리.",
+    "choices": [
+      { "label": "확신을 갖고 입장", "nextNodeId": 7, "requiredItem": null, "grantItem": "정리", "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "명상. 호흡이 가라앉는다. 8:30 도착, 입장 줄에 차분히.",
+    "choices": [
+      { "label": "입장", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["신중","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "1교시 국어. 마지막 비문학 문제 — 시간 5분 남기고 두 답 사이 고민. 정리 노트가 있다면 비교 가능.",
+    "choices": [
+      { "label": "정리 보고 결정", "nextNodeId": 9, "requiredItem": "정리", "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "감으로 골랐다", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["직관"] },
+      { "label": "둘 다 안 풀고 뒤로", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "포기. 차에 앉아 부모님께 \"내년에 다시\". 부모님 한숨, 그러나 끄덕인다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "내년의 약속"
+  },
+  {
+    "nodeId": 9,
+    "text": "정확히 답. 1교시 무난. 점심 도시락에 어머니의 김밥. 오후 수학·영어도 차분히.",
+    "choices": [
+      { "label": "5교시까지 끝까지", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "감으로 찍었다. 2교시 수학에서 또 비슷한 함수 문제 — 또 감으로.",
+    "choices": [
+      { "label": "끝까지 감으로", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["직관","용기"] },
+      { "label": "차분히 분석으로 전환", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "뒤로. 그러나 시간 부족 — 마지막 답안 못 적음.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "마지막 한 문제"
+  },
+  {
+    "nodeId": 12,
+    "text": "5교시 끝. 답안지 마킹 한 번 더 검토. 종이 운다. 1년의 끝.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "끝까지 차분히"
+  },
+  {
+    "nodeId": 13,
+    "text": "끝까지 감. 채점 후 결과 — 감이 잘 맞아 평소 모의고사보다 ↑.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "감의 승리"
+  }
+]

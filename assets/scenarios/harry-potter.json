@@ -1,0 +1,107 @@
+[
+  {
+    "nodeId": 1,
+    "text": "호그와트 7학년 마지막 학기. 학교 안에 다크 마크가 떴다. 그 분이 돌아왔다 — 마지막 결전. 헤르미온느, 론과 함께 대성당으로.",
+    "choices": [
+      { "label": "엘더 완드를 찾는다", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["분석","용기"] },
+      { "label": "호크룩스부터", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["원칙","분석"] },
+      { "label": "벨라트릭스를 막는다", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["정면","용기"] },
+      { "label": "도망 — 친구들을 두고", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "엘더 완드. 그것의 진정한 주인은 누구. 덤블도어 → 드레이코 → 누구?",
+    "choices": [
+      { "label": "드레이코를 무장해제", "nextNodeId": 5, "requiredItem": null, "grantItem": "엘더완드", "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "호크룩스. 일곱 개 중 마지막은 — 내 안. 나에게 그 분의 한 조각.",
+    "choices": [
+      { "label": "스스로 죽음을 받아들임", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "다른 길을 찾는다", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["분석","독자"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "벨라트릭스. 그녀가 도비를 죽였다 — 분노. 헤르미온느 \"내가\" 한다.",
+    "choices": [
+      { "label": "헤르미온느 지원", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "드레이코 무장해제. 엘더 완드의 진정한 주인이 — 너. 그 분의 마법은 너에게 안 통한다.",
+    "choices": [
+      { "label": "그 분과 결투", "nextNodeId": 9, "requiredItem": "엘더완드", "grantItem": null, "traits": ["정면","용기"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "숲으로. 그 분의 아바다 케다브라. 빛이 시야를 가린다. 그러나 — 다시 깨어난다. 호크룩스만 죽고 너는 산다.",
+    "choices": [
+      { "label": "다시 결투장으로", "nextNodeId": 9, "requiredItem": null, "grantItem": "부활", "traits": ["원칙","용기"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "다른 길. 헤르미온느 \"이미 책에 다 있어. 너만이 호크룩스이고, 너만이 부활할 수 있어.\"",
+    "choices": [
+      { "label": "결국 받아들인다", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "헤르미온느 vs 벨라트릭스. \"NOT MY DAUGHTER YOU BITCH\" — 몰리 위즐리의 한 방. 벨라트릭스 KO.",
+    "choices": [
+      { "label": "그 분과 결투장으로", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "그 분 vs 너. 마지막. 마법이 부딪힌다.",
+    "choices": [
+      { "label": "엑스펠리아르무스", "nextNodeId": 10, "requiredItem": "엘더완드", "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "아바다 케다브라", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["정면","자기"] },
+      { "label": "엘더완드 + 호크룩스 + 부활 모두", "nextNodeId": 13, "requiredItem": "부활", "grantItem": null, "traits": ["원칙","용기","협력"] },
+      { "label": "협상 시도 — \"자비를?\"", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "엑스펠리아르무스 — 그 분의 아바다가 자신에게 튀어나간다. 엘더 완드의 진정한 주인이 너이기에. 그 분 소멸.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "용서의 마법"
+  },
+  {
+    "nodeId": 11,
+    "text": "아바다. 그러나 그것은 그 분의 마법. 너 자신에게도 어두움이 스민다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "어두움의 대가"
+  },
+  {
+    "nodeId": 12,
+    "text": "도망. 호그와트는 그 분의 손에. 친구들도 ...",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "도망친 자"
+  },
+  {
+    "nodeId": 13,
+    "text": "엘더 완드 + 호크룩스 + 벨라트릭스 + 부활 — 모든 것을 거쳐. \"All was well.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "All Was Well"
+  },
+  {
+    "nodeId": 14,
+    "text": "그 분과 협상 시도 — \"내 부모님처럼 자비를?\" 그가 비웃음. 한 방.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "자비를 모르는 자"
+  }
+]

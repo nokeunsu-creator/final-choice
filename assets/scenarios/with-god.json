@@ -1,0 +1,107 @@
+[
+  {
+    "nodeId": 1,
+    "text": "사후. 7개 지옥 재판. 변호인이 \"49일 안에 7재판 모두 통과해야 환생.\" 첫 재판은 살인 지옥.",
+    "choices": [
+      { "label": "솔직히 잘못 인정", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "변호인의 변론 따른다", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "재판관과 직접 대화", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "변호인 거절 — 혼자 7재판 솔직", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["원칙","독자","용기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "솔직. 군에서 사고로 후임 사망 — 직접 책임은 없지만 죄책감. 재판관 \"인정한 자는 통과.\"",
+    "choices": [
+      { "label": "다음 — 나태 지옥", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "변호인의 변론. 정황 설명. 통과 — 그러나 거짓이라는 흠.",
+    "choices": [
+      { "label": "다음 지옥", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["협력"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "재판관 직접. \"내가 한 게 아니다\" 강하게 주장. 재판관: \"오만한 자.\" 통과는 한다.",
+    "choices": [
+      { "label": "다음 지옥", "nextNodeId": 5, "requiredItem": null, "grantItem": "오만점수", "traits": ["정면","자기"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "나태 지옥. 미루던 일들. 부모님께 못 한 효도, 친구에게 못 한 사과.",
+    "choices": [
+      { "label": "환생해 갚겠다 약속", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "후회는 했다고 답한다", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "약속. 재판관 \"믿는다.\" 통과.",
+    "choices": [
+      { "label": "다음 — 거짓 / 불의 / 배신 / 폭력 / 천륜", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "후회만. 재판관 한숨. \"통과한다 — 단, 다음에서 보자.\"",
+    "choices": [
+      { "label": "다음", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "거짓 / 불의 / 배신 / 폭력 / 천륜 — 5개 지옥 연속. 솔직과 변호 사이.",
+    "choices": [
+      { "label": "모두 솔직", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "변호 의존", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["협력","회피"] },
+      { "label": "정면 항변", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["정면","자기"] },
+      { "label": "끝까지 거짓 — 들통날 때까지", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "모두 솔직. 마지막 천륜 지옥에서 어머니의 모습. \"엄마 미안해, 효도 못 했어.\" 어머니 미소. 통과.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "환생의 길"
+  },
+  {
+    "nodeId": 10,
+    "text": "변호 의존. 6개 통과 — 그러나 마지막 천륜 지옥에서 변호인이 막힘. \"이건 본인이 직접.\" 침묵.",
+    "choices": [
+      { "label": "엄마에게 직접 사과", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "정면. 모든 지옥 항변 — 6개 통과지만 \"오만\" 점수가 누적. 마지막 천륜에서 어머니가 등장. \"왜 이렇게 강해?\"",
+    "choices": [
+      { "label": "고개를 숙인다", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "고개 숙임. \"엄마, 미안해.\" 어머니 한 마디 \"네가 이제야 어른이구나.\" 통과.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "어른의 한 마디"
+  },
+  {
+    "nodeId": 13,
+    "text": "끝까지 거짓. 마지막에 들통. 49일이 다 됐다. 환생 못 함.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "49일의 끝"
+  },
+  {
+    "nodeId": 14,
+    "text": "변호인을 거절하고 혼자 7재판 솔직 + 정면 + 사과 — 모두 통과. 환생.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "혼자 걸어온 길"
+  }
+]

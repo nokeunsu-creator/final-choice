@@ -36,6 +36,8 @@ export type ScenarioCategory =
   | '판타지'
   | '미스터리'
   | '재난'
+  | '일상'
+  | '패러디'
   | '무한상사'
   | '무한도전'
   | '원피스';
@@ -48,6 +50,8 @@ export const CATEGORY_ORDER: ScenarioCategory[] = [
   '판타지',
   '미스터리',
   '재난',
+  '일상',
+  '패러디',
   '무한상사',
   '무한도전',
   '원피스',
@@ -61,6 +65,8 @@ export const CATEGORY_META: Record<ScenarioCategory, { icon: string; color: stri
   '판타지': { icon: '🗝️', color: '#d4a017' },
   '미스터리': { icon: '🔍', color: '#854d0e' },
   '재난': { icon: '🚒', color: '#f97316' },
+  '일상': { icon: '🍱', color: '#10b981' },
+  '패러디': { icon: '🎬', color: '#f472b6' },
   '무한상사': { icon: '💼', color: '#0ea5e9' },
   '무한도전': { icon: '🏃', color: '#fbbf24' },
   '원피스': { icon: '🏴‍☠️', color: '#dc2626' },

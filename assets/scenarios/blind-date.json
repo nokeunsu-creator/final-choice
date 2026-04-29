@@ -1,0 +1,108 @@
+[
+  {
+    "nodeId": 1,
+    "text": "친구 주선 소개팅. 강남역 카페, 토요일 14:00. 5분 일찍 도착했는데 상대도 이미 와 있다.",
+    "choices": [
+      { "label": "정중하게 손 내밀며 인사", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "유머로 분위기 풀기", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "음료부터 주문하러", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회피","실용"] },
+      { "label": "30분 늦게 도착 — 미적지근하게", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "정중. \"OO입니다.\" 상대도 정중. 어색한 침묵 30초.",
+    "choices": [
+      { "label": "취미 묻는다", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "오늘 날씨 얘기", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "유머. \"먼저 와있는 사람 처음 봐요.\" 상대 웃음. 분위기 풀린다.",
+    "choices": [
+      { "label": "취미 묻는다", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["협력","분석"] },
+      { "label": "공통 친구 얘기", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["협력"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "음료. \"카페라떼 두 잔 부탁드려요.\" 상대 \"저 아메리카노 좋아하는데\" 한다. 분위기 어색.",
+    "choices": [
+      { "label": "다시 시키며 사과", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "취미. 상대: \"등산이요.\" 당신: \"저도 한번 가본 적은 있는데\". 어설픈 공감.",
+    "choices": [
+      { "label": "다음 등산 같이 가자고", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] },
+      { "label": "솔직히 잘 모른다 인정", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "날씨. 30초 후 다시 침묵. 첫 인상이 이미 굳어간다.",
+    "choices": [
+      { "label": "급히 화제 전환", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "어색하게 마무리", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "취미. 상대: \"그림 그려요.\" 당신: \"오, 어떤 스타일?\" 자연스러운 대화.",
+    "choices": [
+      { "label": "전시회 같이 가자 제안", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] },
+      { "label": "그림 보여달라 부탁", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["협력"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "공통 친구 얘기. 둘 다 친구 OO의 단점 알고 있어 한참 깔깔.",
+    "choices": [
+      { "label": "그 친구 빼고 다음 약속 잡자", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "사과 후 다시 시킨다. 상대 \"아니에요 신경 써주신 거잖아요.\" 호감 회복.",
+    "choices": [
+      { "label": "취미 화제로", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["협력"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "다음 약속. 상대 \"좋아요, 다음 주 토요일?\" — 진전.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "다음 토요일"
+  },
+  {
+    "nodeId": 11,
+    "text": "솔직히. 상대 웃음. \"솔직해서 좋아요. 같이 처음부터 배우면 되죠.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "솔직한 시작"
+  },
+  {
+    "nodeId": 12,
+    "text": "약속 잡고 헤어짐. 그날 밤 카톡: \"오늘 즐거웠어요.\" 둘 다 같은 마음.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "같은 마음"
+  },
+  {
+    "nodeId": 13,
+    "text": "1시간 카페 후 어색하게 \"바빠서\" 헤어짐. 친구에게 \"그냥 친구로\".",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "그냥 친구로"
+  },
+  {
+    "nodeId": 14,
+    "text": "약속 잡았지만 그 주에 카톡 답장 늦음 — 결국 자연 소멸.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "자연 소멸"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "nodeId": 1,
+    "text": "논산 훈련소. 입영 첫날 14:00. 부모님과 마지막 포옹 후 위병소 통과. 머리는 이미 빡빡, 손은 등록증.",
+    "choices": [
+      { "label": "차분히 줄에 선다", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "옆 사람과 인사한다", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] },
+      { "label": "주변을 관찰한다", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "분대장에게 반항", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["정면","자기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "줄. 30분 대기. 호명 — 첫 명단에 들어 분대 배정. 1분대 5번.",
+    "choices": [
+      { "label": "분대장 인사", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "옆 김 OO. 같은 동네 출신. 분대 같이 갈 수 있는 운명.",
+    "choices": [
+      { "label": "분대 같이 신청", "nextNodeId": 5, "requiredItem": null, "grantItem": "동기", "traits": ["협력"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "관찰. 조교들 표정, 분대장 통솔법, 동기들 긴장도. 곧 나올 \"체력 측정\"의 위치 파악.",
+    "choices": [
+      { "label": "동기들에게 정보 공유", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "혼자 마음의 준비", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["독자","분석"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "분대장: \"이름.\" \"OO입니다.\" \"태도 좋다.\" 첫 인상 ✓.",
+    "choices": [
+      { "label": "체력 측정", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "동기들에게 \"순서: 팔굽 → 윗몸 → 3km\" 공유. 동기들 \"OO 사회 좋다.\" 분위기 형성.",
+    "choices": [
+      { "label": "함께 체력 측정", "nextNodeId": 9, "requiredItem": null, "grantItem": "동기들", "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "혼자 정리. 호흡 정렬, 마음 가라앉힘.",
+    "choices": [
+      { "label": "체력 측정", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["독자","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "팔굽 / 윗몸 / 3km. 평균 점수 70점. 무난.",
+    "choices": [
+      { "label": "내무반 입성", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "체력이 부족했다", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "동기들과 함께 측정. 서로 응원 — 평균 80점. 우수.",
+    "choices": [
+      { "label": "내무반 입성", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "어려운 동기 한 명을 끌고 함께", "nextNodeId": 14, "requiredItem": "동기들", "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "내무반 첫 밤. 침상 정리 후 누워 천장. 5주의 시작.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "첫 밤"
+  },
+  {
+    "nodeId": 11,
+    "text": "동기들과 첫 밤. 한 명이 고향 노래를 흥얼. 모두 따라부르며 잠든다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "동기들의 노래"
+  },
+  {
+    "nodeId": 12,
+    "text": "체력 미달 — 보충 훈련. 다음 주 재측정 약속.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "보충 훈련"
+  },
+  {
+    "nodeId": 13,
+    "text": "분대장에게 첫날부터 반항했다. 연병장에서 단독 얼차려.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "단독 얼차려"
+  },
+  {
+    "nodeId": 14,
+    "text": "동기들과 합심해 어려운 동기 한 명도 끌고 함께 통과. 분대장이 \"우리 분대 의리 좋네.\" 5주 동안 든든.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "분대 의리"
+  }
+]

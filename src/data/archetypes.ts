@@ -182,14 +182,14 @@ export function axisBalances(counts: TraitCounts): AxisBalance[] {
  * 아키타입별 추천 카테고리. 메인페이지의 시나리오 추천에 사용.
  */
 export const ARCHETYPE_CATEGORIES: Record<string, ScenarioCategory[]> = {
-  hero: ['재난', '좀비', '원피스'],
-  survivor: ['생존', '재난'],
-  scholar: ['미스터리', '호러', '판타지'],
-  warrior: ['좀비', '원피스', '재난'],
-  diplomat: ['재난', '무한상사', '미스터리'],
-  'lone-wolf': ['호러', '생존', '판타지'],
-  explorer: ['생존', 'SF', '원피스', '무한도전'],
-  idealist: ['호러', '재난', '무한상사'],
+  hero: ['재난', '좀비', '원피스', '패러디'],
+  survivor: ['생존', '재난', '일상'],
+  scholar: ['미스터리', '호러', '판타지', '패러디'],
+  warrior: ['좀비', '원피스', '재난', '패러디'],
+  diplomat: ['재난', '무한상사', '미스터리', '일상'],
+  'lone-wolf': ['호러', '생존', '판타지', '일상'],
+  explorer: ['생존', 'SF', '원피스', '무한도전', '패러디'],
+  idealist: ['호러', '재난', '무한상사', '일상'],
 };
 
 /**

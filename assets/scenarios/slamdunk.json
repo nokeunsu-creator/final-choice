@@ -1,0 +1,106 @@
+[
+  {
+    "nodeId": 1,
+    "text": "산왕전 4쿼터 1분 전. 점수 79:80, 우리가 1점 뒤. 마지막 공격권. 안 감독: \"강백호 너에게 맡긴다.\"",
+    "choices": [
+      { "label": "정대만에게 패스 — 3점", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "직접 골밑까지 돌파", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "서태웅과 1대1 합공", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "정대만. 3점 라인. 그가 스왓 — 산왕 가드 손이 닿는다. 빗나감.",
+    "choices": [
+      { "label": "리바운드 — 강백호", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "돌파. 산왕 센터 신현철이 막는다. 무릎이 꺾인다.",
+    "choices": [
+      { "label": "그래도 슛", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "송태섭에게 패스", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "서태웅. \"왼쪽\" 손짓. 그가 화답.",
+    "choices": [
+      { "label": "왼쪽 — 서태웅 어시스트", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "리바운드. 강백호. 마지막 5초.",
+    "choices": [
+      { "label": "그대로 더블클러치 슛", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "팁인 패스", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["협력"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "무릎 꺾인 채 슛. 공이 림에 빙글빙글 — 안 들어간다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "꺾인 무릎"
+  },
+  {
+    "nodeId": 7,
+    "text": "송태섭. 그가 페이크 후 미들슛. 정확히 림 안.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "송태섭의 미들"
+  },
+  {
+    "nodeId": 8,
+    "text": "서태웅의 고난도 어시. 강백호 골밑 슛. 점수 81:80.",
+    "choices": [
+      { "label": "마지막 1초 디펜스", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "더블클러치. 그가 \"왼손은 거들 뿐.\" 슛이 림을 통과 — 점수 81:80.",
+    "choices": [
+      { "label": "마지막 1초 디펜스", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "팁인 패스 — 서태웅이 받아 덩크. 점수 81:80.",
+    "choices": [
+      { "label": "마지막 1초 디펜스", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["협력"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "산왕 마지막 공격. 정우성이 3점 라인.",
+    "choices": [
+      { "label": "강백호 점프", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "정우성 직접 마크", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "잘못된 마크로 빈 자리", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피","독자"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "강백호 점프. 정우성의 슛이 림 짧게 — 빗나감. 종소리.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "산왕전 승리"
+  },
+  {
+    "nodeId": 13,
+    "text": "직접 마크. 정우성이 미스 — 시간 종료.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "마크의 끝"
+  },
+  {
+    "nodeId": 14,
+    "text": "오해 — 잘못된 마크에 정우성 3점 성공. 79:83 패배.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "그 한 슛"
+  }
+]

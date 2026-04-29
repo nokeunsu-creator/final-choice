@@ -1,5 +1,5 @@
 /**
- * 무거운 시나리오 데이터 모듈 — 모든 70개 JSON을 정적 import.
+ * 무거운 시나리오 데이터 모듈 — 모든 79개 JSON을 정적 import.
  * 이 모듈은 GameScreen / EndingScreen에서만 사용. App.tsx의 React.lazy로
  * 분리되어 메인 페이지/시나리오 선택 화면에서는 로드되지 않는다.
  *
@@ -75,6 +75,15 @@ import onepieceImpeldownRaw from '../../assets/scenarios/onepiece-impeldown.json
 import onepieceFishmanRaw from '../../assets/scenarios/onepiece-fishman.json';
 import onepieceWanoRaw from '../../assets/scenarios/onepiece-wano.json';
 import onepieceLaftelRaw from '../../assets/scenarios/onepiece-laftel.json';
+import suneungDayRaw from '../../assets/scenarios/suneung-day.json';
+import armyDay1Raw from '../../assets/scenarios/army-day1.json';
+import blindDateRaw from '../../assets/scenarios/blind-date.json';
+import chuseokRaw from '../../assets/scenarios/chuseok.json';
+import graduationRaw from '../../assets/scenarios/graduation.json';
+import avengersRaw from '../../assets/scenarios/avengers.json';
+import harryPotterRaw from '../../assets/scenarios/harry-potter.json';
+import slamdunkRaw from '../../assets/scenarios/slamdunk.json';
+import withGodRaw from '../../assets/scenarios/with-god.json';
 import type { StoryNode } from './types';
 
 const DATA: Record<string, StoryNode[]> = {
@@ -148,6 +157,15 @@ const DATA: Record<string, StoryNode[]> = {
   'onepiece-fishman': onepieceFishmanRaw as StoryNode[],
   'onepiece-wano': onepieceWanoRaw as StoryNode[],
   'onepiece-laftel': onepieceLaftelRaw as StoryNode[],
+  'suneung-day': suneungDayRaw as StoryNode[],
+  'army-day1': armyDay1Raw as StoryNode[],
+  'blind-date': blindDateRaw as StoryNode[],
+  chuseok: chuseokRaw as StoryNode[],
+  graduation: graduationRaw as StoryNode[],
+  avengers: avengersRaw as StoryNode[],
+  'harry-potter': harryPotterRaw as StoryNode[],
+  slamdunk: slamdunkRaw as StoryNode[],
+  'with-god': withGodRaw as StoryNode[],
 };
 
 const NODE_INDEX: Record<string, Map<number, StoryNode>> = Object.fromEntries(

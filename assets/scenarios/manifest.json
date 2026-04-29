@@ -769,6 +769,105 @@
       "category": "원피스",
       "nodeCount": 14,
       "endingCount": 7
+    },
+    {
+      "id": "suneung-day",
+      "title": "수능 당일",
+      "subtitle": "1년의 끝, 한 시험",
+      "description": "미역국과 마지막 정리",
+      "icon": "📝",
+      "accent": "#10b981",
+      "category": "일상",
+      "nodeCount": 13,
+      "endingCount": 4
+    },
+    {
+      "id": "army-day1",
+      "title": "군대 입영 첫날",
+      "subtitle": "논산 훈련소 14:00",
+      "description": "분대장과 동기와 체력 측정",
+      "icon": "🎖️",
+      "accent": "#65a30d",
+      "category": "일상",
+      "nodeCount": 14,
+      "endingCount": 5
+    },
+    {
+      "id": "blind-date",
+      "title": "소개팅",
+      "subtitle": "강남역 카페 14:00",
+      "description": "정중·유머·실수 사이",
+      "icon": "💑",
+      "accent": "#ec4899",
+      "category": "일상",
+      "nodeCount": 14,
+      "endingCount": 5
+    },
+    {
+      "id": "chuseok",
+      "title": "추석 가족 모임",
+      "subtitle": "큰어머니의 첫 마디",
+      "description": "결혼 잔소리 vs 윷놀이",
+      "icon": "🍱",
+      "accent": "#f59e0b",
+      "category": "일상",
+      "nodeCount": 14,
+      "endingCount": 6
+    },
+    {
+      "id": "graduation",
+      "title": "졸업식 연설",
+      "subtitle": "강당 무대 5분 전",
+      "description": "그 한 사람을 언급할까",
+      "icon": "🎓",
+      "accent": "#0ea5e9",
+      "category": "일상",
+      "nodeCount": 13,
+      "endingCount": 8
+    },
+    {
+      "id": "avengers",
+      "title": "어벤져스 — 와칸다 결전",
+      "subtitle": "핑거스냅 직전 1분",
+      "description": "건틀릿과 시간 작전",
+      "icon": "🦸",
+      "accent": "#dc2626",
+      "category": "패러디",
+      "nodeCount": 14,
+      "endingCount": 5
+    },
+    {
+      "id": "harry-potter",
+      "title": "해리포터 — 마지막 결전",
+      "subtitle": "호그와트 7학년",
+      "description": "엘더 완드와 호크룩스",
+      "icon": "⚡",
+      "accent": "#7c3aed",
+      "category": "패러디",
+      "nodeCount": 14,
+      "endingCount": 5
+    },
+    {
+      "id": "slamdunk",
+      "title": "슬램덩크 — 산왕전",
+      "subtitle": "4쿼터 1분 전 79:80",
+      "description": "왼손은 거들 뿐",
+      "icon": "🏀",
+      "accent": "#dc2626",
+      "category": "패러디",
+      "nodeCount": 14,
+      "endingCount": 5
+    },
+    {
+      "id": "with-god",
+      "title": "신과함께 — 7재판",
+      "subtitle": "사후 49일",
+      "description": "솔직 vs 변호 vs 정면",
+      "icon": "⚖️",
+      "accent": "#a78bfa",
+      "category": "패러디",
+      "nodeCount": 14,
+      "endingCount": 4
     }
   ]
 }

@@ -1,0 +1,106 @@
+[
+  {
+    "nodeId": 1,
+    "text": "와칸다 평원, 타노스의 핑거스냅 직전. 6개 인피니티 스톤이 그의 건틀릿에 모였다. 어벤져스 전원 진영. 마지막 1분.",
+    "choices": [
+      { "label": "타노스에 정면 돌격", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["정면","용기"] },
+      { "label": "건틀릿만 노린다", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "팀 분산 — 양동작전", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력","분석"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "정면. 타노스 한 손으로 막아낸다. 5명 동시 돌격해도 건틀릿엔 흠집도.",
+    "choices": [
+      { "label": "토르 — 묠니르 풀파워", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["정면","용기"] },
+      { "label": "헐크와 합공", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "건틀릿만. 비전이 자신의 마인드 스톤을 \"파괴해 — 핑거스냅 막는다\" 한다.",
+    "choices": [
+      { "label": "비전을 막고 다른 길", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "비전의 결단을 받아들임", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "양동. 한쪽은 타노스 시선 끌고 다른 쪽은 건틀릿 노린다.",
+    "choices": [
+      { "label": "캡틴 + 토르 시선 / 아이언맨 손", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["협력","분석"] },
+      { "label": "통신 두절 — 동시성 깨짐", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피","독자"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "묠니르 풀파워. 타노스 어깨에 정통. 그러나 그가 손으로 묠니르를 잡는다 — 비웃음.",
+    "choices": [
+      { "label": "건틀릿 손가락 봉쇄", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "헐크와 합공. 헐크가 타노스를 잡고 있는 사이 건틀릿 손가락에 누군가 쇠막대.",
+    "choices": [
+      { "label": "그 손가락을 묶는다", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "비전을 막는다. 그러나 타노스가 마인드 스톤을 직접 빼낸다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "마인드의 제거"
+  },
+  {
+    "nodeId": 8,
+    "text": "비전의 결단. 완다가 마인드 스톤을 부순다 — 그러나 타노스가 시간 스톤으로 시간을 되돌린다.",
+    "choices": [
+      { "label": "닥터 스트레인지의 시간 결투", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "건틀릿 손가락 봉쇄. 타노스의 핑거스냅 — 그의 손가락이 안 움직인다. 1초의 갭.",
+    "choices": [
+      { "label": "건틀릿 강제 분리", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "전원 합공 + 묠니르 + 헐크 완벽 동시", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙","용기"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "닥터 스트레인지. \"14000605개의 미래 중, 이긴 미래는 단 하나.\" 그가 타임 스톤을 타노스에게 내준다 — 작전.",
+    "choices": [
+      { "label": "그의 작전을 믿는다", "nextNodeId": 12, "requiredItem": null, "grantItem": "전략", "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "건틀릿 분리. 타노스 무력화. 모두 안도. 그러나 그가 마지막 한 순간에 \"나는 필연이다\" 핑거스냅.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "필연의 한 순간"
+  },
+  {
+    "nodeId": 12,
+    "text": "닥터의 작전대로 — 5년 후 어벤져스 어셈블. 시간 여행으로 모든 스톤 회수. 마지막 어벤저의 핑거스냅으로 타노스 군대 소멸.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "I AM IRON MAN"
+  },
+  {
+    "nodeId": 13,
+    "text": "팀 분산이지만 통신 안 됨 — 동시성 깨짐. 타노스 핑거스냅 성공.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "흩어진 자"
+  },
+  {
+    "nodeId": 14,
+    "text": "전원 합공 + 묠니르 + 헐크 + 시간 작전 — 모두 완벽 동시. 타노스 무릎. 우주 절반의 미래가 지킨다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "어벤져스 어셈블"
+  }
+]

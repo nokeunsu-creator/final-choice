@@ -1,0 +1,100 @@
+[
+  {
+    "nodeId": 1,
+    "text": "고등학교 졸업식. 강당 무대 뒤에서 졸업생 대표 연설 5분 전. 친구들이 \"OO 떨지 마\" 응원. 그러나 선생님의 부탁 — \"한 사람만 언급하지 마.\"",
+    "choices": [
+      { "label": "원래 원고대로", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "그 한 사람 빼고 진행", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "즉흥으로 새로 짠다", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "마이크 앞에서 떨려서 못 한다", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "원래 원고. 무대. 그 한 사람 — 자살한 동급생 — 의 이름이 나오자 강당이 멈춘다.",
+    "choices": [
+      { "label": "추모 한 분 묵념 제안", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "그대로 진행", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["용기","독자"] },
+      { "label": "선생님과 대화 후 가족 인사", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "빼고 진행. 무난한 연설. 그러나 그의 가족이 강당 뒤에 와있는 게 보인다.",
+    "choices": [
+      { "label": "마지막에 짧게 언급", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "그대로 마무리", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "즉흥. 마이크 앞 5초 침묵 후 \"우리는 함께 졸업합니다 — 모두.\" 그 한 사람을 직접 안 언급하지만 모두가 안다.",
+    "choices": [
+      { "label": "그대로 마무리", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] },
+      { "label": "원고 + 묵념 + 가족 인사 모두 동원", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력","용기"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "묵념 1분. 강당 전체가 일어난다. 그의 가족이 눈물. 졸업식의 진심.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "함께 졸업"
+  },
+  {
+    "nodeId": 6,
+    "text": "그대로. 선생님의 표정이 굳지만 학생들 박수는 길다. 가족도 고개 숙여 인사.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "원래 원고"
+  },
+  {
+    "nodeId": 7,
+    "text": "마지막 \"우리 33명은 영원히 33명\" — 자연스럽게. 가족이 미소.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "33명"
+  },
+  {
+    "nodeId": 8,
+    "text": "그대로 마무리. 가족이 조용히 빠져나간다. 무대에서 후회.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "조용한 후회"
+  },
+  {
+    "nodeId": 9,
+    "text": "즉흥의 진심. 친구들이 따라 울고 박수. 모두가 \"우리\"였다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "우리"
+  },
+  {
+    "nodeId": 10,
+    "text": "선생님과 사후 갈등 — 그러나 가족이 \"고맙다\" 직접 인사. 둘 다 화해.",
+    "choices": [
+      { "label": "가족과 인사", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "가족 인사. 어머니가 \"OO야 — 고마워, 우리 아이 기억해줘서.\" 평생 이 한 마디.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "기억해줘서"
+  },
+  {
+    "nodeId": 12,
+    "text": "마이크 앞에서 떨려서 한 마디도 못 함. 선생님이 마이크 받아 정상 진행.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "떨림의 무대"
+  },
+  {
+    "nodeId": 13,
+    "text": "원고 + 즉흥 + 묵념 + 가족 직접 인사 — 모두 동원. 졸업식이 \"우리 모두의 의식\"이 된다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "우리의 의식"
+  }
+]

@@ -79,6 +79,8 @@ const CATEGORY_TITLES: Record<ScenarioCategory, { icon: string; title: string }>
   '판타지': { icon: '🗝️', title: '마법서 마스터' },
   '미스터리': { icon: '🔍', title: '명탐정' },
   '재난': { icon: '🚒', title: '1급 구조사' },
+  '일상': { icon: '🍱', title: '하루의 달인' },
+  '패러디': { icon: '🎬', title: '명장면 수집가' },
   '무한상사': { icon: '💼', title: '무한사원' },
   '무한도전': { icon: '🏃', title: '무한멤버' },
   '원피스': { icon: '🏴‍☠️', title: '해적왕' },

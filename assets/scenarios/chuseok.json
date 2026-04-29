@@ -1,0 +1,107 @@
+[
+  {
+    "nodeId": 1,
+    "text": "추석 큰집. 도착 직후 큰어머니 첫 마디: \"OO야, 결혼은 언제 하니?\" 거실에 사촌들 다섯 명도 같은 눈.",
+    "choices": [
+      { "label": "솔직히 \"아직요\"", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "농담으로 받아치기", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["협력","직관"] },
+      { "label": "주방으로 도망", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] },
+      { "label": "정면 반박: \"제 인생이에요\"", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["정면","자기"] },
+      { "label": "감기 핑계로 일찍 빠지기", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "솔직. \"아직요. 일이 바빠서.\" 큰어머니: \"바쁘기는 다 바빠. 마음먹기 나름이지.\" 시즌 시작.",
+    "choices": [
+      { "label": "조용히 견딘다", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["신중","원칙"] },
+      { "label": "취직·연봉 화제로 돌리기", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["분석","직관"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "농담. \"제가 너무 잘나서 못 만나요.\" 큰어머니 웃음. 분위기 풀린다.",
+    "choices": [
+      { "label": "사촌들과 게임하러", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] },
+      { "label": "할머니 옆에 앉기", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "주방. 어머니가 \"왔니, 전 부쳐 도와줘\" 한다. 안전지대.",
+    "choices": [
+      { "label": "전 굽기 합류", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "조용히 견딘다. 큰어머니 5분 후 다른 사촌으로 화제 전환.",
+    "choices": [
+      { "label": "사촌들 합류", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["협력"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "취직 화제. 큰아버지 끼어들어 \"공무원 시험은 어떠냐\" 시작. 도망 어렵다.",
+    "choices": [
+      { "label": "그냥 듣기만", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "사촌들과 윷놀이. 큰어머니도 한 판 끼어든다. 가족의 시간.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "윷놀이의 평화"
+  },
+  {
+    "nodeId": 8,
+    "text": "할머니 옆. \"우리 OO 멋지다.\" 한 마디. 큰어머니의 잔소리도 멈춘다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "할머니의 한 마디"
+  },
+  {
+    "nodeId": 9,
+    "text": "전 한 판 다 부친다. 사촌들이 \"OO 손맛 좋네\" 칭찬. 큰어머니도 \"걔는 얘기 잘하면 끝\" 한 마디로 풀어진다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "전 한 판"
+  },
+  {
+    "nodeId": 10,
+    "text": "묵묵히 듣는다. 한 시간이 영원처럼. 결국 어머니가 \"OO 잠깐 슈퍼\" 구해준다.",
+    "choices": [
+      { "label": "슈퍼로 도피", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "슈퍼. 어머니 카톡 \"엄마는 너 편\". 다시 돌아갈 용기.",
+    "choices": [
+      { "label": "다시 돌아가 견딘다", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "큰어머니에게 \"좋은 사람 만나면 데려올게요\"", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "큰어머니에 정면 반박: \"결혼은 제 인생이에요.\" 거실 침묵. 어머니 표정 굳어진다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "정면 반박"
+  },
+  {
+    "nodeId": 13,
+    "text": "차에서 일찍 빠져나가기. 가족 카톡방에 \"감기로 일찍 들어갑니다.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "감기 핑계"
+  },
+  {
+    "nodeId": 14,
+    "text": "큰어머니에게 \"제가 가족 모두 좋아하는 사람 만나면 데려올게요\" — 한 마디로 모두 멈춘다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "그 한 마디"
+  }
+]
