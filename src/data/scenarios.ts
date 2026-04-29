@@ -49,6 +49,26 @@ import subwayTrappedRaw from '../../assets/scenarios/subway-trapped.json';
 import warzoneRaw from '../../assets/scenarios/warzone.json';
 import hostageNegotiationRaw from '../../assets/scenarios/hostage-negotiation.json';
 import prisonEscapeRaw from '../../assets/scenarios/prison-escape.json';
+import officePromotionRaw from '../../assets/scenarios/office-promotion.json';
+import officeDinnerRaw from '../../assets/scenarios/office-dinner.json';
+import officeNewbieRaw from '../../assets/scenarios/office-newbie.json';
+import officeCardRaw from '../../assets/scenarios/office-card.json';
+import officeOvernightRaw from '../../assets/scenarios/office-overnight.json';
+import mudoChaseRaw from '../../assets/scenarios/mudo-chase.json';
+import mudoIslandRaw from '../../assets/scenarios/mudo-island.json';
+import mudoSongfestRaw from '../../assets/scenarios/mudo-songfest.json';
+import mudoKaraokeRaw from '../../assets/scenarios/mudo-karaoke.json';
+import mudoMarathonRaw from '../../assets/scenarios/mudo-marathon.json';
+import mudoRelayRaw from '../../assets/scenarios/mudo-relay.json';
+import mudoCookingRaw from '../../assets/scenarios/mudo-cooking.json';
+import onepieceEastblueRaw from '../../assets/scenarios/onepiece-eastblue.json';
+import onepieceGrandlineRaw from '../../assets/scenarios/onepiece-grandline.json';
+import onepieceMarinefordRaw from '../../assets/scenarios/onepiece-marineford.json';
+import onepieceSkypieaRaw from '../../assets/scenarios/onepiece-skypiea.json';
+import onepieceImpeldownRaw from '../../assets/scenarios/onepiece-impeldown.json';
+import onepieceFishmanRaw from '../../assets/scenarios/onepiece-fishman.json';
+import onepieceWanoRaw from '../../assets/scenarios/onepiece-wano.json';
+import onepieceLaftelRaw from '../../assets/scenarios/onepiece-laftel.json';
 import type { ScenarioMeta, StoryNode } from './types';
 
 const manifest = manifestRaw as { scenarios: ScenarioMeta[] };
@@ -104,6 +124,26 @@ const DATA: Record<string, StoryNode[]> = {
   warzone: warzoneRaw as StoryNode[],
   'hostage-negotiation': hostageNegotiationRaw as StoryNode[],
   'prison-escape': prisonEscapeRaw as StoryNode[],
+  'office-promotion': officePromotionRaw as StoryNode[],
+  'office-dinner': officeDinnerRaw as StoryNode[],
+  'office-newbie': officeNewbieRaw as StoryNode[],
+  'office-card': officeCardRaw as StoryNode[],
+  'office-overnight': officeOvernightRaw as StoryNode[],
+  'mudo-chase': mudoChaseRaw as StoryNode[],
+  'mudo-island': mudoIslandRaw as StoryNode[],
+  'mudo-songfest': mudoSongfestRaw as StoryNode[],
+  'mudo-karaoke': mudoKaraokeRaw as StoryNode[],
+  'mudo-marathon': mudoMarathonRaw as StoryNode[],
+  'mudo-relay': mudoRelayRaw as StoryNode[],
+  'mudo-cooking': mudoCookingRaw as StoryNode[],
+  'onepiece-eastblue': onepieceEastblueRaw as StoryNode[],
+  'onepiece-grandline': onepieceGrandlineRaw as StoryNode[],
+  'onepiece-marineford': onepieceMarinefordRaw as StoryNode[],
+  'onepiece-skypiea': onepieceSkypieaRaw as StoryNode[],
+  'onepiece-impeldown': onepieceImpeldownRaw as StoryNode[],
+  'onepiece-fishman': onepieceFishmanRaw as StoryNode[],
+  'onepiece-wano': onepieceWanoRaw as StoryNode[],
+  'onepiece-laftel': onepieceLaftelRaw as StoryNode[],
 };
 
 const NODE_INDEX: Record<string, Map<number, StoryNode>> = Object.fromEntries(

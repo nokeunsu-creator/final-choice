@@ -1,0 +1,257 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한도전 가요제 무대. D-day. 본 무대 5분 전 동료 멤버가 가사를 까먹었다고 한다. 1만 관중. 카메라.",
+    "choices": [
+      {
+        "label": "큐카드 만들어준다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      },
+      {
+        "label": "내 파트 늘려서 커버",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      },
+      {
+        "label": "그냥 시작 — 즉흥",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관",
+          "용기"
+        ]
+      },
+      {
+        "label": "내 파트만",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      },
+      {
+        "label": "동료 정신차림",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "동료 가사 외움",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "준비 30초 부족",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "양 어깨 짊어짐",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "동료 끝까지 못 외움",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "모든 전략 동원",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "큐카드 작성. 무대 입구에 두고 시작. 그러나 무대 위에서 큐카드 안 보인다.",
+    "choices": [
+      {
+        "label": "내 파트로 커버",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "MR 끄고 멘트",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관",
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "내가 두 사람 분량을 노래한다. 동료 멤버가 안무로 커버. 자연스럽게 마무리.",
+    "choices": [
+      {
+        "label": "마지막 후렴구 함께",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "즉흥 시작. 동료 멤버가 가사 잘못 — 관중 반응 \"어?\". 카메라 자막 \"새로운 가사다?\"",
+    "choices": [
+      {
+        "label": "원곡으로 돌리기",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "끝까지 즉흥",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "MR 끄고 멘트. \"여러분! 오늘 라이브로 가겠습니다!\" 관중 환호. 즉흥 멘트로 무대 살림.",
+    "choices": [
+      {
+        "label": "MR 다시 켜고 후렴구",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "마지막 후렴구. 1만 관중 떼창. 무대 끝. 자막 \"감동의 후렴구.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "감동의 후렴구"
+  },
+  {
+    "nodeId": 7,
+    "text": "끝까지 즉흥. 가사가 점점 산으로. 관중 어색. 자막 \"이게 무슨 노래?\"",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "산으로 간 노래"
+  },
+  {
+    "nodeId": 8,
+    "text": "내 파트만 깔끔히 — 동료 파트 스킵. 관중 어리둥절. 자막 \"형 어디 갔어?\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "한 사람 무대"
+  },
+  {
+    "nodeId": 9,
+    "text": "무대 직전 동료가 정신 차림. 큐카드도 같이 보며 무사히. 자막 \"호흡의 무대.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "호흡의 무대"
+  },
+  {
+    "nodeId": 10,
+    "text": "동료가 무대 중 갑자기 가사 외워서 정상 진행. 1만 관중 함께 떼창. 음원 차트 1위.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "차트 1위"
+  },
+  {
+    "nodeId": 11,
+    "text": "큐카드 만들기 30초 부족 — 무대 시작 종. 그냥 무대 올라간다.",
+    "choices": [
+      {
+        "label": "즉흥",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "내 파트 +50% 동료 파트도 받아서 양 어깨 무겁다. 그러나 1만 관중 환호. 무대 끝.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "양 어깨의 무대"
+  },
+  {
+    "nodeId": 13,
+    "text": "동료가 결국 가사 까먹은 채 무대. 어색한 침묵. 끝나고 PD가 \"이거도 방송\" 한다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "이거도 방송"
+  },
+  {
+    "nodeId": 14,
+    "text": "큐카드 + 안무 변경 + 즉흥 멘트 모두 동원. 무대 살아나고 가요제 1위.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "가요제 1위"
+  }
+]

@@ -1,0 +1,239 @@
+[
+  {
+    "nodeId": 1,
+    "text": "와노국. 사무라이의 나라. 황제 카이도가 점령 중. 동맹군 전원 잠입. 결전의 날 — 오니가시마 섬으로.",
+    "choices": [
+      {
+        "label": "정면 — 황제와 결투",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "사무라이 동맹 — 함께",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "잠입 — 황제 본부 지하",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "신중"
+        ]
+      },
+      {
+        "label": "5단 시간 초과",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "정면 끝까지",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "자기"
+        ]
+      },
+      {
+        "label": "잠입 발각",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "모두 동원 - 새 시대",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "황제 카이도 — 거대한 용. 한 발 한 발 다가간다.",
+    "choices": [
+      {
+        "label": "기어 5단 변신",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "패도색 풀 발동",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "9인의 사무라이 동맹. 모두 함께 오니가시마 진입.",
+    "choices": [
+      {
+        "label": "선두에서",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      },
+      {
+        "label": "후방 지원",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "지하 잠입. 옛 무기 창고 발견. 황제 약점 — 옛 무기 한 자루.",
+    "choices": [
+      {
+        "label": "무기 들고 황제 옥상",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "옛무기",
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "기어 5단. 한 시간의 사투. 카이도와 같은 급. 결국 한 방.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "기어 5단"
+  },
+  {
+    "nodeId": 6,
+    "text": "패도색 풀 발동. 카이도가 무릎. 그러나 다시 일어선다 — 무한 회복.",
+    "choices": [
+      {
+        "label": "동료 부르기",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "선두 돌격. 황제 부하 격파. 그러나 황제 본인은 옥상.",
+    "choices": [
+      {
+        "label": "옥상으로 — 마지막 결전",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "후방 지원. 사무라이들 진격. 옥상 결전을 위한 길 만들어줌.",
+    "choices": [
+      {
+        "label": "옥상으로 합류",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "옛 무기 + 황제. 무기로 카이도 약점 정확히. 한 발에 KO.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "옛 무기의 한 방"
+  },
+  {
+    "nodeId": 10,
+    "text": "동료 9인 모두 옥상. 황제와 합공. 카이도 무너짐.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "9인의 합공"
+  },
+  {
+    "nodeId": 11,
+    "text": "기어 5단 시간 초과. 의식 잃음.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "5단의 한계"
+  },
+  {
+    "nodeId": 12,
+    "text": "정면 끝까지. 와노 무너짐. 카이도 다친 채 떠남. 우리도 큰 손실.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "큰 손실의 승리"
+  },
+  {
+    "nodeId": 13,
+    "text": "잠입 실패 — 부하에 발각. 무기 빼앗김.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "발각된 잠입"
+  },
+  {
+    "nodeId": 14,
+    "text": "동맹 + 잠입 + 정면 + 옛 무기 — 모두 동원. 카이도 KO + 와노 해방. 사무라이의 새 시대.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "사무라이의 새 시대"
+  }
+]

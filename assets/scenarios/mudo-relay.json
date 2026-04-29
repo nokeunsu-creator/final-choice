@@ -1,0 +1,237 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한도전 계주 특집. 4명 × 100m. 당신은 마지막 주자. 직전 주자가 바톤 넘기며 \"5m 뒤지고 있어!\" 한다.",
+    "choices": [
+      {
+        "label": "전속력 — 처음부터",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "페이스 조절 — 후반 스퍼트",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "신중"
+        ]
+      },
+      {
+        "label": "바톤 떨어뜨림",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "맨손 만회",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "포기",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "굴러서 실격",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "라이벌 사투",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      },
+      {
+        "label": "라이벌 도와줌",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "두 전략 합공",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "룰 변경 당함",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "전속력. 50m에서 따라잡았다. 그러나 다리에 힘이 빠진다.",
+    "choices": [
+      {
+        "label": "끝까지 전속력",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "후반은 안정",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "신중"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "페이스 조절. 40m까진 5m 뒤. 그러나 50m부터 가속. 70m에서 따라잡음.",
+    "choices": [
+      {
+        "label": "마지막 30m 폭발",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "끝까지 전속력. 90m에서 다리 꺾임 — 그래도 굴러서 결승선. 1위.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "굴러서 1위"
+  },
+  {
+    "nodeId": 5,
+    "text": "후반 안정 — 동률 골인. 비기. 자막 \"무승부의 미학.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "무승부"
+  },
+  {
+    "nodeId": 6,
+    "text": "마지막 30m. 다리가 가볍다. 결승선 0.3초 차로 1위. 자막 \"역전의 막내.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "역전의 막내"
+  },
+  {
+    "nodeId": 7,
+    "text": "바톤을 떨어뜨림. 주워 다시 출발 — 5m 추가 뒤짐.",
+    "choices": [
+      {
+        "label": "전속력으로 만회",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "포기",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "전속력. 결국 1m 차로 2위.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "1m 차"
+  },
+  {
+    "nodeId": 9,
+    "text": "포기. 자막 \"막내 멈춤.\" 꼴찌.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "막내 멈춤"
+  },
+  {
+    "nodeId": 10,
+    "text": "넘어졌지만 굴러서 결승선 — 룰 위반. 실격.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "굴러서 실격"
+  },
+  {
+    "nodeId": 11,
+    "text": "라이벌 팀 막내와 사투. 결승선 0.01초 차. 우리 팀 1위.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "0.01초 차"
+  },
+  {
+    "nodeId": 12,
+    "text": "라이벌 팀 막내가 넘어진다. 도와주려 멈췄다 같이 결승선. 1위는 놓쳤지만 자막 \"인간승리.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "인간승리"
+  },
+  {
+    "nodeId": 13,
+    "text": "전속력 + 후반 스퍼트. 결승선 통과. 카메라 슬로모션. 1위 결정.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "슬로모션의 결승선"
+  },
+  {
+    "nodeId": 14,
+    "text": "100m 동안 PD가 갑자기 \"바톤 더 멀리 가져가야 함\" 룰 변경. 정신 못 차리고 꼴찌.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "룰 변경"
+  }
+]

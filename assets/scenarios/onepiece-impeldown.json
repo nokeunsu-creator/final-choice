@@ -1,0 +1,227 @@
+[
+  {
+    "nodeId": 1,
+    "text": "임펠다운. 해저 대감옥 6층. 형이 6층에 갇혀 있다. 침입자는 처형. 1층부터 6층까지 — 각 층 죄수와 간수.",
+    "choices": [
+      {
+        "label": "정문 — 간수 위장",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "신중"
+        ]
+      },
+      {
+        "label": "1층 죄수 동맹",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      },
+      {
+        "label": "환기구 — 비밀 통로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "독자"
+        ]
+      },
+      {
+        "label": "역사상 첫 탈옥 - 모두 동원",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "간수복 위장. 1층 통과. 그러나 2층 들어서자 짐승 죄수들 — 간수도 위험.",
+    "choices": [
+      {
+        "label": "전속력 통과",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "다른 죄수에게 길 물음",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "1층 죄수 — 미친 광대. \"형 구하러? 나도 동행.\" 그가 동맹 제안.",
+    "choices": [
+      {
+        "label": "동맹 수락",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "거절",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자",
+          "신중"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "환기구 — 좁고 어둡다. 4층 직행 가능 — 그러나 다른 죄수들이 모르는 길.",
+    "choices": [
+      {
+        "label": "4층 직행",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "전속력. 짐승 죄수 한 마리 잡힘 — 발에. 다리 부상.",
+    "choices": [
+      {
+        "label": "그래도 계속",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "자기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "죄수 한 명: \"3층 사막의 지름길 알려줄게. 대신 나도 데려가.\"",
+    "choices": [
+      {
+        "label": "동맹",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "거절",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "동맹 수락. 광대 + 다른 죄수들과 함께 4층 사막 통과. 5층 빙벽도 함께.",
+    "choices": [
+      {
+        "label": "6층 도착 — 형 구출",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "거절. 혼자 2층. 짐승 죄수 무리에 둘러싸임.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "혼자의 짐승층"
+  },
+  {
+    "nodeId": 9,
+    "text": "환기구 4층 직행. 사막. 모래 폭풍. 길을 잃는다.",
+    "choices": [
+      {
+        "label": "감으로 5층",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "다리 부상으로 3층까지. 결국 간수에 잡힘.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "3층의 부상"
+  },
+  {
+    "nodeId": 11,
+    "text": "거절 후 혼자 3층. 사막 한복판에서 헤맴.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "사막의 외톨이"
+  },
+  {
+    "nodeId": 12,
+    "text": "6층 도착. 형 결박 풀음. 함께 탈출 — 동맹 죄수들 도움. 모두 함께 임펠다운 탈출.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "동맹의 탈옥"
+  },
+  {
+    "nodeId": 13,
+    "text": "감으로 5층 — 빙벽. 추위에 의식 잃음.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "5층의 빙벽"
+  },
+  {
+    "nodeId": 14,
+    "text": "동맹 + 환기구 + 간수복 모두. 6층 형 구출 + 정문 통과. 자막 \"역사상 첫 임펠다운 탈옥.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "역사상 첫 탈옥"
+  }
+]

@@ -1,0 +1,255 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한도전 노래방 미션. 99점 받으면 우승, 60점 미만 벌칙. 내가 부르고 있다. 마이크 손이 떨린다.",
+    "choices": [
+      {
+        "label": "발라드 — 안전한 선곡",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      },
+      {
+        "label": "랩 — 점수 폭발 시도",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "트로트 — 형들 좋아함",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "랩으로 시작",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "마이크 첫 음 놓침",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "두 곡 도전 끝에 99점",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "형과 듀엣",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "메들리",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "마이크 던지고 도망",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "정확한 발라드 + 듀엣",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "발라드. 음정 안정. 점수 87점. 안전 통과.",
+    "choices": [
+      {
+        "label": "다음 곡 — 랩으로 99점 도전",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "여기서 멈춘다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "랩 시작. 박자 잘 탔지만 끝부분 발음 꼬임. 점수 92점. 99까지 7점 부족.",
+    "choices": [
+      {
+        "label": "고음 발라드로 한 번 더",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "여기서 멈춘다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "트로트. 형들 박수치며 떼창. 점수는 78점이지만 분위기 만점.",
+    "choices": [
+      {
+        "label": "흥에 따라 한 곡 더",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "여기서 멈춘다. 안전한 점수. 우승은 못 했지만 벌칙도 없다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "안전한 점수"
+  },
+  {
+    "nodeId": 6,
+    "text": "고음 발라드. 마지막 고음에 목소리 갈라진다 — 96점. 99 아쉽지만 우승권.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "96점의 도전"
+  },
+  {
+    "nodeId": 7,
+    "text": "트로트 한 곡 더 — 형들과 떼창 92점. 분위기상 우승.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "분위기 우승"
+  },
+  {
+    "nodeId": 8,
+    "text": "랩으로 시작 — 박자 놓침. 65점. 마지막 한 곡으로 만회.",
+    "choices": [
+      {
+        "label": "발라드",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "트로트",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "마이크 떨림 — 첫 음정 놓침. 50점. 벌칙 — 한강 점프.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "한강 점프"
+  },
+  {
+    "nodeId": 10,
+    "text": "두 번 도전 끝에 99점 달성! 사상 최고. 우승.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "99점의 신화"
+  },
+  {
+    "nodeId": 11,
+    "text": "형들과 듀엣 시도. 화음 깔끔 — 95점. 둘 다 우승권.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "듀엣의 화음"
+  },
+  {
+    "nodeId": 12,
+    "text": "랩 → 발라드 → 트로트 메들리. 87 + 92 + 78 평균 85점. 분위기 폭발 — 우승.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "메들리의 신"
+  },
+  {
+    "nodeId": 13,
+    "text": "마이크 던지고 도망. PD: \"이것도 방송.\" 벌칙은 없지만 자막 \"막내 도망.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "마이크 도망"
+  },
+  {
+    "nodeId": 14,
+    "text": "정확한 발라드 + 형 듀엣. 99점. 벌칙 부장이 받음.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "역전의 99점"
+  }
+]

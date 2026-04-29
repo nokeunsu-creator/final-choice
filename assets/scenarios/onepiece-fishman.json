@@ -1,0 +1,231 @@
+[
+  {
+    "nodeId": 1,
+    "text": "어인섬. 해저 1만m. 인간과 어인의 오랜 갈등. 우리 해적단이 도착. 어인 왕이 환영하는데, 한 무리는 인간 적대.",
+    "choices": [
+      {
+        "label": "왕의 환영 받기",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "적대파 만나 대화",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "어인섬 빠져나가기",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "신중"
+        ]
+      },
+      {
+        "label": "양 진영 사이 끼임",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "세 갈래 모두 - 화합",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "왕궁. 그러나 적대파가 왕궁 습격. 왕이 위험.",
+    "choices": [
+      {
+        "label": "왕을 지킨다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "중재 시도",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "분석"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "적대파 두목 — 호디 존스. \"인간은 모두 적이다\" 으름장.",
+    "choices": [
+      {
+        "label": "정면 격돌",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "옛 인간의 잘못 인정",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "어인섬 빠져나간다. 갈등에 휘말리지 않음. 그러나 며칠 뒤 어인섬 무너졌다는 소식.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "휘말리지 않은 자"
+  },
+  {
+    "nodeId": 5,
+    "text": "왕 보호. 호디와 격돌. 한 시간 사투.",
+    "choices": [
+      {
+        "label": "주먹 한 방",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "왕의 부하와 함께",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "중재. 호디는 듣지 않지만 그의 부하 일부 흔들림.",
+    "choices": [
+      {
+        "label": "부하들 설득",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "정면. 호디의 어인 가라테. 두 시간 사투. 결국 패배 직전.",
+    "choices": [
+      {
+        "label": "마지막 한 방",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "옛 잘못 인정 — 호디가 멈칫. 그러나 그의 분노는 너무 깊다.",
+    "choices": [
+      {
+        "label": "끝까지 평화 시도",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "주먹 한 방. 호디 KO. 왕궁 안전.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "주먹의 평화"
+  },
+  {
+    "nodeId": 10,
+    "text": "왕의 부하와 함께. 호디 부대 분산. 무사히 진압.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "함께 막아낸"
+  },
+  {
+    "nodeId": 11,
+    "text": "부하 일부가 호디에게 등 돌림. 내전. 결국 호디 패배.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "안에서 무너진"
+  },
+  {
+    "nodeId": 12,
+    "text": "끝까지 평화 — 호디의 마지막 일격. 그러나 왕이 등장 \"이제 그만\" 선언.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "왕의 한 마디"
+  },
+  {
+    "nodeId": 13,
+    "text": "정면 끝장 — 어인섬 깊이 손상. 왕이 \"평화의 비용\" 한숨.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "평화의 비용"
+  },
+  {
+    "nodeId": 14,
+    "text": "왕 보호 + 부하 설득 + 옛 잘못 인정. 어인섬 화합. 인간과 어인 다리 — 첫 동맹 조약.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "다리의 동맹"
+  }
+]

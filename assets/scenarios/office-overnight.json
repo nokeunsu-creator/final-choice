@@ -1,0 +1,219 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한상사. 새벽 2시. 분기 보고서 마감 7시. 사무실엔 당신 + 부장 + 정 사원. 부장이 \"한숨 자고 새벽에 마무리하지.\" 했지만 진짜로 잠들었다.",
+    "choices": [
+      {
+        "label": "내가 마무리",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "정 사원과 분담",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "택시 타고 집으로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "자기"
+        ]
+      },
+      {
+        "label": "정 사원에게 먼저 가라",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "부장 깨우려다 짜증",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "그래프 못 받고 7시",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "팀 전체 합심",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "혼자 마무리. 새벽 4시 데이터 정리. 그러나 핵심 그래프 한 장이 누락. 부장 자료에 있을 듯.",
+    "choices": [
+      {
+        "label": "부장 PC 켠다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "독자"
+        ]
+      },
+      {
+        "label": "부장을 깨운다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "정 사원과 분담. 4시까지 둘이 깔끔하게 정리. 부장이 깨어나 \"고생했네.\" 6시 마무리.",
+    "choices": [
+      {
+        "label": "부장 깨운다 — 마지막 검토",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "택시. 7시 보고서 미완. 부장 출근 후 — 한 마디. \"내가 잠든 사이에 자네도 도망?\" 분기 평가 -.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "도망간 새벽"
+  },
+  {
+    "nodeId": 5,
+    "text": "부장 PC. 비밀번호 \"부장1234\". 그래프 발견. 그러나 부장 폴더에 \"인사 후보 명단\"도 보인다.",
+    "choices": [
+      {
+        "label": "그래프만 가져온다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "명단도 본다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "자기",
+          "직관"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "부장: \"어어, 자네구나. 그래프 그거 내 PC. 가져가.\" 비밀번호도 알려준다. 무사히 보고서 완성.",
+    "choices": [
+      {
+        "label": "7시 마무리",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "부장 깨움. \"오, 정리 다 됐어? 좋네.\" 부장 검토하고 사인. 6시 30분 마무리.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "분담의 새벽"
+  },
+  {
+    "nodeId": 8,
+    "text": "그래프만 가져와 보고서 완성. 7시 정시 제출. 부장이 깨어나 보고 \"자네 일 잘하네.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정확한 그래프"
+  },
+  {
+    "nodeId": 9,
+    "text": "명단 본 그 순간 부장이 깨어나 PC 화면을 본다. \"자네... 뭘 본 거지?\"",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "본 자의 무게"
+  },
+  {
+    "nodeId": 10,
+    "text": "7시 보고서 제출. 부장과 정 사원도 함께 합류. 분기 평가 +0.5.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "함께 새벽"
+  },
+  {
+    "nodeId": 11,
+    "text": "정 사원이 \"먼저 가\" 한다. 그러나 정 사원이 새벽에 코드 잘못 — 보고서 통계 틀림.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "정 사원의 새벽"
+  },
+  {
+    "nodeId": 12,
+    "text": "부장 깨우다 부장이 짜증. \"좀 자게 둬!\" 그래프 못 받음. 7시 보고서 미완.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "깨우지 말 것"
+  },
+  {
+    "nodeId": 13,
+    "text": "부장 PC 비밀번호 모름. 결국 그래프 없이 7시 제출. 부장이 보고 \"그래프?\" 한숨.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "그래프 없는 보고서"
+  },
+  {
+    "nodeId": 14,
+    "text": "정 사원과 함께 6시 마무리 + 부장 검토 후 사인. 7시 정시 + 칭찬 메일.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "팀의 새벽"
+  }
+]

@@ -1,0 +1,223 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한상사 회식. 1차 삼겹살, 2차 호프집 시작 직전. 부장: \"오늘은 새벽까지 가자!\" 당신은 내일 발표 준비를 하나도 못 했다.",
+    "choices": [
+      {
+        "label": "솔직히 발표 핑계로 양해",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "장염 핑계로 빠진다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "실용"
+        ]
+      },
+      {
+        "label": "그냥 따라간다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "1차 끝나고 차장과 빠짐",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "부장: \"발표 준비 안 했다고? 그게 더 문제 아니야?\" 분위기 싸늘.",
+    "choices": [
+      {
+        "label": "지금이라도 자료 같이 정리",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      },
+      {
+        "label": "그래도 빠진다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "장염 핑계. 부장이 \"빨리 약 사 먹고 들어가\" 한다. 회사 앞 약국. 그러나 김 차장이 같은 약국에서 마주친다.",
+    "choices": [
+      {
+        "label": "정말 약 사고 집으로",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "회피"
+        ]
+      },
+      {
+        "label": "차장에게 솔직히",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "2차 호프집. 부장이 \"막내야 부장 잔 좀 채워\" 한다. 발표는 내일 9시.",
+    "choices": [
+      {
+        "label": "잔만 채우고 슬쩍 빠짐",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "실용"
+        ]
+      },
+      {
+        "label": "끝까지 함께한다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "부장이 마음을 풀고 \"그래, 그럼 1차만 같이 하자. 끝나면 들어가서 자료.\" 1차 끝. 집에서 자료 정리. 다음 날 발표 무사히.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "1차 협상"
+  },
+  {
+    "nodeId": 6,
+    "text": "그래도 빠지자 부장의 표정이 굳는다. 다음 날 발표는 잘 했지만 분기 평가에서 \"팀워크 부족.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "팀워크 점수"
+  },
+  {
+    "nodeId": 7,
+    "text": "집에서 발표 자료 마무리. 다음 날 발표 잘 마치고 평소처럼 퇴근.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "조용한 퇴근"
+  },
+  {
+    "nodeId": 8,
+    "text": "차장: \"발표 준비 못 했어? 내 자료 줄게. 빨리 가서 정리해.\" 차장의 도움.",
+    "choices": [
+      {
+        "label": "자료 받고 집으로",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": "차장자료",
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "슬쩍 빠진다. 화장실 가는 척 그대로 지하철. 다음 날 발표는 잘 했지만 부장 카톡 \"어디 갔어\" 5통.",
+    "choices": [
+      {
+        "label": "솔직히 사과",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "잠수",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "독자"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "끝까지 새벽까지. 새벽 4시 귀가, 9시 발표. 발표는 헛소리.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "새벽 4시"
+  },
+  {
+    "nodeId": 11,
+    "text": "차장 자료로 정리. 발표 9시. 부장이 듣다 \"어, 이거 김 차장 자료네?\" 차장이 \"제가 같이 했습니다.\" 둘 다 평가 +.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "차장의 한 손"
+  },
+  {
+    "nodeId": 12,
+    "text": "솔직히 사과. 부장: \"발표 잘 했더만 다음에 한 잔 더.\" 관계 회복.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "솔직한 사과"
+  },
+  {
+    "nodeId": 13,
+    "text": "잠수. 부장과 계속 어색. 그 분기 평가 \"커뮤니케이션 부족.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "어색한 분기"
+  },
+  {
+    "nodeId": 14,
+    "text": "1차 끝나자마자 차장과 함께 양해 구하고 퇴근. 다음 날 둘 다 발표 무난.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "차장과 함께"
+  }
+]

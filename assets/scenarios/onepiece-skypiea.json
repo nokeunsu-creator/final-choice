@@ -1,0 +1,248 @@
+[
+  {
+    "nodeId": 1,
+    "text": "구름 위 하늘섬 스카이피아. 우리 배가 노크업 스트림에 휩쓸려 도착. 천국 같은 풍경 — 그러나 신을 자처하는 자가 모든 것을 지배 중.",
+    "choices": [
+      {
+        "label": "신과 정면 대결",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "원주민과 동맹",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "황금 종 찾기 — 본 목적",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "독자"
+        ]
+      },
+      {
+        "label": "몰래 종 + 도망",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "혼자 신 영역",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      },
+      {
+        "label": "모두 동원",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "신과 동맹 시도",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "황금만 챙기기",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용",
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "신 앞에. 그가 번개를 쏜다. 고무 능력으로 흡수.",
+    "choices": [
+      {
+        "label": "주먹 한 방",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "황금 종으로 신호",
+        "nextNodeId": 6,
+        "requiredItem": "황금종",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "원주민 샨디아. 그들도 신과 400년 싸움. 함께 신 타도 약속.",
+    "choices": [
+      {
+        "label": "함께 신 본거지로",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "황금 종 — 거대 나무 꼭대기. 올라가는 길은 신의 영역.",
+    "choices": [
+      {
+        "label": "몰래 올라간다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "독자"
+        ]
+      },
+      {
+        "label": "원주민과 함께",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "주먹 한 방. 신이 무릎 꿇음. 400년의 압제 끝남. 원주민 환호.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "400년의 종결"
+  },
+  {
+    "nodeId": 6,
+    "text": "황금 종 — 옛 약속의 종. 종소리가 하늘섬 전체에. 신이 사라진다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "황금 종의 약속"
+  },
+  {
+    "nodeId": 7,
+    "text": "몰래 올라간다. 황금 종 발견 — 그러나 신의 부하 발견.",
+    "choices": [
+      {
+        "label": "종 들고 도망",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": "황금종",
+        "traits": [
+          "회피",
+          "실용"
+        ]
+      },
+      {
+        "label": "맞선다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "황금 종 들고 도망. 친구들과 합류. 종을 울려 신 패배.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "황금 종의 도주"
+  },
+  {
+    "nodeId": 9,
+    "text": "맞선다. 부하 격파. 그러나 신이 직접 등장.",
+    "choices": [
+      {
+        "label": "주먹 한 방",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "신과 정면 — 번개에 의식 잃음.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "번개의 의식"
+  },
+  {
+    "nodeId": 11,
+    "text": "원주민 도움 거절. 혼자 신 영역. 압도당함.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "혼자의 신"
+  },
+  {
+    "nodeId": 12,
+    "text": "황금 종 + 원주민 + 정면 모두. 신 패배 + 하늘섬 자유. 황금 종은 그대로 두고 떠난다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "남긴 황금"
+  },
+  {
+    "nodeId": 13,
+    "text": "신과 동맹 시도 — 그가 비웃음. 처형 직전.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "신과의 동맹"
+  },
+  {
+    "nodeId": 14,
+    "text": "노크업 스트림 다시 — 황금만 들고 하늘섬 떠남. 신은 그대로.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "황금만 챙긴 자"
+  }
+]

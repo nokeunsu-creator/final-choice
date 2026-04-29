@@ -1,0 +1,220 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한도전 요리 미션. 전국 셰프 경연. 막내인 당신이 주방장. 30분 안에 한 그릇 완성. 재료 — 김치, 라면, 계란, 햄, 뜻 모를 향신료.",
+    "choices": [
+      {
+        "label": "김치라면 — 안전",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "신중"
+        ]
+      },
+      {
+        "label": "이상한 향신료 — 도전",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "계란말이 — 화려함",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "주방 폭주",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "올인 - 모든 재료",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "주방 화재",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "형들 끼어듦 받음",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "한 입씩 부탁",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "김치라면 끓이는 중. 형들이 \"평범하다\" 한다. 그러나 셰프 평가는 깔끔.",
+    "choices": [
+      {
+        "label": "계란 토핑 추가",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "그대로 제출",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "향신료 한 스푼 — 라면에. 색이 보라색. 형들이 \"이게 뭐야!\" 비명.",
+    "choices": [
+      {
+        "label": "맛있다 우긴다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "다시 끓인다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "분석"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "계란말이. 한 장씩 정성스레. 셰프가 \"기본기 좋다.\" 평가.",
+    "choices": [
+      {
+        "label": "햄도 추가",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "계란 토핑 김치라면. 셰프 평가 8/10.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "8점의 김치라면"
+  },
+  {
+    "nodeId": 6,
+    "text": "기본 김치라면 7/10. 평범하지만 무난.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "7점의 평범"
+  },
+  {
+    "nodeId": 7,
+    "text": "맛있다 우김. 형들이 한 입 먹고 \"진짜 맛있어\" 한다. 셰프도 한 입 — \"이거... 새로운 발견.\" 9/10.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "9점의 발견"
+  },
+  {
+    "nodeId": 8,
+    "text": "다시 끓이는 사이 시간 부족. 면이 퍼짐. 6/10.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "퍼진 면"
+  },
+  {
+    "nodeId": 9,
+    "text": "햄+계란말이. 셰프 \"단순하지만 완성도.\" 8/10.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "단순의 완성도"
+  },
+  {
+    "nodeId": 10,
+    "text": "30분 끝. 향신료 폭주 — 5/10. 셰프 \"뭔가 잘못 됐어.\"",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "향신료 폭주"
+  },
+  {
+    "nodeId": 11,
+    "text": "김치라면 + 계란말이 + 향신료 한 방울. 셰프 \"이게 뭐야 — 천재인가\" 10/10.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "천재의 한 그릇"
+  },
+  {
+    "nodeId": 12,
+    "text": "주방 화재 — 그릇 안 만들고 끝. 0점.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "주방 화재"
+  },
+  {
+    "nodeId": 13,
+    "text": "형들이 도와주려 끼어들어 주방 혼란. 결국 평범한 6/10.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "도움의 혼란"
+  },
+  {
+    "nodeId": 14,
+    "text": "막내답게 \"형들 한 입씩 — 어떤 게 맛있어?\" 협력. 셰프 \"팀워크상\" 9/10.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "팀워크상"
+  }
+]

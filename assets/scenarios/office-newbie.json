@@ -1,0 +1,247 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한상사 첫 출근. 8:55. 부장 자리는 비어있고 김 대리가 \"커피 한 잔 부탁\" 한다. 옆자리 정 사원은 \"막내 환영\" 케이크 만들 시간.",
+    "choices": [
+      {
+        "label": "커피부터 — 김 대리에게",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "케이크 도움 — 정 사원에게",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "내 자리 셋업부터",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "독자"
+        ]
+      },
+      {
+        "label": "멀티 - 셋 다 동시",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "탕비실 커피 머신. 김 대리는 아메리카노. 그러나 옆에 부장 머그 — \"부장은 라떼\" 적힌 메모.",
+    "choices": [
+      {
+        "label": "둘 다 만든다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "김 대리 것만",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "정 사원과 케이크 준비. 그가 \"부장 알레르기 — 견과류 NO\" 알려준다. 케이크는 견과류 토핑.",
+    "choices": [
+      {
+        "label": "토핑 떼고 다시",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "그냥 진행",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "직관"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "내 자리. 컴퓨터 부팅 중 부장 들어와 \"막내야 어디 있냐\" 호통.",
+    "choices": [
+      {
+        "label": "사정 설명",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "조용히 일어나 인사",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "두 잔. 그러나 손이 떨려 부장 컵을 김 대리 책상에 — 김 대리: \"이거 내 거 아닌데?\" 부장도 들어옴.",
+    "choices": [
+      {
+        "label": "솔직히 실수 인정",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "변명한다",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "직관"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "김 대리만. 부장 들어와 \"내 라떼는?\" 한다.",
+    "choices": [
+      {
+        "label": "지금 만들겠다",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "메모 못 봤다고",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "토핑 떼고 다시. 정 사원이 \"센스 좋네\" 한다. 케이크 환영회 자연스러움. 부장도 만족.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "센스 있는 첫날"
+  },
+  {
+    "nodeId": 8,
+    "text": "그냥 진행. 부장이 한 입 — 알레르기 반응. 응급실. 평생 그 일 회자.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "견과류의 결정"
+  },
+  {
+    "nodeId": 9,
+    "text": "사정 설명. 부장: \"첫날부터 핑계? 정 사원 좀 도와주고 와.\"",
+    "choices": [
+      {
+        "label": "정 사원에게로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "조용히 일어나 인사. 부장 표정 풀린다. \"오, 첫날인가? 잘 부탁해.\"",
+    "choices": [
+      {
+        "label": "커피 먼저",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "솔직히 사과. 부장이 웃는다. \"그래도 첫날 둘 다 챙기는 막내네. 합격.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "솔직한 막내"
+  },
+  {
+    "nodeId": 12,
+    "text": "변명. 부장 표정 굳는다. \"첫날부터?\" 김 대리 시선도 차갑다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "어색한 첫날"
+  },
+  {
+    "nodeId": 13,
+    "text": "메모 못 봤다는 말. 부장: \"메모 붙어있는데도? 자네 눈 좀 키우게.\" 그러나 큰 사고는 아니다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "눈 좀 키우게"
+  },
+  {
+    "nodeId": 14,
+    "text": "부장 라떼 + 김 대리 아메리카노 + 정 사원 케이크 동시에. 막내 첫날 \"멀티태스킹의 신.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "멀티태스킹의 신"
+  }
+]

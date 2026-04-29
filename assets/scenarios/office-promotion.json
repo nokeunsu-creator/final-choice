@@ -1,0 +1,109 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한상사 영업 3팀, 입사 5년차. 오늘 부장이 \"승진 인사 명단\" 보고서를 책상에 두고 갔다. 옆자리 박 대리가 슬쩍 본 듯하다. 점심 시간 1시간.",
+    "choices": [
+      { "label": "보고서를 몰래 본다", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["직관","자기"] },
+      { "label": "박 대리에게 묻는다", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "그냥 일에 집중한다", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "보고서 첫 페이지. 당신 이름은 후보군에 있다. 그러나 1순위는 박 대리. 그의 점수가 0.3점 더 높다.",
+    "choices": [
+      { "label": "박 대리 약점을 찾는다", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["정면","자기"] },
+      { "label": "내 점수를 올릴 방법", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["분석","실용"] },
+      { "label": "보고서를 원래대로 두고 모른 척", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["원칙","회피"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "박 대리: \"아, 그거? 나도 어제 살짝 봤어. 둘 중 하나 같던데.\" 그가 웃으며 커피 한 잔 권한다.",
+    "choices": [
+      { "label": "선의의 경쟁이라 답한다", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "협력 제안 — 둘 다 좋게", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["협력","분석"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "오후 일에 집중. 마침 이사님이 부장 자리에 들렀다 가는 게 보인다.",
+    "choices": [
+      { "label": "이사님께 인사", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "그대로 모니터만 본다", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "박 대리 약점을 캐다 그의 어머니 병환 사실을 안다. 이걸 인사팀에 흘리면 점수가 뒤집힐 수 있다.",
+    "choices": [
+      { "label": "흘린다", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["정면","자기"] },
+      { "label": "흘리지 않는다", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "마지막 분기 매출 자료. 내가 놓친 미수금 회수 건이 있다. 오늘 밤새 정리하면 분기 막판에 0.5점.",
+    "choices": [
+      { "label": "야근으로 마무리", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "박 대리에게 도움 요청", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["협력"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "선의의 경쟁. 박 대리가 \"좋아, 정정당당.\" 하며 손을 내민다. 그러나 그 다음 주 그는 갑자기 거래처 미팅을 독차지한다.",
+    "choices": [
+      { "label": "나도 거래처 추가 발굴", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["용기","실용"] },
+      { "label": "부장에게 항의", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["정면"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "협력 제안. \"한 명 승진하고 한 명은 다음 분기.\" 박 대리가 흔쾌히 동의. 둘이 분기 매출 분담으로 둘 다 좋은 점수.",
+    "choices": [
+      { "label": "이대로 마무리", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "이사님이 \"자네, 일 잘한다는 얘기 들었네. 다음 분기는 자네야.\" 한 마디.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "이사님의 한 마디"
+  },
+  {
+    "nodeId": 10,
+    "text": "그대로 일만 한다. 그 주 인사 발표 — 박 대리 승진. 당신은 그대로.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "묵묵한 5년"
+  },
+  {
+    "nodeId": 11,
+    "text": "흘린 정보가 부메랑. 박 대리가 인사팀 친구를 통해 누구 짓인지 안다. 사내에서 평판이 무너진다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "흘린 한 마디"
+  },
+  {
+    "nodeId": 12,
+    "text": "흘리지 않은 그 한 마디. 인사 발표 박 대리 승진. 그가 며칠 뒤 \"고맙다\" 한 마디 — 그것도 모르는 새. 다음 분기 당신.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "지킨 한 마디"
+  },
+  {
+    "nodeId": 13,
+    "text": "밤 11시. 미수금 회수 건 정리. 부장이 \"이거 자네가 했나? 인사 점수 다시 봐야겠군.\" 점수 0.6점 추가. 승진.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "야근의 0.6점"
+  },
+  {
+    "nodeId": 14,
+    "text": "둘이 함께 분기 매출 1위. 부장이 \"둘 다 승진. 본부 신설하니까 같이 가자.\" 협력의 결과.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "동반 승진"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "nodeId": 1,
+    "text": "라프텔. 모든 길의 끝. 우리 해적단이 마지막 섬에 도착. 그 섬에 무엇이 있는지 — 800년의 비밀, 그리고 \"하나의 큰 보물\".",
+    "choices": [
+      {
+        "label": "선장 혼자 진입",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "독자"
+        ]
+      },
+      {
+        "label": "전원 함께 진입",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "잠시 멈춤 — 결의 다짐",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      },
+      {
+        "label": "이게 보물이다 - 동료",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "해적왕 선언",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "혼자 간직 후 털어놓기",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "두려움 - 후퇴 후 다시",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "끝의 시작",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "선장 혼자 — 가장 깊은 곳. 800년 전 한 명의 자취. 그리고 비밀 책.",
+    "choices": [
+      {
+        "label": "비밀 책을 본다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "보물만 챙긴다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용",
+          "독자"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "전원 함께. 비밀 동굴 — 800년의 빛. 모두 한 자리에서 비밀을 본다.",
+    "choices": [
+      {
+        "label": "비밀을 세상에 알린다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "비밀을 묻는다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "신중"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "결의 다짐. 모두 갑판에 모여 한 마디씩. 그리고 함께 진입.",
+    "choices": [
+      {
+        "label": "전원 진입",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "비밀 책 — \"공허의 100년\" 진실. 인류의 잊혀진 한 챕터.",
+    "choices": [
+      {
+        "label": "동료들과 공유",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "혼자 간직",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "보물만. 황금 산. 그러나 진짜 의미를 놓침. 다음 항해도 의미 없어진다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "황금만 든 자"
+  },
+  {
+    "nodeId": 7,
+    "text": "비밀 세상에 — 모든 바다에 800년의 진실 전파. 새 시대 — 공허의 시대 끝남.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "공허의 끝"
+  },
+  {
+    "nodeId": 8,
+    "text": "비밀 묻음. 어떤 자도 다시 못 찾게. 우리 해적단만이 안다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "우리만의 비밀"
+  },
+  {
+    "nodeId": 9,
+    "text": "혼자 간직. 동료들 모르는 채. 부담만 더해짐.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "혼자의 800년"
+  },
+  {
+    "nodeId": 10,
+    "text": "선장이 \"하나의 큰 보물\"을 가리킨다 — 모든 동료들. \"이게 보물이다.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "이게 보물이다"
+  },
+  {
+    "nodeId": 11,
+    "text": "비밀 책 + 동료 + 결의 다짐. 모든 진실 + 모든 동료 + 모든 의미. 해적왕 선언.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "해적왕"
+  },
+  {
+    "nodeId": 12,
+    "text": "혼자 간직 → 부담에 무너짐. 결국 동료들에게 털어놓는다.",
+    "choices": [
+      {
+        "label": "함께 결정",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "라프텔 입구에서 후퇴 — 두려움. 그러나 다시 도전.",
+    "choices": [
+      {
+        "label": "결의 다지고 다시",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "라프텔의 끝. 800년의 진실 + 동료 + 보물. 새 시대의 시작. 자막 \"이제 그 시대다.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "이제 그 시대"
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "nodeId": 1,
+    "text": "마린포드 정상결전. 형 — 사형대 위. 해군 본부에 우리 해적단 단신 진입. 황제 한 명, 대장 셋이 우리 사이에 있다.",
+    "choices": [
+      {
+        "label": "정면 돌파 — 사형대로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "동맹 — 다른 해적단",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "우회 — 광장 옆",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "신중"
+        ]
+      },
+      {
+        "label": "동맹 + 잠입 + 정면",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "정면 돌파. 대장 한 명이 길을 막는다 — 빙결 능력자.",
+    "choices": [
+      {
+        "label": "고무 능력으로 우회",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관",
+          "용기"
+        ]
+      },
+      {
+        "label": "정면 격돌",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "동맹. 흰수염 해적단 — 형의 아버지. 그가 \"꼬마야 형 구하자\" 한다.",
+    "choices": [
+      {
+        "label": "선두에서 돌격",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      },
+      {
+        "label": "후방에서 지원",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "광장 옆. 해군 함대 한 척이 비어있다. 잠입 — 사형대 옆 가까이 갈 수 있다.",
+    "choices": [
+      {
+        "label": "잠입 후 형 구출",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "고무 능력으로 빙결 우회 — 사형대 5m 앞.",
+    "choices": [
+      {
+        "label": "사형대 위로 점프",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "정면 격돌. 대장의 빙결 — 한 발 못 움직임. 잠시 의식 잃음.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "빙결의 정면"
+  },
+  {
+    "nodeId": 7,
+    "text": "선두 돌격. 흰수염과 함께 사형대까지. 형 구출. 그러나 흰수염은 황제와 격돌 중 부상.",
+    "choices": [
+      {
+        "label": "형 데리고 후퇴",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "후방 지원. 흰수염 해적단의 진격 도와줌. 형 구출 성공.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "후방의 의리"
+  },
+  {
+    "nodeId": 9,
+    "text": "잠입 + 사형대 옆 — 그러나 사형 집행 직전. 형 손목 결박 풀음.",
+    "choices": [
+      {
+        "label": "함께 후퇴",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "사형대 점프 — 형 결박 풀음. 두 형제 등 맞대고 적진 한가운데.",
+    "choices": [
+      {
+        "label": "고무 능력 풀파워로 후퇴",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "후퇴. 그러나 적장의 마지막 일격이 형을 향한다.",
+    "choices": [
+      {
+        "label": "막는다 — 내 몸으로",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "함께 도망",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "자기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "내 몸으로 막는다. 깊은 부상 — 그러나 형은 살아남는다. 동료들이 끌어 올린다. 살아 돌아온다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "내 몸으로 막은"
+  },
+  {
+    "nodeId": 13,
+    "text": "함께 도망 — 형이 일격에 쓰러진다. 후회의 그림자.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "막지 못한 일격"
+  },
+  {
+    "nodeId": 14,
+    "text": "동맹 + 잠입 + 정면 — 셋 다 동원. 마린포드 정상결전 — 형 구출 + 우리 해적단 무사 후퇴. 자막 \"새로운 시대.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "새로운 시대"
+  }
+]

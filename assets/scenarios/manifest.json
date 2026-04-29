@@ -49,6 +49,26 @@
     { "id": "subway-trapped", "title": "지하철 갇힘", "subtitle": "2호선 막차", "description": "옆 선로의 빛", "icon": "🚇", "accent": "#10b981" },
     { "id": "warzone", "title": "전쟁터 한복판", "subtitle": "종군기자", "description": "프레스 차량과 검문소", "icon": "🪖", "accent": "#65a30d" },
     { "id": "hostage-negotiation", "title": "인질 협상", "subtitle": "은행 강도 12명 인질", "description": "공감 vs 강압", "icon": "🎲", "accent": "#7c3aed" },
-    { "id": "prison-escape", "title": "탈옥수", "subtitle": "어머니 위독", "description": "옥상·세탁실·식당", "icon": "⛓️", "accent": "#52525b" }
+    { "id": "prison-escape", "title": "탈옥수", "subtitle": "어머니 위독", "description": "옥상·세탁실·식당", "icon": "⛓️", "accent": "#52525b" },
+    { "id": "office-promotion", "title": "무한상사 — 승진 인사", "subtitle": "박 대리와의 0.3점", "description": "보고서를 몰래 보면", "icon": "💼", "accent": "#0ea5e9" },
+    { "id": "office-dinner", "title": "무한상사 — 회식 거절", "subtitle": "내일 9시 발표", "description": "빠질 것인가 끝까지", "icon": "🍻", "accent": "#0284c7" },
+    { "id": "office-newbie", "title": "무한상사 — 첫 출근", "subtitle": "8:55 막내", "description": "커피 vs 케이크 vs 자리", "icon": "🌱", "accent": "#22c55e" },
+    { "id": "office-card", "title": "무한상사 — 법인카드", "subtitle": "일요일 오후 6시", "description": "월요일 9시 정산", "icon": "💳", "accent": "#0891b2" },
+    { "id": "office-overnight", "title": "무한상사 — 새벽 야근", "subtitle": "부장이 잠들었다", "description": "혼자? 분담? 도주?", "icon": "🌙", "accent": "#475569" },
+    { "id": "mudo-chase", "title": "무한도전 — 추격전", "subtitle": "30분 안에 본부로", "description": "명찰을 지켜라", "icon": "🏃", "accent": "#fbbf24" },
+    { "id": "mudo-island", "title": "무한도전 — 24시간 무인도", "subtitle": "5명, 식량 없음", "description": "물 / 쉘터 / 낚시", "icon": "🏝️", "accent": "#16a34a" },
+    { "id": "mudo-songfest", "title": "무한도전 — 가요제", "subtitle": "1만 관중 5분 전", "description": "동료가 가사 까먹었다", "icon": "🎤", "accent": "#ec4899" },
+    { "id": "mudo-karaoke", "title": "무한도전 — 노래방 99점", "subtitle": "60점 미만 벌칙", "description": "발라드 vs 랩 vs 트로트", "icon": "🎶", "accent": "#f472b6" },
+    { "id": "mudo-marathon", "title": "무한도전 — 사천성 마라톤", "subtitle": "42.195km 4시간", "description": "비 속의 완주", "icon": "🏅", "accent": "#fb923c" },
+    { "id": "mudo-relay", "title": "무한도전 — 계주 마지막 주자", "subtitle": "5m 뒤지고 있어", "description": "전속력 vs 페이스 조절", "icon": "🥖", "accent": "#facc15" },
+    { "id": "mudo-cooking", "title": "무한도전 — 요리 미션", "subtitle": "30분 한 그릇", "description": "김치라면 vs 향신료", "icon": "🍳", "accent": "#fde047" },
+    { "id": "onepiece-eastblue", "title": "원피스 — 이스트블루 출항", "subtitle": "견습 해적의 첫날", "description": "힘 / 머리 / 의리", "icon": "🏴‍☠️", "accent": "#dc2626" },
+    { "id": "onepiece-grandline", "title": "원피스 — 그랜드라인 입구", "subtitle": "리버스 마운틴", "description": "고래와 폭포", "icon": "⛵", "accent": "#0369a1" },
+    { "id": "onepiece-marineford", "title": "원피스 — 마린포드 정상결전", "subtitle": "형이 사형대 위에", "description": "단신 진입", "icon": "⚔️", "accent": "#b91c1c" },
+    { "id": "onepiece-skypiea", "title": "원피스 — 스카이피아", "subtitle": "구름 위 하늘섬", "description": "신과 황금 종", "icon": "☁️", "accent": "#fcd34d" },
+    { "id": "onepiece-impeldown", "title": "원피스 — 임펠다운", "subtitle": "해저 대감옥 6층", "description": "1층부터 6층까지", "icon": "🔒", "accent": "#3f3f46" },
+    { "id": "onepiece-fishman", "title": "원피스 — 어인섬", "subtitle": "해저 1만m", "description": "왕 vs 적대파", "icon": "🐠", "accent": "#0891b2" },
+    { "id": "onepiece-wano", "title": "원피스 — 와노국", "subtitle": "오니가시마 결전", "description": "황제 카이도", "icon": "🐉", "accent": "#dc2626" },
+    { "id": "onepiece-laftel", "title": "원피스 — 라프텔", "subtitle": "모든 길의 끝", "description": "800년의 비밀", "icon": "🗺️", "accent": "#fbbf24" }
   ]
 }

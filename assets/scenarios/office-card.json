@@ -1,0 +1,255 @@
+[
+  {
+    "nodeId": 1,
+    "text": "법인카드를 잃어버렸다. 어제 회식 후 분실 추정. 월요일 9시까지 카드 정산서 제출 필요. 지금 일요일 오후 6시.",
+    "choices": [
+      {
+        "label": "회식 식당에 전화",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "택시 분실물센터",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "재발급 신청 — 월요일 새것",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "실용"
+        ]
+      },
+      {
+        "label": "잠수",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "독자"
+        ]
+      },
+      {
+        "label": "재발급+영수증 찾기",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "택시+식당 모두",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "식당 사장: \"카드는 못 봤는데... CCTV 확인은 직원만.\" 직원은 휴무.",
+    "choices": [
+      {
+        "label": "사장에게 부탁",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      },
+      {
+        "label": "다른 곳 시도",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "택시 분실물 센터. 카드 한 장이 접수됐다 — 그러나 본인 확인 절차가 까다롭다.",
+    "choices": [
+      {
+        "label": "직접 방문",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "내일 아침으로",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "신중"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "재발급 신청. 그러나 정산서엔 어제 결제 내역이 들어가야 한다. 카드 없으면 영수증으로 입력.",
+    "choices": [
+      {
+        "label": "회식 영수증 챙기러 식당",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "사장이 직원에게 전화. \"내일 11시 출근, 그때 CCTV.\" 그러나 정산은 9시.",
+    "choices": [
+      {
+        "label": "부장에게 미리 보고",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "정산 늦춰달라 부탁",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "분실물 센터 직접 방문. 카드 회수. 본인 확인 30분 걸렸지만 무사히.",
+    "choices": [
+      {
+        "label": "정산서 정리하고 9시 제출",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "실용"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "내일 아침. 그러나 분실물 센터 8시 30분 오픈, 회사 9시. 시간이 빠듯하다.",
+    "choices": [
+      {
+        "label": "센터 들렀다 회사로",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "실용"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "부장에게 보고. \"솔직해서 좋다. 내일 아침 정리해서 와.\" 큰일 안 된다.",
+    "choices": [
+      {
+        "label": "다음 날 카드 회수 후 정리",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "부장: \"왜 늦지?\" 추궁. 결국 솔직히 말하자 부장이 한숨. \"미리 말해야지.\"",
+    "choices": [
+      {
+        "label": "사과하고 정리",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "9시 정산서 제출. 정확. 부장 한 마디 없이 통과.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "9시 정시"
+  },
+  {
+    "nodeId": 11,
+    "text": "솔직히 보고 + 다음 날 정리. 부장이 \"앞으로도 그렇게 솔직하게.\" 신뢰 점수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "솔직한 막내"
+  },
+  {
+    "nodeId": 12,
+    "text": "잠수. 월요일 부장 호출 — 카드 부정사용 의심. 인사 위원회.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "잠수의 끝"
+  },
+  {
+    "nodeId": 13,
+    "text": "재발급 + 영수증 정산. 그러나 회식 한 영수증이 사라졌다. 정산서 0.5만원 비어있는 채.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "5천원의 구멍"
+  },
+  {
+    "nodeId": 14,
+    "text": "택시 + 식당 모두 들러 카드+영수증 회수. 9시 정확히 정산. 부장 \"역시 일 잘하네.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "일요일 밤의 추격"
+  }
+]

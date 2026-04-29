@@ -1,0 +1,107 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한도전 추격전 특집. 멤버 6명, 명찰 떼면 탈락. 시작 시그널과 함께 모두 흩어진다. 당신은 가장 막내. 30분 안에 명찰 못 떼면 본부에 도착.",
+    "choices": [
+      { "label": "지하철역 — 인파 속으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["회피","실용"] },
+      { "label": "건물 옥상 — 시야 확보", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "팀 결성 시도 — 형 두 명", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "지하철역. 사람 많고 CCTV 많다. 그러나 카메라가 따라온다. \"막내 동선 노출.\"",
+    "choices": [
+      { "label": "다른 출구로 빠져나간다", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["직관","회피"] },
+      { "label": "역 화장실에 숨는다", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "옥상. 멀리 형 두 명이 명찰 떼려 추격당한다. 한 명은 곧 잡힐 듯.",
+    "choices": [
+      { "label": "내려가서 도와준다", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "그대로 숨어있는다", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["자기","회피"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "박명수 형 + 정형돈 형 발견. 셋이 뭉친다. 카메라가 \"3인 동맹\" 자막. 그러나 동맹 내 배신 가능.",
+    "choices": [
+      { "label": "끝까지 함께", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "박명수 형 명찰 떼기 시도", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["정면","자기"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "다른 출구. 카메라 한 대만 따라옴. 인근 빌딩 비상계단으로 본부까지 5분.",
+    "choices": [
+      { "label": "5분 본부 직행", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["원칙","실용"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "화장실. 안에서 5분 대기. 그러나 옆 칸에서 \"막내야 거기 있어?\" 형의 목소리.",
+    "choices": [
+      { "label": "조용히 빠져나옴", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] },
+      { "label": "맞대결", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["정면","용기"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "내려가 형을 도와준다. 둘이 함께 본부 가던 중 카메라 자막 \"의리의 막내.\" 본부 도착.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "의리의 막내"
+  },
+  {
+    "nodeId": 8,
+    "text": "그대로 숨어있다 30분 끝. 본부 도착. 명찰 보존. 그러나 형이 잡히는 그 장면 자막 \"막내, 형 외면.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "외면의 명찰"
+  },
+  {
+    "nodeId": 9,
+    "text": "셋이 끝까지. 본부 100m 앞. 누군가 한 명은 명찰 떼서 탈락.",
+    "choices": [
+      { "label": "내가 희생", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "박명수 형이 자진 희생", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "박명수 형 명찰 떼기. 그가 \"이 막내가!\" 비명. 그러나 정형돈 형이 당신 명찰을 떼고 도망. 둘 다 탈락.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "삼파전"
+  },
+  {
+    "nodeId": 11,
+    "text": "본부 직행. 30분 안에 도착. 명찰 보존 — 우승.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "지하철 우승"
+  },
+  {
+    "nodeId": 12,
+    "text": "맞대결. 막내가 형 명찰 떼기 시도 — 카메라 자막 \"막내 미쳤다\". 결국 둘 다 명찰 사라짐.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "막내 미쳤다"
+  },
+  {
+    "nodeId": 13,
+    "text": "내가 희생. 두 형은 우승. 자막 \"의리의 막내, 두 번째 우승.\" 인기상.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "인기상의 막내"
+  },
+  {
+    "nodeId": 14,
+    "text": "박명수 형 자진 희생. 둘이 본부 도착. 자막 \"형이 양보한 우승.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "양보의 우승"
+  }
+]

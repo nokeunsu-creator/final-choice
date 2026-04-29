@@ -1,0 +1,229 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한도전 사천성 마라톤. 42.195km. 4시간 안에 완주. 막내 + 형 5명. 시작 직전 비.",
+    "choices": [
+      {
+        "label": "비옷 입고 출발",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": "비옷",
+        "traits": [
+          "신중",
+          "실용"
+        ]
+      },
+      {
+        "label": "그냥 출발",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "워밍업 더",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "완벽 준비",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "30km에서 무릎",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "5명 전원 함께",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "10km. 비옷 덕에 따뜻. 페이스 좋다. 형 한 명이 뒤처진다.",
+    "choices": [
+      {
+        "label": "기다려 함께 간다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "내 페이스 유지",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "5km. 비에 흠뻑 젖었다. 추위. 페이스 떨어짐.",
+    "choices": [
+      {
+        "label": "잠시 비 피하고 다시",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "그래도 계속",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "자기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "워밍업 5분 더. 다른 멤버보다 5분 늦은 출발. 그러나 다리 가볍다.",
+    "choices": [
+      {
+        "label": "추격 페이스로",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "함께 페이스. 30km까지 둘이 같이. 그러나 4시간 마감 위태.",
+    "choices": [
+      {
+        "label": "마지막 12km 스퍼트",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "내 페이스. 30km 통과. 형은 한참 뒤. 4시간 안에 완주 가능.",
+    "choices": [
+      {
+        "label": "마지막 12km 스퍼트",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "비 잠깐 피한 뒤 다시. 그러나 컷오프 시간 위태.",
+    "choices": [
+      {
+        "label": "스퍼트",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "그래도 계속. 20km에서 저체온증.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "비의 20km"
+  },
+  {
+    "nodeId": 9,
+    "text": "둘이 함께 결승선. 3시간 58분 — 컷 직전. 자막 \"의리의 완주.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "의리의 완주"
+  },
+  {
+    "nodeId": 10,
+    "text": "혼자 결승선. 3시간 45분. 1위 완주. 그러나 형은 컷 못 했다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "1위의 무게"
+  },
+  {
+    "nodeId": 11,
+    "text": "스퍼트. 4시간 12분 — 컷오프 초과. 미완주.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "12분의 차이"
+  },
+  {
+    "nodeId": 12,
+    "text": "비옷 + 워밍업 + 페이스 조절. 3시간 50분 완주. 자막 \"준비가 답이다.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "준비가 답"
+  },
+  {
+    "nodeId": 13,
+    "text": "30km에서 무릎 부상. 의무 차에 실린다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "30km의 무릎"
+  },
+  {
+    "nodeId": 14,
+    "text": "5명 모두 컷 안에 완주. 자막 \"한 명도 빠짐없이.\" 시청자 감동.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "한 명도 빠짐없이"
+  }
+]

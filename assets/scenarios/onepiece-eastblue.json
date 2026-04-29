@@ -1,0 +1,266 @@
+[
+  {
+    "nodeId": 1,
+    "text": "이스트블루 어느 작은 섬. 막 출항한 견습 해적. 작은 보트, 빵 한 덩어리, 칼 한 자루. 멀리 거대 갈매기 — 해적 깃발 단 배가 다가온다.",
+    "choices": [
+      {
+        "label": "숨어서 지나가길 기다림",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "회피"
+        ]
+      },
+      {
+        "label": "흰 깃발 들고 합류 시도",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      },
+      {
+        "label": "도망 — 노 저어",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "독자"
+        ]
+      },
+      {
+        "label": "통 떨어뜨림",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "지도 못 읽음",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "자만한다",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "자기"
+        ]
+      },
+      {
+        "label": "표류 다른 섬",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      },
+      {
+        "label": "삼관왕 도전",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "보트 옆 바위에 숨음. 해적선이 지나간다. 그러나 한 명이 뛰어내려 \"어이! 너 뭐야?\"",
+    "choices": [
+      {
+        "label": "용기 내어 \"동료 시켜주세요\"",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "칼 들고 맞선다",
+        "nextNodeId": 5,
+        "requiredItem": "칼",
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "해적선장 — 빨간 모자, 짙은 수염. \"꼬마야, 우리 배에 들어오려면 시험을 봐.\" 시험 셋: 힘, 머리, 의리.",
+    "choices": [
+      {
+        "label": "힘 — 무거운 통 들기",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "머리 — 항해 지도 읽기",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "의리 — 동료 위해 한 마디",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "도망. 노가 부러진다. 해적선이 따라잡음.",
+    "choices": [
+      {
+        "label": "그래도 합류 시도",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "칼로 맞선다. 해적이 \"꼬마, 깡은 있네.\" 하며 칼을 거두고 \"동료다.\" 한다.",
+    "choices": [
+      {
+        "label": "선장 만나러",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "통이 너무 무겁다. 그러나 끝까지 들었다. 선장: \"근성 합격.\" 동료가 된다.",
+    "choices": [
+      {
+        "label": "동료 인사",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "동료증",
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "지도 읽기. 그랜드라인 입구 좌표 정확히 짚음. 선장 감탄. 항해사 자리 내준다.",
+    "choices": [
+      {
+        "label": "항해사로 합류",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "동료증",
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "한 마디 — \"동료가 필요하면 저를. 동료를 잃으면 저도 함께 슬퍼하겠습니다.\" 선장이 한참 보다 \"좋다.\"",
+    "choices": [
+      {
+        "label": "동료 인사",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "동료증",
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "동료 인사 후 첫 항해. 그랜드라인 입구로 향한다. 첫날 밤 갑판에서 별을 본다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "첫 항해의 별"
+  },
+  {
+    "nodeId": 10,
+    "text": "통 절반 들다 떨어뜨림. 발 위에. 부상 + 탈락.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "발 위의 통"
+  },
+  {
+    "nodeId": 11,
+    "text": "지도 못 읽음. 선장 한숨. 그러나 \"청소부 자리는 있다.\" 합류 — 신분 낮음.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "청소부 동료"
+  },
+  {
+    "nodeId": 12,
+    "text": "한 마디 — \"제가 더 강합니다.\" 자만. 선장 \"꺼져.\"",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "꺼진 자"
+  },
+  {
+    "nodeId": 13,
+    "text": "도망 끝까지. 노 부서지고 표류. 며칠 후 다른 섬 도착, 거기서 새 시작.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "표류의 새 시작"
+  },
+  {
+    "nodeId": 14,
+    "text": "셋 다 통과 — 힘+머리+의리. 선장이 \"부선장\" 자리를 준다. 첫 항해부터 부선장.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "삼관왕 부선장"
+  }
+]
