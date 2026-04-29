@@ -151,6 +151,11 @@ export function EndingScreen({ onReturnToTitle, onRetryScenario, onShowMap }: Pr
 
         <div style={{ marginTop: 28, fontSize: 12, color: '#555' }}>
           이 시나리오 결말: {clearedCount} / {totalEndings}
+          {node?.endingTitle && (current?.endingCounts?.[node.endingTitle] ?? 0) > 0 && (
+            <span style={{ marginLeft: 10, color: '#a8acc1' }}>
+              · 이 결말 <span style={{ color: '#ffaa00' }}>{current?.endingCounts?.[node.endingTitle]}</span>회 도달
+            </span>
+          )}
         </div>
 
         {/* 분기 힌트 */}

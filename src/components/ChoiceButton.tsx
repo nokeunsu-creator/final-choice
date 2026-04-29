@@ -1,3 +1,5 @@
+import { playClick, playLocked } from '../utils/sound';
+
 interface Props {
   label: string;
   disabled?: boolean;
@@ -6,11 +8,19 @@ interface Props {
 }
 
 export function ChoiceButton({ label, disabled, hint, onClick }: Props) {
+  const handleClick = () => {
+    if (disabled) {
+      playLocked();
+      return;
+    }
+    playClick();
+    onClick();
+  };
   return (
     <button
       type="button"
-      onClick={onClick}
-      disabled={disabled}
+      onClick={handleClick}
+      aria-disabled={disabled || undefined}
       style={{
         width: '100%',
         textAlign: 'left',

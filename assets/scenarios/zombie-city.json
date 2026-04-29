@@ -343,7 +343,7 @@
   },
   {
     "nodeId": 16,
-    "text": "지하도는 어둡고 차들이 줄지어 멈춰있다. 사이로 빠져 끝까지 가자 학교 운동장이 눈앞에.",
+    "text": "지하도는 어둡고 차들이 줄지어 멈춰있다. 사이로 빠져나가던 중, 한 차량 옆에서 다친 시민의 신음. 끝까지 가면 학교 운동장.",
     "choices": [
       {
         "label": "옥상으로 신호를 보낸다",
@@ -351,6 +351,16 @@
         "requiredItem": "라디오",
         "grantItem": null,
         "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "다친 시민을 살핀다",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
           "협력"
         ]
       },
@@ -440,5 +450,97 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "두 바퀴의 탈주"
+  },
+  {
+    "nodeId": 23,
+    "text": "다친 시민. 어깨가 찢어졌고 얼굴이 창백하다. 감염은 아닌 것 같다. \"제발 — 도와주세요.\"",
+    "choices": [
+      {
+        "label": "진통제를 준다",
+        "nextNodeId": 24,
+        "requiredItem": "진통제",
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "항바이러스를 준다",
+        "nextNodeId": 25,
+        "requiredItem": "항바이러스",
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      },
+      {
+        "label": "지나친다",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "자기",
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 24,
+    "text": "진통제. 시민이 일어선다. \"같이 갑시다.\" 둘이서 지하도 끝까지. 학교 정문 앞.",
+    "choices": [
+      {
+        "label": "라디오로 신호 (둘 다 합류)",
+        "nextNodeId": 26,
+        "requiredItem": "라디오",
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "그냥 진입",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 25,
+    "text": "항바이러스. 시민이 흠칫. \"이거… 마지막 한 알이지? 나는 이미 늦었어. 옥상에 다른 사람을 위해 가져가.\" 약을 다시 돌려준다.",
+    "choices": [
+      {
+        "label": "그의 부탁대로 옥상으로",
+        "nextNodeId": 27,
+        "requiredItem": "라디오",
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 26,
+    "text": "주파수 87.3. \"민간인 두 명, 진입 지원.\" 군인들이 정문을 잠시 열고 둘을 들인다. 옥상엔 살아남은 자들의 박수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "동행자"
+  },
+  {
+    "nodeId": 27,
+    "text": "옥상의 군의관에게 약을 내민다. 한 어린이가 막 감염된 직후. 약이 그 아이를 살린다. 군인이 손을 굳게 잡는다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "양보의 자비"
   }
 ]

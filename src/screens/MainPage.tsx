@@ -5,6 +5,7 @@ import { ARCHETYPE_CATEGORIES, aggregateCounts, scoreArchetypes } from '../data/
 import { ACHIEVEMENTS, evaluateAchievements, unlockedCount } from '../data/achievements';
 import { PersonalityResult } from '../components/PersonalityResult';
 import type { ScenarioMeta } from '../data/types';
+import { isMuted, setMuted, playClick } from '../utils/sound';
 
 interface Props {
   onStart: () => void;
@@ -86,6 +87,13 @@ export function MainPage({ onStart, onSelectScenario, onShowStats }: Props) {
   const achievements = useMemo(() => evaluateAchievements(save), [save]);
   const unlockedAchCount = useMemo(() => unlockedCount(save), [save]);
   const [showAchievements, setShowAchievements] = useState(false);
+  const [muted, setMutedState] = useState(() => isMuted());
+  const toggleMute = () => {
+    const next = !muted;
+    setMuted(next);
+    setMutedState(next);
+    if (!next) playClick();
+  };
 
   return (
     <div
@@ -339,22 +347,41 @@ export function MainPage({ onStart, onSelectScenario, onShowStats }: Props) {
           이야기 고르기 ›
         </button>
 
-        <button
-          onClick={onShowStats}
-          style={{
-            width: '100%',
-            padding: '12px',
-            background: 'transparent',
-            color: '#a8acc1',
-            border: '1px solid #2a2c3a',
-            borderRadius: 8,
-            fontSize: 13,
-            cursor: 'pointer',
-            fontFamily: 'inherit',
-          }}
-        >
-          📊 상세 통계
-        </button>
+        <div style={{ display: 'flex', gap: 8 }}>
+          <button
+            onClick={onShowStats}
+            style={{
+              flex: 1,
+              padding: '12px',
+              background: 'transparent',
+              color: '#a8acc1',
+              border: '1px solid #2a2c3a',
+              borderRadius: 8,
+              fontSize: 13,
+              cursor: 'pointer',
+              fontFamily: 'inherit',
+            }}
+          >
+            📊 상세 통계
+          </button>
+          <button
+            onClick={toggleMute}
+            aria-label={muted ? '소리 켜기' : '소리 끄기'}
+            style={{
+              padding: '12px 14px',
+              background: 'transparent',
+              color: muted ? '#5a5d70' : '#a8acc1',
+              border: '1px solid #2a2c3a',
+              borderRadius: 8,
+              fontSize: 16,
+              cursor: 'pointer',
+              fontFamily: 'inherit',
+            }}
+            title={muted ? '소리 켜기' : '소리 끄기'}
+          >
+            {muted ? '🔇' : '🔊'}
+          </button>
+        </div>
 
         <div
           style={{

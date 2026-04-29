@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useReducer, type ReactNode } from 'react';
 import type { Trait, TraitCounts } from '../data/types';
+import { playItem } from '../utils/sound';
 
 const STORAGE_KEY = 'finalchoice:save:v2';
 const START_NODE_ID = 1;
@@ -11,6 +12,8 @@ export interface ScenarioState {
   endingsCleared: string[];
   /** 이 시나리오에서 누적된 성격 트레이트 점수 */
   traitCounts: TraitCounts;
+  /** 결말 제목 → 도달 횟수 (재플레이 시 누적) */
+  endingCounts?: Record<string, number>;
 }
 
 export interface SaveState {
@@ -32,6 +35,7 @@ const emptyScenarioState: ScenarioState = {
   visitedNodes: [START_NODE_ID],
   endingsCleared: [],
   traitCounts: {},
+  endingCounts: {},
 };
 
 const initialState: SaveState = {
@@ -96,6 +100,7 @@ function reducer(state: SaveState, action: Action): SaveState {
         visitedNodes: [START_NODE_ID],
         endingsCleared: s.endingsCleared,
         traitCounts: {}, // 재시작 시 트레이트 초기화 (엔딩 누적은 보존)
+        endingCounts: s.endingCounts ?? {},
       }));
     }
     case 'EXIT_TO_TITLE':
@@ -103,18 +108,22 @@ function reducer(state: SaveState, action: Action): SaveState {
     case 'RECORD_ENDING': {
       if (!state.scenarioId) return state;
       return withScenario(state, state.scenarioId, (s) => {
-        if (s.endingsCleared.includes(action.endingTitle)) return s;
-        return { ...s, endingsCleared: [...s.endingsCleared, action.endingTitle] };
+        const counts = s.endingCounts ?? {};
+        const updatedCounts = { ...counts, [action.endingTitle]: (counts[action.endingTitle] ?? 0) + 1 };
+        const cleared = s.endingsCleared.includes(action.endingTitle)
+          ? s.endingsCleared
+          : [...s.endingsCleared, action.endingTitle];
+        return { ...s, endingsCleared: cleared, endingCounts: updatedCounts };
       });
     }
     case 'HYDRATE':
-      // v1 → v2 마이그레이션: traitCounts 누락 시 기본값
+      // v1 → v2 마이그레이션: traitCounts/endingCounts 누락 시 기본값
       return {
         ...action.state,
         byScenario: Object.fromEntries(
           Object.entries(action.state.byScenario ?? {}).map(([id, s]) => [
             id,
-            { ...s, traitCounts: s.traitCounts ?? {} },
+            { ...s, traitCounts: s.traitCounts ?? {}, endingCounts: s.endingCounts ?? {} },
           ]),
         ),
       };
@@ -164,6 +173,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
     dispatch({ type: 'SELECT_SCENARIO', scenarioId });
   }, []);
   const goTo = useCallback((nodeId: number, grantItem?: string | null, traits?: Trait[]) => {
+    if (grantItem) playItem();
     dispatch({ type: 'GO_TO', nodeId, grantItem, traits });
   }, []);
   const resetCurrentScenario = useCallback(() => {

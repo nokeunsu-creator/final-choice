@@ -84,7 +84,7 @@
   },
   {
     "nodeId": 4,
-    "text": "구급실. 동료 카프리가 찢어진 부상 위에 비상 키트를 들고 있다. 의료 키트와 산소통 한 통이 남아있다.",
+    "text": "구급실. 동료 카프리가 찢어진 부상 위에 비상 키트를 들고 있다. 의료 키트와 산소통 한 통이 남아있다. 카프리의 손엔 작은 종이.",
     "choices": [
       {
         "label": "산소통을 챙긴다",
@@ -102,6 +102,16 @@
         "grantItem": "비상키트",
         "traits": [
           "실용"
+        ]
+      },
+      {
+        "label": "카프리의 손에 쥔 종이를 본다",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "이타"
         ]
       }
     ]
@@ -301,6 +311,17 @@
         ]
       },
       {
+        "label": "비상 발신기로 SOS",
+        "nextNodeId": 26,
+        "requiredItem": "발신기",
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력",
+          "원칙"
+        ]
+      },
+      {
         "label": "그냥 잠든다",
         "nextNodeId": 18,
         "requiredItem": null,
@@ -409,5 +430,77 @@
     "choices": [],
     "endingType": "bad",
     "endingTitle": "공허"
+  },
+  {
+    "nodeId": 23,
+    "text": "카프리의 손에 쥔 종이. \"3번 화물칸 — 비상 발신기 백업. 코드 4815.\" 서명: 카프리.",
+    "choices": [
+      {
+        "label": "메모를 챙긴다",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": "메모",
+        "traits": [
+          "분석",
+          "이타"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 24,
+    "text": "3번 화물칸 앞. 잠금 패널은 4자리 코드를 요구한다. 메모의 4815를 입력하자 잠금이 풀린다.",
+    "choices": [
+      {
+        "label": "비상 발신기를 챙긴다",
+        "nextNodeId": 25,
+        "requiredItem": "메모",
+        "grantItem": "발신기",
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 25,
+    "text": "발신기를 손에 들고 통로로 나선다. 시간은 줄지만 새 길이 열렸다.",
+    "choices": [
+      {
+        "label": "엔진실 진입 (우주복 필요)",
+        "nextNodeId": 11,
+        "requiredItem": "우주복",
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "조타실에서 발신기 단독 송출",
+        "nextNodeId": 27,
+        "requiredItem": "발신기",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 26,
+    "text": "추진기가 살아난 상태에서 발신기까지 — 두 개의 신호가 동기화된다. 화성 궤도 모함이 4시간 만에 도달.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "두 신호의 동기화"
+  },
+  {
+    "nodeId": 27,
+    "text": "발신기 단독 송출. 약하지만 자율 정거장이 잡고 무인 견인선을 즉시 출발시킨다. 6시간 만에 도착.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "비상 발신기"
   }
 ]

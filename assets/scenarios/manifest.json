@@ -19,8 +19,8 @@
       "icon": "🕯️",
       "accent": "#a78bfa",
       "category": "호러",
-      "nodeCount": 22,
-      "endingCount": 7
+      "nodeCount": 27,
+      "endingCount": 9
     },
     {
       "id": "zombie-city",
@@ -30,8 +30,8 @@
       "icon": "🧟",
       "accent": "#ef4444",
       "category": "좀비",
-      "nodeCount": 22,
-      "endingCount": 4
+      "nodeCount": 27,
+      "endingCount": 6
     },
     {
       "id": "spaceship",
@@ -41,8 +41,8 @@
       "icon": "🛰️",
       "accent": "#22d3ee",
       "category": "SF",
-      "nodeCount": 22,
-      "endingCount": 9
+      "nodeCount": 27,
+      "endingCount": 11
     },
     {
       "id": "dungeon",

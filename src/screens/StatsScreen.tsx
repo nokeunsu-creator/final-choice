@@ -99,6 +99,25 @@ export function StatsScreen({ onBack }: Props) {
     [save.byScenario],
   );
 
+  const totalEndingHits = useMemo(() => {
+    let n = 0;
+    for (const s of Object.values(save.byScenario)) {
+      for (const v of Object.values(s.endingCounts ?? {})) n += v;
+    }
+    return n;
+  }, [save.byScenario]);
+
+  // 가장 많이 도달한 결말 top 5
+  const topEndingHits = useMemo(() => {
+    const arr: Array<{ scenarioId: string; title: string; count: number }> = [];
+    for (const [scenarioId, s] of Object.entries(save.byScenario)) {
+      for (const [title, count] of Object.entries(s.endingCounts ?? {})) {
+        arr.push({ scenarioId, title, count });
+      }
+    }
+    return arr.sort((a, b) => b.count - a.count).slice(0, 5);
+  }, [save.byScenario]);
+
   const completionPct = totalEndings > 0 ? (clearedEndings / totalEndings) * 100 : 0;
   const ach = unlockedCount(save);
 
@@ -171,6 +190,10 @@ export function StatsScreen({ onBack }: Props) {
               <Stat label="누적 선택" value={String(totalChoices)} />
               <Stat label="업적" value={`${ach} / ${ACHIEVEMENTS.length}`} />
             </Row>
+            <Row>
+              <Stat label="결말 누적 도달" value={String(totalEndingHits)} />
+              <Stat label="평균 재플레이" value={clearedEndings > 0 ? (totalEndingHits / clearedEndings).toFixed(1) : '0'} />
+            </Row>
           </div>
         </Section>
 
@@ -229,6 +252,51 @@ export function StatsScreen({ onBack }: Props) {
               {axes.map((axis) => (
                 <AxisBar key={axis.axis} axis={axis} />
               ))}
+            </div>
+          </Section>
+        )}
+
+        {topEndingHits.length > 0 && (
+          <Section title="가장 많이 도달한 결말">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              {topEndingHits.map((e) => {
+                const sc = SCENARIOS.find((s) => s.id === e.scenarioId);
+                return (
+                  <div
+                    key={e.scenarioId + ':' + e.title}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 10,
+                      padding: '8px 10px',
+                      background: '#1f2030',
+                      borderLeft: `3px solid ${sc?.accent ?? '#ffaa00'}`,
+                      borderRadius: 6,
+                    }}
+                  >
+                    <span style={{ fontSize: 14 }}>{sc?.icon ?? '🏁'}</span>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <div
+                        style={{
+                          fontSize: 12,
+                          color: '#e8e8e8',
+                          whiteSpace: 'nowrap',
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                        }}
+                      >
+                        {e.title}
+                      </div>
+                      <div style={{ fontSize: 10, color: '#7a7e92' }}>
+                        {sc?.title}
+                      </div>
+                    </div>
+                    <span style={{ fontSize: 13, color: '#ffaa00', fontWeight: 600 }}>
+                      ×{e.count}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </Section>
         )}

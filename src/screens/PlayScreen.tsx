@@ -4,6 +4,7 @@ import { getNode, isEnding } from '../data/scenarios';
 import { GameScreen } from './GameScreen';
 import { EndingScreen } from './EndingScreen';
 import { BranchMapScreen } from './BranchMapScreen';
+import { playEnding } from '../utils/sound';
 
 interface Props {
   onExitToSelect: () => void;
@@ -24,6 +25,7 @@ export default function PlayScreen({ onExitToSelect, onRetryScenario }: Props) {
   useEffect(() => {
     if (onEnding && node?.endingTitle) {
       recordEnding(node.endingTitle);
+      playEnding(node.endingType ?? 'neutral');
     }
   }, [onEnding, node, recordEnding]);
 

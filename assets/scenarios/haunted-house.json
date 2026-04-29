@@ -365,6 +365,16 @@
         ]
       },
       {
+        "label": "복도 끝 다락 사다리로",
+        "nextNodeId": 23,
+        "requiredItem": "손전등",
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "신중"
+        ]
+      },
+      {
         "label": "되돌아 나간다",
         "nextNodeId": 22,
         "requiredItem": null,
@@ -407,6 +417,27 @@
           "정면",
           "용기"
         ]
+      },
+      {
+        "label": "사진을 비추며 어머니의 이름을 부른다",
+        "nextNodeId": 26,
+        "requiredItem": "사진",
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "어머니의 메모를 거울에 보인다",
+        "nextNodeId": 27,
+        "requiredItem": "어머니의메모",
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
       }
     ]
   },
@@ -437,5 +468,86 @@
     "choices": [],
     "endingType": "bad",
     "endingTitle": "도망친 자"
+  },
+  {
+    "nodeId": 23,
+    "text": "복도 끝 다락 사다리. 손전등이 위쪽 천장의 흙을 비춘다. 위에서 가느다란 한숨 — 사람의 것이 아니다.",
+    "choices": [
+      {
+        "label": "올라간다",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "다시 내려가 305호로",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 24,
+    "text": "다락방. 곰팡이 냄새. 가운데 깨진 액자 — 어머니가 검은 거울을 두 손으로 받치고 있는 사진. 한쪽 구석엔 또 다른 상자.",
+    "choices": [
+      {
+        "label": "사진을 챙긴다",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": "사진",
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "구석의 상자를 연다 (부적 필요)",
+        "nextNodeId": 25,
+        "requiredItem": "부적",
+        "grantItem": "어머니의메모",
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 25,
+    "text": "사진과 일기의 글씨체가 같다. 어머니였다. \"305호의 거울에 봉인된 자는 — 나다.\" 발이 떨린다.",
+    "choices": [
+      {
+        "label": "305호로 내려간다",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 26,
+    "text": "사진을 거울에 비추며 \"엄마\" 부른다. 거울 표면이 잠시 부드러워지고, 어머니의 얼굴이 떠오른다. \"고맙다, 아들. 이제 잘 수 있어.\" 거울이 잔잔히 닫힌다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "어머니의 안식"
+  },
+  {
+    "nodeId": 27,
+    "text": "메모를 펼친다. 어머니의 손글씨가 거울 표면에 비친다. \"내가 지킨다.\" 글자가 빛나고, 305호의 거울은 영원히 봉인된다. 새벽이 창을 채운다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "어머니의 약속"
   }
 ]
