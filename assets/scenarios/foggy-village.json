@@ -3,34 +3,119 @@
     "nodeId": 1,
     "text": "GPS가 안 잡히는 산간 마을. 짙은 안개. 차가 고장나 마을 어귀에 멈췄고, 길 가던 행인들이 천천히 당신을 본다. 모두 똑같은 얼굴을 하고 있다.",
     "choices": [
-      { "label": "마을 이장 집을 찾는다", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "유일한 다른 차를 본다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "왔던 길로 걸어 돌아간다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "마을 이장 집을 찾는다",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "유일한 다른 차를 본다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "왔던 길로 걸어 돌아간다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "독자"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "이장 집. 그 또한 같은 얼굴. \"낯선 자, 안개가 걷히기 전엔 못 떠나오. 새벽까지 우리 집에서.\"",
     "choices": [
-      { "label": "묵는다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "거절하고 차로", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "묵는다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "거절하고 차로",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "다른 차. 한 외지인이 운전석에서 기절. 옆에 지도와 손전등.",
     "choices": [
-      { "label": "지도를 챙긴다", "nextNodeId": 7, "requiredItem": null, "grantItem": "지도" },
-      { "label": "손전등을 챙긴다", "nextNodeId": 7, "requiredItem": null, "grantItem": "손전등" },
-      { "label": "외지인을 깨운다", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+      {
+        "label": "지도를 챙긴다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "지도",
+        "traits": [
+          "실용",
+          "분석"
+        ]
+      },
+      {
+        "label": "손전등을 챙긴다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "손전등",
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "외지인을 깨운다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "왔던 길. 안개 속에서 같은 자리만 빙빙 돈다. 30분 후 마을 어귀에 다시.",
     "choices": [
-      { "label": "이장 집으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "다른 차로", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+      {
+        "label": "이장 집으로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "다른 차로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
@@ -44,33 +129,110 @@
     "nodeId": 6,
     "text": "거절. 마을 사람들이 동시에 한 발자국씩 다가온다.",
     "choices": [
-      { "label": "다른 차로 달린다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "외지인 차로 합류", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
-      { "label": "안개 속으로 도망", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+      {
+        "label": "다른 차로 달린다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "외지인 차로 합류",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "안개 속으로 도망",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "장비 챙김. 지도엔 \"안개 들어온 길은 못 나간다. 산봉 정북 방향만 안 막힌다.\" 메모.",
     "choices": [
-      { "label": "정북 방향으로 산을 오른다", "nextNodeId": 9, "requiredItem": "지도", "grantItem": null },
-      { "label": "그래도 차로 시도", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "정북 방향으로 산을 오른다",
+        "nextNodeId": 9,
+        "requiredItem": "지도",
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "그래도 차로 시도",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "자기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "외지인이 깬다. \"여기 — 떠나면 안 돼. 안개 안에 그것이 살아.\" 외지인이 손전등을 건넨다.",
     "choices": [
-      { "label": "함께 정북으로", "nextNodeId": 9, "requiredItem": null, "grantItem": "손전등" },
-      { "label": "외지인 두고 혼자 산봉", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+      {
+        "label": "함께 정북으로",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "손전등",
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "외지인 두고 혼자 산봉",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자",
+          "자기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "정북 산. 안개가 옅어진다. 산봉 정상에서 마을이 한눈에 보이지만 — 마을은 비어있다.",
     "choices": [
-      { "label": "그대로 산을 넘는다", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
-      { "label": "손전등으로 안개 비춘다", "nextNodeId": 11, "requiredItem": "손전등", "grantItem": null }
+      {
+        "label": "그대로 산을 넘는다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "손전등으로 안개 비춘다",
+        "nextNodeId": 11,
+        "requiredItem": "손전등",
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
     ]
   },
   {
@@ -91,7 +253,15 @@
     "nodeId": 12,
     "text": "이장 집에서 잠을 거부하고 도망치는 동안 외지인의 차로 합류. 함께 정북으로.",
     "choices": [
-      { "label": "정북으로", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+      {
+        "label": "정북으로",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {

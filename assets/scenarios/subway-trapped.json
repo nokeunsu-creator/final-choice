@@ -3,51 +3,181 @@
     "nodeId": 1,
     "text": "지하철 2호선 막차. 터널 한가운데서 정전 + 정지. 비상등만. 객실엔 당신 포함 일곱. 차장 무전 끊김.",
     "choices": [
-      { "label": "차장 칸으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "비상 문을 연다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "다른 승객들 진정시킨다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "차장 칸으로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "비상 문을 연다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "다른 승객들 진정시킨다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "차장 칸. 차장이 의식 없이. 무전기와 비상 키. 비상등 케이블이 끊겨있다.",
     "choices": [
-      { "label": "무전기 챙김", "nextNodeId": 5, "requiredItem": null, "grantItem": "무전기" },
-      { "label": "비상 키 챙김", "nextNodeId": 5, "requiredItem": null, "grantItem": "비상키" },
-      { "label": "차장 응급 처치만 하고 대기", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+      {
+        "label": "무전기 챙김",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": "무전기",
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "비상 키 챙김",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": "비상키",
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "차장 응급 처치만 하고 대기",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "비상 문. 발 아래 깊이 어둠. 옆 터널 벽에 비상등이 가물가물.",
     "choices": [
-      { "label": "내려가서 비상등 따라", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
-      { "label": "객실 안에서 대기", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+      {
+        "label": "내려가서 비상등 따라",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      },
+      {
+        "label": "객실 안에서 대기",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "다른 승객들. 한 노인이 \"내려서 걸으면 안 돼. 옆 선로에 다른 차.\" 한 청년이 \"여기 갇혀있을 수 없어.\" 두 의견.",
     "choices": [
-      { "label": "노인 의견대로 대기", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "청년 따라 내린다", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
-      { "label": "청년이 강제로 비상 문 연다", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+      {
+        "label": "노인 의견대로 대기",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      },
+      {
+        "label": "청년 따라 내린다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "청년이 강제로 비상 문 연다",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "장비.",
     "choices": [
-      { "label": "비상 문 열기", "nextNodeId": 3, "requiredItem": "비상키", "grantItem": null },
-      { "label": "무전 송출", "nextNodeId": 8, "requiredItem": "무전기", "grantItem": null }
+      {
+        "label": "비상 문 열기",
+        "nextNodeId": 3,
+        "requiredItem": "비상키",
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "무전 송출",
+        "nextNodeId": 8,
+        "requiredItem": "무전기",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "터널 안. 비상등 따라 50m. 갑자기 진동 — 옆 선로 차가 빠르게 지나간다.",
     "choices": [
-      { "label": "벽에 붙어 멈춘다", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
-      { "label": "그래도 비상등으로", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+      {
+        "label": "벽에 붙어 멈춘다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      },
+      {
+        "label": "그래도 비상등으로",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {
@@ -61,15 +191,41 @@
     "nodeId": 8,
     "text": "무전 송출. \"강남역 동측 터널 — 정지 차량.\" 응답: \"15분 안에 구조.\" 15분.",
     "choices": [
-      { "label": "객실에서 대기", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "비상 키로 문 열고 신호", "nextNodeId": 11, "requiredItem": "비상키", "grantItem": null }
+      {
+        "label": "객실에서 대기",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "비상 키로 문 열고 신호",
+        "nextNodeId": 11,
+        "requiredItem": "비상키",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "벽에 붙는다. 차가 지나가는 사이 한 발자국씩. 비상등까지 도달.",
     "choices": [
-      { "label": "비상등 옆 비상구로", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "비상등 옆 비상구로",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      }
     ]
   },
   {

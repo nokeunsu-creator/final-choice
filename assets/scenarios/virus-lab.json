@@ -3,56 +3,177 @@
     "nodeId": 1,
     "text": "BSL-4 바이러스 연구소. 한밤 봉쇄 알람. 동료 연구원 다섯이 격리실에 갇혔고, 당신은 BSL-3 복도. 보호복은 한 벌, 시간은 60분.",
     "choices": [
-      { "label": "보호복 입고 격리실로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "통제실로 — 봉쇄 해제 시도", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "비상 탈출구로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "보호복 입고 격리실로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "통제실로 — 봉쇄 해제 시도",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "비상 탈출구로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "자기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "보호복 착용. 격리실 앞. 안의 동료들은 의식이 있지만 이미 한 명이 발열.",
     "choices": [
-      { "label": "백신 챙기러 냉장고로", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "격리실 문을 연다 (위험)", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "백신 챙기러 냉장고로",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "격리실 문을 연다 (위험)",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "통제실. 봉쇄 해제는 소장 권한. 콘솔 옆 카드 슬롯.",
     "choices": [
-      { "label": "소장실로 카드 가지러", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "통제실 컴퓨터 해킹 시도", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+      {
+        "label": "소장실로 카드 가지러",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "통제실 컴퓨터 해킹 시도",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "비상 탈출구. 그러나 BSL-3 복도에서 외부로 나가려면 제염샤워 필수. 패스 안 했다.",
     "choices": [
-      { "label": "그래도 나간다", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
-      { "label": "되돌아 통제실로", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+      {
+        "label": "그래도 나간다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "자기"
+        ]
+      },
+      {
+        "label": "되돌아 통제실로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "냉장고. 백신 한 박스 (5명분). 옆에 분석기.",
     "choices": [
-      { "label": "백신만 챙기고 격리실로", "nextNodeId": 10, "requiredItem": null, "grantItem": "백신" },
-      { "label": "분석기로 변종 확인 후", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "백신만 챙기고 격리실로",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": "백신",
+        "traits": [
+          "실용",
+          "용기"
+        ]
+      },
+      {
+        "label": "분석기로 변종 확인 후",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "보호복으로 격리실 진입. 백신 없이는 동료 다섯을 모두 못 살린다.",
     "choices": [
-      { "label": "냉장고에서 백신 가지고 다시", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+      {
+        "label": "냉장고에서 백신 가지고 다시",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "소장실. 책상 서랍에 카드 + 손글씨 메모: \"실수로 변종 누출. 봉쇄 절대 풀지 마라. 격리실 동료 희생 — 미안.\"",
     "choices": [
-      { "label": "카드 들고 통제실로", "nextNodeId": 12, "requiredItem": null, "grantItem": "카드" },
-      { "label": "메모 따라 봉쇄 유지", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+      {
+        "label": "카드 들고 통제실로",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": "카드",
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "메모 따라 봉쇄 유지",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "자기"
+        ]
+      }
     ]
   },
   {
@@ -73,15 +194,40 @@
     "nodeId": 10,
     "text": "백신 5병. 동료 5명에게 차례로 주사. 60분 안에 봉쇄 해제 시 모두 산다.",
     "choices": [
-      { "label": "통제실로 카드 가지러", "nextNodeId": 7, "requiredItem": null, "grantItem": "백신" },
-      { "label": "백신을 자신에게만 투여", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+      {
+        "label": "통제실로 카드 가지러",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "백신",
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "백신을 자신에게만 투여",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "자기",
+          "독자"
+        ]
+      }
     ]
   },
   {
     "nodeId": 11,
     "text": "분석기 결과: 변종은 백신으로 막힌다. 그러나 분석에 15분 — 격리실 동료 한 명이 죽는다.",
     "choices": [
-      { "label": "그래도 백신을 가지고", "nextNodeId": 10, "requiredItem": null, "grantItem": "백신" }
+      {
+        "label": "그래도 백신을 가지고",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": "백신",
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {

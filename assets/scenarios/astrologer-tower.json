@@ -3,58 +3,195 @@
     "nodeId": 1,
     "text": "탑 꼭대기에 사는 점성술사를 만나러 왔다. 사랑하는 이의 운명을 바꿀 한 방법이 그에게 있다 들었다. 탑 입구엔 자물쇠 셋.",
     "choices": [
-      { "label": "동쪽 — 별빛 자물쇠", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "서쪽 — 달빛 자물쇠", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "정문 — 태양 자물쇠", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "동쪽 — 별빛 자물쇠",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      },
+      {
+        "label": "서쪽 — 달빛 자물쇠",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "정문 — 태양 자물쇠",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "별빛 자물쇠 옆에 시. \"새벽 첫 별이 비치는 자만 들어올 수 있다.\" 새벽까지 4시간.",
     "choices": [
-      { "label": "기다린다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "다른 자물쇠 시도", "nextNodeId": 1, "requiredItem": null, "grantItem": null }
+      {
+        "label": "기다린다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      },
+      {
+        "label": "다른 자물쇠 시도",
+        "nextNodeId": 1,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "달빛 자물쇠. \"보름달일 때만.\" 오늘은 그믐.",
     "choices": [
-      { "label": "다른 자물쇠 시도", "nextNodeId": 1, "requiredItem": null, "grantItem": null }
+      {
+        "label": "다른 자물쇠 시도",
+        "nextNodeId": 1,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "태양 자물쇠. \"낮에만.\" 지금은 밤.",
     "choices": [
-      { "label": "동쪽 자물쇠로", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "동쪽 자물쇠로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "4시간 기다린 끝에 첫 별. 자물쇠가 풀린다. 탑 안 1층 — 점성표가 가득.",
     "choices": [
-      { "label": "점성표를 본다", "nextNodeId": 6, "requiredItem": null, "grantItem": null },
-      { "label": "위층 계단으로", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+      {
+        "label": "점성표를 본다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "위층 계단으로",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "점성표. 사랑하는 이의 별자리를 찾아 본다. \"오늘 자정 — 첫 별이 두 번째 별을 가린다. 그 사이 단 한 번 운명을 바꿀 수 있다.\"",
     "choices": [
-      { "label": "위층으로 — 점성술사를 찾는다", "nextNodeId": 7, "requiredItem": null, "grantItem": "지식" }
+      {
+        "label": "위층으로 — 점성술사를 찾는다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "지식",
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "탑 꼭대기. 점성술사. \"무슨 운명을 바꾸려 하나? 단, 대가는 — 너 자신의 별이다.\"",
     "choices": [
-      { "label": "내 별을 내준다", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
-      { "label": "다른 대가는 안 되나 묻는다", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
-      { "label": "지식으로 다른 길 묻는다", "nextNodeId": 10, "requiredItem": "지식", "grantItem": null },
-      { "label": "지식 없이 그냥 거래 시도", "nextNodeId": 13, "requiredItem": null, "grantItem": null },
-      { "label": "협박해 강제 거래", "nextNodeId": 14, "requiredItem": null, "grantItem": null },
-      { "label": "도망친다", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "내 별을 내준다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "다른 대가는 안 되나 묻는다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "지식으로 다른 길 묻는다",
+        "nextNodeId": 10,
+        "requiredItem": "지식",
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "지식 없이 그냥 거래 시도",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "자기"
+        ]
+      },
+      {
+        "label": "협박해 강제 거래",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "자기"
+        ]
+      },
+      {
+        "label": "도망친다",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
@@ -75,8 +212,26 @@
     "nodeId": 10,
     "text": "지식 덕에 점성술사가 한 발 양보. \"네 별의 절반만 — 단, 그도 절반의 회복.\"",
     "choices": [
-      { "label": "절반의 거래", "nextNodeId": 11, "requiredItem": null, "grantItem": null },
-      { "label": "그래도 거절", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+      {
+        "label": "절반의 거래",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "그래도 거절",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      }
     ]
   },
   {
@@ -97,7 +252,15 @@
     "nodeId": 13,
     "text": "지식 없이 거래하려 하자 점성술사가 \"준비 안 된 자에겐 안 판다.\" 한 마디.",
     "choices": [
-      { "label": "되돌아 점성표 다시", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "되돌아 점성표 다시",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {

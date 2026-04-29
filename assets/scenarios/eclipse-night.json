@@ -3,32 +3,102 @@
     "nodeId": 1,
     "text": "100년 만의 개기일식 관측 캠프. 정확히 일식이 시작되는 순간 모두 의식을 잃었다 깨어난다 — 동료들의 눈은 검은 거울처럼 변했다. 당신만 멀쩡하다.",
     "choices": [
-      { "label": "캠프 무전기로 외부", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "동료의 손을 잡는다", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "차로 도망친다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "캠프 무전기로 외부",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "동료의 손을 잡는다",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "차로 도망친다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "자기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "무전기. 잡음 사이로 자기 목소리가 들린다. \"여기, 여기, 여기.\" 어디서?",
     "choices": [
-      { "label": "응답한다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "주파수 바꾼다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "응답한다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관",
+          "용기"
+        ]
+      },
+      {
+        "label": "주파수 바꾼다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "동료의 손은 차다. 그가 천천히 \"너도 곧.\" 입꼬리가 올라간다.",
     "choices": [
-      { "label": "손을 뺀다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "그대로 잡는다", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+      {
+        "label": "손을 뺀다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "그대로 잡는다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "차. 키는 캠프 텐트 안. 들어가야 한다.",
     "choices": [
-      { "label": "텐트로", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+      {
+        "label": "텐트로",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
@@ -42,15 +112,39 @@
     "nodeId": 6,
     "text": "주파수를 바꾼다. 외부 관측소: \"일식 동안 직접 본 사람들에게 — 당신은 안 봤소?\"",
     "choices": [
-      { "label": "안 봤다고 답한다", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+      {
+        "label": "안 봤다고 답한다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "손을 뺀 순간 동료가 비명. 그러나 다른 동료들이 둘러싼다.",
     "choices": [
-      { "label": "차로 달린다", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
-      { "label": "텐트에서 무전기로", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "차로 달린다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "텐트에서 무전기로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
@@ -64,23 +158,68 @@
     "nodeId": 9,
     "text": "텐트. 차 키와 일식 관측 필름 — 모두에게 나눠준 그 보호 필름.",
     "choices": [
-      { "label": "필름을 눈앞에 들고 차로", "nextNodeId": 11, "requiredItem": null, "grantItem": "필름" },
-      { "label": "차 키만 챙기고 달린다", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "필름을 눈앞에 들고 차로",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": "필름",
+        "traits": [
+          "실용",
+          "용기"
+        ]
+      },
+      {
+        "label": "차 키만 챙기고 달린다",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "자기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "관측소: \"안 본 사람만 무사할 거요. 캠프 떠나서 산 아래 마을까지 — 일출까지 동료들이 돌아옵니다.\"",
     "choices": [
-      { "label": "차로 마을까지", "nextNodeId": 13, "requiredItem": "필름", "grantItem": null },
-      { "label": "그냥 텐트에서 일출 대기", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+      {
+        "label": "차로 마을까지",
+        "nextNodeId": 13,
+        "requiredItem": "필름",
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      },
+      {
+        "label": "그냥 텐트에서 일출 대기",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 11,
     "text": "필름을 눈앞에. 동료들의 눈이 마주칠 때 필름이 그것을 가린다. 차에 도달, 출발.",
     "choices": [
-      { "label": "마을까지 — 일출 대기", "nextNodeId": 13, "requiredItem": "필름", "grantItem": null }
+      {
+        "label": "마을까지 — 일출 대기",
+        "nextNodeId": 13,
+        "requiredItem": "필름",
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "용기"
+        ]
+      }
     ]
   },
   {

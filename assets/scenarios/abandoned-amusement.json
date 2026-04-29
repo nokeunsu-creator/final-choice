@@ -3,56 +3,174 @@
     "nodeId": 1,
     "text": "20년 전 폐장한 놀이공원. 입장료 없는 입구. 회전목마가 혼자 돌아가고, 음악이 멈추지 않는다.",
     "choices": [
-      { "label": "회전목마로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "유령의 집으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "관제실로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "회전목마로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "유령의 집으로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "관제실로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "회전목마. 한 마리 백마에 어린아이가 앉아있다. 20년 전 그 모습 그대로. 미소.",
     "choices": [
-      { "label": "다가가 인사", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "조용히 빠져나간다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "다가가 인사",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "조용히 빠져나간다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "유령의 집 입구. 안에서 깔깔거리는 어린 웃음소리. 입장 카운터에 마스터키.",
     "choices": [
-      { "label": "마스터키 챙김", "nextNodeId": 7, "requiredItem": null, "grantItem": "마스터키" },
-      { "label": "그냥 들어간다", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+      {
+        "label": "마스터키 챙김",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "마스터키",
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "그냥 들어간다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "관제실. 모든 놀이기구가 실시간으로 가동되고 있다 — 사람이 없는데. 비상 정지 버튼.",
     "choices": [
-      { "label": "정지 버튼", "nextNodeId": 9, "requiredItem": null, "grantItem": null },
-      { "label": "기록 컴퓨터 본다", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+      {
+        "label": "정지 버튼",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "기록 컴퓨터 본다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "아이: \"여기 갇혀 있어요. 20년이나. 누가 회전목마 멈춰주면 나갈 수 있어요.\"",
     "choices": [
-      { "label": "관제실로 — 멈추러", "nextNodeId": 4, "requiredItem": null, "grantItem": "약속" },
-      { "label": "회전목마 코드 직접 뽑는다", "nextNodeId": 11, "requiredItem": null, "grantItem": null },
-      { "label": "약속만 하고 떠난다", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+      {
+        "label": "관제실로 — 멈추러",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": "약속",
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "회전목마 코드 직접 뽑는다",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "자기"
+        ]
+      },
+      {
+        "label": "약속만 하고 떠난다",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "자기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "조용히 빠져나가려 하자 회전목마 음악이 점점 빨라진다.",
     "choices": [
-      { "label": "관제실로 달린다", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "관제실로 달린다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "마스터키. 모든 비상 정지 자물쇠를 열 수 있다.",
     "choices": [
-      { "label": "관제실로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "관제실로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
@@ -66,16 +184,51 @@
     "nodeId": 9,
     "text": "정지 버튼. 모든 기구가 한꺼번에 정지. 그러나 회전목마는 계속 돈다 — 자물쇠가 따로.",
     "choices": [
-      { "label": "마스터키로 회전목마 자물쇠", "nextNodeId": 12, "requiredItem": "마스터키", "grantItem": null },
-      { "label": "코드 직접 뽑는다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "마스터키로 회전목마 자물쇠",
+        "nextNodeId": 12,
+        "requiredItem": "마스터키",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "실용"
+        ]
+      },
+      {
+        "label": "코드 직접 뽑는다",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "기록 컴퓨터. \"2003년 회전목마 사고. 어린이 한 명 사망. 영혼이 묶임.\" 관리 일지.",
     "choices": [
-      { "label": "정지 버튼 누르고 회전목마", "nextNodeId": 9, "requiredItem": null, "grantItem": "지식" },
-      { "label": "마스터키로 영구 정지 + 위로", "nextNodeId": 14, "requiredItem": "마스터키", "grantItem": "지식" }
+      {
+        "label": "정지 버튼 누르고 회전목마",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "지식",
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "마스터키로 영구 정지 + 위로",
+        "nextNodeId": 14,
+        "requiredItem": "마스터키",
+        "grantItem": "지식",
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {

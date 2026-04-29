@@ -3,71 +3,214 @@
     "nodeId": 1,
     "text": "강남 호텔 펜트하우스, 재벌 회장의 시신. 사인 조사는 6시간. 의심스러운 인물 셋: 비서, 아들, 정원사. 당신은 사건 현장에 막 도착했다.",
     "choices": [
-      { "label": "현장 조사부터", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "비서 면담", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "아들 면담", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
-      { "label": "단서 없이 시간 흐른다", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+      {
+        "label": "현장 조사부터",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "비서 면담",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "아들 면담",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "단서 없이 시간 흐른다",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "현장. 와인잔 위 입술 자국 — 빨간 립스틱. 책상 위 유서 — 컴퓨터 출력본. 창문 살짝 열림.",
     "choices": [
-      { "label": "립스틱 채취", "nextNodeId": 5, "requiredItem": null, "grantItem": "립스틱" },
-      { "label": "유서 검사", "nextNodeId": 6, "requiredItem": null, "grantItem": "유서" },
-      { "label": "창문 본다", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+      {
+        "label": "립스틱 채취",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": "립스틱",
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "유서 검사",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": "유서",
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "창문 본다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "비서. 입술이 빨갛다. \"회장님 어제 새벽까지 함께 회의. 그 후 모릅니다.\"",
     "choices": [
-      { "label": "립스틱 색 비교", "nextNodeId": 8, "requiredItem": "립스틱", "grantItem": null },
-      { "label": "더 캐묻는다", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+      {
+        "label": "립스틱 색 비교",
+        "nextNodeId": 8,
+        "requiredItem": "립스틱",
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "더 캐묻는다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "아들. 침착한 태도. \"아버지와 5년 전부터 사이가 좋지 않았어요. 살인이라면 ... 저예요.\" 자백.",
     "choices": [
-      { "label": "그대로 체포", "nextNodeId": 10, "requiredItem": null, "grantItem": null },
-      { "label": "동기를 더 묻는다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "그대로 체포",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "자기"
+        ]
+      },
+      {
+        "label": "동기를 더 묻는다",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "립스틱. 화학분석. 비서의 색깔과 정확히 일치.",
     "choices": [
-      { "label": "비서 면담", "nextNodeId": 3, "requiredItem": null, "grantItem": "립스틱" }
+      {
+        "label": "비서 면담",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": "립스틱",
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "유서. 글씨체는 회장의 것이지만 — 컴퓨터 출력. 그리고 마지막 문구: \"내 아들에게 모든 것을\" — 회장은 의절한 아들에게 절대 안 줄 사람.",
     "choices": [
-      { "label": "아들 면담", "nextNodeId": 12, "requiredItem": null, "grantItem": "유서" }
+      {
+        "label": "아들 면담",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": "유서",
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "창문. 외부에서 들어온 흔적은 없다. 그러나 정원사의 사다리가 창 아래.",
     "choices": [
-      { "label": "정원사 면담", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+      {
+        "label": "정원사 면담",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "립스틱 일치. 비서가 동요. \"네, 그날 밤 — 함께 있었어요. 하지만 ... 살아계셨어요.\" 비서가 사실 회장의 정부.",
     "choices": [
-      { "label": "유서 보여주며 추궁", "nextNodeId": 14, "requiredItem": "유서", "grantItem": null },
-      { "label": "정원사 면담", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+      {
+        "label": "유서 보여주며 추궁",
+        "nextNodeId": 14,
+        "requiredItem": "유서",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "정원사 면담",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "더 캐묻자 비서가 변호사 부르겠다고. 면담 종료.",
     "choices": [
-      { "label": "다른 단서 — 현장으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "다른 단서 — 현장으로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
@@ -81,22 +224,57 @@
     "nodeId": 11,
     "text": "동기. 아들: \"제가 한 게 맞아요. 그런데 — 비서 누나도 알았어요.\" 단순 자백이 아니다.",
     "choices": [
-      { "label": "비서 면담으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+      {
+        "label": "비서 면담으로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 12,
     "text": "아들에게 유서 보임. \"아버지가 절 ... 다시 받아주신 건가요?\" 그가 진심 놀라움. 그렇다면 유서는 아들 작품 아니다.",
     "choices": [
-      { "label": "비서 추궁", "nextNodeId": 14, "requiredItem": "유서", "grantItem": null }
+      {
+        "label": "비서 추궁",
+        "nextNodeId": 14,
+        "requiredItem": "유서",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 13,
     "text": "정원사. \"그날 밤 — 사다리에서 누가 내려오는 걸 봤어요. 비서 분이요. 새벽 3시.\" 사진까지 찍어둠.",
     "choices": [
-      { "label": "비서 추궁", "nextNodeId": 14, "requiredItem": null, "grantItem": "사진" },
-      { "label": "사진만으로 직접 폭로", "nextNodeId": 15, "requiredItem": null, "grantItem": "사진" }
+      {
+        "label": "비서 추궁",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": "사진",
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "사진만으로 직접 폭로",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": "사진",
+        "traits": [
+          "정면",
+          "원칙"
+        ]
+      }
     ]
   },
   {

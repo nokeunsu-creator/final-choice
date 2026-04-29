@@ -28,6 +28,44 @@ export interface StoryNode {
   endingTitle?: string;
 }
 
+export type ScenarioCategory =
+  | '생존'
+  | '호러'
+  | '좀비'
+  | 'SF'
+  | '판타지'
+  | '미스터리'
+  | '재난'
+  | '무한상사'
+  | '무한도전'
+  | '원피스';
+
+export const CATEGORY_ORDER: ScenarioCategory[] = [
+  '생존',
+  '호러',
+  '좀비',
+  'SF',
+  '판타지',
+  '미스터리',
+  '재난',
+  '무한상사',
+  '무한도전',
+  '원피스',
+];
+
+export const CATEGORY_META: Record<ScenarioCategory, { icon: string; color: string }> = {
+  '생존': { icon: '🏝️', color: '#ffaa00' },
+  '호러': { icon: '🕯️', color: '#a78bfa' },
+  '좀비': { icon: '🧟', color: '#ef4444' },
+  SF: { icon: '🛰️', color: '#22d3ee' },
+  '판타지': { icon: '🗝️', color: '#d4a017' },
+  '미스터리': { icon: '🔍', color: '#854d0e' },
+  '재난': { icon: '🚒', color: '#f97316' },
+  '무한상사': { icon: '💼', color: '#0ea5e9' },
+  '무한도전': { icon: '🏃', color: '#fbbf24' },
+  '원피스': { icon: '🏴‍☠️', color: '#dc2626' },
+};
+
 export interface ScenarioMeta {
   id: string;
   title: string;
@@ -35,6 +73,7 @@ export interface ScenarioMeta {
   description: string;
   icon: string;
   accent: string;
+  category: ScenarioCategory;
 }
 
 export type TraitCounts = Partial<Record<Trait, number>>;

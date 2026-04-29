@@ -3,36 +3,139 @@
     "nodeId": 1,
     "text": "강남 지하상가. 익명 제보로 폭탄 발견. 당신은 폭발물처리반. 타이머 14분. 동료 한 명은 인파 대피 중.",
     "choices": [
-      { "label": "외부 케이스 분리", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "X-ray로 내부 스캔", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "범인 — 메모 본다", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
-      { "label": "결정 못 한 채 시간 흐른다", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+      {
+        "label": "외부 케이스 분리",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "X-ray로 내부 스캔",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "범인 — 메모 본다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "결정 못 한 채 시간 흐른다",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "케이스 분리. 빨간선·파란선·검은선 셋. 메모 없이는 어떤 것이 정답인지 모른다.",
     "choices": [
-      { "label": "X-ray 먼저", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "메모 찾는다", "nextNodeId": 4, "requiredItem": null, "grantItem": null },
-      { "label": "감으로 자른다", "nextNodeId": 5, "requiredItem": null, "grantItem": null }
+      {
+        "label": "X-ray 먼저",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "메모 찾는다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "감으로 자른다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "X-ray. 회로 구조 — 빨간선이 메인 트리거. 파란선이 더미. 검은선이 페이크 트리거.",
     "choices": [
-      { "label": "빨간선 자른다", "nextNodeId": 6, "requiredItem": null, "grantItem": "회로지식" },
-      { "label": "메모 더 본다", "nextNodeId": 4, "requiredItem": null, "grantItem": "회로지식" }
+      {
+        "label": "빨간선 자른다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": "회로지식",
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "메모 더 본다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": "회로지식",
+        "traits": [
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "현장 옆 메모. \"빨간선은 미끼다.\" — 그러나 글씨가 두 사람의 것. 누가 진짜?",
     "choices": [
-      { "label": "두 글씨 비교", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "메모 무시 X-ray로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "메모만 신뢰 — 파란선", "nextNodeId": 12, "requiredItem": null, "grantItem": null }
+      {
+        "label": "두 글씨 비교",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "메모 무시 X-ray로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "메모만 신뢰 — 파란선",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관",
+          "자기"
+        ]
+      }
     ]
   },
   {
@@ -46,24 +149,76 @@
     "nodeId": 6,
     "text": "X-ray 결과 — 빨간선. 자르는 순간 안전 모드. 그러나 메모가 거짓일 수도. 메모 본 자만 진실 알 수 있다.",
     "choices": [
-      { "label": "그대로 빨간선 자른다", "nextNodeId": 8, "requiredItem": "회로지식", "grantItem": null },
-      { "label": "메모 본다", "nextNodeId": 4, "requiredItem": null, "grantItem": "회로지식" }
+      {
+        "label": "그대로 빨간선 자른다",
+        "nextNodeId": 8,
+        "requiredItem": "회로지식",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "자기"
+        ]
+      },
+      {
+        "label": "메모 본다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": "회로지식",
+        "traits": [
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "글씨 비교. 한 글씨는 범인의 것 — 도발용. 다른 글씨는 신고자의 것 — 정확함. 신고자: \"빨간선은 미끼.\"",
     "choices": [
-      { "label": "검은선 자른다 (페이크 트리거 무력화)", "nextNodeId": 9, "requiredItem": "회로지식", "grantItem": null },
-      { "label": "지식+검증으로 검은선", "nextNodeId": 13, "requiredItem": "회로지식", "grantItem": null },
-      { "label": "빨간선 자른다", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+      {
+        "label": "검은선 자른다 (페이크 트리거 무력화)",
+        "nextNodeId": 9,
+        "requiredItem": "회로지식",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "지식+검증으로 검은선",
+        "nextNodeId": 13,
+        "requiredItem": "회로지식",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "분석"
+        ]
+      },
+      {
+        "label": "빨간선 자른다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "빨간선. 그러나 X-ray가 잘못 — 페이크 트리거가 빨간선이었다. 폭발 1분 카운트다운 시작.",
     "choices": [
-      { "label": "마지막 1분 — 검은선 자른다", "nextNodeId": 11, "requiredItem": null, "grantItem": null }
+      {
+        "label": "마지막 1분 — 검은선 자른다",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {

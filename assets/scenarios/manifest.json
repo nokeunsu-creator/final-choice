@@ -1,74 +1,634 @@
 {
   "scenarios": [
-    { "id": "desert-island", "title": "무인도 생존", "subtitle": "비행기가 추락했다", "description": "100개 노드, 25개 결말", "icon": "🏝️", "accent": "#ffaa00" },
-    { "id": "haunted-house", "title": "폐가 탈출", "subtitle": "버려진 저택의 새벽", "description": "동트기 전에 빠져나가야 한다", "icon": "🕯️", "accent": "#a78bfa" },
-    { "id": "zombie-city", "title": "좀비 도시", "subtitle": "감염은 하룻밤 사이에", "description": "구조 거점까지 살아서", "icon": "🧟", "accent": "#ef4444" },
-    { "id": "spaceship", "title": "우주선 표류", "subtitle": "고요한 진공 속에서", "description": "산소가 떨어지기 전에", "icon": "🛰️", "accent": "#22d3ee" },
-    { "id": "dungeon", "title": "지하 던전", "subtitle": "잊혀진 신전의 입구", "description": "보물과 함정 사이", "icon": "🗝️", "accent": "#d4a017" },
-    { "id": "snow-mountain", "title": "설산 조난", "subtitle": "눈사태 이후", "description": "베이스캠프까지 하강", "icon": "🏔️", "accent": "#93c5fd" },
-    { "id": "cyberpunk", "title": "사이버 도시", "subtitle": "네온이 모든 것을 비춘다", "description": "타워 50층까지 잠입", "icon": "🌃", "accent": "#f472b6" },
-    { "id": "hotel-mystery", "title": "외딴 호텔", "subtitle": "투숙객이 사라졌다", "description": "진실은 305호에", "icon": "🏨", "accent": "#dc2626" },
-    { "id": "deep-sea", "title": "심해 잠수정", "subtitle": "수심 4000m", "description": "지상으로 돌아갈 수 있을까", "icon": "🌊", "accent": "#3b82f6" },
-    { "id": "time-traveler", "title": "시간 여행자", "subtitle": "1923년의 그림자", "description": "역사를 바꾸지 않고 돌아가기", "icon": "⏳", "accent": "#eab308" },
-    { "id": "abandoned-train", "title": "폐선된 열차", "subtitle": "안개 속 마지막 객실", "description": "22:14 전에 다음 역까지", "icon": "🚂", "accent": "#94a3b8" },
-    { "id": "zombie-village", "title": "좀비 시골마을", "subtitle": "할머니의 집", "description": "트랙터와 산탄총", "icon": "🌾", "accent": "#65a30d" },
-    { "id": "storm-yacht", "title": "폭풍우 요트", "subtitle": "친구들은 의식을 잃었다", "description": "등대 불빛까지", "icon": "⛵", "accent": "#0ea5e9" },
-    { "id": "lighthouse", "title": "외딴 등대", "subtitle": "전임자는 사라졌다", "description": "동쪽 동굴의 비밀", "icon": "🗼", "accent": "#fbbf24" },
-    { "id": "asylum", "title": "정신병원", "subtitle": "환자가 아니었다", "description": "가운을 입고 빠져나갈 수 있을까", "icon": "🧠", "accent": "#84cc16" },
-    { "id": "space-station", "title": "우주 정거장", "subtitle": "12명 중 깨어있는 한 명", "description": "본부의 진짜 명령", "icon": "🛸", "accent": "#c4b5fd" },
-    { "id": "casino-heist", "title": "카지노 강도", "subtitle": "골든 미라주 22:00", "description": "VIP 룸 금고까지 6분", "icon": "🎰", "accent": "#f59e0b" },
-    { "id": "bank-robbery", "title": "은행 강도", "subtitle": "강남지점 10:14", "description": "시간 잠금 5분 vs 협상", "icon": "💰", "accent": "#10b981" },
-    { "id": "zombie-airplane", "title": "좀비 항공기", "subtitle": "인천발 LA행 6시간 차", "description": "조종실 vs 후방 봉쇄", "icon": "✈️", "accent": "#60a5fa" },
-    { "id": "abandoned-school", "title": "폐교", "subtitle": "30년 전 모교", "description": "사라진 동창과 4-2 교실", "icon": "🏫", "accent": "#71717a" },
-    { "id": "old-temple", "title": "옛 절", "subtitle": "지리산 청정암", "description": "종은 절대 멈추면 안 된다", "icon": "⛩️", "accent": "#dc2626" },
-    { "id": "burning-hotel", "title": "화재 호텔", "subtitle": "23층 새벽 3시", "description": "사다리차는 18층까지", "icon": "🔥", "accent": "#f97316" },
-    { "id": "old-mine", "title": "옛 광산", "subtitle": "북갱 7번 채굴장", "description": "광부의 곡괭이를 피해", "icon": "⛏️", "accent": "#a16207" },
-    { "id": "jungle-expedition", "title": "정글 탐험", "subtitle": "아마존 탐사대 5명 실종", "description": "강 / 산 / 늪지", "icon": "🌴", "accent": "#16a34a" },
-    { "id": "arctic-base", "title": "북극 기지", "subtitle": "보급선 두절 6주차", "description": "영구 동토에서 깨어난 무엇", "icon": "❄️", "accent": "#bae6fd" },
-    { "id": "volcano", "title": "화산 분출", "subtitle": "분화구 옆에서", "description": "마을까지 12km", "icon": "🌋", "accent": "#dc2626" },
-    { "id": "witch-castle", "title": "마녀의 성", "subtitle": "동생을 구하러", "description": "거울의 천 년", "icon": "🏰", "accent": "#7c3aed" },
-    { "id": "alien-invasion", "title": "외계인 침공", "subtitle": "서울 D+3", "description": "지하 대피소까지", "icon": "👽", "accent": "#22c55e" },
-    { "id": "military-lab", "title": "군사 연구소", "subtitle": "B-3 격리실 USB", "description": "잠입과 빠져나오기", "icon": "🧪", "accent": "#475569" },
-    { "id": "cruise-ship", "title": "크루즈선", "subtitle": "지중해 새벽 3시", "description": "구명정 8척 우선권", "icon": "🚢", "accent": "#0284c7" },
-    { "id": "virus-lab", "title": "바이러스 연구소", "subtitle": "BSL-4 봉쇄 60분", "description": "백신 5병 vs 봉쇄 유지", "icon": "🦠", "accent": "#dc2626" },
-    { "id": "graveyard", "title": "외딴 묘지", "subtitle": "외할아버지의 회중시계", "description": "한 마디만 전하면", "icon": "🪦", "accent": "#737373" },
-    { "id": "eclipse-night", "title": "일식의 밤", "subtitle": "100년 만의 개기일식", "description": "검은 거울 같은 눈들", "icon": "🌑", "accent": "#581c87" },
-    { "id": "masquerade", "title": "가면무도회", "subtitle": "베네치아 자정", "description": "빨간 장미를 든 자", "icon": "🎭", "accent": "#be185d" },
-    { "id": "bat-cave", "title": "박쥐 동굴", "subtitle": "동료가 끼었다", "description": "박쥐 폭풍을 피해", "icon": "🦇", "accent": "#3f3f46" },
-    { "id": "vanished-station", "title": "사라진 기차역", "subtitle": "지도에 없는 연선역", "description": "어제로 가는 차표", "icon": "🛤️", "accent": "#0d9488" },
-    { "id": "foggy-village", "title": "안개 낀 마을", "subtitle": "같은 얼굴들", "description": "정북의 산봉", "icon": "🌫️", "accent": "#9ca3af" },
-    { "id": "astrologer-tower", "title": "점성술사의 탑", "subtitle": "별빛·달빛·태양 자물쇠", "description": "내 별을 내줄까", "icon": "🔮", "accent": "#6366f1" },
-    { "id": "closed-stadium", "title": "폐쇄된 경기장", "subtitle": "5년 전 9회 말", "description": "마지막 한 타석", "icon": "🏟️", "accent": "#0891b2" },
-    { "id": "drifting-boat", "title": "표류 보트", "subtitle": "남태평양 5일째", "description": "엔진 부품 vs 동료", "icon": "🚤", "accent": "#0e7490" },
-    { "id": "desert-caravan", "title": "사막 캐러밴", "subtitle": "사하라 모래 폭풍", "description": "오아시스까지 30km", "icon": "🐪", "accent": "#ca8a04" },
-    { "id": "abandoned-amusement", "title": "폐쇄된 놀이공원", "subtitle": "혼자 도는 회전목마", "description": "20년 전 사고", "icon": "🎠", "accent": "#ec4899" },
-    { "id": "secret-agent", "title": "비밀 요원", "subtitle": "베를린 30분 작전", "description": "USB 회수와 공항 게이트 22", "icon": "💼", "accent": "#525252" },
-    { "id": "detective-case", "title": "탐정 사건", "subtitle": "재벌 회장 펜트하우스", "description": "립스틱과 위조 유서", "icon": "🔍", "accent": "#854d0e" },
-    { "id": "tomb-raider", "title": "무덤 도굴꾼", "subtitle": "왕가의 골짜기", "description": "보석을 만지지 말라", "icon": "👑", "accent": "#b45309" },
-    { "id": "bomb-defusal", "title": "시한 폭탄", "subtitle": "강남 지하상가 14분", "description": "빨간선·파란선·검은선", "icon": "💣", "accent": "#b91c1c" },
-    { "id": "subway-trapped", "title": "지하철 갇힘", "subtitle": "2호선 막차", "description": "옆 선로의 빛", "icon": "🚇", "accent": "#10b981" },
-    { "id": "warzone", "title": "전쟁터 한복판", "subtitle": "종군기자", "description": "프레스 차량과 검문소", "icon": "🪖", "accent": "#65a30d" },
-    { "id": "hostage-negotiation", "title": "인질 협상", "subtitle": "은행 강도 12명 인질", "description": "공감 vs 강압", "icon": "🎲", "accent": "#7c3aed" },
-    { "id": "prison-escape", "title": "탈옥수", "subtitle": "어머니 위독", "description": "옥상·세탁실·식당", "icon": "⛓️", "accent": "#52525b" },
-    { "id": "office-promotion", "title": "무한상사 — 승진 인사", "subtitle": "박 대리와의 0.3점", "description": "보고서를 몰래 보면", "icon": "💼", "accent": "#0ea5e9" },
-    { "id": "office-dinner", "title": "무한상사 — 회식 거절", "subtitle": "내일 9시 발표", "description": "빠질 것인가 끝까지", "icon": "🍻", "accent": "#0284c7" },
-    { "id": "office-newbie", "title": "무한상사 — 첫 출근", "subtitle": "8:55 막내", "description": "커피 vs 케이크 vs 자리", "icon": "🌱", "accent": "#22c55e" },
-    { "id": "office-card", "title": "무한상사 — 법인카드", "subtitle": "일요일 오후 6시", "description": "월요일 9시 정산", "icon": "💳", "accent": "#0891b2" },
-    { "id": "office-overnight", "title": "무한상사 — 새벽 야근", "subtitle": "부장이 잠들었다", "description": "혼자? 분담? 도주?", "icon": "🌙", "accent": "#475569" },
-    { "id": "mudo-chase", "title": "무한도전 — 추격전", "subtitle": "30분 안에 본부로", "description": "명찰을 지켜라", "icon": "🏃", "accent": "#fbbf24" },
-    { "id": "mudo-island", "title": "무한도전 — 24시간 무인도", "subtitle": "5명, 식량 없음", "description": "물 / 쉘터 / 낚시", "icon": "🏝️", "accent": "#16a34a" },
-    { "id": "mudo-songfest", "title": "무한도전 — 가요제", "subtitle": "1만 관중 5분 전", "description": "동료가 가사 까먹었다", "icon": "🎤", "accent": "#ec4899" },
-    { "id": "mudo-karaoke", "title": "무한도전 — 노래방 99점", "subtitle": "60점 미만 벌칙", "description": "발라드 vs 랩 vs 트로트", "icon": "🎶", "accent": "#f472b6" },
-    { "id": "mudo-marathon", "title": "무한도전 — 사천성 마라톤", "subtitle": "42.195km 4시간", "description": "비 속의 완주", "icon": "🏅", "accent": "#fb923c" },
-    { "id": "mudo-relay", "title": "무한도전 — 계주 마지막 주자", "subtitle": "5m 뒤지고 있어", "description": "전속력 vs 페이스 조절", "icon": "🥖", "accent": "#facc15" },
-    { "id": "mudo-cooking", "title": "무한도전 — 요리 미션", "subtitle": "30분 한 그릇", "description": "김치라면 vs 향신료", "icon": "🍳", "accent": "#fde047" },
-    { "id": "onepiece-eastblue", "title": "원피스 — 이스트블루 출항", "subtitle": "견습 해적의 첫날", "description": "힘 / 머리 / 의리", "icon": "🏴‍☠️", "accent": "#dc2626" },
-    { "id": "onepiece-grandline", "title": "원피스 — 그랜드라인 입구", "subtitle": "리버스 마운틴", "description": "고래와 폭포", "icon": "⛵", "accent": "#0369a1" },
-    { "id": "onepiece-marineford", "title": "원피스 — 마린포드 정상결전", "subtitle": "형이 사형대 위에", "description": "단신 진입", "icon": "⚔️", "accent": "#b91c1c" },
-    { "id": "onepiece-skypiea", "title": "원피스 — 스카이피아", "subtitle": "구름 위 하늘섬", "description": "신과 황금 종", "icon": "☁️", "accent": "#fcd34d" },
-    { "id": "onepiece-impeldown", "title": "원피스 — 임펠다운", "subtitle": "해저 대감옥 6층", "description": "1층부터 6층까지", "icon": "🔒", "accent": "#3f3f46" },
-    { "id": "onepiece-fishman", "title": "원피스 — 어인섬", "subtitle": "해저 1만m", "description": "왕 vs 적대파", "icon": "🐠", "accent": "#0891b2" },
-    { "id": "onepiece-wano", "title": "원피스 — 와노국", "subtitle": "오니가시마 결전", "description": "황제 카이도", "icon": "🐉", "accent": "#dc2626" },
-    { "id": "onepiece-laftel", "title": "원피스 — 라프텔", "subtitle": "모든 길의 끝", "description": "800년의 비밀", "icon": "🗺️", "accent": "#fbbf24" }
+    {
+      "id": "desert-island",
+      "title": "무인도 생존",
+      "subtitle": "비행기가 추락했다",
+      "description": "100개 노드, 25개 결말",
+      "icon": "🏝️",
+      "accent": "#ffaa00",
+      "category": "생존"
+    },
+    {
+      "id": "haunted-house",
+      "title": "폐가 탈출",
+      "subtitle": "버려진 저택의 새벽",
+      "description": "동트기 전에 빠져나가야 한다",
+      "icon": "🕯️",
+      "accent": "#a78bfa",
+      "category": "호러"
+    },
+    {
+      "id": "zombie-city",
+      "title": "좀비 도시",
+      "subtitle": "감염은 하룻밤 사이에",
+      "description": "구조 거점까지 살아서",
+      "icon": "🧟",
+      "accent": "#ef4444",
+      "category": "좀비"
+    },
+    {
+      "id": "spaceship",
+      "title": "우주선 표류",
+      "subtitle": "고요한 진공 속에서",
+      "description": "산소가 떨어지기 전에",
+      "icon": "🛰️",
+      "accent": "#22d3ee",
+      "category": "SF"
+    },
+    {
+      "id": "dungeon",
+      "title": "지하 던전",
+      "subtitle": "잊혀진 신전의 입구",
+      "description": "보물과 함정 사이",
+      "icon": "🗝️",
+      "accent": "#d4a017",
+      "category": "판타지"
+    },
+    {
+      "id": "snow-mountain",
+      "title": "설산 조난",
+      "subtitle": "눈사태 이후",
+      "description": "베이스캠프까지 하강",
+      "icon": "🏔️",
+      "accent": "#93c5fd",
+      "category": "생존"
+    },
+    {
+      "id": "cyberpunk",
+      "title": "사이버 도시",
+      "subtitle": "네온이 모든 것을 비춘다",
+      "description": "타워 50층까지 잠입",
+      "icon": "🌃",
+      "accent": "#f472b6",
+      "category": "SF"
+    },
+    {
+      "id": "hotel-mystery",
+      "title": "외딴 호텔",
+      "subtitle": "투숙객이 사라졌다",
+      "description": "진실은 305호에",
+      "icon": "🏨",
+      "accent": "#dc2626",
+      "category": "미스터리"
+    },
+    {
+      "id": "deep-sea",
+      "title": "심해 잠수정",
+      "subtitle": "수심 4000m",
+      "description": "지상으로 돌아갈 수 있을까",
+      "icon": "🌊",
+      "accent": "#3b82f6",
+      "category": "생존"
+    },
+    {
+      "id": "time-traveler",
+      "title": "시간 여행자",
+      "subtitle": "1923년의 그림자",
+      "description": "역사를 바꾸지 않고 돌아가기",
+      "icon": "⏳",
+      "accent": "#eab308",
+      "category": "재난"
+    },
+    {
+      "id": "abandoned-train",
+      "title": "폐선된 열차",
+      "subtitle": "안개 속 마지막 객실",
+      "description": "22:14 전에 다음 역까지",
+      "icon": "🚂",
+      "accent": "#94a3b8",
+      "category": "생존"
+    },
+    {
+      "id": "zombie-village",
+      "title": "좀비 시골마을",
+      "subtitle": "할머니의 집",
+      "description": "트랙터와 산탄총",
+      "icon": "🌾",
+      "accent": "#65a30d",
+      "category": "좀비"
+    },
+    {
+      "id": "storm-yacht",
+      "title": "폭풍우 요트",
+      "subtitle": "친구들은 의식을 잃었다",
+      "description": "등대 불빛까지",
+      "icon": "⛵",
+      "accent": "#0ea5e9",
+      "category": "생존"
+    },
+    {
+      "id": "lighthouse",
+      "title": "외딴 등대",
+      "subtitle": "전임자는 사라졌다",
+      "description": "동쪽 동굴의 비밀",
+      "icon": "🗼",
+      "accent": "#fbbf24",
+      "category": "생존"
+    },
+    {
+      "id": "asylum",
+      "title": "정신병원",
+      "subtitle": "환자가 아니었다",
+      "description": "가운을 입고 빠져나갈 수 있을까",
+      "icon": "🧠",
+      "accent": "#84cc16",
+      "category": "호러"
+    },
+    {
+      "id": "space-station",
+      "title": "우주 정거장",
+      "subtitle": "12명 중 깨어있는 한 명",
+      "description": "본부의 진짜 명령",
+      "icon": "🛸",
+      "accent": "#c4b5fd",
+      "category": "SF"
+    },
+    {
+      "id": "casino-heist",
+      "title": "카지노 강도",
+      "subtitle": "골든 미라주 22:00",
+      "description": "VIP 룸 금고까지 6분",
+      "icon": "🎰",
+      "accent": "#f59e0b",
+      "category": "미스터리"
+    },
+    {
+      "id": "bank-robbery",
+      "title": "은행 강도",
+      "subtitle": "강남지점 10:14",
+      "description": "시간 잠금 5분 vs 협상",
+      "icon": "💰",
+      "accent": "#10b981",
+      "category": "미스터리"
+    },
+    {
+      "id": "zombie-airplane",
+      "title": "좀비 항공기",
+      "subtitle": "인천발 LA행 6시간 차",
+      "description": "조종실 vs 후방 봉쇄",
+      "icon": "✈️",
+      "accent": "#60a5fa",
+      "category": "좀비"
+    },
+    {
+      "id": "abandoned-school",
+      "title": "폐교",
+      "subtitle": "30년 전 모교",
+      "description": "사라진 동창과 4-2 교실",
+      "icon": "🏫",
+      "accent": "#71717a",
+      "category": "호러"
+    },
+    {
+      "id": "old-temple",
+      "title": "옛 절",
+      "subtitle": "지리산 청정암",
+      "description": "종은 절대 멈추면 안 된다",
+      "icon": "⛩️",
+      "accent": "#dc2626",
+      "category": "호러"
+    },
+    {
+      "id": "burning-hotel",
+      "title": "화재 호텔",
+      "subtitle": "23층 새벽 3시",
+      "description": "사다리차는 18층까지",
+      "icon": "🔥",
+      "accent": "#f97316",
+      "category": "재난"
+    },
+    {
+      "id": "old-mine",
+      "title": "옛 광산",
+      "subtitle": "북갱 7번 채굴장",
+      "description": "광부의 곡괭이를 피해",
+      "icon": "⛏️",
+      "accent": "#a16207",
+      "category": "호러"
+    },
+    {
+      "id": "jungle-expedition",
+      "title": "정글 탐험",
+      "subtitle": "아마존 탐사대 5명 실종",
+      "description": "강 / 산 / 늪지",
+      "icon": "🌴",
+      "accent": "#16a34a",
+      "category": "생존"
+    },
+    {
+      "id": "arctic-base",
+      "title": "북극 기지",
+      "subtitle": "보급선 두절 6주차",
+      "description": "영구 동토에서 깨어난 무엇",
+      "icon": "❄️",
+      "accent": "#bae6fd",
+      "category": "생존"
+    },
+    {
+      "id": "volcano",
+      "title": "화산 분출",
+      "subtitle": "분화구 옆에서",
+      "description": "마을까지 12km",
+      "icon": "🌋",
+      "accent": "#dc2626",
+      "category": "생존"
+    },
+    {
+      "id": "witch-castle",
+      "title": "마녀의 성",
+      "subtitle": "동생을 구하러",
+      "description": "거울의 천 년",
+      "icon": "🏰",
+      "accent": "#7c3aed",
+      "category": "판타지"
+    },
+    {
+      "id": "alien-invasion",
+      "title": "외계인 침공",
+      "subtitle": "서울 D+3",
+      "description": "지하 대피소까지",
+      "icon": "👽",
+      "accent": "#22c55e",
+      "category": "SF"
+    },
+    {
+      "id": "military-lab",
+      "title": "군사 연구소",
+      "subtitle": "B-3 격리실 USB",
+      "description": "잠입과 빠져나오기",
+      "icon": "🧪",
+      "accent": "#475569",
+      "category": "미스터리"
+    },
+    {
+      "id": "cruise-ship",
+      "title": "크루즈선",
+      "subtitle": "지중해 새벽 3시",
+      "description": "구명정 8척 우선권",
+      "icon": "🚢",
+      "accent": "#0284c7",
+      "category": "재난"
+    },
+    {
+      "id": "virus-lab",
+      "title": "바이러스 연구소",
+      "subtitle": "BSL-4 봉쇄 60분",
+      "description": "백신 5병 vs 봉쇄 유지",
+      "icon": "🦠",
+      "accent": "#dc2626",
+      "category": "좀비"
+    },
+    {
+      "id": "graveyard",
+      "title": "외딴 묘지",
+      "subtitle": "외할아버지의 회중시계",
+      "description": "한 마디만 전하면",
+      "icon": "🪦",
+      "accent": "#737373",
+      "category": "호러"
+    },
+    {
+      "id": "eclipse-night",
+      "title": "일식의 밤",
+      "subtitle": "100년 만의 개기일식",
+      "description": "검은 거울 같은 눈들",
+      "icon": "🌑",
+      "accent": "#581c87",
+      "category": "호러"
+    },
+    {
+      "id": "masquerade",
+      "title": "가면무도회",
+      "subtitle": "베네치아 자정",
+      "description": "빨간 장미를 든 자",
+      "icon": "🎭",
+      "accent": "#be185d",
+      "category": "호러"
+    },
+    {
+      "id": "bat-cave",
+      "title": "박쥐 동굴",
+      "subtitle": "동료가 끼었다",
+      "description": "박쥐 폭풍을 피해",
+      "icon": "🦇",
+      "accent": "#3f3f46",
+      "category": "호러"
+    },
+    {
+      "id": "vanished-station",
+      "title": "사라진 기차역",
+      "subtitle": "지도에 없는 연선역",
+      "description": "어제로 가는 차표",
+      "icon": "🛤️",
+      "accent": "#0d9488",
+      "category": "호러"
+    },
+    {
+      "id": "foggy-village",
+      "title": "안개 낀 마을",
+      "subtitle": "같은 얼굴들",
+      "description": "정북의 산봉",
+      "icon": "🌫️",
+      "accent": "#9ca3af",
+      "category": "호러"
+    },
+    {
+      "id": "astrologer-tower",
+      "title": "점성술사의 탑",
+      "subtitle": "별빛·달빛·태양 자물쇠",
+      "description": "내 별을 내줄까",
+      "icon": "🔮",
+      "accent": "#6366f1",
+      "category": "판타지"
+    },
+    {
+      "id": "closed-stadium",
+      "title": "폐쇄된 경기장",
+      "subtitle": "5년 전 9회 말",
+      "description": "마지막 한 타석",
+      "icon": "🏟️",
+      "accent": "#0891b2",
+      "category": "재난"
+    },
+    {
+      "id": "drifting-boat",
+      "title": "표류 보트",
+      "subtitle": "남태평양 5일째",
+      "description": "엔진 부품 vs 동료",
+      "icon": "🚤",
+      "accent": "#0e7490",
+      "category": "생존"
+    },
+    {
+      "id": "desert-caravan",
+      "title": "사막 캐러밴",
+      "subtitle": "사하라 모래 폭풍",
+      "description": "오아시스까지 30km",
+      "icon": "🐪",
+      "accent": "#ca8a04",
+      "category": "생존"
+    },
+    {
+      "id": "abandoned-amusement",
+      "title": "폐쇄된 놀이공원",
+      "subtitle": "혼자 도는 회전목마",
+      "description": "20년 전 사고",
+      "icon": "🎠",
+      "accent": "#ec4899",
+      "category": "호러"
+    },
+    {
+      "id": "secret-agent",
+      "title": "비밀 요원",
+      "subtitle": "베를린 30분 작전",
+      "description": "USB 회수와 공항 게이트 22",
+      "icon": "💼",
+      "accent": "#525252",
+      "category": "미스터리"
+    },
+    {
+      "id": "detective-case",
+      "title": "탐정 사건",
+      "subtitle": "재벌 회장 펜트하우스",
+      "description": "립스틱과 위조 유서",
+      "icon": "🔍",
+      "accent": "#854d0e",
+      "category": "미스터리"
+    },
+    {
+      "id": "tomb-raider",
+      "title": "무덤 도굴꾼",
+      "subtitle": "왕가의 골짜기",
+      "description": "보석을 만지지 말라",
+      "icon": "👑",
+      "accent": "#b45309",
+      "category": "미스터리"
+    },
+    {
+      "id": "bomb-defusal",
+      "title": "시한 폭탄",
+      "subtitle": "강남 지하상가 14분",
+      "description": "빨간선·파란선·검은선",
+      "icon": "💣",
+      "accent": "#b91c1c",
+      "category": "재난"
+    },
+    {
+      "id": "subway-trapped",
+      "title": "지하철 갇힘",
+      "subtitle": "2호선 막차",
+      "description": "옆 선로의 빛",
+      "icon": "🚇",
+      "accent": "#10b981",
+      "category": "재난"
+    },
+    {
+      "id": "warzone",
+      "title": "전쟁터 한복판",
+      "subtitle": "종군기자",
+      "description": "프레스 차량과 검문소",
+      "icon": "🪖",
+      "accent": "#65a30d",
+      "category": "재난"
+    },
+    {
+      "id": "hostage-negotiation",
+      "title": "인질 협상",
+      "subtitle": "은행 강도 12명 인질",
+      "description": "공감 vs 강압",
+      "icon": "🎲",
+      "accent": "#7c3aed",
+      "category": "재난"
+    },
+    {
+      "id": "prison-escape",
+      "title": "탈옥수",
+      "subtitle": "어머니 위독",
+      "description": "옥상·세탁실·식당",
+      "icon": "⛓️",
+      "accent": "#52525b",
+      "category": "재난"
+    },
+    {
+      "id": "office-promotion",
+      "title": "무한상사 — 승진 인사",
+      "subtitle": "박 대리와의 0.3점",
+      "description": "보고서를 몰래 보면",
+      "icon": "💼",
+      "accent": "#0ea5e9",
+      "category": "무한상사"
+    },
+    {
+      "id": "office-dinner",
+      "title": "무한상사 — 회식 거절",
+      "subtitle": "내일 9시 발표",
+      "description": "빠질 것인가 끝까지",
+      "icon": "🍻",
+      "accent": "#0284c7",
+      "category": "무한상사"
+    },
+    {
+      "id": "office-newbie",
+      "title": "무한상사 — 첫 출근",
+      "subtitle": "8:55 막내",
+      "description": "커피 vs 케이크 vs 자리",
+      "icon": "🌱",
+      "accent": "#22c55e",
+      "category": "무한상사"
+    },
+    {
+      "id": "office-card",
+      "title": "무한상사 — 법인카드",
+      "subtitle": "일요일 오후 6시",
+      "description": "월요일 9시 정산",
+      "icon": "💳",
+      "accent": "#0891b2",
+      "category": "무한상사"
+    },
+    {
+      "id": "office-overnight",
+      "title": "무한상사 — 새벽 야근",
+      "subtitle": "부장이 잠들었다",
+      "description": "혼자? 분담? 도주?",
+      "icon": "🌙",
+      "accent": "#475569",
+      "category": "무한상사"
+    },
+    {
+      "id": "mudo-chase",
+      "title": "무한도전 — 추격전",
+      "subtitle": "30분 안에 본부로",
+      "description": "명찰을 지켜라",
+      "icon": "🏃",
+      "accent": "#fbbf24",
+      "category": "무한도전"
+    },
+    {
+      "id": "mudo-island",
+      "title": "무한도전 — 24시간 무인도",
+      "subtitle": "5명, 식량 없음",
+      "description": "물 / 쉘터 / 낚시",
+      "icon": "🏝️",
+      "accent": "#16a34a",
+      "category": "무한도전"
+    },
+    {
+      "id": "mudo-songfest",
+      "title": "무한도전 — 가요제",
+      "subtitle": "1만 관중 5분 전",
+      "description": "동료가 가사 까먹었다",
+      "icon": "🎤",
+      "accent": "#ec4899",
+      "category": "무한도전"
+    },
+    {
+      "id": "mudo-karaoke",
+      "title": "무한도전 — 노래방 99점",
+      "subtitle": "60점 미만 벌칙",
+      "description": "발라드 vs 랩 vs 트로트",
+      "icon": "🎶",
+      "accent": "#f472b6",
+      "category": "무한도전"
+    },
+    {
+      "id": "mudo-marathon",
+      "title": "무한도전 — 사천성 마라톤",
+      "subtitle": "42.195km 4시간",
+      "description": "비 속의 완주",
+      "icon": "🏅",
+      "accent": "#fb923c",
+      "category": "무한도전"
+    },
+    {
+      "id": "mudo-relay",
+      "title": "무한도전 — 계주 마지막 주자",
+      "subtitle": "5m 뒤지고 있어",
+      "description": "전속력 vs 페이스 조절",
+      "icon": "🥖",
+      "accent": "#facc15",
+      "category": "무한도전"
+    },
+    {
+      "id": "mudo-cooking",
+      "title": "무한도전 — 요리 미션",
+      "subtitle": "30분 한 그릇",
+      "description": "김치라면 vs 향신료",
+      "icon": "🍳",
+      "accent": "#fde047",
+      "category": "무한도전"
+    },
+    {
+      "id": "onepiece-eastblue",
+      "title": "원피스 — 이스트블루 출항",
+      "subtitle": "견습 해적의 첫날",
+      "description": "힘 / 머리 / 의리",
+      "icon": "🏴‍☠️",
+      "accent": "#dc2626",
+      "category": "원피스"
+    },
+    {
+      "id": "onepiece-grandline",
+      "title": "원피스 — 그랜드라인 입구",
+      "subtitle": "리버스 마운틴",
+      "description": "고래와 폭포",
+      "icon": "⛵",
+      "accent": "#0369a1",
+      "category": "원피스"
+    },
+    {
+      "id": "onepiece-marineford",
+      "title": "원피스 — 마린포드 정상결전",
+      "subtitle": "형이 사형대 위에",
+      "description": "단신 진입",
+      "icon": "⚔️",
+      "accent": "#b91c1c",
+      "category": "원피스"
+    },
+    {
+      "id": "onepiece-skypiea",
+      "title": "원피스 — 스카이피아",
+      "subtitle": "구름 위 하늘섬",
+      "description": "신과 황금 종",
+      "icon": "☁️",
+      "accent": "#fcd34d",
+      "category": "원피스"
+    },
+    {
+      "id": "onepiece-impeldown",
+      "title": "원피스 — 임펠다운",
+      "subtitle": "해저 대감옥 6층",
+      "description": "1층부터 6층까지",
+      "icon": "🔒",
+      "accent": "#3f3f46",
+      "category": "원피스"
+    },
+    {
+      "id": "onepiece-fishman",
+      "title": "원피스 — 어인섬",
+      "subtitle": "해저 1만m",
+      "description": "왕 vs 적대파",
+      "icon": "🐠",
+      "accent": "#0891b2",
+      "category": "원피스"
+    },
+    {
+      "id": "onepiece-wano",
+      "title": "원피스 — 와노국",
+      "subtitle": "오니가시마 결전",
+      "description": "황제 카이도",
+      "icon": "🐉",
+      "accent": "#dc2626",
+      "category": "원피스"
+    },
+    {
+      "id": "onepiece-laftel",
+      "title": "원피스 — 라프텔",
+      "subtitle": "모든 길의 끝",
+      "description": "800년의 비밀",
+      "icon": "🗺️",
+      "accent": "#fbbf24",
+      "category": "원피스"
+    }
   ]
 }

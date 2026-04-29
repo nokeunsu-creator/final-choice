@@ -3,100 +3,293 @@
     "nodeId": 1,
     "text": "5년 전 폐쇄된 잠실 야구장. 도시 괴담을 추적하는 유튜버 셋과 진입했지만, 셔터가 등 뒤에서 쾅. 다른 둘은 사라졌다.",
     "choices": [
-      { "label": "관중석으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "선수 라커룸으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "그라운드 한가운데로", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "관중석으로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "용기"
+        ]
+      },
+      {
+        "label": "선수 라커룸으로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용",
+          "분석"
+        ]
+      },
+      {
+        "label": "그라운드 한가운데로",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "관중석. 한 자리에 누군가 앉아 박수를 친다. 짝, 짝, 짝. 무대는 비어있다.",
     "choices": [
-      { "label": "그쪽으로 가본다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "조용히 빠져나간다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "그쪽으로 가본다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "조용히 빠져나간다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "라커룸. 옷장 하나가 살짝 열려있다. 안에서 5년 전 유니폼과 야구방망이.",
     "choices": [
-      { "label": "방망이 챙김", "nextNodeId": 7, "requiredItem": null, "grantItem": "방망이" },
-      { "label": "유니폼 본다", "nextNodeId": 8, "requiredItem": null, "grantItem": null }
+      {
+        "label": "방망이 챙김",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "방망이",
+        "traits": [
+          "실용",
+          "용기"
+        ]
+      },
+      {
+        "label": "유니폼 본다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "그라운드 한가운데. 마운드 위에 야구공 하나가 올려져 있다. 5년 전 마지막 경기에서 던져지지 못한 공.",
     "choices": [
-      { "label": "공을 잡는다", "nextNodeId": 9, "requiredItem": null, "grantItem": "공" },
-      { "label": "그대로 둔다", "nextNodeId": 10, "requiredItem": null, "grantItem": null }
+      {
+        "label": "공을 잡는다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "공",
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "그대로 둔다",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "박수치는 자리. 5년 전 그 경기에서 결승 홈런을 못 친 채 죽은 노감독의 모습.",
     "choices": [
-      { "label": "감독께 인사", "nextNodeId": 11, "requiredItem": null, "grantItem": null },
-      { "label": "도망친다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "감독께 인사",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "도망친다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "관중석을 빠져나오려 하자 출구가 사라진다. 5년 전 마지막 경기 9회 말로 시간이 묶여있다.",
     "choices": [
-      { "label": "그라운드로 — 마지막 타석", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "그라운드로 — 마지막 타석",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "야구방망이 손에. 마운드에서 누군가의 공이 날아온다.",
     "choices": [
-      { "label": "그라운드로 — 타석에 선다", "nextNodeId": 12, "requiredItem": "방망이", "grantItem": null }
+      {
+        "label": "그라운드로 — 타석에 선다",
+        "nextNodeId": 12,
+        "requiredItem": "방망이",
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "유니폼 — 5년 전 마지막 타자의 것. 찢어진 등판 번호 \"7\".",
     "choices": [
-      { "label": "유니폼을 입는다", "nextNodeId": 13, "requiredItem": null, "grantItem": "유니폼" }
+      {
+        "label": "유니폼을 입는다",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": "유니폼",
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "공을 잡자 그라운드 위로 5년 전 관중의 함성이 솟구친다. 9회 말 2아웃, 풀카운트.",
     "choices": [
-      { "label": "타석에 선다 (방망이 필요)", "nextNodeId": 12, "requiredItem": "방망이", "grantItem": null },
-      { "label": "공을 마운드에 다시", "nextNodeId": 14, "requiredItem": null, "grantItem": null }
+      {
+        "label": "타석에 선다 (방망이 필요)",
+        "nextNodeId": 12,
+        "requiredItem": "방망이",
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "공을 마운드에 다시",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "공을 두고 떠나려 하자 관중석에서 단 하나의 박수.",
     "choices": [
-      { "label": "관중석으로", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "관중석으로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 11,
     "text": "감독께 인사. 그가 한숨. \"5년이나 됐는가. 누구든 마지막 한 타석만 — 끝내주면 우린 모두 풀려나.\"",
     "choices": [
-      { "label": "라커룸 → 마운드", "nextNodeId": 3, "requiredItem": null, "grantItem": null }
+      {
+        "label": "라커룸 → 마운드",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 12,
     "text": "타석. 마운드의 투수 — 5년 전 그 자세 그대로. 첫 공이 들어온다.",
     "choices": [
-      { "label": "유니폼 입은 채로 휘두른다", "nextNodeId": 15, "requiredItem": "유니폼", "grantItem": null },
-      { "label": "그냥 휘두른다", "nextNodeId": 16, "requiredItem": null, "grantItem": null }
+      {
+        "label": "유니폼 입은 채로 휘두른다",
+        "nextNodeId": 15,
+        "requiredItem": "유니폼",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "그냥 휘두른다",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 13,
     "text": "유니폼. 손에 쥔 채로 등번호 7이 빛을 낸다. 5년 전의 영혼이 함께한다.",
     "choices": [
-      { "label": "그라운드로 — 타석에", "nextNodeId": 12, "requiredItem": "방망이", "grantItem": "유니폼" },
-      { "label": "방망이 가지러 라커룸 다시", "nextNodeId": 3, "requiredItem": null, "grantItem": "유니폼" }
+      {
+        "label": "그라운드로 — 타석에",
+        "nextNodeId": 12,
+        "requiredItem": "방망이",
+        "grantItem": "유니폼",
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "방망이 가지러 라커룸 다시",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": "유니폼",
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {

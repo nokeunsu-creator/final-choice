@@ -3,48 +3,148 @@
     "nodeId": 1,
     "text": "지도에 없는 기차역, '연선'. 마지막 차를 놓치고 새벽까지 기다리던 중 시계가 거꾸로 돈다. 역사 안엔 당신뿐.",
     "choices": [
-      { "label": "매표소로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "승강장으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null },
-      { "label": "역장실 노크", "nextNodeId": 4, "requiredItem": null, "grantItem": null }
+      {
+        "label": "매표소로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "승강장으로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "역장실 노크",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "매표소. 창구엔 늙은 매표원. \"마지막 차 — 출발했어요. 다음 차는 어제예요.\" 그가 차표 한 장을 내민다.",
     "choices": [
-      { "label": "차표를 받는다", "nextNodeId": 5, "requiredItem": null, "grantItem": "차표" },
-      { "label": "거절한다", "nextNodeId": 6, "requiredItem": null, "grantItem": null }
+      {
+        "label": "차표를 받는다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": "차표",
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "거절한다",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "승강장. 1번 선로에 차 한 대 멈춰있다. 객실 안 빈 좌석들. 출입문이 열려 있다.",
     "choices": [
-      { "label": "탑승한다", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "역으로 돌아간다", "nextNodeId": 1, "requiredItem": null, "grantItem": null }
+      {
+        "label": "탑승한다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관",
+          "용기"
+        ]
+      },
+      {
+        "label": "역으로 돌아간다",
+        "nextNodeId": 1,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "역장실. 노역장이 시계를 만지고 있다. \"여긴 어제로 가는 역이야. 정거장 안 머물면 — 어제로 끌려가.\"",
     "choices": [
-      { "label": "더 묻는다", "nextNodeId": 8, "requiredItem": null, "grantItem": null },
-      { "label": "차표 없이 떠나려 한다", "nextNodeId": 9, "requiredItem": null, "grantItem": null }
+      {
+        "label": "더 묻는다",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "차표 없이 떠나려 한다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "독자"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "차표 — 출발지: 어제. 도착지: 오늘. 매표원이 \"이게 돌아갈 표예요.\" 한다.",
     "choices": [
-      { "label": "승강장으로", "nextNodeId": 10, "requiredItem": "차표", "grantItem": null }
+      {
+        "label": "승강장으로",
+        "nextNodeId": 10,
+        "requiredItem": "차표",
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "거절하자 매표원이 한숨. \"그럼 영영 못 돌아가겠네.\" 차표 없이는 시간을 못 거슬러 간다.",
     "choices": [
-      { "label": "다시 받겠다", "nextNodeId": 5, "requiredItem": null, "grantItem": null },
-      { "label": "차에 그냥 탄다", "nextNodeId": 7, "requiredItem": null, "grantItem": null }
+      {
+        "label": "다시 받겠다",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "차에 그냥 탄다",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
     ]
   },
   {
@@ -58,24 +158,74 @@
     "nodeId": 8,
     "text": "역장: \"매표소의 그 표가 — 돌아갈 유일한 길이야.\"",
     "choices": [
-      { "label": "매표소로", "nextNodeId": 2, "requiredItem": null, "grantItem": null }
+      {
+        "label": "매표소로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "역장실을 나와 출구로. 역사 출구가 사라졌다. 이제 승강장만 남아있다.",
     "choices": [
-      { "label": "승강장 — 차에 탑승", "nextNodeId": 7, "requiredItem": null, "grantItem": null },
-      { "label": "매표소로", "nextNodeId": 2, "requiredItem": null, "grantItem": null },
-      { "label": "표 없이 강제 탑승 시도", "nextNodeId": 12, "requiredItem": null, "grantItem": null },
-      { "label": "역장실 시계를 만진다", "nextNodeId": 13, "requiredItem": null, "grantItem": null }
+      {
+        "label": "승강장 — 차에 탑승",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "자기"
+        ]
+      },
+      {
+        "label": "매표소로",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "표 없이 강제 탑승 시도",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "자기"
+        ]
+      },
+      {
+        "label": "역장실 시계를 만진다",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "승강장. 차표를 든 자만 탈 수 있는 1번 선로 차에 탑승.",
     "choices": [
-      { "label": "탑승", "nextNodeId": 11, "requiredItem": "차표", "grantItem": null }
+      {
+        "label": "탑승",
+        "nextNodeId": 11,
+        "requiredItem": "차표",
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
