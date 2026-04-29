@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { useGame } from '../state/GameContext';
 import { getEndingCount, getNode, getScenario } from '../data/scenarios';
+import { scoreArchetypes } from '../data/archetypes';
 import { showInterstitialAd } from '../ads/interstitial';
 import { PersonalityResult } from '../components/PersonalityResult';
+import { shareEnding } from '../utils/share';
 
 interface Props {
   onReturnToTitle: () => void;
@@ -51,6 +53,28 @@ export function EndingScreen({ onReturnToTitle, onRetryScenario }: Props) {
     await showInterstitialAd();
     resetCurrentScenario();
     onRetryScenario();
+  };
+
+  const [shareToast, setShareToast] = useState<string | null>(null);
+  const handleShare = async () => {
+    if (!scenario || !node?.endingTitle || !node.endingType) return;
+    const traits = current?.traitCounts ?? {};
+    const totalChoices = Object.values(traits).reduce((s, v) => s + (v ?? 0), 0);
+    const top = totalChoices > 0 ? scoreArchetypes(traits)[0]?.archetype : undefined;
+    const result = await shareEnding({
+      scenarioTitle: scenario.title,
+      scenarioIcon: scenario.icon,
+      endingTitle: node.endingTitle,
+      endingType: node.endingType,
+      archetypeName: top?.name,
+      archetypeIcon: top?.icon,
+    });
+    if (result === 'copied') setShareToast('클립보드에 복사됨');
+    else if (result === 'shared') setShareToast('공유 완료');
+    else if (result === 'unavailable') setShareToast('공유를 사용할 수 없는 환경입니다');
+    if (result !== 'cancelled') {
+      window.setTimeout(() => setShareToast(null), 2200);
+    }
   };
 
   return (
@@ -112,7 +136,14 @@ export function EndingScreen({ onReturnToTitle, onRetryScenario }: Props) {
         </div>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 24 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 24, position: 'relative' }}>
+        <button
+          onClick={handleShare}
+          disabled={loading}
+          style={endingButtonStyle('#a8acc1', loading)}
+        >
+          📤 공유하기
+        </button>
         <button
           onClick={handleRetry}
           disabled={loading}
@@ -127,6 +158,28 @@ export function EndingScreen({ onReturnToTitle, onRetryScenario }: Props) {
         >
           {loading ? '...' : '다른 이야기 고르기'}
         </button>
+
+        {shareToast && (
+          <div
+            style={{
+              position: 'fixed',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              bottom: 100,
+              padding: '10px 16px',
+              background: '#1f2030',
+              border: '1px solid #3a3d50',
+              borderRadius: 8,
+              color: '#e8e8e8',
+              fontSize: 13,
+              boxShadow: '0 6px 24px rgba(0,0,0,0.4)',
+              zIndex: 100,
+              animation: 'fadeIn 0.2s ease-out',
+            }}
+          >
+            {shareToast}
+          </div>
+        )}
       </div>
     </div>
   );
