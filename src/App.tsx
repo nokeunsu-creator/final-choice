@@ -31,7 +31,15 @@ function Router() {
   }, [onEnding, node, recordEnding]);
 
   if (screen === 'main') {
-    return <MainPage onStart={() => setScreen('select')} />;
+    return (
+      <MainPage
+        onStart={() => setScreen('select')}
+        onSelectScenario={(id) => {
+          selectScenario(id);
+          setScreen('play');
+        }}
+      />
+    );
   }
   if (screen === 'select' || !save.scenarioId) {
     return (

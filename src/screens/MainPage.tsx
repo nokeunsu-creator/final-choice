@@ -1,14 +1,16 @@
 import { useMemo } from 'react';
 import { useGame } from '../state/GameContext';
 import { SCENARIOS, getEndingCount } from '../data/scenarios';
-import { aggregateCounts } from '../data/archetypes';
+import { ARCHETYPE_CATEGORIES, aggregateCounts, scoreArchetypes } from '../data/archetypes';
 import { PersonalityResult } from '../components/PersonalityResult';
+import type { ScenarioMeta } from '../data/types';
 
 interface Props {
   onStart: () => void;
+  onSelectScenario: (scenarioId: string) => void;
 }
 
-export function MainPage({ onStart }: Props) {
+export function MainPage({ onStart, onSelectScenario }: Props) {
   const { save } = useGame();
 
   // 통계
@@ -34,7 +36,7 @@ export function MainPage({ onStart }: Props) {
     [save.byScenario],
   );
 
-  // 진행 중 시나리오 (있으면 강조)
+  // 진행 중 시나리오
   const inProgress = useMemo(
     () =>
       SCENARIOS.find((s) => {
@@ -44,12 +46,40 @@ export function MainPage({ onStart }: Props) {
     [save.byScenario],
   );
 
-  // 누적 트레이트 (모든 시나리오 합산)
+  // 누적 트레이트
   const cumulativeTraits = useMemo(
     () => aggregateCounts(SCENARIOS.map((s) => save.byScenario[s.id]?.traitCounts)),
     [save.byScenario],
   );
   const totalChoicesMade = Object.values(cumulativeTraits).reduce((s, v) => s + (v ?? 0), 0);
+
+  // 추천 시나리오 (top 아키타입 기반, 5개 이상 선택했을 때)
+  const recommendations = useMemo<ScenarioMeta[]>(() => {
+    if (totalChoicesMade < 5) return [];
+    const ranked = scoreArchetypes(cumulativeTraits);
+    if (ranked.length === 0) return [];
+    const topArchetype = ranked[0].archetype;
+    const preferredCats = ARCHETYPE_CATEGORIES[topArchetype.id] ?? [];
+
+    // 우선 추천: 미클리어 + 선호 카테고리
+    const unplayed = SCENARIOS.filter((s) => {
+      const state = save.byScenario[s.id];
+      const cleared = state?.endingsCleared.length ?? 0;
+      const totalE = getEndingCount(s.id);
+      return cleared < totalE; // 모든 결말 못 본 시나리오
+    });
+    const inCat = unplayed.filter((s) => preferredCats.includes(s.category));
+    const others = unplayed.filter((s) => !preferredCats.includes(s.category));
+
+    // 카테고리 매칭 우선, 부족하면 다른 카테고리로 채움
+    return [...inCat, ...others].slice(0, 3);
+  }, [cumulativeTraits, totalChoicesMade, save.byScenario]);
+
+  const topArchetypeName = useMemo(() => {
+    if (totalChoicesMade < 5) return null;
+    const ranked = scoreArchetypes(cumulativeTraits);
+    return ranked[0]?.archetype ?? null;
+  }, [cumulativeTraits, totalChoicesMade]);
 
   return (
     <div
@@ -68,25 +98,19 @@ export function MainPage({ onStart }: Props) {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          justifyContent: 'center',
+          justifyContent: 'flex-start',
           textAlign: 'center',
           gap: 20,
-          paddingTop: '12vh',
+          paddingTop: '8vh',
         }}
       >
-        <div
-          style={{
-            fontSize: 11,
-            letterSpacing: 8,
-            color: '#7a7e92',
-          }}
-        >
+        <div style={{ fontSize: 11, letterSpacing: 8, color: '#7a7e92' }}>
           F I N A L C H O I C E
         </div>
 
         <h1
           style={{
-            fontSize: 46,
+            fontSize: 42,
             fontWeight: 800,
             color: '#ffaa00',
             margin: 0,
@@ -98,16 +122,8 @@ export function MainPage({ onStart }: Props) {
           최후의 선택
         </h1>
 
-        <p
-          style={{
-            color: '#a8acc1',
-            fontSize: 14,
-            maxWidth: 360,
-            lineHeight: 1.8,
-            margin: 0,
-          }}
-        >
-          50개의 이야기, 끝없는 분기.
+        <p style={{ color: '#a8acc1', fontSize: 13, maxWidth: 360, lineHeight: 1.7, margin: 0 }}>
+          70개의 이야기, 끝없는 분기.
           <br />
           당신의 선택만이 결말을 만든다.
         </p>
@@ -116,36 +132,30 @@ export function MainPage({ onStart }: Props) {
           style={{
             display: 'flex',
             gap: 24,
-            marginTop: 12,
+            marginTop: 4,
             color: '#6c6f82',
             fontSize: 12,
           }}
         >
           <div>
-            <div style={{ fontSize: 22, color: '#e8e8e8', fontWeight: 600 }}>
-              {totalScenarios}
-            </div>
+            <div style={{ fontSize: 22, color: '#e8e8e8', fontWeight: 600 }}>{totalScenarios}</div>
             <div>이야기</div>
           </div>
           <div style={{ width: 1, background: '#2a2c3a' }} />
           <div>
-            <div style={{ fontSize: 22, color: '#e8e8e8', fontWeight: 600 }}>
-              {totalEndings}
-            </div>
+            <div style={{ fontSize: 22, color: '#e8e8e8', fontWeight: 600 }}>{totalEndings}</div>
             <div>결말</div>
           </div>
           <div style={{ width: 1, background: '#2a2c3a' }} />
           <div>
-            <div style={{ fontSize: 22, color: '#7dffaa', fontWeight: 600 }}>
-              {clearedEndings}
-            </div>
+            <div style={{ fontSize: 22, color: '#7dffaa', fontWeight: 600 }}>{clearedEndings}</div>
             <div>달성</div>
           </div>
         </div>
 
-        {/* 누적 성격 (한 번이라도 선택했을 때만) */}
+        {/* 누적 성격 */}
         {totalChoicesMade > 0 && (
-          <div style={{ marginTop: 28, width: '100%', maxWidth: 420 }}>
+          <div style={{ marginTop: 16, width: '100%', maxWidth: 420 }}>
             <div
               style={{
                 fontSize: 10,
@@ -160,6 +170,33 @@ export function MainPage({ onStart }: Props) {
             <PersonalityResult traitCounts={cumulativeTraits} variant="compact" />
           </div>
         )}
+
+        {/* 추천 시나리오 */}
+        {recommendations.length > 0 && topArchetypeName && (
+          <div style={{ marginTop: 16, width: '100%', maxWidth: 420 }}>
+            <div
+              style={{
+                fontSize: 10,
+                letterSpacing: 3,
+                color: '#7a7e92',
+                marginBottom: 8,
+                textAlign: 'center',
+              }}
+            >
+              {topArchetypeName.icon} {topArchetypeName.name}에게 어울리는 이야기
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              {recommendations.map((s) => (
+                <RecommendCard
+                  key={s.id}
+                  scenario={s}
+                  archetypeColor={topArchetypeName.color}
+                  onClick={() => onSelectScenario(s.id)}
+                />
+              ))}
+            </div>
+          </div>
+        )}
       </main>
 
       <footer
@@ -169,7 +206,7 @@ export function MainPage({ onStart }: Props) {
           gap: 10,
           maxWidth: 420,
           width: '100%',
-          margin: '0 auto',
+          margin: '24px auto 0',
         }}
       >
         {inProgress && (
@@ -181,7 +218,10 @@ export function MainPage({ onStart }: Props) {
               marginBottom: 4,
             }}
           >
-            진행 중: <span style={{ color: inProgress.accent }}>{inProgress.icon} {inProgress.title}</span>
+            진행 중:{' '}
+            <span style={{ color: inProgress.accent }}>
+              {inProgress.icon} {inProgress.title}
+            </span>
           </div>
         )}
 
@@ -222,5 +262,49 @@ export function MainPage({ onStart }: Props) {
         </div>
       </footer>
     </div>
+  );
+}
+
+function RecommendCard({
+  scenario,
+  archetypeColor,
+  onClick,
+}: {
+  scenario: ScenarioMeta;
+  archetypeColor: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: 10,
+        padding: '10px 12px',
+        background: '#1f2030',
+        border: `1px solid ${archetypeColor}33`,
+        borderLeft: `3px solid ${scenario.accent}`,
+        borderRadius: 8,
+        textAlign: 'left',
+        color: '#e8e8e8',
+        cursor: 'pointer',
+        fontFamily: 'inherit',
+        transition: 'background 0.15s, transform 0.06s',
+      }}
+      onMouseEnter={(e) => (e.currentTarget.style.background = '#262739')}
+      onMouseLeave={(e) => (e.currentTarget.style.background = '#1f2030')}
+      onMouseDown={(e) => (e.currentTarget.style.transform = 'scale(0.99)')}
+      onMouseUp={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+    >
+      <span style={{ fontSize: 20, lineHeight: 1 }}>{scenario.icon}</span>
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <div style={{ fontSize: 13, fontWeight: 600, color: scenario.accent }}>
+          {scenario.title}
+        </div>
+        <div style={{ fontSize: 11, color: '#a8acc1', marginTop: 1 }}>{scenario.subtitle}</div>
+      </div>
+      <span style={{ color: '#5a5d70', fontSize: 14 }}>›</span>
+    </button>
   );
 }
