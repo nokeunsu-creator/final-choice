@@ -1,7 +1,8 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useGame } from '../state/GameContext';
 import { SCENARIOS, getEndingCount } from '../data/scenarios';
 import { ARCHETYPE_CATEGORIES, aggregateCounts, scoreArchetypes } from '../data/archetypes';
+import { ACHIEVEMENTS, evaluateAchievements, unlockedCount } from '../data/achievements';
 import { PersonalityResult } from '../components/PersonalityResult';
 import type { ScenarioMeta } from '../data/types';
 
@@ -80,6 +81,10 @@ export function MainPage({ onStart, onSelectScenario }: Props) {
     const ranked = scoreArchetypes(cumulativeTraits);
     return ranked[0]?.archetype ?? null;
   }, [cumulativeTraits, totalChoicesMade]);
+
+  const achievements = useMemo(() => evaluateAchievements(save), [save]);
+  const unlockedAchCount = useMemo(() => unlockedCount(save), [save]);
+  const [showAchievements, setShowAchievements] = useState(false);
 
   return (
     <div
@@ -168,6 +173,84 @@ export function MainPage({ onStart, onSelectScenario }: Props) {
               지금까지 당신은
             </div>
             <PersonalityResult traitCounts={cumulativeTraits} variant="compact" />
+          </div>
+        )}
+
+        {/* 업적 (한 번이라도 결말 도달했을 때) */}
+        {clearedEndings > 0 && (
+          <div style={{ marginTop: 16, width: '100%', maxWidth: 420 }}>
+            <button
+              onClick={() => setShowAchievements((v) => !v)}
+              style={{
+                width: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 8,
+                padding: '8px 12px',
+                background: '#1f2030',
+                border: '1px solid #2a2c3a',
+                borderRadius: 8,
+                color: '#e8e8e8',
+                fontSize: 12,
+                fontFamily: 'inherit',
+                cursor: 'pointer',
+              }}
+            >
+              <span style={{ fontSize: 16 }}>🏆</span>
+              <span style={{ flex: 1, textAlign: 'left' }}>
+                업적 <span style={{ color: '#7dffaa' }}>{unlockedAchCount}</span>
+                <span style={{ color: '#5a5d70' }}> / {ACHIEVEMENTS.length}</span>
+              </span>
+              <span style={{ color: '#7a7e92', fontSize: 14 }}>
+                {showAchievements ? '▾' : '▸'}
+              </span>
+            </button>
+            {showAchievements && (
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(56px, 1fr))',
+                  gap: 6,
+                  marginTop: 8,
+                  padding: 10,
+                  background: '#1a1b25',
+                  borderRadius: 8,
+                  border: '1px solid #2a2c3a',
+                }}
+              >
+                {achievements.map(({ achievement: a, unlocked, progressText }) => (
+                  <div
+                    key={a.id}
+                    title={`${a.title}\n${a.description}\n${progressText}`}
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      gap: 2,
+                      padding: '6px 4px',
+                      background: unlocked ? '#1f2030' : '#181923',
+                      border: `1px solid ${unlocked ? '#3a3d50' : '#252631'}`,
+                      borderRadius: 6,
+                      opacity: unlocked ? 1 : 0.4,
+                      filter: unlocked ? 'none' : 'grayscale(80%)',
+                      cursor: 'help',
+                    }}
+                  >
+                    <div style={{ fontSize: 18, lineHeight: 1 }}>{a.icon}</div>
+                    <div
+                      style={{
+                        fontSize: 8,
+                        color: unlocked ? '#a8acc1' : '#5a5d70',
+                        textAlign: 'center',
+                        lineHeight: 1.2,
+                      }}
+                    >
+                      {a.title}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         )}
 
