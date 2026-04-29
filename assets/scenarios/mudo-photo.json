@@ -1,0 +1,140 @@
+[
+  {
+    "nodeId": 1,
+    "text": "달력 화보 촬영 특집. 멤버별 콘셉트. 너의 콘셉트는 \"고독한 도시인.\" 카메라 감독이 \"30분 안에 컷.\" 박명수가 옆에서 \"형 표정 좀 무서워.\"",
+    "choices": [
+      { "label": "정통 — 정자세 차분히", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "코믹 — 웃긴 표정", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "박명수 의견 따름", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력","회피"] },
+      { "label": "콘셉트 변경 제안", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] },
+      { "label": "긴장으로 굳음", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "박명수 + 7인 달력 콘셉트", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "패션 잡지급으로 끝까지", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "정형돈과 콜라보", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] },
+      { "label": "박명수 호통과 새 트렌드", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "박명수가 표지를 가로챔", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] },
+      { "label": "정통 + 콜라보 + 결정타 모두", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력","용기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "정자세. 카메라 감독 \"이거다.\" 첫 컷 성공. 그러나 박명수 \"너무 차분해\" 한다.",
+    "choices": [
+      { "label": "다음 컷 — 살짝 미소", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "그대로 — 정통", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["원칙","독자"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "코믹. 박명수 호통 흉내. 카메라 감독 \"이건 콘셉트 위반\" 한다.",
+    "choices": [
+      { "label": "콘셉트 회복", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] },
+      { "label": "끝까지 코믹", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기","독자"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "박명수 의견. \"형 그냥 자연스럽게\" 한다. 자연스러움이 가장 어렵다.",
+    "choices": [
+      { "label": "박명수와 둘이 — 그가 옆에서 호통", "nextNodeId": 8, "requiredItem": null, "grantItem": "박명수콜라보", "traits": ["협력","직관"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "살짝 미소. 카메라 감독 \"좋아!\" 한다. 잡지 표지급.",
+    "choices": [
+      { "label": "마지막 컷 — 결정타", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "그대로. 정통. 그러나 잡지가 \"너무 보수적\" 평가.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "보수적 화보"
+  },
+  {
+    "nodeId": 7,
+    "text": "끝까지 코믹. 카메라 감독 화. 결국 다른 멤버에게 콘셉트 양보.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "콘셉트 위반"
+  },
+  {
+    "nodeId": 8,
+    "text": "박명수 콜라보. 둘이서 \"고독한 도시인 + 호통하는 형\" 찰떡 콘셉트. 카메라 감독 환호.",
+    "choices": [
+      { "label": "마지막 컷 — 둘이 함께", "nextNodeId": 10, "requiredItem": "박명수콜라보", "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "마지막 컷. 카메라 앞에서 한 번. 잡지 표지로 선정.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "12월 표지"
+  },
+  {
+    "nodeId": 10,
+    "text": "둘이 마지막 컷. \"형돈 X 명수\" 캡션. 잡지 양면 페이지.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "양면 페이지"
+  },
+  {
+    "nodeId": 11,
+    "text": "감독이 \"이거 콘셉트 바꾸자\" 한다. \"호통하는 도시인\"으로.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "콘셉트 변경"
+  },
+  {
+    "nodeId": 12,
+    "text": "긴장으로 표정 굳음. 30분 동안 한 컷도 안 나옴. 다음 회로.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "굳은 표정"
+  },
+  {
+    "nodeId": 13,
+    "text": "박명수가 옆에서 자기 콘셉트도 한다고 끼어듦. 7명 다 화보. 달력 완성.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "7인 달력"
+  },
+  {
+    "nodeId": 14,
+    "text": "감독이 \"이건 진짜 패션 잡지\" 한다. 12월 표지 + 인터뷰까지.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "패션 잡지"
+  },
+  {
+    "nodeId": 15,
+    "text": "정형돈이 \"형 같이 찍자\" 한다. 그와 콜라보. 잡지 \"형돈 X 너\" 표지.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정형돈과의 콜라보"
+  },
+  {
+    "nodeId": 16,
+    "text": "박명수의 호통이 들어가 의외로 \"고독한 도시인 + 호통\" 새 트렌드.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "새 트렌드"
+  },
+  {
+    "nodeId": 17,
+    "text": "촬영 도중 박명수가 카메라 앞에서 \"내가 더 잘 찍히게\" 한다. 그가 표지.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "박명수의 표지"
+  },
+  {
+    "nodeId": 18,
+    "text": "정통 + 콜라보 + 마지막 컷 — 모두 완벽. 12월 달력 표지 + 양면 + 인터뷰.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "완벽 달력"
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한도전 퀴즈쇼 특집. 멤버 7명 한 줄. 진행자 유재석. 첫 문제: \"무한도전 100회 게스트는?\" 4지선다. 박명수가 \"3번\" 외친다.",
+    "choices": [
+      { "label": "박명수 따라 — 3번", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["협력","회피"] },
+      { "label": "혼자 생각 — 1번", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","독자"] },
+      { "label": "정형돈 의견 듣기", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력","신중"] },
+      { "label": "박명수가 모든 문제 \"3번\" — 행운 도전", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "박명수의 7등을 본다", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "유재석이 답을 흘리게 둔다", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] },
+      { "label": "정형돈 + 분석 + 풀파워 — 최고 기록", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["분석","협력","원칙"] },
+      { "label": "그냥 즐기는 퀴즈로", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["협력","직관"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "3번. 정답! 박명수 \"내가 알지 그런 거.\" 5점.",
+    "choices": [
+      { "label": "다음 — 박명수 따라 계속", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["협력","회피"] },
+      { "label": "다음부터 — 자기 판단", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["독자","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "1번. 오답. 정답은 3번. 박명수 \"내가 맞췄네!\" 호통.",
+    "choices": [
+      { "label": "다음 — 분석으로 회복", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "정형돈. \"잘 모르겠어\" 솔직. 박명수가 \"형 맞으면 만점\" 한다.",
+    "choices": [
+      { "label": "정형돈에게 자신감 부여", "nextNodeId": 8, "requiredItem": null, "grantItem": "정형돈자신감", "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "박명수 따라 두 번째. 그가 \"5번\" 한다 (4지선다인데). 박장대소 + 오답.",
+    "choices": [
+      { "label": "다음부터 — 자기 판단", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["독자","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "자기 판단. 다음 문제: \"무한도전 첫 가요제 우승팀은?\" 신중히.",
+    "choices": [
+      { "label": "1번 — 거북이즈", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "2번 — Y2J", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["분석"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "분석 회복. 다음 문제. 정확.",
+    "choices": [
+      { "label": "끝까지 분석", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "정형돈 자신감. \"한 번 답해볼게\" 한다. 그가 정답!",
+    "choices": [
+      { "label": "정형돈에게 다음도 맡김", "nextNodeId": 12, "requiredItem": "정형돈자신감", "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "거북이즈. 정답! 박명수가 \"근데 내가 만들었지.\" 자랑.",
+    "choices": [
+      { "label": "마지막 문제 — 풀파워", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "Y2J. 오답. 거북이즈가 정답.",
+    "choices": [
+      { "label": "남은 문제 회복", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["회복"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "회복. 마지막 3문제 모두 정답. 그러나 초반 손실 만회 못함.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "회복의 한계"
+  },
+  {
+    "nodeId": 12,
+    "text": "정형돈. 마지막 문제 정답. 7명이 \"정형돈! 정형돈!\" 외침.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정형돈의 활약"
+  },
+  {
+    "nodeId": 13,
+    "text": "마지막 문제. 만점 + 보너스. 우승. 박명수가 트로피 들어올림.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "퀴즈 우승"
+  },
+  {
+    "nodeId": 14,
+    "text": "박명수가 모든 문제에 \"3번\". 우연히 다 맞아 우승. 통계학적 행운.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "박명수 3번의 행운"
+  },
+  {
+    "nodeId": 15,
+    "text": "박명수가 모든 문제 오답. 7등. 호통의 끝.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "박명수의 7등"
+  },
+  {
+    "nodeId": 16,
+    "text": "유재석이 \"이건 너무 쉬워\" 진행자 권한으로 답을 흘림. 모두 만점. 무효.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "진행자의 흘림"
+  },
+  {
+    "nodeId": 17,
+    "text": "정형돈 + 분석 + 풀파워 — 7명 평균 만점. 퀴즈쇼 역사상 최고 기록.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "최고 기록"
+  },
+  {
+    "nodeId": 18,
+    "text": "박명수가 \"이게 무한도전이지\" 한다. 모두가 답을 모르고 그냥 즐기는 퀴즈.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "즐기는 퀴즈"
+  }
+]

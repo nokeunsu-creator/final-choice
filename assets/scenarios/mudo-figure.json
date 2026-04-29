@@ -1,0 +1,138 @@
+[
+  {
+    "nodeId": 1,
+    "text": "김연아 피겨 도전. 3개월 훈련 후 발표회. 빙판 위. 김연아가 옆에서 \"천천히 호흡.\" 음악 시작 5초 전.",
+    "choices": [
+      { "label": "기본 — 백 크로스부터", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "도전 — 1회전 점프 시도", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "쇼맨십 — 카메라에 손짓", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "솔직히 — \"준비 안 됐어요\" 인터뷰", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["원칙","자기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "백 크로스. 매끄럽게. 빙판이 너의 발 아래. 김연아가 \"좋아요\" 한다.",
+    "choices": [
+      { "label": "다음 — 회전 시도", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "안전하게 끝까지 기본기", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["신중"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "1회전 점프. 빙판을 박차고 — 한 바퀴. 그러나 착지에서 비틀거린다.",
+    "choices": [
+      { "label": "균형 잡고 다음", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "넘어진다", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "카메라에 손짓. 관객이 환호. 그러나 음악이 빨리 진행되어 첫 동작을 놓쳤다.",
+    "choices": [
+      { "label": "급히 따라잡기", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["직관","자기"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "회전. 한 바퀴 — 두 바퀴. 점점 빨라지는 회전. 균형을 잡으며 정확히 멈춘다.",
+    "choices": [
+      { "label": "1회전 점프", "nextNodeId": 7, "requiredItem": null, "grantItem": "기본기", "traits": ["용기","원칙"] },
+      { "label": "발표회 끝까지 — 김연아의 인사", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "안전한 기본기. 마지막까지 무난. 김연아가 \"기본기는 완벽\" 한다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "기본기의 완벽"
+  },
+  {
+    "nodeId": 7,
+    "text": "1회전 점프 — 다시. 이번엔 착지 정확. 관객 박수.",
+    "choices": [
+      { "label": "2회전 점프 도전", "nextNodeId": 10, "requiredItem": "기본기", "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "여기서 마무리", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["신중","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "넘어진다. 빙판에 손이. 김연아가 \"괜찮아요? 일어나세요\" 한다.",
+    "choices": [
+      { "label": "일어나 다시 — 끝까지", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "이만 그만둔다", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "급히 따라잡는다. 그러나 음악과 동작이 어긋나 결국 어색.",
+    "choices": [
+      { "label": "기본기로 회복", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "2회전 점프. 김연아만 가능한 그것. 빙판을 박차고 — 두 바퀴. 공중에서 영원처럼.",
+    "choices": [
+      { "label": "착지 — 무릎 굽혀 충격 흡수", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "착지 — 그냥", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["자기"] },
+      { "label": "착지 직전 김연아와 페어 시도", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["협력","이타","용기"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "여기서 마무리. 깔끔한 1회전 점프 + 기본기. 관객 박수. 김연아 인사.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "안전한 완성"
+  },
+  {
+    "nodeId": 12,
+    "text": "일어나 끝까지. 넘어진 후의 회복이 가장 박수받는 순간. 마지막 포즈.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "넘어진 후의 일어섬"
+  },
+  {
+    "nodeId": 13,
+    "text": "그만둔다. 빙판에서 내려간다. 김연아가 안타깝게 본다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "포기"
+  },
+  {
+    "nodeId": 14,
+    "text": "착지 정확. 무릎이 충격을 흡수. 관객 일어나 박수. 김연아가 \"이건 진짜다!\" 한다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "2회전의 진심"
+  },
+  {
+    "nodeId": 15,
+    "text": "그냥 착지. 무릎이 펴져있어 충격이 그대로. 발목이 비틀어진다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "발목의 대가"
+  },
+  {
+    "nodeId": 16,
+    "text": "김연아가 옆에 와서 \"같이 한 번 더\" 한다. 둘이서 페어 동작. 관객 환호.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "김연아와 페어"
+  },
+  {
+    "nodeId": 17,
+    "text": "발표회 마지막. 김연아가 마이크 잡고 \"오늘 도전한 분 — 진심으로 박수.\" 만 명의 박수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "발표회의 끝"
+  },
+  {
+    "nodeId": 18,
+    "text": "음악이 끝나기 전 빙판에서 내려와 인터뷰. \"준비가 안 됐어요.\" 솔직.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "솔직한 후퇴"
+  }
+]

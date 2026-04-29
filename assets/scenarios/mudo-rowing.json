@@ -1,0 +1,139 @@
+[
+  {
+    "nodeId": 1,
+    "text": "조정 (Rowing) 도전. 6개월 훈련 후 한강에서 8인 1보트. 결승 직전. 코치 \"한 명이라도 박자 어긋나면 끝.\" 출발 신호 30초 전.",
+    "choices": [
+      { "label": "큰 호흡 — 박자 맞춤", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "박명수 옆 — 그를 진정시킴", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "혼자 집중 — 헤드셋 끼움", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["독자","원칙"] },
+      { "label": "결승 후 \"한국조정 우리가\" 외침", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "박명수의 박자 어긋남에 맞추기", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "정형돈이 도주", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "6개월 결과를 노 들어 보임", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "박명수 + 1등 + 모두 합력 신기록", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["협력","용기","원칙"] },
+      { "label": "박명수의 고백 — \"노 잘 못 함\"", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "큰 호흡. 8명이 동시에. 출발 신호. 첫 노. 박자 ✓.",
+    "choices": [
+      { "label": "초반 — 천천히 가속", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["신중","원칙"] },
+      { "label": "초반부터 풀파워", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "박명수 진정. 그가 \"내가 빠지면 어떡해\" 한다. 출발 직후 그를 안심.",
+    "choices": [
+      { "label": "그의 박자에 맞춤", "nextNodeId": 7, "requiredItem": null, "grantItem": "박명수의안정", "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "헤드셋. 음악만. 박자 보지 않고 직관.",
+    "choices": [
+      { "label": "그대로 — 직관 신뢰", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["독자","직관"] },
+      { "label": "헤드셋 빼기", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "천천히 가속. 100m 지점. 다른 팀과 같은 라인.",
+    "choices": [
+      { "label": "200m 지점 풀파워 전환", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "초반 풀파워. 50m에서 1등. 그러나 200m에서 다리 풀림.",
+    "choices": [
+      { "label": "그래도 끝까지", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "박명수 박자. 다른 멤버들도 안심. 안정된 8명. 200m에서 가속.",
+    "choices": [
+      { "label": "마지막 100m — 모두 풀파워", "nextNodeId": 11, "requiredItem": "박명수의안정", "grantItem": null, "traits": ["협력","용기"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "직관. 박자가 안 맞아 노가 옆 사람과 부딪힘. 보트가 흔들린다.",
+    "choices": [
+      { "label": "다시 박자 맞춤", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["회복","협력"] },
+      { "label": "그대로 — 무리한다", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["용기","독자"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "200m 풀파워. 라인 유지. 다른 팀 추월. 1등으로.",
+    "choices": [
+      { "label": "마지막 100m", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "끝까지. 2등으로 결승선. 8명이 보트에서 쓰러짐.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "2등의 결승"
+  },
+  {
+    "nodeId": 11,
+    "text": "마지막 100m. 풀파워. 결승선 통과. 1등.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "1등의 결승"
+  },
+  {
+    "nodeId": 12,
+    "text": "무리. 보트가 옆으로. 8명 강에 빠짐. 미션 실패.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "전복"
+  },
+  {
+    "nodeId": 13,
+    "text": "8명이 결승 후 동시에 \"한국조정 우리가\" 외친다. 코치가 박수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "한국 조정의 우리"
+  },
+  {
+    "nodeId": 14,
+    "text": "박명수가 한 번 박자 어긋남. 8명이 그래도 그를 따라 박자 맞춤. 끝까지.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "박명수에 맞춤"
+  },
+  {
+    "nodeId": 15,
+    "text": "출발 직후 정형돈이 \"형 못 하겠어\" 도주. 7명만으로는 박자 안 맞아 실격.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "한 명의 도주"
+  },
+  {
+    "nodeId": 16,
+    "text": "결승 후 코치가 \"6개월의 결과\" 한다. 8명이 동시에 노를 들어올림.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "6개월의 결과"
+  },
+  {
+    "nodeId": 17,
+    "text": "박명수의 박자 + 1등 + 모두의 합력 — 한국 조정 신기록.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "한국 조정 신기록"
+  },
+  {
+    "nodeId": 18,
+    "text": "박명수가 1등 직후 \"형 사실 노는 잘 못 했어\" 솔직. 폭소. 7명이 그를 안음.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "박명수의 고백"
+  }
+]

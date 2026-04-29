@@ -1,0 +1,137 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한도전 300회 특집. 지난 6년의 영상 모음 + 라이브 토크쇼. 7명 멤버 다 모임. 첫 코너: \"가장 기억에 남는 회차\" 발표.",
+    "choices": [
+      { "label": "가요제 — \"올림픽대로\" 무대", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "추격전 — 광화문 광장", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "100회 — 형이 너무해", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "PD의 마지막 인사", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] },
+      { "label": "박명수 호통 통계", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["분석","직관"] },
+      { "label": "300회가 다음주로 짤림", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "인터뷰만 30분 진행", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","원칙"] },
+      { "label": "모든 코너 다 — 완성판", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙","용기"] },
+      { "label": "박명수의 마지막 농담", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["직관","자기"] },
+      { "label": "다음 주 301회 예고로 마무리", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "가요제. 모든 멤버가 그 무대 떠올림. 박명수 \"내가 그때 사실 가사 까먹었거든.\" 폭소.",
+    "choices": [
+      { "label": "300회 라이브 — 가요제 노래 다시", "nextNodeId": 5, "requiredItem": null, "grantItem": "가요제기억", "traits": ["용기","협력"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "추격전. 정형돈이 명찰 떼이는 장면 회상. 정형돈 \"그때 진짜 울 뻔했어.\"",
+    "choices": [
+      { "label": "300회 — 즉흥 추격전 시도", "nextNodeId": 6, "requiredItem": null, "grantItem": "추격기억", "traits": ["용기","직관"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "100회. 박명수가 멤버들에게 \"형이 너무해\" 호통친 그 회차. 모두 웃음.",
+    "choices": [
+      { "label": "박명수에게 200회 만에 사과", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["이타","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "가요제 노래 라이브. 박명수가 가사 또 까먹는다. 폭소. 관객도 따라부른다.",
+    "choices": [
+      { "label": "끝까지 — 모두 합창", "nextNodeId": 8, "requiredItem": "가요제기억", "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "즉흥 추격전. 광화문 광장. 7명이 도쿄 가운데서 추격. 시청자도 함께.",
+    "choices": [
+      { "label": "정형돈에게 명찰 — 그가 우승", "nextNodeId": 9, "requiredItem": "추격기억", "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "박명수가 \"이게 진짜 사과인가?\" 한다. 멤버들 박수. 관객도.",
+    "choices": [
+      { "label": "다 같이 한 마디씩 — 미안하다", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "가요제 합창. 관객 만 명이 한 노래. 6년의 결실.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "300회 가요제"
+  },
+  {
+    "nodeId": 9,
+    "text": "정형돈 우승. 관객이 \"형돈이 형돈이\" 외친다. 그가 마이크 잡고 울먹.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정형돈의 우승"
+  },
+  {
+    "nodeId": 10,
+    "text": "다 같이 미안하다. 관객 박수. 박명수도 결국 \"고맙다\" 한다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "300회 화해"
+  },
+  {
+    "nodeId": 11,
+    "text": "PD가 마이크 잡고 \"여러분 덕분에 300회까지 왔습니다.\" 멤버들이 인사.",
+    "choices": [
+      { "label": "유재석 — 마지막 인사", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "유재석. \"300회까지의 여정 — 시청자 여러분 덕분입니다.\" 7명이 동시에 절.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "300회의 절"
+  },
+  {
+    "nodeId": 13,
+    "text": "박명수가 \"호통 200번 했죠?\" 통계. 정형돈이 \"형 사실 더 많이 했어요.\" 폭소.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "호통의 통계"
+  },
+  {
+    "nodeId": 14,
+    "text": "300회 자체가 짤려서 다음주로. 멤버 \"진짜?\" 호통.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "다음주로"
+  },
+  {
+    "nodeId": 15,
+    "text": "300회 인터뷰만 30분. 시청자가 \"코너는?\" 항의.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "인터뷰의 한계"
+  },
+  {
+    "nodeId": 16,
+    "text": "추격전 + 가요제 + 화해 — 모든 코너 동원. 300회의 완성. 시청률 27%.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "300회 완성"
+  },
+  {
+    "nodeId": 17,
+    "text": "갑자기 박명수가 \"이게 마지막이에요\" 거짓말. 모두 충격. PD가 \"농담이지?\" 한다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "박명수의 농담"
+  },
+  {
+    "nodeId": 18,
+    "text": "300회 끝. 다음 주 301회 예고. 멤버 7명이 \"이번엔 진짜 새로운 거\" 약속.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "301회 예고"
+  }
+]

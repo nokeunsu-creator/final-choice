@@ -1,0 +1,137 @@
+[
+  {
+    "nodeId": 1,
+    "text": "식스맨 오디션 마지막 라운드. 카메라 앞 1분 PR. 박명수, 정형돈, 유재석이 심사위원. 너의 차례.",
+    "choices": [
+      { "label": "유재석 닮은 진행 스타일", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "박명수 호통 패러디", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "정형돈 자학 개그", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회피","직관"] },
+      { "label": "전혀 다른 — 너만의 캐릭터", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["독자","용기"] },
+      { "label": "긴장해서 떨고만 있는다", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "유재석 스타일. 매끄러운 진행. 그러나 심사위원이 \"근데 — 유재석은 이미 있잖아?\"",
+    "choices": [
+      { "label": "차이를 어필", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "이미지 변경", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "박명수 호통. \"왜 안 도와! 형이 뭐 잘못했냐!\" 박명수 본인이 \"내가 진짜 저랬어?\" 폭소.",
+    "choices": [
+      { "label": "더 진하게 흉내", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "여기서 멈추기", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["신중"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "자학. \"저는 잘하는 게 없는데, 그게 제 강점입니다.\" 정형돈 \"...어디서 본 듯.\"",
+    "choices": [
+      { "label": "더 깊이 — \"하지만 진심으로\"", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] },
+      { "label": "농담으로 마무리", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "너만의 캐릭터. 한 발 앞으로. \"저는 무도에 없던 무엇을 가져옵니다.\" 박명수 \"오, 보자.\"",
+    "choices": [
+      { "label": "특기 시연 — 마술", "nextNodeId": 12, "requiredItem": null, "grantItem": "마술", "traits": ["용기","직관"] },
+      { "label": "특기 시연 — 노래", "nextNodeId": 13, "requiredItem": null, "grantItem": "노래", "traits": ["용기","원칙"] },
+      { "label": "특기 시연 — 즉흥 코미디", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "차이 어필. \"저는 더 디테일에 강해요.\" 그러나 추상적. 심사위원 시선 회피.",
+    "choices": [
+      { "label": "구체 사례 — 즉석 진행", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["분석","용기"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "이미지 변경. \"실은… 저는 정형돈 스타일도 가능합니다.\" 일관성 ↓.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "일관성 부족"
+  },
+  {
+    "nodeId": 8,
+    "text": "더 진하게. 박명수가 의자에서 일어나 \"이거 진짜 나야!\" 폭소. 유재석 박수.",
+    "choices": [
+      { "label": "마무리 짧게", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "여기서 멈추기. 박명수 \"왜 멈춰?\" 정형돈 \"흐름 끊겨.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "끊긴 흐름"
+  },
+  {
+    "nodeId": 10,
+    "text": "더 깊이. \"저는 7년 동안 무도 봐왔어요. 시청자 입장에서 시작하니까 — 시청자 마음을 압니다.\" 정형돈이 끄덕인다.",
+    "choices": [
+      { "label": "마무리 — 진심으로 인사", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "농담. \"근데 저 이거 5분 연습한 거예요.\" 약한 웃음.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "준비 부족"
+  },
+  {
+    "nodeId": 12,
+    "text": "마술. 카드 한 장이 박명수 주머니에서 나온다. \"어떻게?!\" 박명수 놀람.",
+    "choices": [
+      { "label": "두 번째 마술 — 더 큰 거", "nextNodeId": 16, "requiredItem": "마술", "grantItem": null, "traits": ["용기","직관"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "노래. 발라드 한 소절. 정형돈이 \"진심이 느껴진다\" 한다. 유재석 미소.",
+    "choices": [
+      { "label": "한 소절 더", "nextNodeId": 17, "requiredItem": "노래", "grantItem": null, "traits": ["원칙","이타"] }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "즉흥 코미디. 박명수 가방을 가지고 4분짜리 즉흥. 모두 폭소.",
+    "choices": [
+      { "label": "박명수에게 절", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "즉석 진행. 박명수에게 \"오늘 어떠셨어요?\" 박명수 \"피곤했죠.\" 자연스런 흐름.",
+    "choices": [
+      { "label": "유재석에게도 — 구도 만든다", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "마무리. 박명수가 \"이 친구 진짜 잘한다\" 한다. 합격.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "식스맨 합격"
+  },
+  {
+    "nodeId": 17,
+    "text": "유재석이 일어선다. \"우리 멤버하자.\" 합격 + 진심 인정.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "진심의 식스맨"
+  },
+  {
+    "nodeId": 18,
+    "text": "박명수가 \"근데 너무 떨고 있다\" 호통. 결국 PR이 흐트러져 불합격.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "긴장의 패배"
+  }
+]

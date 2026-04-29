@@ -1,0 +1,137 @@
+[
+  {
+    "nodeId": 1,
+    "text": "에어로빅 특집. 1980년대 의상 + 고난도 안무. 대회 본선 5분 전. 정형돈이 \"이거 진짜 해?\" 한다. 음악은 \"잠바\"가 시작될 거다.",
+    "choices": [
+      { "label": "기본 — 깔끔하게", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "오버 — 80년대 그 자체", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "정형돈 데리고 듀엣", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] },
+      { "label": "잠바 트리오 — 박명수까지 합류", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["용기","협력","직관"] },
+      { "label": "음악 시작에 안무 잊음", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "오버 + 듀엣 + 결정타 모두 동원", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["용기","협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "기본. 안무 정확. 그러나 인상적 동작 부족.",
+    "choices": [
+      { "label": "다리 찢기 — 마지막에", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "그대로 끝까지", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "오버. 80년대 컬러풀 의상에 매칭한 큰 동작. 관객 환호.",
+    "choices": [
+      { "label": "에어로빅 점프", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "회전 동작 + 의상 펄럭", "nextNodeId": 8, "requiredItem": null, "grantItem": "오버액션", "traits": ["용기","직관"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "정형돈 듀엣. 그가 옆에서 따라온다. 박자가 다르지만 둘이 어색하게 같이.",
+    "choices": [
+      { "label": "정형돈 안무 맞추기", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] },
+      { "label": "둘이 즉흥 — 막춤", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "마지막 다리 찢기. 정확히. 관객 \"어머나!\" 박수. 점수 ↑.",
+    "choices": [
+      { "label": "결과 발표", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "그대로. 정확하지만 임팩트 없음. 평균 점수.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "기본의 평균"
+  },
+  {
+    "nodeId": 7,
+    "text": "에어로빅 점프. 공중에서 다리 펴기. 그러나 착지 어색.",
+    "choices": [
+      { "label": "수습 — 다음 동작", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["회복","용기"] },
+      { "label": "넘어진다", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "회전 + 의상 펄럭. 80년대 그 자체. 관객 환호. 정형돈 박수.",
+    "choices": [
+      { "label": "마지막 — 더블 회전", "nextNodeId": 14, "requiredItem": "오버액션", "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "정형돈 박자에 맞춤. 둘이 천천히 같이. 관객 \"훈훈해\" 한다.",
+    "choices": [
+      { "label": "마지막 — 둘이 손잡고 마무리", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "막춤. 정형돈이 더 잘한다 (이상하게). 둘이 폭소. 관객도 폭소.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정형돈의 막춤"
+  },
+  {
+    "nodeId": 11,
+    "text": "결과 발표. 7.8점. 본선 통과. 결승 진출.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "본선 통과"
+  },
+  {
+    "nodeId": 12,
+    "text": "수습. 다음 동작이 자연스럽게 이어진다. 관객 안도의 박수.",
+    "choices": [
+      { "label": "마지막 결정타", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["용기"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "착지 실패. 매트에 손목. 정형돈이 달려와 도와준다. 부상으로 기권.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "손목 부상"
+  },
+  {
+    "nodeId": 14,
+    "text": "마지막 결정타. 더블 회전 + 다리 찢기 동시. 관객 비명. 9.2점. 우승.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "에어로빅 우승"
+  },
+  {
+    "nodeId": 15,
+    "text": "둘이 손잡고 마무리. 80년대의 우정. 관객 박수. 점수 8.5.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "두 사람의 하모니"
+  },
+  {
+    "nodeId": 16,
+    "text": "음악이 \"잠바\". 정형돈 + 박명수 + 너가 갑자기 합류. 트리오 막춤. 관객 폭발.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "잠바 트리오"
+  },
+  {
+    "nodeId": 17,
+    "text": "긴장해서 음악 시작 직후 안무 잊음. 그냥 가만히 5초. 결국 기권.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "안무의 망각"
+  },
+  {
+    "nodeId": 18,
+    "text": "오버 + 듀엣 + 마지막 결정타 — 우승 + 잠바 트리오 무대 후 박수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "에어로빅의 전설"
+  }
+]

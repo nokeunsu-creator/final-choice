@@ -1,0 +1,139 @@
+[
+  {
+    "nodeId": 1,
+    "text": "캠핑 도전. 강원도 산속. 24시간 동안 음식, 텐트, 불, 잠. 도착 시 박명수 \"형, 핸드폰 신호 안 와\" 한다. 일몰 2시간 전.",
+    "choices": [
+      { "label": "텐트부터 — 해 지기 전에", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "불부터 — 화목 모으기", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","실용"] },
+      { "label": "음식 — 박명수 라면 챙김", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] },
+      { "label": "비가 오기 시작 — 차로 도주", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "곰 등장 — 라면 빼앗김", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피","직관"] },
+      { "label": "별 아래 합창 코스로", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] },
+      { "label": "텐트 + 불 + 음식 + 별 — 모범 캠핑", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력","용기"] },
+      { "label": "박명수 호통 후 \"한 번 더\"", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] },
+      { "label": "정형돈 \"잠 안 와\"", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "텐트. 6명이 분담. 30분 만에 4인용 텐트 두 채. 일몰 1시간 30분 남음.",
+    "choices": [
+      { "label": "불 — 박명수와 화목", "nextNodeId": 5, "requiredItem": null, "grantItem": "텐트완성", "traits": ["협력","실용"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "화목 모으기. 그러나 비가 와서 다 젖었다. 마른 가지 찾기 어려움.",
+    "choices": [
+      { "label": "박명수 발견한 곳간 안 가지", "nextNodeId": 6, "requiredItem": null, "grantItem": "마른가지", "traits": ["분석","실용"] },
+      { "label": "그냥 젖은 거로 시도", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "라면 챙김. 그러나 불도, 텐트도 없음. 일몰까지 1시간 30분.",
+    "choices": [
+      { "label": "급히 텐트로", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "박명수와 화목. 그가 \"이거 진짜 무겁다\" 호통. 그래도 둘이서 쌓는다.",
+    "choices": [
+      { "label": "라이터로 첫 불", "nextNodeId": 8, "requiredItem": "텐트완성", "grantItem": "불", "traits": ["용기","실용"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "곳간 안 마른 가지. 정확히 적당한 양. 박명수가 \"형 천재\" 한다.",
+    "choices": [
+      { "label": "불 피우기", "nextNodeId": 8, "requiredItem": "마른가지", "grantItem": "불", "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "젖은 가지. 라이터 한 통 다 써도 안 붙는다. 일몰 30분 남음.",
+    "choices": [
+      { "label": "포기 — 차에서 잠", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "곳간 가지 찾으러", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "불. 모두가 둘러앉아 박수. 박명수의 라면.",
+    "choices": [
+      { "label": "라면 끓이기 — 모두에게", "nextNodeId": 10, "requiredItem": "불", "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "고기 — 가져온 삼겹살", "nextNodeId": 11, "requiredItem": "불", "grantItem": null, "traits": ["실용","협력"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "차에서 잠. 그러나 모기 + 좁음. 박명수 호통.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "차박의 패배"
+  },
+  {
+    "nodeId": 10,
+    "text": "라면. 6명이 따뜻한 한 그릇씩. 박명수가 \"이게 진짜 캠핑\" 한다.",
+    "choices": [
+      { "label": "별 보며 잠", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "삼겹살. 기름이 불에 떨어져 큰 불꽃. 박명수가 \"이거 진짜네!\" 환호.",
+    "choices": [
+      { "label": "박명수 첫 한 점", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["이타"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "별 보며 잠. 텐트 안 6명. 캠핑의 진짜.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "별 아래의 6명"
+  },
+  {
+    "nodeId": 13,
+    "text": "비가 오기 시작. 텐트가 새고, 불이 꺼진다. 모두 차로.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "비의 캠핑"
+  },
+  {
+    "nodeId": 14,
+    "text": "곰 한 마리 나타남. 모두 차로 도주. 박명수 \"형 곰이 우리 라면 가져갔어!\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "곰의 라면"
+  },
+  {
+    "nodeId": 15,
+    "text": "박명수가 \"이게 캠핑이지\" 한다. 6명이 별 보며 합창. 24시간의 진짜 캠핑.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "캠핑의 합창"
+  },
+  {
+    "nodeId": 16,
+    "text": "텐트 + 불 + 음식 + 별 — 모든 것이 완벽. 캠핑의 모범.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "캠핑의 모범"
+  },
+  {
+    "nodeId": 17,
+    "text": "박명수가 호통. \"이거 캠핑이 아니라 고생이야!\" 그러나 다음 날 \"한 번 더 가자\" 한다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "한 번 더"
+  },
+  {
+    "nodeId": 18,
+    "text": "정형돈이 \"형 미안한데 나 잠 안 와\" 한다. 모두가 옆에서 같이 잠 못 든다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "잠 못 드는 밤"
+  }
+]

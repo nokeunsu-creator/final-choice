@@ -1,5 +1,5 @@
 /**
- * 무거운 시나리오 데이터 모듈 — 모든 79개 JSON을 정적 import.
+ * 무거운 시나리오 데이터 모듈 — 모든 95개 JSON을 정적 import.
  * 이 모듈은 GameScreen / EndingScreen에서만 사용. App.tsx의 React.lazy로
  * 분리되어 메인 페이지/시나리오 선택 화면에서는 로드되지 않는다.
  *
@@ -84,6 +84,22 @@ import avengersRaw from '../../assets/scenarios/avengers.json';
 import harryPotterRaw from '../../assets/scenarios/harry-potter.json';
 import slamdunkRaw from '../../assets/scenarios/slamdunk.json';
 import withGodRaw from '../../assets/scenarios/with-god.json';
+import mudoWrestlingRaw from '../../assets/scenarios/mudo-wrestling.json';
+import mudoBobsleighRaw from '../../assets/scenarios/mudo-bobsleigh.json';
+import mudoJjeonRaw from '../../assets/scenarios/mudo-jjeon.json';
+import mudoSixManRaw from '../../assets/scenarios/mudo-six-man.json';
+import mudoFigureRaw from '../../assets/scenarios/mudo-figure.json';
+import mudoCidaeinRaw from '../../assets/scenarios/mudo-cidaein.json';
+import mudoZombieMudoRaw from '../../assets/scenarios/mudo-zombie-mudo.json';
+import mudoNewYorkRaw from '../../assets/scenarios/mudo-newyork.json';
+import mudoFashionRaw from '../../assets/scenarios/mudo-fashion.json';
+import mudoAerobicRaw from '../../assets/scenarios/mudo-aerobic.json';
+import mudoTunaRaw from '../../assets/scenarios/mudo-tuna.json';
+import mudo300Raw from '../../assets/scenarios/mudo-300.json';
+import mudoRowingRaw from '../../assets/scenarios/mudo-rowing.json';
+import mudoCampingRaw from '../../assets/scenarios/mudo-camping.json';
+import mudoQuizRaw from '../../assets/scenarios/mudo-quiz.json';
+import mudoPhotoRaw from '../../assets/scenarios/mudo-photo.json';
 import type { StoryNode } from './types';
 
 const DATA: Record<string, StoryNode[]> = {
@@ -166,6 +182,22 @@ const DATA: Record<string, StoryNode[]> = {
   'harry-potter': harryPotterRaw as StoryNode[],
   slamdunk: slamdunkRaw as StoryNode[],
   'with-god': withGodRaw as StoryNode[],
+  'mudo-wrestling': mudoWrestlingRaw as StoryNode[],
+  'mudo-bobsleigh': mudoBobsleighRaw as StoryNode[],
+  'mudo-jjeon': mudoJjeonRaw as StoryNode[],
+  'mudo-six-man': mudoSixManRaw as StoryNode[],
+  'mudo-figure': mudoFigureRaw as StoryNode[],
+  'mudo-cidaein': mudoCidaeinRaw as StoryNode[],
+  'mudo-zombie-mudo': mudoZombieMudoRaw as StoryNode[],
+  'mudo-newyork': mudoNewYorkRaw as StoryNode[],
+  'mudo-fashion': mudoFashionRaw as StoryNode[],
+  'mudo-aerobic': mudoAerobicRaw as StoryNode[],
+  'mudo-tuna': mudoTunaRaw as StoryNode[],
+  'mudo-300': mudo300Raw as StoryNode[],
+  'mudo-rowing': mudoRowingRaw as StoryNode[],
+  'mudo-camping': mudoCampingRaw as StoryNode[],
+  'mudo-quiz': mudoQuizRaw as StoryNode[],
+  'mudo-photo': mudoPhotoRaw as StoryNode[],
 };
 
 const NODE_INDEX: Record<string, Map<number, StoryNode>> = Object.fromEntries(

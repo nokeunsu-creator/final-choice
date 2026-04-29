@@ -1,0 +1,137 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무도 좀비 특집. MBC 사옥에서 갑자기 좀비 발생 (도전 ㅋㅋ). 박명수가 \"형 살려줘\" 한다. 24시간 안에 6명 다 살리면 미션 성공.",
+    "choices": [
+      { "label": "박명수부터 구한다", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "유재석을 찾는다 (리더)", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "혼자 도망", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["자기","독자"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "박명수 책상 아래 숨어있다. \"형 무서워!\" 그를 끌어내며 무기 — 책상 다리 부수기.",
+    "choices": [
+      { "label": "책상 다리 부수기", "nextNodeId": 5, "requiredItem": null, "grantItem": "책상다리", "traits": ["용기","실용"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "녹화실. 유재석이 카메라맨과 함께 있다. \"우리 멤버들 다 모이자.\"",
+    "choices": [
+      { "label": "동의 — 함께 찾기", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "분담 작전", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "혼자 도망. 엘리베이터로. 그러나 안에 좀비 한 마리. 갇혔다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "혼자의 패배"
+  },
+  {
+    "nodeId": 5,
+    "text": "박명수와 책상 다리 들고 복도. 정형돈 비명 소리 — 5층.",
+    "choices": [
+      { "label": "5층으로", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["이타","용기"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "함께 찾기. 박명수, 정형돈, 노홍철, 정준하 순서대로 발견. 5명 합류.",
+    "choices": [
+      { "label": "마지막 — 하하 찾기", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "분담. 셋씩 두 팀. 그러나 통신이 끊기고 한 팀 길 잃음.",
+    "choices": [
+      { "label": "다시 합치자", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "5층. 정형돈이 좀비에게 잡힐 뻔. 책상다리 휘둘러 처리.",
+    "choices": [
+      { "label": "정형돈 데리고 다음 — 노홍철 찾기", "nextNodeId": 10, "requiredItem": "책상다리", "grantItem": null, "traits": ["이타","원칙"] },
+      { "label": "한 명을 두고 떠나자", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["자기","회피"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "하하 — 옥상에 있다. \"형들 죽은 줄 알았어!\" 6명 합류 완료. 그러나 옥상이 좀비에게 둘러싸였다.",
+    "choices": [
+      { "label": "헬기 신호", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "지하 주차장으로 돌파", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "박명수가 미끼 자청", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "유재석의 합공 작전 (책상다리)", "nextNodeId": 17, "requiredItem": "책상다리", "grantItem": null, "traits": ["분석","협력","원칙"] },
+      { "label": "PD에게 \"이거 다 짜고 친 거지?\"", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["분석","직관"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "정형돈 + 박명수 + 너. 6층 노홍철 발견. 모이는 멤버 5명.",
+    "choices": [
+      { "label": "옥상 향해", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "헬기. 30분 기다림. 좀비가 옥상에 올라온다 — 하지만 헬기가 먼저 도착. 6명 모두 탑승.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "6명의 합류"
+  },
+  {
+    "nodeId": 12,
+    "text": "지하 주차장. 회사 차량. 모두 탑승해 정문 돌파.",
+    "choices": [
+      { "label": "정면 돌파", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "차가 좀비 무리를 뚫고 정문 통과. 6명 모두 안전. PD가 \"미션 성공!\" 외친다 — 그리고 좀비들이 갑자기 멈춘다 (다 알바생).",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "전원 생존"
+  },
+  {
+    "nodeId": 14,
+    "text": "한 명을 두고 떠나자는 의견. 박명수: \"하하는 너무 멀어.\"",
+    "choices": [
+      { "label": "그래도 다 같이", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] },
+      { "label": "5명만으로 충분", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["자기","독자"] }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "5명만 옥상으로. 헬기 도착. 그러나 PD가 \"6명 다 안 모이면 실패\" 한다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "한 명의 부족"
+  },
+  {
+    "nodeId": 16,
+    "text": "박명수가 \"내가 미끼 한다\" 한다. 좀비 시선을 끌어 다른 5명이 빠져나간다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "박명수의 희생"
+  },
+  {
+    "nodeId": 17,
+    "text": "유재석의 작전. 모두 협력 + 시간 분담. 6명 합류 + 정확한 헬기 시간.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "리더의 작전"
+  },
+  {
+    "nodeId": 18,
+    "text": "결국 좀비가 알바생 코스프레임을 다 알아챘다. 박명수가 \"이거 다 짜고 친 거지?\" PD: \"네\".",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "알바생의 진실"
+  }
+]

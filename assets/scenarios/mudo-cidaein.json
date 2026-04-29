@@ -1,0 +1,138 @@
+[
+  {
+    "nodeId": 1,
+    "text": "도시인 특집. 24시간 동안 지하철만 타고 서울 횡단. 시작점 인천. 도착점 강남. 첫 환승: 부평역.",
+    "choices": [
+      { "label": "1호선 직진", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","실용"] },
+      { "label": "환승 앱으로 빠른 길 검색", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "행인에게 길 묻기", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "택시 부른다 (규칙 무시)", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "1호선. 서울역까지 1시간. 그러나 출근 시간 — 지옥 만원.",
+    "choices": [
+      { "label": "끝까지 버틴다", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "한 정거장 내려 다른 노선", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회피","직관"] },
+      { "label": "잠시 깜빡 잠", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "앱 검색. \"공항철도 → 9호선 급행이 27분 빠름.\" 그러나 1호선 도전이 원칙.",
+    "choices": [
+      { "label": "앱대로 — 빠른 길", "nextNodeId": 7, "requiredItem": null, "grantItem": "환승계획", "traits": ["분석","실용"] },
+      { "label": "원칙대로 1호선", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "행인 할머니. \"우리 손주도 여기 살아. 1호선 타고 서울역, 그 다음 4호선이야.\" 친절.",
+    "choices": [
+      { "label": "고맙다 인사", "nextNodeId": 8, "requiredItem": null, "grantItem": "할머니의응원", "traits": ["협력","이타"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "끝까지. 서울역 도착. 만원이 풀린다. 오후로 진입.",
+    "choices": [
+      { "label": "4호선 환승", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "한 정거장 내림. 그러나 다음 노선 어디로 갈지 모름. 길 잃었다.",
+    "choices": [
+      { "label": "역무원에게 도움", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["협력"] },
+      { "label": "혼자 헤맨다", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["독자","자기"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "공항철도. 빠르게 김포공항. 9호선 급행으로 환승. 한 시간 단축.",
+    "choices": [
+      { "label": "9호선 강남 — 도착 임박", "nextNodeId": 12, "requiredItem": "환승계획", "grantItem": null, "traits": ["분석","실용"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "할머니의 응원. 서울역까지 1호선. 4호선 환승.",
+    "choices": [
+      { "label": "할머니 손주를 만난다 (도중에)", "nextNodeId": 13, "requiredItem": "할머니의응원", "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "그냥 강남으로", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "4호선 명동 통과 → 사당 → 강남까지 9호선. 끝이 보인다.",
+    "choices": [
+      { "label": "강남역 도착", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "1분 남기고 마지막 환승 — 막바지", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "한 정거장 차이로 막힌다", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "역무원. \"이쪽 노선 잘 못 타셨네. 다시 1호선으로.\" 시간 손실 30분.",
+    "choices": [
+      { "label": "다시 1호선", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["회피","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "혼자 헤맨다. 잘못된 노선. 잘못된 방향. 시간 1시간 손실.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "길 잃은 도시인"
+  },
+  {
+    "nodeId": 12,
+    "text": "9호선 급행 강남. 23시 50분. 10분 남기고 도착. 미션 완료.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "분석가의 도시"
+  },
+  {
+    "nodeId": 13,
+    "text": "할머니 손주 — 마침 같은 칸에. \"제가 그 손주에요.\" 친밀한 만남. 그가 강남까지 안내.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "도시의 친절"
+  },
+  {
+    "nodeId": 14,
+    "text": "강남역 11번 출구. 23시 30분. 미션 완료. 인천에서 강남까지 — 도시인의 도시.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "원칙의 도시인"
+  },
+  {
+    "nodeId": 15,
+    "text": "지친 채로 도착. 23시 59분. 1분 남기고. 도시는 너를 기다리지 않았다 — 그래도 도착했다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "1분의 의미"
+  },
+  {
+    "nodeId": 16,
+    "text": "23시 50분. 강남에 거의 다왔지만 마지막 환승에서 끊긴다. 24시간 종료.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "한 정거장 차이"
+  },
+  {
+    "nodeId": 17,
+    "text": "지하철 안 — 깜빡 잠. 깨어보니 종점 인천. 미션 실패.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "되돌아간 도시"
+  },
+  {
+    "nodeId": 18,
+    "text": "택시 손짓 — 그러나 지하철만이 규칙. 거기서 바로 실격.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "규칙 위반"
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "nodeId": 1,
+    "text": "참치 낚시 도전. 부산 앞바다. 100kg 참치 — 멤버 6명이 한 마리만 잡으면 미션 성공. 출항 5시간 후. 첫 입질!",
+    "choices": [
+      { "label": "혼자 낚싯대 — 강하게", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "박명수 도움 — 둘이서", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "전 멤버 합세", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "참치가 너무 작아 — 다시 출항", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] },
+      { "label": "5시간 추가 출항만 — 허탕", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "200kg 신기록에 도전 — 모든 자원 동원", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["용기","협력","원칙"] },
+      { "label": "회 한 점씩 나누는 결말로", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "혼자. 낚싯대가 휘어진다. 80kg 추정. 그러나 팔이 견디지 못한다.",
+    "choices": [
+      { "label": "끝까지 — 팔이 끊어져도", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "도움 요청", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["협력","회피"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "박명수와 둘. 그러나 박명수가 \"형 미는 거 너무 강해!\" 호통.",
+    "choices": [
+      { "label": "박자 맞추기", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "박명수 빼고 혼자로", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["독자","자기"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "6명 합세. 한 줄로 줄을 잡고 당긴다. 70년대 어선 풍경.",
+    "choices": [
+      { "label": "선장 지시대로", "nextNodeId": 7, "requiredItem": null, "grantItem": "선장지시", "traits": ["원칙","협력"] },
+      { "label": "각자 알아서", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["독자"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "혼자 끝까지. 줄이 손바닥을 벤다. 피. 그러나 참치가 점점 가까워진다.",
+    "choices": [
+      { "label": "끝까지 견딘다", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "줄 놓는다", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "박자 맞추기. 셋, 넷, 줄을 당긴다. 참치가 위로. 갑판에 올린다.",
+    "choices": [
+      { "label": "마지막 들어올리기", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "사진까지 — 6명의 한 컷", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "선장 지시. \"천천히 — 참치가 지치게.\" 30분의 인내.",
+    "choices": [
+      { "label": "끝까지 인내", "nextNodeId": 12, "requiredItem": "선장지시", "grantItem": null, "traits": ["원칙","신중"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "각자. 박자가 안 맞고 줄이 한쪽으로 쏠린다. 참치가 깊이 들어간다.",
+    "choices": [
+      { "label": "다시 합치자", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회복","협력"] },
+      { "label": "줄이 끊어진다", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "견딘다. 손에 피. 1시간. 참치가 결국 갑판에 올라온다. 100kg 정확.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "혼자의 100kg"
+  },
+  {
+    "nodeId": 10,
+    "text": "줄 놓는다. 참치가 도망. 모두 한숨. 미션 실패.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "놓친 참치"
+  },
+  {
+    "nodeId": 11,
+    "text": "마지막. 6명이 함께 들어올림. 100kg 참치 갑판에. 박명수가 \"이건 우리 거다!\" 외친다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "6명의 합력"
+  },
+  {
+    "nodeId": 12,
+    "text": "30분 인내. 참치가 지친 후 천천히 갑판에. 선장 \"이게 진짜 낚시다.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "선장의 가르침"
+  },
+  {
+    "nodeId": 13,
+    "text": "줄 끊어짐. 박명수 호통. 정형돈 슬픔. 미션 실패.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "끊어진 줄"
+  },
+  {
+    "nodeId": 14,
+    "text": "참치를 갑판에 올린 후 모두 사진. 100kg + 6명. 무한도전 역사의 한 컷.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "역사의 한 컷"
+  },
+  {
+    "nodeId": 15,
+    "text": "참치가 너무 작다 (30kg). 미션 기준 미달. 다시 출항.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "기준 미달"
+  },
+  {
+    "nodeId": 16,
+    "text": "5시간 더 출항. 그러나 참치가 안 잡힘. 시간 종료.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "허탕의 5시간"
+  },
+  {
+    "nodeId": 17,
+    "text": "박명수가 \"참치 말고 고래도 괜찮지?\" 농담. 결국 참치 200kg 잡아 신기록.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "200kg 신기록"
+  },
+  {
+    "nodeId": 18,
+    "text": "선장이 \"이 정도면 일본 시장에서도\" 한다. 6명이 회 한 점씩.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "한 점의 회"
+  }
+]

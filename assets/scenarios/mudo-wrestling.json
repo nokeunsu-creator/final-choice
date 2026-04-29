@@ -1,0 +1,145 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한도전 레슬링 특집. 6개월 훈련 후 WM7 본선 무대. 관객 만 명. 유재석이 \"기술 한 번이라도 들어가면 성공.\" 입장 전 30초.",
+    "choices": [
+      { "label": "기본기 — 잡고 들어올리기", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "쇼맨십 — 관객 호응부터", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "긴장 풀기 — 박명수 농담", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "기본기. 상대 잡고 들어올리려는 순간, 6개월 훈련했던 그 자세. 관객이 \"오~\" 한다.",
+    "choices": [
+      { "label": "마크 — 백드롭", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "안전하게 슬램", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["신중","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "쇼맨십. 관객 향해 손짓. \"우~~~\" 만 명의 함성. 상대 선수가 잠시 멈칫.",
+    "choices": [
+      { "label": "기회 잡고 클로즈라인", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "더 끌어모은다", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "박명수가 옆에서 \"형, 다 죽었다 생각하고\" 한다. 웃음. 긴장이 풀린다.",
+    "choices": [
+      { "label": "차분히 입장", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["신중"] },
+      { "label": "박명수와 텀빙 작전", "nextNodeId": 9, "requiredItem": null, "grantItem": "텀빙작전", "traits": ["협력","직관"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "백드롭. 상대를 들어 뒤로 던진다. 만 명의 비명. 매트가 울린다. 그러나 너의 허리도.",
+    "choices": [
+      { "label": "다음 기술 — 헤드락", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "허리 잡고 잠시 쉰다", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["신중","자기"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "안전한 슬램. 들어가지만 임팩트 부족. 관객 반응이 미적지근.",
+    "choices": [
+      { "label": "다음 기술 시도", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "포기 — 관중 인사", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "클로즈라인. 정확히 들어간다. 상대 다운. 관객 \"WHOA!\" 폭발.",
+    "choices": [
+      { "label": "핀폴 시도", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "더 끌어모은다. 그러나 상대가 정신 차리고 뒤에서 잡는다.",
+    "choices": [
+      { "label": "그래도 버틴다", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["정면","용기"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "박명수와 작전. 관객 시선 분산 후 동시 공격. 상대가 당황.",
+    "choices": [
+      { "label": "동시 클로즈라인", "nextNodeId": 13, "requiredItem": "텀빙작전", "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "헤드락. 상대 머리를 잡고 매트로. 그러나 상대가 빠져나간다.",
+    "choices": [
+      { "label": "다시 시도", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "탑 로프 점프", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "허리 잡고 잠시. 코치가 와서 \"괜찮아, 한 번 더만\" 한다. 상대가 도와주려 손 내민다.",
+    "choices": [
+      { "label": "손 잡고 다시", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "여기서 그만", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "관중 인사. 모두 일어나 박수. 6개월의 훈련만으로도 충분했다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "박수의 의미"
+  },
+  {
+    "nodeId": 13,
+    "text": "1, 2, 3! 핀폴 성공. 만 명의 함성. 6개월의 훈련이 결실.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "WM7 챔피언"
+  },
+  {
+    "nodeId": 14,
+    "text": "버티려 했지만 백드롭으로 매트에 떨어진다. 일어나려는데 다리가 안 움직인다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "교만의 대가"
+  },
+  {
+    "nodeId": 15,
+    "text": "다시 헤드락. 이번엔 잡았다. 매트로 끌어내린다. 핀폴 시도.",
+    "choices": [
+      { "label": "끝까지 누른다", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "탑 로프. 만 명이 \"점프! 점프!\" 외친다. 손이 떨린다.",
+    "choices": [
+      { "label": "뛴다", "nextNodeId": 19, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "내려간다", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["신중","회피"] }
+    ]
+  },
+  {
+    "nodeId": 17,
+    "text": "상대 손 잡고 다시 일어선다. 관객 박수. 둘이 동시에 기술 — 합작 슬램. 매트가 운다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "동료의 손"
+  },
+  {
+    "nodeId": 18,
+    "text": "그만 둔다. 무대에서 내려간다. 관중도 박수는 하지만, 너 자신은 안다 — 6개월이 완성되지 않았다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "완성되지 않은 6개월"
+  },
+  {
+    "nodeId": 19,
+    "text": "탑 로프 점프. 공중에서 한 바퀴. 관객의 침묵, 그리고 폭발. 상대 위로 정확히 — 핀폴 성공.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "공중의 한 순간"
+  }
+]

@@ -1,0 +1,136 @@
+[
+  {
+    "nodeId": 1,
+    "text": "무한도전 봅슬레이 특집. 평창 슬라이딩 센터. 4인 봅슬레이 첫 활주. 출발 5초 전. 정형돈이 \"형, 무서워\" 한다.",
+    "choices": [
+      { "label": "긴장 풀기 — \"걱정마, 내가 있어\"", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "집중 — 코칭 지시 복기", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "정신 차리려 큰소리", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "정형돈을 빼고 3명만 출발", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["자기","독자"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "정형돈 어깨 두드리며 안심. 출발 신호. 4명이 동시에 밀고 들어간다. 첫 코너 진입.",
+    "choices": [
+      { "label": "코너 안쪽으로 핸들", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "코너 바깥쪽으로", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["직관"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "코치의 마지막 한마디 복기. \"3번 코너에서 무게 중심.\" 출발 신호. 빠른 가속.",
+    "choices": [
+      { "label": "3번 코너 정확히 — 무게 중심", "nextNodeId": 7, "requiredItem": null, "grantItem": "코치브리핑", "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "큰소리. \"가자!\" 4명 모두 정신이 든다. 그러나 너무 흥분해 첫 푸시에서 미끄러진다.",
+    "choices": [
+      { "label": "그래도 출발", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "안쪽 핸들. 안전. 그러나 속도 손실. 다음 코너에서 회복 가능.",
+    "choices": [
+      { "label": "다음 코너에서 가속", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "바깥쪽. 코너에서 G가 강하게 걸린다. 헬멧이 벽에 닿을 듯.",
+    "choices": [
+      { "label": "버틴다", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "급히 안쪽으로", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["회피","직관"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "3번 코너. 코치가 말한 그 자세. 무게 중심 정확히. 봅슬레이가 줄곧 라인을 지킨다.",
+    "choices": [
+      { "label": "마지막 직선 — 끝까지", "nextNodeId": 12, "requiredItem": "코치브리핑", "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "4번째 도전을 약속하며 메달까지", "nextNodeId": 16, "requiredItem": "코치브리핑", "grantItem": null, "traits": ["원칙","협력","용기"] },
+      { "label": "한 코너 더 신중하게", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["신중","협력"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "흥분 상태에서 출발. 첫 코너 진입에서 핸들이 떨린다. 봅슬레이가 옆으로 기운다.",
+    "choices": [
+      { "label": "발차기로 무게 잡기", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["직관","자기"] },
+      { "label": "그대로 흘러간다", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "다음 코너. 가속하며 정확히 라인. 정형돈이 뒤에서 \"좋아!\" 한다. 마지막 직선.",
+    "choices": [
+      { "label": "끝까지", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "버틴다. G가 빠지고 라인 회복. 4명 모두 무사. 다음 코너로.",
+    "choices": [
+      { "label": "마지막 직선", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["용기"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "급히 안쪽으로. 봅슬레이가 라인을 잃고 옆벽에 부딪힌다. 충격.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "라인 이탈"
+  },
+  {
+    "nodeId": 12,
+    "text": "마지막 직선. 시속 130km. 결승선 통과. 4명이 환호. 한국 봅슬레이의 시작점.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "한국 봅슬레이"
+  },
+  {
+    "nodeId": 13,
+    "text": "발차기로 무게 잡기. 본능적 반응. 봅슬레이가 라인 회복. 그러나 시간 손실.",
+    "choices": [
+      { "label": "끝까지 — 늦더라도", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "그대로. 봅슬레이가 측면 충돌. 4명 모두 헬멧이 벽에. 정형돈의 비명.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "흥분의 대가"
+  },
+  {
+    "nodeId": 15,
+    "text": "결승선 통과. 시간은 늦지만 완주. 4명이 매트에 누워 호흡. \"다시 하자.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "완주의 의미"
+  },
+  {
+    "nodeId": 16,
+    "text": "마지막에 정형돈이 핸들 잡고 끝까지 — 4번째 도전 만에 메달 획득. 평창의 의미.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "평창의 의미"
+  },
+  {
+    "nodeId": 17,
+    "text": "코치가 \"3번 코너 빼고 다 잘했다\" 한다. 4명이 어깨 동무. 다음을 약속.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "다음 시즌"
+  },
+  {
+    "nodeId": 18,
+    "text": "정형돈이 무서워 출발 직전 빠진다. 3명만 출발 — 균형 무너지고 코너에서 전복.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "한 명의 부재"
+  }
+]

@@ -1,0 +1,139 @@
+[
+  {
+    "nodeId": 1,
+    "text": "뉴욕 시간여행 특집. 1920년대 뉴욕 분장. 타임스퀘어. 미션: 24시간 내 5명의 \"옛 뉴요커\"에게 인사 받기. 영어 한 마디 — 박명수 \"How are you?\" 정도.",
+    "choices": [
+      { "label": "타임스퀘어 한복판 인사", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "센트럴파크로 — 노인 찾기", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] },
+      { "label": "박물관 — 1920년대 전문가", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "지하철로 다른 동네", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] },
+      { "label": "거리 — 영화 촬영장 발견", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "박명수가 한국말로", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "지하철에서 잠", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "호텔 라운지로", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "타임스퀘어. 사람들이 너의 옛 의상에 시선. 박명수가 \"How are you sir?\" 한다. 첫 인사 ✓.",
+    "choices": [
+      { "label": "박명수 영어로 4명 더", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] },
+      { "label": "다른 장소로", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "센트럴파크. 80대 노인이 벤치에. \"You look like 1920s gangster.\" 친근.",
+    "choices": [
+      { "label": "그의 이야기 듣기", "nextNodeId": 6, "requiredItem": null, "grantItem": "노인의이야기", "traits": ["이타","협력"] },
+      { "label": "사진 한 장 부탁", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["회피","실용"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "박물관. 1920년대 전시 큐레이터가 \"Authentic costume!\" 한다.",
+    "choices": [
+      { "label": "1920년대 음식점 정보 묻기", "nextNodeId": 8, "requiredItem": null, "grantItem": "옛음식점위치", "traits": ["분석","협력"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "박명수 영어 작전. 4명에게 \"How do you do?\" 모두 답. 5명 합계.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "박명수의 영어"
+  },
+  {
+    "nodeId": 6,
+    "text": "노인의 이야기. 그의 할아버지가 1920년대 뉴욕 신문배달. \"You bring me memories.\" 진심.",
+    "choices": [
+      { "label": "감사 인사 + 사진", "nextNodeId": 9, "requiredItem": "노인의이야기", "grantItem": null, "traits": ["이타","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "사진. 그러나 노인이 \"Why so quick? Sit, talk.\" 시간 1시간 소모.",
+    "choices": [
+      { "label": "결국 앉아 이야기", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회복","협력"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "옛 음식점. 100년 된 카페. 사장이 옛 의상을 보고 환대.",
+    "choices": [
+      { "label": "단골 손님들 인사", "nextNodeId": 10, "requiredItem": "옛음식점위치", "grantItem": null, "traits": ["협력","이타"] },
+      { "label": "전 뉴욕 환영의 길로 — 모든 곳 다 돈다", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["용기","협력","원칙"] },
+      { "label": "박명수의 호통 듣고 끝내기", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "노인 + 그의 친구들. 4명. 한 명 더 — 노인의 손주. 5명 인사 완성.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "센트럴파크의 옛 뉴욕"
+  },
+  {
+    "nodeId": 10,
+    "text": "단골 5명. 모두 \"Welcome back, brother!\" 5명 인사 완성.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "100년 된 카페"
+  },
+  {
+    "nodeId": 11,
+    "text": "지하철 안. 1920년대 옷 그대로. 한 노인이 \"My grandfather wore that.\" 잠시 침묵.",
+    "choices": [
+      { "label": "그의 이야기 듣기", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["이타"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "거리에서 강도? 아니, 영화 촬영장. 분장이 비슷해 엑스트라로 출연.",
+    "choices": [
+      { "label": "출연 — 1분짜리", "nextNodeId": 13, "requiredItem": null, "grantItem": "엑스트라영수증", "traits": ["용기","직관"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "엑스트라 영수증. 옷이 진짜 1920년대였다. 영화 스태프 5명이 인사.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "엑스트라의 행운"
+  },
+  {
+    "nodeId": 14,
+    "text": "박명수가 영어 막혀 한국어 \"안녕하세요!\" 한다. 한국 관광객이 알아듣고 인사. 1명만.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "한국말의 한계"
+  },
+  {
+    "nodeId": 15,
+    "text": "지하철 안에서 잠. 깨어보니 종점. 시간 종료.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "잠든 시간여행자"
+  },
+  {
+    "nodeId": 16,
+    "text": "노인 + 카페 + 박물관 + 영화 촬영 — 모든 길 동원. 5명 훌쩍 넘어 50명 인사.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "전 뉴욕의 환영"
+  },
+  {
+    "nodeId": 17,
+    "text": "박명수가 호통. \"이게 시간여행이야 한국말로 인사야!\" 정형돈이 웃음.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "호통의 종착"
+  },
+  {
+    "nodeId": 18,
+    "text": "1920년대 의상으로 호텔 라운지. 호텔 직원 5명이 정중히 인사.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "호텔의 신사"
+  }
+]

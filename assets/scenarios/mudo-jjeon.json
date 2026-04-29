@@ -1,0 +1,135 @@
+[
+  {
+    "nodeId": 1,
+    "text": "쩐의 전쟁 특집. 통장에 6000만원. 24시간 안에 다 써야 한다. 안 쓰면 PD 차지. 9시 출발.",
+    "choices": [
+      { "label": "박명수 — 명품 시계 사기", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["자기","실용"] },
+      { "label": "유재석 — 기부", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["이타","원칙"] },
+      { "label": "혼자 — 가장 비싼 식사", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["독자","자기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "강남 백화점. 1500만원 시계. 박명수가 \"이건 내 거다\" 한다. 한 번에 25%만 처리.",
+    "choices": [
+      { "label": "벗어나 다른 곳으로", "nextNodeId": 5, "requiredItem": null, "grantItem": "시계", "traits": ["용기","독자"] },
+      { "label": "박명수에게도 사주기", "nextNodeId": 6, "requiredItem": null, "grantItem": "시계", "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "기부 단체. 3000만원 일시불. 직원이 손이 떨린다. \"감사합니다.\" 절반 처리.",
+    "choices": [
+      { "label": "남은 3000으로 식사 + 친구 챙김", "nextNodeId": 7, "requiredItem": null, "grantItem": "기부영수증", "traits": ["이타","협력"] },
+      { "label": "더 기부하러", "nextNodeId": 8, "requiredItem": null, "grantItem": "기부영수증", "traits": ["이타","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "신라호텔 한정식 코스 오마카세. 50만원. 너무 적어 1%도 안 된다. 와인까지 추가.",
+    "choices": [
+      { "label": "최고가 와인 한 병", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["자기","실용"] },
+      { "label": "다른 멤버에게 코스 사주기", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "벗어나 한남동 앤틱샵. 옛 그림 — 진품 1억. 사장: \"3000만에 드릴게요.\"",
+    "choices": [
+      { "label": "산다", "nextNodeId": 11, "requiredItem": null, "grantItem": "그림", "traits": ["용기","독자"] },
+      { "label": "사기일 수 있다 — 패스", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["분석","신중"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "둘 다 시계. 3000만원 끝. 박명수가 \"이거 진짜 형 너무 통 크다\" 한다.",
+    "choices": [
+      { "label": "남은 3000 — 멤버 모두에게", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "남은 3000. 멤버 + 가족 + 스태프 + 카메라맨 모두에게 한끼. 영수증이 산처럼 쌓인다.",
+    "choices": [
+      { "label": "마지막 — 길거리 분식까지", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "또 다른 단체. 3000만 일시불. 24시간 다 쓰지도 않고 0원.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "전액 기부의 자"
+  },
+  {
+    "nodeId": 9,
+    "text": "최고가 와인. 한 잔에 100만원. 박명수가 옆에서 \"형, 그만 마셔\" 한다. 취해서 잠.",
+    "choices": [
+      { "label": "잠 자버린다", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "멤버들이 와서 호텔 코스. 한 명당 50만원. 5명이서 250만. 진척이 느리다.",
+    "choices": [
+      { "label": "추가 — 호텔 스위트룸 1박", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["이타","실용"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "그림 산다. 3000만원. 그러나 진품 보증서는 없다. 24시간 만에 결판.",
+    "choices": [
+      { "label": "감정사에게 가본다", "nextNodeId": 16, "requiredItem": "그림", "grantItem": null, "traits": ["분석","신중"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "패스. 사장이 \"맞아요, 가짜에요\" 솔직히 인정. 분석력 ✓. 다른 곳으로.",
+    "choices": [
+      { "label": "고급 외식 + 멤버 합류", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "멤버 + 가족 + 스태프 모두 모여 호텔 파티. 음식, 케이크, 선물. 6000만원이 사라진다.",
+    "choices": [
+      { "label": "마지막 1만원 — 영수증과 함께", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "23시 59분. 잔액 0원. 영수증 30장. 모두가 \"이게 진짜 쩐의 전쟁\".",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "쩐의 진짜 가치"
+  },
+  {
+    "nodeId": 15,
+    "text": "취해서 잠. 깨어나 보니 저녁. 잔액 4500만원. 망했다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "잠든 자의 패배"
+  },
+  {
+    "nodeId": 16,
+    "text": "감정사. \"이거 진품. 1억 5000.\" 박명수에게 알리지 않고 챙길까?",
+    "choices": [
+      { "label": "정직히 — 멤버들에게 공개", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] },
+      { "label": "혼자 챙긴다", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["자기","독자"] }
+    ]
+  },
+  {
+    "nodeId": 17,
+    "text": "공개. 멤버들이 박수. \"우리 형이지!\" 그림은 박물관 기증. 24시간이 의미 있게.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정직의 가치"
+  },
+  {
+    "nodeId": 18,
+    "text": "혼자 챙긴다. 그러나 PD가 알아챔. \"규칙 위반\" — 6000만 다시 회수. 시청자도.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "혼자의 욕심"
+  }
+]
