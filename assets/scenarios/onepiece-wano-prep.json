@@ -1,0 +1,135 @@
+[
+  {
+    "nodeId": 1,
+    "text": "와노쿠니. 카이도 토벌 D-3. 동맹 모으기 + 무기 + 작전. 너는 루피의 동료. 첫 임무: 키쿠노조의 안내로 가시나무 마을.",
+    "choices": [
+      { "label": "오니가시마 정찰", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["분석","용기"] },
+      { "label": "동맹 — 라이벌 광부 합류 설득", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "무기 — 카타나 단조", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["실용","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "오니가시마 정찰. 절벽 위에서 망원경. 카이도 군 1만 + 백수 해적단. 정문 + 동굴 + 비상 통로.",
+    "choices": [
+      { "label": "동굴 통로 — 야마토와 연결", "nextNodeId": 5, "requiredItem": null, "grantItem": "동굴지도", "traits": ["분석","협력"] },
+      { "label": "정문 정면 돌파 작전", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "광부 동맹. 우두머리가 \"카이도가 우리 식량 빼앗아간다.\" 동맹 설득.",
+    "choices": [
+      { "label": "이름을 말하지 않고 — 정의로 호소", "nextNodeId": 7, "requiredItem": null, "grantItem": "광부동맹", "traits": ["원칙","이타"] },
+      { "label": "이름 밝힘 — 루피의 동료", "nextNodeId": 8, "requiredItem": null, "grantItem": "광부동맹", "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "카타나 단조. 호젠지의 뜨거운 망치. 5일 만에 한 자루.",
+    "choices": [
+      { "label": "본인의 카타나 만든다", "nextNodeId": 9, "requiredItem": null, "grantItem": "카타나", "traits": ["원칙","실용"] },
+      { "label": "조로에게 양보", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "야마토와 동굴 통로. 그녀가 \"카이도의 비밀 — 약점은 술이 깰 때.\" 정보 ✓.",
+    "choices": [
+      { "label": "타이밍 정보 본부에", "nextNodeId": 11, "requiredItem": "동굴지도", "grantItem": "약점타이밍", "traits": ["분석","협력"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "정면 돌파. 1만 명 vs 9명. 무모. 작전 포기 + 후일.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "무모한 정면"
+  },
+  {
+    "nodeId": 7,
+    "text": "정의 호소. 광부들 \"우리도 자유.\" 1000명 동맹.",
+    "choices": [
+      { "label": "본부에 보고", "nextNodeId": 11, "requiredItem": "광부동맹", "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "이름 밝힘. \"루피의 동료라면 — 우리는 함께.\" 2000명 동맹.",
+    "choices": [
+      { "label": "본부에 보고 — 광부 + 야마토 정보", "nextNodeId": 11, "requiredItem": "광부동맹", "grantItem": null, "traits": ["용기","협력"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "본인 카타나. 손에 익숙. 그러나 5일 후 카이도와 직접 부딪칠 자신감 없음.",
+    "choices": [
+      { "label": "조로에게 양도", "nextNodeId": 12, "requiredItem": "카타나", "grantItem": null, "traits": ["이타","원칙"] },
+      { "label": "끝까지 본인 사용", "nextNodeId": 13, "requiredItem": "카타나", "grantItem": null, "traits": ["자기","용기"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "조로에게 양보. 그가 받아 \"이 검 — 명검이다.\" 다음 날 그가 카타나 3자루 들고 나감.",
+    "choices": [
+      { "label": "다른 무기 만든다", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회복","실용"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "본부 회의. 루피 + 키드 + 로 3대장 동맹. 오니가시마 D-day. 9시 정각.",
+    "choices": [
+      { "label": "동굴 진입 (지도 보유)", "nextNodeId": 14, "requiredItem": "동굴지도", "grantItem": null, "traits": ["분석","협력"] },
+      { "label": "정문 — 광부들과 함성", "nextNodeId": 15, "requiredItem": "광부동맹", "grantItem": null, "traits": ["용기","협력"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "조로에게 양도. 그가 카이도와 정면. 너는 후방 지원.",
+    "choices": [
+      { "label": "후방에서 지휘", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "본인 카타나. 카이도와 직접. 한 칼로 무릎 — 그러나 카이도의 거대 곤봉.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "한 칼의 한계"
+  },
+  {
+    "nodeId": 14,
+    "text": "동굴. 카이도 술 깬 직후. 약점 타이밍. 루피와 함께 정상 침투.",
+    "choices": [
+      { "label": "타이밍 정확히 — 루피 신호", "nextNodeId": 17, "requiredItem": "약점타이밍", "grantItem": null, "traits": ["원칙","협력","용기"] }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "정문 + 광부 함성. 카이도 군 분산. 루피가 정상 진입.",
+    "choices": [
+      { "label": "광부들과 함께 끝까지", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "후방 지휘. 조로 + 루피 + 키드 + 로 4명이 정상. 너의 명령으로 광부들 진입 타이밍.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "후방의 지휘관"
+  },
+  {
+    "nodeId": 17,
+    "text": "타이밍 정확. 루피의 \"기어 5.\" 카이도 첫 무릎. 와노쿠니의 새벽.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "기어 5의 새벽"
+  },
+  {
+    "nodeId": 18,
+    "text": "광부들과 함께 정문 점령. 카이도 군 무력화. 루피가 정상에서 깃발 꽂는다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "광부들의 새벽"
+  }
+]

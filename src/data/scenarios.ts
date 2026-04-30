@@ -1,5 +1,5 @@
 /**
- * 무거운 시나리오 데이터 모듈 — 모든 95개 JSON을 정적 import.
+ * 무거운 시나리오 데이터 모듈 — 모든 98개 JSON을 정적 import.
  * 이 모듈은 GameScreen / EndingScreen에서만 사용. App.tsx의 React.lazy로
  * 분리되어 메인 페이지/시나리오 선택 화면에서는 로드되지 않는다.
  *
@@ -100,6 +100,9 @@ import mudoRowingRaw from '../../assets/scenarios/mudo-rowing.json';
 import mudoCampingRaw from '../../assets/scenarios/mudo-camping.json';
 import mudoQuizRaw from '../../assets/scenarios/mudo-quiz.json';
 import mudoPhotoRaw from '../../assets/scenarios/mudo-photo.json';
+import manitoClubRaw from '../../assets/scenarios/manito-club.json';
+import onepieceWanoPrepRaw from '../../assets/scenarios/onepiece-wano-prep.json';
+import jidaenubeoryeolbRaw from '../../assets/scenarios/jidaenubeoryeolb.json';
 import type { StoryNode } from './types';
 
 const DATA: Record<string, StoryNode[]> = {
@@ -198,6 +201,9 @@ const DATA: Record<string, StoryNode[]> = {
   'mudo-camping': mudoCampingRaw as StoryNode[],
   'mudo-quiz': mudoQuizRaw as StoryNode[],
   'mudo-photo': mudoPhotoRaw as StoryNode[],
+  'manito-club': manitoClubRaw as StoryNode[],
+  'onepiece-wano-prep': onepieceWanoPrepRaw as StoryNode[],
+  jidaenubeoryeolb: jidaenubeoryeolbRaw as StoryNode[],
 };
 
 const NODE_INDEX: Record<string, Map<number, StoryNode>> = Object.fromEntries(

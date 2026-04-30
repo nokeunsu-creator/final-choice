@@ -1,0 +1,137 @@
+[
+  {
+    "nodeId": 1,
+    "text": "지대넓얕 모임. 4명 — 채사장, 네가, 친구 둘. 오늘 주제는 \"왜 사는가.\" 카페 한 구석. 첫 문장.",
+    "choices": [
+      { "label": "역사적 관점 — 인류는 왜 살아왔나", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "철학적 관점 — 의미는 우리가 만든다", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","독자"] },
+      { "label": "솔직 — \"잘 모르겠다\"", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "위키만 보고 와서 들킴", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "역사 + 철학 + 예술 + 종교 모두 동원", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["분석","협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "역사. \"농경사회 이후 사람은 노동의 의미를 — \" 채사장이 \"좋은 시각.\" 다른 친구가 \"근데 노동이 다인가?\" 반박.",
+    "choices": [
+      { "label": "반박 수용 — \"맞다, 일만은 아니다\"", "nextNodeId": 5, "requiredItem": null, "grantItem": "겸손", "traits": ["협력","원칙"] },
+      { "label": "끝까지 노동의 가치 주장", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["정면","독자"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "철학. \"실존은 본질에 앞선다.\" 사르트르 인용. 친구 둘 \"오, 진짜?\"",
+    "choices": [
+      { "label": "더 깊이 — 카뮈와 대조", "nextNodeId": 7, "requiredItem": null, "grantItem": "철학지식", "traits": ["분석","독자"] },
+      { "label": "쉽게 풀어서", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "솔직. 채사장 미소. \"이게 진짜 시작이다. 모른다는 것을 인정하는 것.\" 친구들이 끄덕.",
+    "choices": [
+      { "label": "공동 탐구 시작", "nextNodeId": 8, "requiredItem": null, "grantItem": "겸손", "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "수용 + 쉬운 풀이. 네 명이 점점 깊어진다. 카페 다른 손님도 듣는다.",
+    "choices": [
+      { "label": "예술 관점도 끌어들임 — 영화 인용", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] },
+      { "label": "종교 관점 — 의미와 신", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "정면. 친구가 \"너 진짜 자기 주장 강하네\" 한다. 분위기 어색.",
+    "choices": [
+      { "label": "사과", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] },
+      { "label": "그래도 끝까지", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["정면","독자"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "카뮈. \"부조리.\" 채사장 \"오, 시지프스 인용까지.\" 분위기 ↑.",
+    "choices": [
+      { "label": "현대 적용 — 직장과 부조리", "nextNodeId": 12, "requiredItem": "철학지식", "grantItem": null, "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "공동 탐구. 4명이 한 시간. 깊이가 점점.",
+    "choices": [
+      { "label": "끝까지 — 한 명도 빼지 않고", "nextNodeId": 13, "requiredItem": "겸손", "grantItem": null, "traits": ["원칙","협력","이타"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "영화. \"대탈주\" 인용. 자유의 의미. 친구들 \"아, 그런 시각이.\" 모두 만족.",
+    "choices": [
+      { "label": "마무리 — 한 마디씩", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "종교. 채사장 \"종교 없는 의미 — 가능한가?\" 깊은 토론.",
+    "choices": [
+      { "label": "가능하다 주장", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["원칙","독자"] },
+      { "label": "어려울 수 있다고 인정", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "끝까지. 친구가 일어선다. \"오늘은 여기까지.\" 모임 종료. 어색하게 헤어짐.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "고집의 끝"
+  },
+  {
+    "nodeId": 12,
+    "text": "현대 적용. 모두 자기 직장 이야기. 4명이 처음으로 진짜 대화.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "철학과 직장"
+  },
+  {
+    "nodeId": 13,
+    "text": "끝까지. 4명이 5시간 토론. 카페가 닫는다. 다음 주 약속.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "5시간의 토론"
+  },
+  {
+    "nodeId": 14,
+    "text": "한 마디씩. \"왜 사는가\" — 4명의 답이 다 다르지만, 그게 좋다. 채사장 \"이게 지대넓얕.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "지대넓얕의 의미"
+  },
+  {
+    "nodeId": 15,
+    "text": "가능 주장. 자세한 논증. 채사장 박수. \"이 친구 다음 책 공동저자.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "공동저자의 길"
+  },
+  {
+    "nodeId": 16,
+    "text": "인정. \"종교 없이도 가능하지만, 어려움.\" 친구가 \"균형 있는 시각.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "균형의 시각"
+  },
+  {
+    "nodeId": 17,
+    "text": "토론 도중 친구가 \"근데 너 책 안 읽었지?\" 솔직히 들킴. 위키만 본 것.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "위키의 한계"
+  },
+  {
+    "nodeId": 18,
+    "text": "역사 + 철학 + 예술 + 종교 — 모두 동원. 채사장이 \"우리 다음 시즌 게스트.\" 정식 초청.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "지대넓얕 게스트"
+  }
+]

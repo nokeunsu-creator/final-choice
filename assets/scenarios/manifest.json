@@ -859,6 +859,39 @@
       "endingCount": 12
     },
     {
+      "id": "manito-club",
+      "title": "마니또 클럽",
+      "subtitle": "비밀 마니또 24시간",
+      "description": "정체 들키지 않고 챙기기",
+      "icon": "🎁",
+      "accent": "#fb7185",
+      "category": "패러디",
+      "nodeCount": 18,
+      "endingCount": 8
+    },
+    {
+      "id": "onepiece-wano-prep",
+      "title": "원피스 — 와노쿠니 준비",
+      "subtitle": "오니가시마 D-3",
+      "description": "동맹 + 무기 + 작전",
+      "icon": "⚔️",
+      "accent": "#dc2626",
+      "category": "원피스",
+      "nodeCount": 18,
+      "endingCount": 5
+    },
+    {
+      "id": "jidaenubeoryeolb",
+      "title": "지대넓얕 — 왜 사는가",
+      "subtitle": "4명의 토론",
+      "description": "역사·철학·예술·종교",
+      "icon": "📚",
+      "accent": "#a78bfa",
+      "category": "패러디",
+      "nodeCount": 18,
+      "endingCount": 8
+    },
+    {
       "id": "onepiece-eastblue",
       "title": "원피스 — 이스트블루 출항",
       "subtitle": "견습 해적의 첫날",

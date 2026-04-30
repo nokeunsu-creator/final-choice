@@ -1,0 +1,138 @@
+[
+  {
+    "nodeId": 1,
+    "text": "마니또 클럽 첫 주. 너의 마니또는 — 가장 무뚝뚝한 멤버. 24시간 동안 정체 들키지 않고 챙겨야 한다. PD가 \"세 가지 미션\" 하달.",
+    "choices": [
+      { "label": "미션 1 — 아침 식사 챙김", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "미션 2 — 그가 좋아하는 음악 틀어둠", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","이타"] },
+      { "label": "미션 3 — 그의 우산 챙김 (비 예보)", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["신중","이타"] },
+      { "label": "PD에게 발각 — 미션 실패 선언", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "전원 마니또 — 서프라이즈 협업", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] },
+      { "label": "마지막 회 — 서로의 마니또", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "아침 식사. 그의 책상에 김밥 + 커피. 익명 메모 \"좋은 하루.\" 그가 \"이거 누가?\" 한다.",
+    "choices": [
+      { "label": "모르는 척", "nextNodeId": 5, "requiredItem": null, "grantItem": "마니또점수1", "traits": ["원칙","회피"] },
+      { "label": "다른 멤버에게 떠넘김", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회피","독자"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "음악. 그가 좋아하는 발라드 — SNS에서 알아냄. 휴게실에 BGM. 그가 멈춰서 \"이거 내가 좋아하는…\" 한다.",
+    "choices": [
+      { "label": "우연인 척", "nextNodeId": 7, "requiredItem": null, "grantItem": "마니또점수1", "traits": ["원칙","협력"] },
+      { "label": "급히 끔", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "우산. 그의 사물함에 우산 + 메모 \"오늘 비.\" 그가 의심.",
+    "choices": [
+      { "label": "다른 사람도 받았다고 거짓말", "nextNodeId": 9, "requiredItem": null, "grantItem": "마니또점수1", "traits": ["회피"] },
+      { "label": "정중히 — 직원이 한 거라고", "nextNodeId": 7, "requiredItem": null, "grantItem": "마니또점수1", "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "모르는 척. 그가 \"고맙긴 하다\" 한다. 마니또 1점 ✓.",
+    "choices": [
+      { "label": "다음 미션 진행", "nextNodeId": 10, "requiredItem": "마니또점수1", "grantItem": null, "traits": ["원칙","이타"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "다른 멤버 떠넘김. 그가 그 멤버에게 고맙다 한다. 너의 노력이 사라짐.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "사라진 노력"
+  },
+  {
+    "nodeId": 7,
+    "text": "정중히. 그가 미소. \"나도 이런 거 잘 모르는데, 누가 알아주네.\" 마니또 1점.",
+    "choices": [
+      { "label": "다음 미션 진행", "nextNodeId": 10, "requiredItem": "마니또점수1", "grantItem": null, "traits": ["원칙","이타"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "급히 끔. 그가 \"왜 끄지?\" 의심 ↑. 정체 발각 위험.",
+    "choices": [
+      { "label": "음악 다시 트는 척", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["회피","직관"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "거짓말. 그가 \"근데 다른 사람들은 우산 없는데?\" 의심 ↑.",
+    "choices": [
+      { "label": "급히 화제 전환", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "다음 미션. 그의 생일이 다가옴. 익명 케이크 + 카드 \"오늘 행복.\" 그가 감동.",
+    "choices": [
+      { "label": "끝까지 익명으로", "nextNodeId": 12, "requiredItem": null, "grantItem": "마니또점수3", "traits": ["원칙","이타"] },
+      { "label": "정체 살짝 — 메모 더 진하게", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["용기","이타"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "급히 화제 전환. 그러나 그가 \"너 마니또지?\" 직접 물음.",
+    "choices": [
+      { "label": "솔직히 인정", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "끝까지 부정", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","독자"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "끝까지 익명. 24시간 후 PD가 발표. \"이번 주 마니또 — 너.\" 그가 일어나 깊은 절. \"몰랐어.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "익명의 마니또"
+  },
+  {
+    "nodeId": 13,
+    "text": "정체 살짝. 그가 알아챔. 둘이 어색한 미소.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "절반의 정체"
+  },
+  {
+    "nodeId": 14,
+    "text": "솔직. \"내가 마니또였어.\" 그가 안았다. \"고맙다.\" PD: \"미션 종료 — 인간승리.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "인간 승리"
+  },
+  {
+    "nodeId": 15,
+    "text": "끝까지 부정. 그가 의심 풀지 않고 결국 PD에게 \"마니또 누군지 알려달라\" 한다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "신뢰의 손실"
+  },
+  {
+    "nodeId": 16,
+    "text": "PD가 \"마니또 발각 — 미션 실패\" 선언. 1주일 더 도전.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "다음 주로"
+  },
+  {
+    "nodeId": 17,
+    "text": "그가 \"마니또가 누구지\" 묻는데, 다른 멤버들이 \"우리 다 너의 마니또\" 한다. 7명이 동시에 챙김.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "전원 마니또"
+  },
+  {
+    "nodeId": 18,
+    "text": "마지막 회. 너의 마니또가 너의 마니또였다. 서로의 마니또. 둘이 동시에 \"고맙다.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "서로의 마니또"
+  }
+]
