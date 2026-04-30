@@ -1,0 +1,133 @@
+[
+  {
+    "nodeId": 1,
+    "text": "친구 결혼식 사회. 신부 입장 5분 전. 마이크 손에. 친구가 \"네가 사회 봐줘\" 1주 전 부탁. 식순 카드 4페이지.",
+    "choices": [
+      { "label": "정통 — 식순 그대로", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "유머 — 친구 농담 한 마디", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "긴장 — 손이 떨림", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "친구의 고마움 — 어깨 두드림", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "식순 한 페이지 빠뜨림", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "마이크 음향 문제", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "모든 멘트+식순+마지막 완벽", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력","이타"] },
+      { "label": "신부 아버지 끼어듦", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "정통. \"신부 입장.\" 음악. 신부가 미소. 하객 박수.",
+    "choices": [
+      { "label": "다음 — 신랑 신부 인사", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "감동 멘트 추가", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "유머. \"신부 너무 예뻐서 신랑 좀 긴장한 듯합니다.\" 하객 폭소. 친구 신랑 \"형 진짜.\"",
+    "choices": [
+      { "label": "한 번 더 — 친구 농담", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "다시 정통으로", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["회피","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "긴장. 마이크 떨어뜨림. 하객 시선. 친구가 \"형 천천히\" 한다.",
+    "choices": [
+      { "label": "심호흡 — 다시", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] },
+      { "label": "그대로 — 사회 못함", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "신랑 신부 인사. 하객들 박수. 다음 식순 — 주례.",
+    "choices": [
+      { "label": "주례 소개 — 정중", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "감동 멘트. \"오늘 두 사람의 새로운 시작 — 모두 함께 축하합시다.\" 신부 눈물.",
+    "choices": [
+      { "label": "박수 유도", "nextNodeId": 9, "requiredItem": null, "grantItem": "감동", "traits": ["이타","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "한 번 더. \"신랑 — 도망갈 수 없습니다.\" 폭소. 그러나 신부 어머니 표정 굳음.",
+    "choices": [
+      { "label": "사과 톤 — 정중", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] },
+      { "label": "끝까지 농담", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["독자","자기"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "사회 못함. 다른 친구가 마이크. 너는 자리에 앉아 후회.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "사회 포기"
+  },
+  {
+    "nodeId": 9,
+    "text": "주례 소개. 그가 멋진 말씀. 다음 — 신랑 신부 행진.",
+    "choices": [
+      { "label": "마지막 — 축가 + 배웅", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "끝까지 농담. 신부 어머니 일어남. \"이게 무슨 사회야!\" 분위기 폭발.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "어머니의 분노"
+  },
+  {
+    "nodeId": 11,
+    "text": "마지막. 축가 + 배웅. 신랑 신부 절. 하객 박수. 식 끝.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "완벽한 사회"
+  },
+  {
+    "nodeId": 12,
+    "text": "친구 신랑이 마지막에 \"형, 진짜 고맙다\" 한다. 그가 너의 어깨 두드림.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "친구의 고마움"
+  },
+  {
+    "nodeId": 13,
+    "text": "식순 한 페이지 빠뜨림. 하객 \"어, 이거 안 한 거 같은데\" 한다.",
+    "choices": [
+      { "label": "솔직 사과 + 추가", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙","회복"] }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "마이크 음향 문제 — 30초 침묵. 하객 어색.",
+    "choices": [
+      { "label": "음성 — 큰소리로", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "감동 멘트 + 농담 + 식순 + 마지막 — 모두 완벽. 신부 어머니가 \"우리 식 진짜 좋았다\" 한다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "완벽 사회의 명예"
+  },
+  {
+    "nodeId": 16,
+    "text": "주례 도중 신부 아버지가 갑자기 \"내가 한 마디\" 끼어듦. 사회자 권한.",
+    "choices": [
+      { "label": "정중히 — 식순대로", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "양보 — 그가 한다", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] }
+    ]
+  },
+  {
+    "nodeId": 17,
+    "text": "양보. 신부 아버지가 즉흥 한 마디. 하객 감동. \"이건 사회자 덕\" 한다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "양보의 덕"
+  }
+]

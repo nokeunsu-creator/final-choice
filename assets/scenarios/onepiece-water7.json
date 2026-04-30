@@ -1,0 +1,134 @@
+[
+  {
+    "nodeId": 1,
+    "text": "워터 세븐. CP9가 로빈을 잡아갔다. 사이파의 기차 — 6시간 후 정의의 문 통과. 너는 루피 동료. 7명이 분담.",
+    "choices": [
+      { "label": "로빈 직접 구출 — 기차 침투", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "프랭키 합류 설득 — 배 새 만듦", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
+      { "label": "워터 세븐 시민들 — 정보 수집", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] },
+      { "label": "정의의 문 통과 — 임펠다운으로", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "프랭키 + 우솝 + 루치 모두 격파", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙","용기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "기차 침투. 사이파의 폭우. 비행 차량으로 추격. CP9의 칸쥬로가 막음.",
+    "choices": [
+      { "label": "조로 — 칸쥬로 일대일", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] },
+      { "label": "건너뛰기 — 다음 차량으로", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회피","직관"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "프랭키. 그가 \"내 도크 부서졌어\" 한다. 동맹 협상.",
+    "choices": [
+      { "label": "도크 1 보호 약속", "nextNodeId": 7, "requiredItem": null, "grantItem": "프랭키동맹", "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "시민. 우솝이 어디로 갔나? 시민이 \"북쪽 다리\" 알려줌.",
+    "choices": [
+      { "label": "우솝 회수 — 사과 + 합류", "nextNodeId": 8, "requiredItem": null, "grantItem": "우솝", "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "조로 vs 칸쥬로. 1대1. 조로의 \"3검 사자가구\". 칸쥬로 다운.",
+    "choices": [
+      { "label": "다음 차량 — 사이파 따라잡기", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "건너뛰기. 칸쥬로가 추격. 그러나 너는 다음 차량.",
+    "choices": [
+      { "label": "사이파 마지막 차량으로", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "프랭키 동맹. 그가 새 배 \"썬섐버호\" 약속. 그러나 \"먼저 로빈 구출.\"",
+    "choices": [
+      { "label": "기차 침투 (프랭키 합류)", "nextNodeId": 10, "requiredItem": "프랭키동맹", "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "우솝. 그가 \"미안해 형들 — 같이 가자\" 한다. 다시 8명.",
+    "choices": [
+      { "label": "기차 침투", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["협력"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "사이파 마지막. CP9의 루치가 로빈을 들고. 정의의 문 직전.",
+    "choices": [
+      { "label": "루피 vs 루치", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "조로 + 루피 합공", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "기차 침투 (8명 또는 동맹). 합공으로 사이파 차량 전부 무력화.",
+    "choices": [
+      { "label": "정의의 문 도달", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "루피 vs 루치. 기어 세컨드. 정의의 문 위에서 결투.",
+    "choices": [
+      { "label": "루피 일격 — 고무고무 자이언트 피스톨", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "합공. 조로가 칼, 루피가 주먹. 루치 다운.",
+    "choices": [
+      { "label": "로빈 구출", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "정의의 문 직전. 9명 동시. 로빈이 \"살고 싶어!\" 외침. 모두가 답.",
+    "choices": [
+      { "label": "마지막 — 깃발 들고 진입", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력","용기"] }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "루피 자이언트 피스톨. 루치 격파. 정의의 문 무너짐. 로빈 구출.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "로빈 구출"
+  },
+  {
+    "nodeId": 15,
+    "text": "로빈. \"고마워.\" 9명이 기차 위에서 새벽. 워터 세븐 출항.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "9명의 기차"
+  },
+  {
+    "nodeId": 16,
+    "text": "깃발. 시민들 보는 앞에서. 사이파 부서지고 워터 세븐의 시민이 박수. \"밀짚모자!\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "워터 세븐의 박수"
+  },
+  {
+    "nodeId": 17,
+    "text": "정의의 문 통과 — 로빈이 안 멈춰서 같이 임펠다운으로. 6년의 기다림.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "임펠다운으로"
+  },
+  {
+    "nodeId": 18,
+    "text": "프랭키 + 우솝 + 동료 모두 + 루치 격파 — 모든 길. 새 배 + 새 동료.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "썬섐버호 출항"
+  }
+]

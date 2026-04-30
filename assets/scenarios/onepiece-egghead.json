@@ -1,0 +1,128 @@
+[
+  {
+    "nodeId": 1,
+    "text": "에그헤드 섬. 베가펑크의 미래 도시. 그러나 5인의 예지 — 세계 정부가 베가펑크 제거 명령. 너는 루피 동료. 위성 베가펑크 6명 + 본체.",
+    "choices": [
+      { "label": "베가펑크 보호 — 본체 호위", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["이타","원칙"] },
+      { "label": "정보 — 그의 비밀 알아냄", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "탈출 — 배 준비", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["신중","협력"] },
+      { "label": "5인 직접 강림", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "베가펑크+정보+황+탈출 모두", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력","용기"] },
+      { "label": "위성 베가펑크 5명 동료로", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "정보 너무 충격 — 무방송", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "에그헤드를 동맹 거점으로", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "본체 호위. 베가펑크 \"감사하오.\" 그가 \"세계 정부의 진실 — 비밀 5번\" 한다.",
+    "choices": [
+      { "label": "비밀 5번 듣기", "nextNodeId": 5, "requiredItem": null, "grantItem": "비밀5번", "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "정보. 베가펑크의 일지. \"드디어 — 제로의 진실.\" 100년 공백의 기록.",
+    "choices": [
+      { "label": "일지 챙김", "nextNodeId": 6, "requiredItem": null, "grantItem": "일지", "traits": ["분석","독자"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "배 준비. 썬섐버호 출항 직전. 그러나 황제 황 (요크)가 배 압수.",
+    "choices": [
+      { "label": "황 직접 — 일대일", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "비밀 5번. \"세계 정부의 가장 큰 거짓 — 우리 모두가 — \" 그 순간 황의 공격.",
+    "choices": [
+      { "label": "베가펑크 보호 + 정보 챙김", "nextNodeId": 8, "requiredItem": "비밀5번", "grantItem": null, "traits": ["이타","원칙","용기"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "일지 챙김. 그러나 위성 베가펑크 (요크)가 배신. \"이 정보는 못 가져가.\"",
+    "choices": [
+      { "label": "요크 격파", "nextNodeId": 9, "requiredItem": "일지", "grantItem": null, "traits": ["용기","정면"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "황과 일대일. 그가 \"베가펑크의 그림자\" 본체. 너의 능력 vs 그녀의 능력.",
+    "choices": [
+      { "label": "끝까지 — 일대일", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "베가펑크 보호 + 정보. 황을 일격. 베가펑크가 \"고맙소 — 이 정보 세상에 알려주오.\" 임종.",
+    "choices": [
+      { "label": "그의 부탁 — 정보 세상에 송신", "nextNodeId": 11, "requiredItem": "비밀5번", "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "요크 격파. 그녀의 통신실 부서짐. 그러나 황 본체가 다음 단계.",
+    "choices": [
+      { "label": "황과 정면", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "일대일 끝. 황 다운. 그러나 5인의 함대가 섬을 둘러쌈.",
+    "choices": [
+      { "label": "탈출 — 섬 폭발 직전", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["용기","신중"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "정보 송신. 전 세계가 베가펑크의 마지막 방송 듣는다. \"우리는 — 거짓 속에 살아왔다.\" 100년 공백 공개.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "마지막 방송"
+  },
+  {
+    "nodeId": 12,
+    "text": "탈출. 섬이 폭발. 모든 위성 베가펑크 함께. 7명이 새벽의 배.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "에그헤드의 새벽"
+  },
+  {
+    "nodeId": 13,
+    "text": "5인이 직접 강림. 너 + 루피 vs 5인. 무모.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "5인의 강림"
+  },
+  {
+    "nodeId": 14,
+    "text": "베가펑크 + 정보 + 황 격파 + 탈출 — 모든 길. 새 시대의 시작.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "새 시대"
+  },
+  {
+    "nodeId": 15,
+    "text": "위성 베가펑크 5명이 너에게 \"같이 가자\" 한다. 6명 동료 추가.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "5명의 동료"
+  },
+  {
+    "nodeId": 16,
+    "text": "정보가 너무 충격적이라 시청자가 그것을 못 받아들임. 무방송.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "무방송"
+  },
+  {
+    "nodeId": 17,
+    "text": "에그헤드 섬을 데려가 동맹의 거점으로. 미래.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "동맹의 거점"
+  }
+]

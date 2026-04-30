@@ -1,0 +1,131 @@
+[
+  {
+    "nodeId": 1,
+    "text": "첫 직장 면접. 대기실. 5명이 앉아있다. 정장 단추 한 번 더 점검. 면접관 \"OO 들어오세요.\" 너의 차례.",
+    "choices": [
+      { "label": "정중 — 인사부터", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "자신감 — 미소", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] },
+      { "label": "긴장 — 떨림", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "함정 질문 — 회사 단점", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "연봉 협상 질문", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["분석","용기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "정중. 면접관 3명. 첫 질문: \"우리 회사를 왜 지원했나?\"",
+    "choices": [
+      { "label": "솔직 — 회사 미션 공감", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] },
+      { "label": "구체 — 부서 + 직무", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "흔한 답 — 성장", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "자신감. 첫 인상 ✓. 면접관 한 명: \"이 친구 자신감 좋네.\"",
+    "choices": [
+      { "label": "구체 사례 — 자신감 근거", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["원칙","분석"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "긴장. 첫 질문에 1분 침묵. 면접관 \"긴장하지 말고\" 한다.",
+    "choices": [
+      { "label": "심호흡 후 — 다시", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] },
+      { "label": "그대로 — 답 못함", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "솔직. 회사 미션 + 너의 가치관. 면접관 끄덕.",
+    "choices": [
+      { "label": "사례 추가 — 자원봉사 경험", "nextNodeId": 9, "requiredItem": null, "grantItem": "사례", "traits": ["분석","이타"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "구체. \"마케팅 부서, 디지털 광고 — 제 학부 프로젝트와 연결.\" 면접관 \"오, 준비했네.\"",
+    "choices": [
+      { "label": "프로젝트 결과 — 숫자로", "nextNodeId": 9, "requiredItem": null, "grantItem": "사례", "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "흔한. 면접관 \"왜 우리 회사인지는?\" 추가 질문. 답 못함.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "흔한 답의 한계"
+  },
+  {
+    "nodeId": 8,
+    "text": "답 못함. 면접관 다음 후보 부른다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "긴장의 패배"
+  },
+  {
+    "nodeId": 9,
+    "text": "사례 + 숫자. \"매출 30% 증가 기여.\" 면접관 \"이 친구 정말 준비됐다.\"",
+    "choices": [
+      { "label": "마지막 — 질문 있냐 — 그렇다", "nextNodeId": 10, "requiredItem": "사례", "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "마지막 — 없다", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "질문. \"신입의 첫 6개월 — 어떻게 적응?\" 면접관 \"좋은 질문!\" 미소.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "합격"
+  },
+  {
+    "nodeId": 11,
+    "text": "없다. 면접관 미적지근. \"음, 다음 후보.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "보류"
+  },
+  {
+    "nodeId": 12,
+    "text": "면접관이 \"우리 회사 단점은?\" 함정 질문.",
+    "choices": [
+      { "label": "정직 — 단점 인정 + 개선 제안", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "회피 — \"단점은 없다\"", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "정직. \"오프라인 마케팅 비중이 높아 디지털 약함 — 제가 도울 부분.\" 면접관 \"이거 진짜 분석한 자.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "분석가 합격"
+  },
+  {
+    "nodeId": 14,
+    "text": "회피. 면접관 \"준비 안 했네.\" 평가 ↓.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "회피의 한계"
+  },
+  {
+    "nodeId": 15,
+    "text": "면접 끝. 면접관 \"내일 결과.\" 다음 날 합격 메일.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "내일의 합격"
+  },
+  {
+    "nodeId": 16,
+    "text": "면접관이 \"연봉 협상은?\" 묻는다. 신입인데.",
+    "choices": [
+      { "label": "회사 표준대로", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","원칙"] },
+      { "label": "근거 — 시장가 5% 상회", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["분석","용기"] }
+    ]
+  },
+  {
+    "nodeId": 17,
+    "text": "근거. \"학부 + 자격증 + 인턴 — 시장가 5% 상회 자격.\" 면접관 끄덕. 합격 + 우대 연봉.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "협상 합격"
+  }
+]

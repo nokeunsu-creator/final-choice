@@ -1,0 +1,129 @@
+[
+  {
+    "nodeId": 1,
+    "text": "팀 워크샵 1박2일. 강원도 펜션. 부장이 \"오늘 술자리 빼고 진짜 워크샵\" 한다. 토론 주제: \"내년 팀 방향.\" 첫 발언자 너.",
+    "choices": [
+      { "label": "구체 — 신규 사업 제안", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "팀 문화 개선 — 회식 줄이기", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "조용히 듣기", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] },
+      { "label": "결국 회식이라며 시작됨", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] },
+      { "label": "동료가 부장 직접 비판", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["정면","독자"] },
+      { "label": "신규사업+문화+야근 통합 제안", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["분석","협력","원칙"] },
+      { "label": "노래방 팀빌딩으로 마무리", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "신규 사업. 부장이 \"오, 데이터 있어?\" 한다.",
+    "choices": [
+      { "label": "준비한 자료 — 노트북 펼침", "nextNodeId": 5, "requiredItem": null, "grantItem": "준비자료", "traits": ["분석","원칙"] },
+      { "label": "감각만 — 자세 한 번 더", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["직관","독자"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "회식 줄이기. 김 대리 \"오, 진짜요?\" 환호. 부장 표정 어색.",
+    "choices": [
+      { "label": "구체 — 월 1회로", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "감정적 호소 — 가족 시간", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "조용히. 부장 \"왜 말 안 해?\" 한다. 분위기 어색.",
+    "choices": [
+      { "label": "급히 동조 의견", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "준비자료. 시장 분석 + 매출 예상. 부장 \"이 친구 진짜 일잘러.\"",
+    "choices": [
+      { "label": "사장 보고로 가져가자 제안", "nextNodeId": 10, "requiredItem": "준비자료", "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "감각만. 부장 \"근거?\" 묻는다. 답을 못 함. 분위기 굳음.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "근거 없는 자세"
+  },
+  {
+    "nodeId": 7,
+    "text": "구체. 월 1회 강제 회식 + 자유 회식. 부장 \"음, 합리적이네.\" 동의.",
+    "choices": [
+      { "label": "다음 안건 — 야근 줄이기", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "감정적. 김 대리 \"형 진짜 우리 마음을\" 한다. 부장 한숨. \"맞아.\"",
+    "choices": [
+      { "label": "부장 인정 받기 — 정중", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "급히 동조. 부장 \"그럼 너의 의견은?\" 묻는다. 답 못함.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "발언 부재"
+  },
+  {
+    "nodeId": 10,
+    "text": "사장 보고. 부장 + 너 + 김 대리 셋이 사장 만남. 사장이 \"이 팀 잘 만들었다\" 한다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "사장의 팀 인정"
+  },
+  {
+    "nodeId": 11,
+    "text": "야근 줄이기. \"평균 90시간 → 60시간 목표.\" 부장 \"노력하지.\" 동의.",
+    "choices": [
+      { "label": "구체 — 업무 자동화 제안", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "정중. 부장 \"좋아 — 내일부터 매주 금요일 8시 퇴근.\" 팀원 박수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "금요일 8시"
+  },
+  {
+    "nodeId": 13,
+    "text": "업무 자동화. 부장 \"근데 그러려면 비용\" 한다. 너가 ROI 제시.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "자동화 제안"
+  },
+  {
+    "nodeId": 14,
+    "text": "워크샵 도중 부장이 갑자기 \"내가 한 잔 마실게 — 사실 회식이지\" 한다. 처음부터 의도된 술자리.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "결국 회식"
+  },
+  {
+    "nodeId": 15,
+    "text": "팀원 한 명이 \"부장 비판\" 직접 발언. 부장 호통. 분위기 폭발.",
+    "choices": [
+      { "label": "중재 시도", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["회복","협력"] }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "신규사업 + 문화개선 + 야근 — 모든 의견 통합. 부장 \"이 친구 진짜 부팀장감.\" 승진.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "워크샵의 승진"
+  },
+  {
+    "nodeId": 17,
+    "text": "워크샵 끝나고 펜션 노래방. 모두 함께 노래 — 진짜 팀빌딩.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "노래방의 팀"
+  }
+]

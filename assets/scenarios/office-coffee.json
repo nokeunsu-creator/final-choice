@@ -1,0 +1,130 @@
+[
+  {
+    "nodeId": 1,
+    "text": "오후 3시. 부장이 \"커피 한 잔만\" 한다. 막내가 너인데 부장이 직접 너를 지목. 4명 음료 주문.",
+    "choices": [
+      { "label": "다 받아 적기", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "막내한테 떠넘김", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["자기","회피"] },
+      { "label": "다 같이 가자 제안", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] },
+      { "label": "카페 가는 길에 사장 마주침", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] },
+      { "label": "사무실 돌아오니 음료 식음", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "엘리베이터에서 흘림", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "부장 음료에 시럽 메모", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["분석","이타"] },
+      { "label": "법인카드로 디저트까지", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["자기","실용"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "주문 받기. \"아아 둘, 라떼 하나, 디카페인 하나\" — 그러나 부장이 \"근데 디카페인은 빼고 그냥 따뜻한 거\" 한다.",
+    "choices": [
+      { "label": "되묻기 — 정확히", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙","분석"] },
+      { "label": "알아서 추측", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["직관","독자"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "막내한테 떠넘김. 막내 표정 굳음. 부장이 보고 \"너가 가져와\" 호통.",
+    "choices": [
+      { "label": "사과 + 직접 가기", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "다 같이 가자. 부장 \"오, 좋네 — 다같이 30분 휴식.\" 의외의 호응.",
+    "choices": [
+      { "label": "팀 5명 함께", "nextNodeId": 7, "requiredItem": null, "grantItem": "팀모임", "traits": ["협력","이타"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "되묻기. \"그럼 따뜻한 아메리카노?\" 부장 \"응 그거.\" 정확.",
+    "choices": [
+      { "label": "카페 — 4잔 정확히", "nextNodeId": 8, "requiredItem": null, "grantItem": "정확주문", "traits": ["원칙","실용"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "추측. 따뜻한 라떼. 부장 \"이거 라떼잖아 — 아메리카노라니까.\" 호통.",
+    "choices": [
+      { "label": "다시 사러", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["회복"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "팀 5명 카페. 부장이 \"오늘 내가 산다\" 한다. 분위기 ↑.",
+    "choices": [
+      { "label": "감사 인사 + 다음에 답례", "nextNodeId": 10, "requiredItem": "팀모임", "grantItem": null, "traits": ["원칙","이타"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "정확 주문. 4잔 들고 사무실. 부장 \"이 친구 일잘러야\" 한다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "일잘러"
+  },
+  {
+    "nodeId": 9,
+    "text": "다시 사러. 30분 추가. 부장 \"됐다, 그냥 놔둬.\" 분위기 굳음.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "라떼의 실수"
+  },
+  {
+    "nodeId": 10,
+    "text": "다음에 답례. 팀 친목 ↑. 부장 \"이 친구 소셜 좋아.\" 평가 ↑.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "팀의 친목"
+  },
+  {
+    "nodeId": 11,
+    "text": "카페 가는 길에 사장 마주침. \"어, 이 친구 막내야?\" 부장이 옆에서 \"네.\"",
+    "choices": [
+      { "label": "정중 인사 — 사장 음료도 사겠습니다", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "그냥 인사만", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "사장 음료 추가. 사장 \"오, 적극적이네.\" 부장도 미소.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "사장의 인상"
+  },
+  {
+    "nodeId": 13,
+    "text": "그냥 인사. 사장 \"음 — \" 미적지근. 부장 \"기회 놓쳤네.\" 한숨.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "놓친 기회"
+  },
+  {
+    "nodeId": 14,
+    "text": "사무실 돌아오니 부장이 \"음료 식었어\" 호통. 다 다시 데움.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "식은 음료"
+  },
+  {
+    "nodeId": 15,
+    "text": "음료 운반 중 엘리베이터에서 흘림. 4잔 다. 사무실 못 돌아감.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "엘리베이터의 사고"
+  },
+  {
+    "nodeId": 16,
+    "text": "부장 음료에 시럽 2번 넣음 (메모). \"이거 정확히 내가 먹는 거야.\" 부장 진심 미소.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "디테일의 가치"
+  },
+  {
+    "nodeId": 17,
+    "text": "법인카드로 음료 + 디저트까지. 부장 \"이건 좀…\" 회사 룰 위반.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "디저트의 한계"
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "nodeId": 1,
+    "text": "임원 회의실. 너의 첫 발표 — 신사업 제안서. 임원 5명, 사장 정면. PPT 클릭 직전. 손에 땀.",
+    "choices": [
+      { "label": "준비한 그대로 — 자신감", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "시작 전 — 사장에게 농담", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "차분히 — 데이터부터", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["분석","신중"] },
+      { "label": "PPT 멈춤 — 노트북 다운", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피","직관"] },
+      { "label": "긴장으로 첫 마디 못함", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "사장이 다른 임원에게 추천", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "자신감. 첫 슬라이드. 목소리 떨림 없음. 그러나 임원 한 명: \"이 데이터 출처는?\"",
+    "choices": [
+      { "label": "정확한 출처 — 외부 연구소", "nextNodeId": 5, "requiredItem": null, "grantItem": "데이터신뢰", "traits": ["분석","원칙"] },
+      { "label": "기억이 안 남 — 얼버무림", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "사장에게 농담. \"오늘 넥타이 멋지십니다.\" 사장이 웃음. 분위기 풀림.",
+    "choices": [
+      { "label": "그대로 발표 진행", "nextNodeId": 5, "requiredItem": null, "grantItem": "분위기", "traits": ["용기","협력"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "데이터부터. 시장 규모 + 경쟁사 + 진입 장벽. 임원들 끄덕.",
+    "choices": [
+      { "label": "ROI 계산 — 3년 후 전망", "nextNodeId": 7, "requiredItem": null, "grantItem": "분석근거", "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "발표 매끄럽게. 마지막 슬라이드. 사장: \"실현 가능한가?\"",
+    "choices": [
+      { "label": "구체 계획 — 6개월 단위", "nextNodeId": 8, "requiredItem": "데이터신뢰", "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "팀 협력 부각", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "얼버무림. 임원 표정 굳음. 사장 \"다음에 정확히 가져오게.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "다음 회의로"
+  },
+  {
+    "nodeId": 7,
+    "text": "ROI 계산. 그래프가 명확. 임원 한 명: \"이 친구 진짜 준비했네.\"",
+    "choices": [
+      { "label": "결론 — 사장에게 직접 제안", "nextNodeId": 10, "requiredItem": "분석근거", "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "구체 계획. 6개월 단위 마일스톤. 사장: \"좋아, 진행하지.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "프로젝트 승인"
+  },
+  {
+    "nodeId": 9,
+    "text": "팀 협력 부각. \"저 혼자가 아닙니다.\" 사장: \"리더십 좋네.\" 승진 후보.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "리더의 인상"
+  },
+  {
+    "nodeId": 10,
+    "text": "사장 직접 제안. \"이거 너 책임자로.\" 부장 표정 굳음 (질투).",
+    "choices": [
+      { "label": "감사 인사 + 부장에게도", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "사장만 직접", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["자기","독자"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "둘 다 인사. 부장 마음 풀림. 사장 \"이 친구 사회성도 있다.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "양방의 인사"
+  },
+  {
+    "nodeId": 12,
+    "text": "사장만. 부장 회의 후 호출. \"너 다음부터 내 라인 패스 — 알지?\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "라인 패스"
+  },
+  {
+    "nodeId": 13,
+    "text": "발표 도중 PPT 멈춤. 노트북 다운. 모두 어색.",
+    "choices": [
+      { "label": "구두로 계속 — 5분 즉흥", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "재부팅 기다림", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "구두 5분. 임원들 \"오, 슬라이드보다 나은데?\" 사장 박수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "PPT 없는 발표"
+  },
+  {
+    "nodeId": 15,
+    "text": "재부팅 5분. 분위기 죽음. 사장 \"다음에 정리해서.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "재부팅의 시간"
+  },
+  {
+    "nodeId": 16,
+    "text": "긴장으로 첫 마디 못함. 1분 침묵. 결국 부장이 대신 발표.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "긴장의 침묵"
+  },
+  {
+    "nodeId": 17,
+    "text": "사장이 회의 도중 다른 임원에게 \"이 친구 데려가\" 한다. 부서 이동.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "부서 이동의 손"
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "nodeId": 1,
+    "text": "운전면허 도로주행. 시험관 옆자리. \"출발하세요.\" 떨리는 손. 50m 직진 후 우회전.",
+    "choices": [
+      { "label": "안전벨트 + 사이드미러 — 정통", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "곧바로 출발", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "긴장 — 시동도 못 켬", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "보행자 갑자기 — 급정거", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["용기","신중"] },
+      { "label": "신호등 노란불 — 가속? 멈춤?", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["분석","신중"] },
+      { "label": "주차장에서 사이드 긁힘", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "정통. 시험관 \"좋아요.\" 출발. 50m 직진 + 우회전. 속도 30km.",
+    "choices": [
+      { "label": "다음 — 차선 변경", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "신호등 정지", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["신중","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "곧바로. 시험관 \"안전벨트는?\" 한다. 감점 5점.",
+    "choices": [
+      { "label": "당황하지 않고 — 멈춰서 매기", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "긴장. 시동 못 켬. 시험관 \"천천히 — 5분 줄게.\" 한다.",
+    "choices": [
+      { "label": "심호흡 — 다시", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] },
+      { "label": "포기", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "차선 변경. 사이드미러 + 깜빡이 + 백미러. 정확.",
+    "choices": [
+      { "label": "다음 — 평행주차", "nextNodeId": 9, "requiredItem": null, "grantItem": "기본기", "traits": ["원칙","분석"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "신호등 정지. 정확한 위치. 시험관 끄덕.",
+    "choices": [
+      { "label": "출발 — 다음 코스", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "회복. 안전벨트. 출발. 그러나 감점 5점.",
+    "choices": [
+      { "label": "이후 정확히", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "포기. 다음 회 도전 약속. 시험관 \"괜찮아 — 다음에.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "다음 회로"
+  },
+  {
+    "nodeId": 9,
+    "text": "평행주차. 한 번에 들어간다. 시험관 \"오, 좋네.\"",
+    "choices": [
+      { "label": "주행 마무리 — 정차", "nextNodeId": 10, "requiredItem": "기본기", "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "주행 끝. 시험관 \"합격.\" 90점.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "합격"
+  },
+  {
+    "nodeId": 11,
+    "text": "시험 도중 보행자 갑자기 — 급정거.",
+    "choices": [
+      { "label": "정확히 멈추기", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "충돌 직전", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "정확. 보행자 무사. 시험관 \"이거 진짜 운전자.\" 가산점.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "급정거의 정확"
+  },
+  {
+    "nodeId": 13,
+    "text": "충돌 직전 — 가까스로 멈춤. 시험관 \"심장이 멈췄어\" 한다. 합격 → 보류.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "심장의 보류"
+  },
+  {
+    "nodeId": 14,
+    "text": "신호등 노란불 — 가속? 멈춤?",
+    "choices": [
+      { "label": "멈춤 — 안전", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["신중","원칙"] },
+      { "label": "가속 — 통과", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "멈춤. 시험관 \"맞는 선택.\" 가산점.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "안전의 가산"
+  },
+  {
+    "nodeId": 16,
+    "text": "가속. 빨간불 직전 통과. 시험관 \"위험 — 감점.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "위험의 감점"
+  },
+  {
+    "nodeId": 17,
+    "text": "주차장 진입 — 차 한 대와 가까이. 차문 열다 사이드 긁힘.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "사이드 긁힘"
+  }
+]

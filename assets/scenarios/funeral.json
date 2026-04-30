@@ -1,0 +1,131 @@
+[
+  {
+    "nodeId": 1,
+    "text": "친구 아버지의 장례식. 검은 정장. 빈소 입장. 친구가 \"와줘서 고마워\" 한다. 표정 평정 유지 어렵다.",
+    "choices": [
+      { "label": "정중 절 — 분향 후 인사", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "친구 직접 안음", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "조용히 — 식사부터", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] },
+      { "label": "회사 일 전화 — 받기 결정", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "다른 친구 늦게 도착 — 안내", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "친구 옆 + 어머니 + 발인 모두", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["이타","협력","원칙"] },
+      { "label": "조의금 봉투 — 정중", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "장례식 후 친구와 한 잔", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "정중. 절 + 분향. 영정 앞 1분. 친구 어머니에게 \"건강하세요.\" 정중 인사.",
+    "choices": [
+      { "label": "친구와 함께 시간", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "조용히 식사 자리로", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회피","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "친구를 안음. 그가 무너짐. \"고맙다… 진짜.\"",
+    "choices": [
+      { "label": "옆에 30분 — 말없이", "nextNodeId": 7, "requiredItem": null, "grantItem": "옆에있음", "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "식사부터. 친구 어머니가 \"고마워, 식사하렴.\" 한다. 그러나 친구는 다른 자리.",
+    "choices": [
+      { "label": "친구에게로 — 인사", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["회복","협력"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "친구와 함께. 그가 \"아버지 마지막 모습 — 평온\" 한다. 둘이 침묵.",
+    "choices": [
+      { "label": "그의 손 잡음", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "그의 추억 듣기", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "식사. 친구 어머니가 \"같이 앉자\" 한다. 정중 대화.",
+    "choices": [
+      { "label": "어머니의 추억 듣기", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "옆에 30분. 친구 \"이 30분이 진짜 위로였다.\" 한다.",
+    "choices": [
+      { "label": "끝까지 — 발인까지", "nextNodeId": 10, "requiredItem": "옆에있음", "grantItem": null, "traits": ["이타","협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "그의 손. 5분 침묵. 그러나 그 5분이 1년 같음. 친구 평정.",
+    "choices": [
+      { "label": "발인까지 함께", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "추억 듣기. 친구 아버지의 작은 순간들. 친구 미소가 살짝.",
+    "choices": [
+      { "label": "한 마디 — \"아버지 자랑스러우셨겠다\"", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["이타","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "발인. 너가 운구. 친구가 \"형제처럼\" 한다. 그날의 진심.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "형제의 운구"
+  },
+  {
+    "nodeId": 11,
+    "text": "한 마디. 친구가 처음으로 미소. \"맞아 — 자랑스러우셨을 거야.\" 위로 ✓.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "한 마디의 위로"
+  },
+  {
+    "nodeId": 12,
+    "text": "장례식 도중 핸드폰 울림. 회사 일.",
+    "choices": [
+      { "label": "전화 거절 — 친구 옆", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] },
+      { "label": "잠시 받음", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["자기","회피"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "잠시 받음. 친구가 \"여기서?\" 표정. 분위기 굳음.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "잘못된 시간의 전화"
+  },
+  {
+    "nodeId": 14,
+    "text": "다른 친구가 늦게 도착. 그를 안내 + 함께 분향.",
+    "choices": [
+      { "label": "셋이 함께 — 친구 옆", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "친구 옆 + 어머니 + 발인 — 모든 자리. 친구가 \"형 진짜 가족 같았어\" 한다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "가족 같은 친구"
+  },
+  {
+    "nodeId": 16,
+    "text": "조의금 봉투 — 너무 많이 / 적게.",
+    "choices": [
+      { "label": "관계에 맞게 — 정중", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 17,
+    "text": "장례식 끝. 친구가 \"한 잔 하자\" 한다. 둘이서 새벽까지.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "새벽까지의 한 잔"
+  }
+]

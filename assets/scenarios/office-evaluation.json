@@ -1,0 +1,132 @@
+[
+  {
+    "nodeId": 1,
+    "text": "1년 인사평가 1:1. 부장과 회의실. 책상 위 평가지 — A+, A, B, C, D 5단계. 부장이 \"올해 솔직히 어땠어?\" 묻는다.",
+    "choices": [
+      { "label": "겸손 — \"부족했습니다\"", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "자신감 — \"성과 컸습니다\"", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "구체 데이터 — 정확히", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "동료 김 대리 갈등 언급됨", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] },
+      { "label": "긴장으로 말 더듬", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "부장이 \"승진 후보야\"", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] },
+      { "label": "분석 + 팀 + 솔직 + 비전 모두", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["분석","협력","원칙"] },
+      { "label": "회사 매출 적자 발표", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "겸손. 부장 \"진짜 부족했어?\" 한다. 본인의 노력 무시당한 느낌.",
+    "choices": [
+      { "label": "구체 사례 추가", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["회복","분석"] },
+      { "label": "그대로 — 끝까지 겸손", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["원칙","회피"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "자신감. \"매출 30% 기여, 새 거래처 3개\" 한다. 부장 \"음, 적극적이네.\"",
+    "choices": [
+      { "label": "추가로 — 팀 협력 부각", "nextNodeId": 7, "requiredItem": null, "grantItem": "팀언급", "traits": ["협력","원칙"] },
+      { "label": "혼자 한 일 강조", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["자기","독자"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "구체 데이터. 분기별 그래프 + 고객사 만족도 92%. 부장 \"이거 진짜 잘 정리했네.\"",
+    "choices": [
+      { "label": "내년 계획도 — 5년 비전", "nextNodeId": 9, "requiredItem": null, "grantItem": "분석근거", "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "구체 사례. \"매출 + 거래처 + 후임 교육.\" 부장이 \"그럼 왜 부족했다고\" 한다.",
+    "choices": [
+      { "label": "솔직히 인정 — 더 잘할 수 있었다", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "끝까지 겸손. 부장 \"평가 B로 가자.\" 본인 기여보다 낮음.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "B의 후회"
+  },
+  {
+    "nodeId": 7,
+    "text": "팀 협력 부각. 부장 \"이 친구 진짜 리더감.\" 평가지 A+.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "리더 A+"
+  },
+  {
+    "nodeId": 8,
+    "text": "혼자 한 일. 부장 \"근데 김 대리가 같이 한 거 아냐?\" 의심. 평가 B+.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "혼자의 한계"
+  },
+  {
+    "nodeId": 9,
+    "text": "5년 비전. \"부장 자리 도전합니다.\" 부장 웃음. \"좋네 — 내년에 부팀장.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "부팀장 약속"
+  },
+  {
+    "nodeId": 10,
+    "text": "솔직 인정. 부장 \"이게 진짜 평가야.\" A 등급 + 보너스 50%.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "솔직의 보너스"
+  },
+  {
+    "nodeId": 11,
+    "text": "부장이 \"근데 김 대리가 너에 대해 불만 있다는데\" 한다.",
+    "choices": [
+      { "label": "솔직 — 갈등 인정", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "반박 — 김 대리 흠 잡기", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["정면","독자"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "솔직. \"의견 차이 있었습니다 — 풀겠습니다.\" 부장 \"이게 어른스러운 거야.\" 평가 A.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "어른스러운 인정"
+  },
+  {
+    "nodeId": 13,
+    "text": "반박 + 흠. 부장 \"너희 둘 다 문제야.\" B-.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "흠 잡기의 대가"
+  },
+  {
+    "nodeId": 14,
+    "text": "긴장으로 말 더듬. 부장 \"진정해.\" 분위기 어색.",
+    "choices": [
+      { "label": "심호흡 후 다시", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "부장이 \"승진 후보야 — 그러나 한 명만 가능해\" 한다.",
+    "choices": [
+      { "label": "감사 — 노력하겠다", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "다른 후보 평가 — 비교", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["정면","자기"] }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "분석 + 팀 + 솔직 + 비전 — 모든 게 완벽. 평가 A+ + 부팀장 + 보너스.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "완벽 평가"
+  },
+  {
+    "nodeId": 17,
+    "text": "평가 도중 회사 매출 발표 — 적자. 부장 \"올해는 보너스 없어.\" 평가 무관.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "회사의 적자"
+  }
+]

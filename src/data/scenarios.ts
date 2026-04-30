@@ -1,5 +1,5 @@
 /**
- * 무거운 시나리오 데이터 모듈 — 모든 98개 JSON을 정적 import.
+ * 무거운 시나리오 데이터 모듈 — 모든 113개 JSON을 정적 import.
  * 이 모듈은 GameScreen / EndingScreen에서만 사용. App.tsx의 React.lazy로
  * 분리되어 메인 페이지/시나리오 선택 화면에서는 로드되지 않는다.
  *
@@ -103,6 +103,21 @@ import mudoPhotoRaw from '../../assets/scenarios/mudo-photo.json';
 import manitoClubRaw from '../../assets/scenarios/manito-club.json';
 import onepieceWanoPrepRaw from '../../assets/scenarios/onepiece-wano-prep.json';
 import jidaenubeoryeolbRaw from '../../assets/scenarios/jidaenubeoryeolb.json';
+import officeMeetingRaw from '../../assets/scenarios/office-meeting.json';
+import officeCoffeeRaw from '../../assets/scenarios/office-coffee.json';
+import officeResignRaw from '../../assets/scenarios/office-resign.json';
+import officeEvaluationRaw from '../../assets/scenarios/office-evaluation.json';
+import officeTeamBuildRaw from '../../assets/scenarios/office-team-build.json';
+import onepieceArabastaRaw from '../../assets/scenarios/onepiece-arabasta.json';
+import onepieceThrillerRaw from '../../assets/scenarios/onepiece-thriller.json';
+import onepieceWater7Raw from '../../assets/scenarios/onepiece-water7.json';
+import onepieceDressrosaRaw from '../../assets/scenarios/onepiece-dressrosa.json';
+import onepieceEggheadRaw from '../../assets/scenarios/onepiece-egghead.json';
+import firstJobRaw from '../../assets/scenarios/first-job.json';
+import weddingEmceeRaw from '../../assets/scenarios/wedding-emcee.json';
+import movingDayRaw from '../../assets/scenarios/moving-day.json';
+import drivingTestRaw from '../../assets/scenarios/driving-test.json';
+import funeralRaw from '../../assets/scenarios/funeral.json';
 import type { StoryNode } from './types';
 
 const DATA: Record<string, StoryNode[]> = {
@@ -204,6 +219,21 @@ const DATA: Record<string, StoryNode[]> = {
   'manito-club': manitoClubRaw as StoryNode[],
   'onepiece-wano-prep': onepieceWanoPrepRaw as StoryNode[],
   jidaenubeoryeolb: jidaenubeoryeolbRaw as StoryNode[],
+  'office-meeting': officeMeetingRaw as StoryNode[],
+  'office-coffee': officeCoffeeRaw as StoryNode[],
+  'office-resign': officeResignRaw as StoryNode[],
+  'office-evaluation': officeEvaluationRaw as StoryNode[],
+  'office-team-build': officeTeamBuildRaw as StoryNode[],
+  'onepiece-arabasta': onepieceArabastaRaw as StoryNode[],
+  'onepiece-thriller': onepieceThrillerRaw as StoryNode[],
+  'onepiece-water7': onepieceWater7Raw as StoryNode[],
+  'onepiece-dressrosa': onepieceDressrosaRaw as StoryNode[],
+  'onepiece-egghead': onepieceEggheadRaw as StoryNode[],
+  'first-job': firstJobRaw as StoryNode[],
+  'wedding-emcee': weddingEmceeRaw as StoryNode[],
+  'moving-day': movingDayRaw as StoryNode[],
+  'driving-test': drivingTestRaw as StoryNode[],
+  funeral: funeralRaw as StoryNode[],
 };
 
 const NODE_INDEX: Record<string, Map<number, StoryNode>> = Object.fromEntries(

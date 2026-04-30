@@ -1,0 +1,131 @@
+[
+  {
+    "nodeId": 1,
+    "text": "사직서. 봉투 안에 넣어 가방. 5년의 무한상사. 오늘 점심 시간 끝나기 전 부장에게 제출 결심. 그러나 부장이 회의 중.",
+    "choices": [
+      { "label": "회의 끝날 때까지 기다림", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["신중","원칙"] },
+      { "label": "다른 임원 — 인사부장에게", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["회피","독자"] },
+      { "label": "이메일로 — 회의 중에", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "사직서 내고 그냥 도망", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "사장 직접 만남", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "기다림. 회의 1시간. 부장이 나오며 \"무슨 일?\" 한다.",
+    "choices": [
+      { "label": "정중 — 직접 대면", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "급히 — 봉투만 건네줌", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "인사부장. 그가 \"부장 통해야지\" 거절. 라인 무시.",
+    "choices": [
+      { "label": "그래도 처리 부탁", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["독자"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "이메일. 부장 폰에 알림. 회의 중 봤지만 \"뭐 이거?\" 분노.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "이메일의 결례"
+  },
+  {
+    "nodeId": 5,
+    "text": "정중. \"부장님, 5년 동안 감사했습니다.\" 부장 표정 굳음. \"왜?\"",
+    "choices": [
+      { "label": "솔직 — 다른 회사 제안", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "건강 핑계", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] },
+      { "label": "구체적 — 회사 문제 지적", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["정면","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "봉투만. 부장 \"왜 말 안 해?\" 호통.",
+    "choices": [
+      { "label": "솔직 사과 + 대화", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "인사부장 처리. 부장이 나중에 알고 \"날 무시했어?\" 분노. 인수인계 안 도와줌.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "라인 무시"
+  },
+  {
+    "nodeId": 8,
+    "text": "솔직. 부장 \"얼마 받기로 했나?\" 비밀히 묻는다.",
+    "choices": [
+      { "label": "솔직히 답함", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "비밀이라 거절", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙","독자"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "건강 핑계. 부장이 의심. \"진료 기록 보여줘.\" 거짓이 들통.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "거짓의 한계"
+  },
+  {
+    "nodeId": 10,
+    "text": "구체 지적. \"야근 + 휴가 안 줌 + 임금 5년 동결.\" 부장 한숨. \"맞아.\"",
+    "choices": [
+      { "label": "그래도 떠난다", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙","독자"] },
+      { "label": "조건 협상", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "솔직. 부장 \"우리도 1.5배 줄게, 다시 생각해.\" 카운터오퍼.",
+    "choices": [
+      { "label": "고민 후 받음", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] },
+      { "label": "거절 — 떠난다", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙","독자"] }
+    ]
+  },
+  {
+    "nodeId": 12,
+    "text": "비밀 거절. 부장 \"그래, 가라.\" 인수인계 깔끔.",
+    "choices": [
+      { "label": "한 달 인수인계", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "한 달 인수인계 끝. 마지막 날 회식. 부장이 \"어디서든 잘 해.\" 진심.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정중한 퇴사"
+  },
+  {
+    "nodeId": 14,
+    "text": "조건 협상. 임금 인상 + 휴가 보장. 부장 \"4명 더 채용한다.\" 너 + 회사 둘 다 win.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "협상의 가치"
+  },
+  {
+    "nodeId": 15,
+    "text": "받음. 1.5배 임금 + 직급 ↑. 그러나 마음은 아직 떠나있다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "1.5배의 무게"
+  },
+  {
+    "nodeId": 16,
+    "text": "사직서 내고 도망. 인수인계 안 함. 후임이 고생. 6개월 후 평판 흔들.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "도망친 자"
+  },
+  {
+    "nodeId": 17,
+    "text": "사장 직접 만남. 사장 \"왜 떠나?\" 솔직히. 사장이 회사 구조 바꿈 약속.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "사장의 변화"
+  }
+]

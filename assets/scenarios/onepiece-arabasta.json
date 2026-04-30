@@ -1,0 +1,131 @@
+[
+  {
+    "nodeId": 1,
+    "text": "알라바스타 왕국. 7무해 크로커다일이 모래 폭풍으로 나라를 무너뜨림. 비비가 \"백성을 지켜야\" 한다. 너는 루피 동료. 알루바나 광장 D-1.",
+    "choices": [
+      { "label": "왕궁 직진 — 크로커다일 정면", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "광장 폭탄 해체 — 비비 합류", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "물 — 사막 횡단 준비", "nextNodeId": 4, "requiredItem": null, "grantItem": "물통", "traits": ["분석","신중"] },
+      { "label": "비비와 작별 코스로", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "사막 횡단 — 물 부족", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "크로커다일과 협상 시도", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","독자"] },
+      { "label": "에이스 등장으로 합류", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] },
+      { "label": "물+폭탄+비비+작별 모든 길", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "왕궁 직진. 모래 폭풍. 크로커다일이 입구에서 \"네가 왔구나.\" 모래로 변신.",
+    "choices": [
+      { "label": "물통으로 모래 무력화", "nextNodeId": 5, "requiredItem": "물통", "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "주먹 직격", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "광장 폭탄. 시계탑 위 오각형 폭탄. 1시 0분 폭발 예정. 비비가 \"5분 남음\" 외친다.",
+    "choices": [
+      { "label": "비비와 함께 — 정확히 끄기", "nextNodeId": 7, "requiredItem": null, "grantItem": "폭탄해체", "traits": ["협력","원칙"] },
+      { "label": "근처 멤버에게 — 던지기", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["용기","독자"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "물통 준비. 사막 7일치. 크로커다일은 모래 — 물이 약점.",
+    "choices": [
+      { "label": "왕궁으로", "nextNodeId": 2, "requiredItem": "물통", "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "광장 폭탄으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "물통. 크로커다일의 모래 형체에 물. 그가 잠시 굳음. 루피의 고무 고무 피스톨!",
+    "choices": [
+      { "label": "마지막 한 방 — 결정타", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "주먹. 크로커다일의 모래에 흡수. \"이 친구 모르나?\" 그가 비웃음.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "모래의 무력"
+  },
+  {
+    "nodeId": 7,
+    "text": "비비와 함께. 폭탄 해체 시퀀스. 빨간선 자르기 직전 — 크로커다일이 위에서 \"멈춰.\"",
+    "choices": [
+      { "label": "그래도 자르기 — 1초 안", "nextNodeId": 10, "requiredItem": "폭탄해체", "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "던지기. 폭탄 공중에서 폭발. 시계탑 부서지지만 광장 살음.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "시계탑의 희생"
+  },
+  {
+    "nodeId": 9,
+    "text": "루피 결정타. 크로커다일 모래 입자가 흩어짐. 7무해 격파.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "7무해 격파"
+  },
+  {
+    "nodeId": 10,
+    "text": "1초 안 자르기. 폭탄 멈춤. 비비가 \"감사해\" 한다. 그러나 크로커다일이 비비를 잡음.",
+    "choices": [
+      { "label": "비비 구하기 + 크로커다일 처치", "nextNodeId": 11, "requiredItem": "물통", "grantItem": null, "traits": ["이타","용기"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "물통으로 크로커다일. 비비 구출. 알루바나 백성이 \"비비 공주!\" 외침. 루피가 마지막 한 방.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "비비의 왕국"
+  },
+  {
+    "nodeId": 12,
+    "text": "비비가 \"같이 가자\" 한다 (밀짚모자 합류). 그러나 그녀는 왕족.",
+    "choices": [
+      { "label": "왕국에 남으라 권유", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "왕국에 남기. 비비가 등 손짓 — 마지막 인사. 출항.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "비비와 작별"
+  },
+  {
+    "nodeId": 14,
+    "text": "사막 도중 물 부족 — 일행 탈수. 광장 도착 전 쓰러짐.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "사막의 갈증"
+  },
+  {
+    "nodeId": 15,
+    "text": "크로커다일과 협상. \"우리 알라바스타 떠날게\" 한다. 그가 \"좋다\" 하지만 루피가 \"안 돼!\" 단독 진입.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "협상의 거절"
+  },
+  {
+    "nodeId": 16,
+    "text": "에이스 등장. 크로커다일과 일대일. 동생을 위해.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "에이스의 형"
+  },
+  {
+    "nodeId": 17,
+    "text": "물 + 폭탄 해체 + 비비 구출 + 비비 작별 — 모든 길. 알라바스타 부흥.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "알라바스타의 부흥"
+  }
+]

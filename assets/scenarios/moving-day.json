@@ -1,0 +1,130 @@
+[
+  {
+    "nodeId": 1,
+    "text": "이사 첫날. 새 자취방. 트럭 도착 30분 늦음. 박스 30개 + 가구. 엘리베이터 대기 줄. 시간은 1시간 안에 끝나야.",
+    "choices": [
+      { "label": "엘리베이터 우선 — 가구만", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "이사업체에 채근 — 추가 인력", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","실용"] },
+      { "label": "박스 직접 — 계단 4층", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "이사업체 가구 분실 — 보상", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "친구 3명이 자발적으로 와서 도움", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] },
+      { "label": "폭우 시작", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "엘리베이터 우선. 가구 배치 끝. 박스 차례.",
+    "choices": [
+      { "label": "이웃에게 양보 — 30분 더 기다림", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "다음 차례 끝까지", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["원칙","독자"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "채근. 이사업체 \"추가 인력 30분 후\" 한다. 비용 +10만원.",
+    "choices": [
+      { "label": "받음", "nextNodeId": 7, "requiredItem": null, "grantItem": "추가인력", "traits": ["실용","용기"] },
+      { "label": "거절 — 직접 한다", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["자기","독자"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "박스 4층 계단. 한 번 두 번 — 다리가 풀린다. 박스 한 개 떨어뜨림.",
+    "choices": [
+      { "label": "안에 깨진 거 확인", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["신중"] },
+      { "label": "그대로 — 끝까지", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "이웃 양보. 그가 \"감사합니다\" 인사. 그러나 너의 시간 추가.",
+    "choices": [
+      { "label": "끝까지 — 느리지만", "nextNodeId": 10, "requiredItem": null, "grantItem": "이웃호감", "traits": ["이타","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "끝까지. 이웃이 \"좀 양보해줘\" 항의. 분위기 어색.",
+    "choices": [
+      { "label": "사과 + 양보", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["회복","협력"] },
+      { "label": "끝까지 — 그래도", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["독자","자기"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "추가 인력 도착. 30분 만에 다 끝. 깔끔한 마무리.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "추가 인력의 가치"
+  },
+  {
+    "nodeId": 8,
+    "text": "확인. 안에 식기 깨짐. 5만원 손실.",
+    "choices": [
+      { "label": "다음 박스부터 조심", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["회복","신중"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "끝까지. 30개 박스 다. 그러나 허리 통증. 다음 날 결근.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "허리의 대가"
+  },
+  {
+    "nodeId": 10,
+    "text": "이웃 호감. 한 달 후 그가 너의 자취방에 떡 가져옴. 좋은 시작.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "이웃의 떡"
+  },
+  {
+    "nodeId": 11,
+    "text": "끝까지. 이웃이 항의 + 관리실에 신고. 첫날부터 이미지 ↓.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "첫날의 신고"
+  },
+  {
+    "nodeId": 12,
+    "text": "조심. 남은 박스는 다 무사. 마지막 박스가 책 — 무겁지만 안전.",
+    "choices": [
+      { "label": "끝까지 — 마무리", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "마무리. 가구 배치 + 박스 정리. 첫 밤 — 새집의 첫 잠.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "새집의 첫 밤"
+  },
+  {
+    "nodeId": 14,
+    "text": "이사업체가 가구 한 개 분실. \"미안합니다 — 보상\" 한다.",
+    "choices": [
+      { "label": "보상 받기", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "보상 50만원. 새 가구로 교체. 이사업체에 별 1점.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "분실의 보상"
+  },
+  {
+    "nodeId": 16,
+    "text": "친구 3명이 자발적으로 와서 도와줌. 1시간 안에 끝. 저녁 — 너가 치킨.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "친구의 손길"
+  },
+  {
+    "nodeId": 17,
+    "text": "비 — 폭우 시작. 박스 일부 젖음. 이사업체가 비닐 추가.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "비의 이사"
+  }
+]

@@ -1,0 +1,129 @@
+[
+  {
+    "nodeId": 1,
+    "text": "드레스로사. 7무해 도플라밍고가 왕. 시민이 장난감으로 변함. 너는 루피 동료. 콜로세움에서 대회 — 우승 상품 \"멜라멜라 열매.\"",
+    "choices": [
+      { "label": "콜로세움 출전 — 우승 노림", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "도플라밍고 직진 — 왕궁 침투", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","독자"] },
+      { "label": "장난감 시민 구출 — 지하 공장", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "도플라밍고 버드케이지에 갇힘", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "C블록 디아만테에게 패배", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "리쿠 왕가 부활 코스", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] },
+      { "label": "콜로세움+사보+시민+도플라밍고 모두", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["용기","협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "콜로세움. C블록 결승. 사보가 옆에 있다. \"형의 의지.\" 그가 멜라멜라를 가져갈 의도.",
+    "choices": [
+      { "label": "사보에게 양보", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["이타","원칙"] },
+      { "label": "정정당당 결투", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "왕궁. 도플라밍고가 \"오, 직진하는 자.\" 그의 실. 일대 다대응.",
+    "choices": [
+      { "label": "기어 4 — 정면", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "후퇴 — 동맹 모음", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "지하 공장. 시저가 SAD 만드는 곳. 시민 1000명 장난감 + 노예.",
+    "choices": [
+      { "label": "프랭키 + 시민 봉기", "nextNodeId": 9, "requiredItem": null, "grantItem": "시민봉기", "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "사보 양보. 그가 멜라멜라 능력 흡수 — 에이스의 불꽃. 둘이 동맹.",
+    "choices": [
+      { "label": "사보 + 너 — 도플라밍고", "nextNodeId": 10, "requiredItem": null, "grantItem": "사보동맹", "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "결투. 사보의 불꽃 vs 너의 무기. 격투. 그가 \"이거 우리 형 의지\" 한다. 패배.",
+    "choices": [
+      { "label": "사보 인정 — 동맹", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "기어 4. 도플라밍고의 \"신의 실.\" 둘 다 거대 충돌. 왕궁 부서짐.",
+    "choices": [
+      { "label": "끝까지 — 한 방 더", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "후퇴. 동맹 모음 — 로 + 사보 + 시민. 7대 1.",
+    "choices": [
+      { "label": "합공 — 도플라밍고 둘러쌈", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "시민 봉기. 1000명이 일제히. 도플라밍고 군 흔들림.",
+    "choices": [
+      { "label": "왕궁 진입 (시민과 함께)", "nextNodeId": 12, "requiredItem": "시민봉기", "grantItem": null, "traits": ["협력","용기"] }
+    ]
+  },
+  {
+    "nodeId": 10,
+    "text": "사보 + 너. 사보의 불꽃 + 너의 능력. 도플라밍고 \"이건 — \" 충격.",
+    "choices": [
+      { "label": "마지막 한 방", "nextNodeId": 13, "requiredItem": "사보동맹", "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "한 방 더. 도플라밍고 격파. 그러나 너도 거의 다운.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "도플라밍고 격파"
+  },
+  {
+    "nodeId": 12,
+    "text": "합공. 도플라밍고 둘러쌈. 그가 \"내가 왕이다!\" 하지만 시민의 분노가 그를 무릎.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "시민의 분노"
+  },
+  {
+    "nodeId": 13,
+    "text": "사보 + 너 마지막. 도플라밍고 격파. 사보가 \"형 — 봤지?\" 한다. 멜라멜라가 손에.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "에이스의 의지"
+  },
+  {
+    "nodeId": 14,
+    "text": "도플라밍고가 \"버드케이지\" 발동. 모든 도시 봉쇄. 너가 갇힘.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "버드케이지"
+  },
+  {
+    "nodeId": 15,
+    "text": "콜로세움 도중 디아만테에게 패배. 멜라멜라 못 얻음.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "C블록 패배"
+  },
+  {
+    "nodeId": 16,
+    "text": "리쿠 왕가 부활. 시민이 너에게 절. 그러나 너는 출항.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "리쿠 왕가의 부활"
+  },
+  {
+    "nodeId": 17,
+    "text": "콜로세움 + 사보 + 시민 + 도플라밍고 격파 — 드레스로사 자유. 전 세계가 놀람.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "드레스로사의 자유"
+  }
+]
