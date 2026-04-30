@@ -6,7 +6,12 @@
       { "label": "솔직히 잘못 인정", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
       { "label": "변호인의 변론 따른다", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
       { "label": "재판관과 직접 대화", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
-      { "label": "변호인 거절 — 혼자 7재판 솔직", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["원칙","독자","용기"] }
+      { "label": "변호인 거절 — 혼자 7재판 솔직", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["원칙","독자","용기"] },
+      { "label": "각 지옥 별도 대응", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "이승 친지 영접", "nextNodeId": 21, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "재판관 매수 시도", "nextNodeId": 27, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "다음 생 결정 — 환생 종류", "nextNodeId": 33, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "변호인의 비밀 — 그가 사실은 너의 형", "nextNodeId": 39, "requiredItem": null, "grantItem": null, "traits": ["분석","이타"] }
     ]
   },
   {
@@ -103,5 +108,196 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "혼자 걸어온 길"
+  },
+  {
+    "nodeId": 15,
+    "text": "7개 지옥 별도. 어느 지옥에 집중?",
+    "choices": [
+      { "label": "살인 — 군 후임의 자리에서", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "나태 — 못한 효도", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] },
+      { "label": "거짓 — 평생의 거짓말", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "불의 — 지나친 부정", "nextNodeId": 19, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "천륜 — 부모님 외면", "nextNodeId": 20, "requiredItem": null, "grantItem": null, "traits": ["이타","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "살인 지옥. 후임이 \"형님 — 나는 이미 이해했어요.\" 통과 + 정화.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "후임의 용서"
+  },
+  {
+    "nodeId": 17,
+    "text": "나태 지옥. 어머니가 \"네가 와서 좋다.\" 통과 + 다음 생 효도 약속.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "어머니의 환영"
+  },
+  {
+    "nodeId": 18,
+    "text": "거짓 지옥. 평생의 거짓말이 영상으로. 직시 후 통과.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "거짓의 직시"
+  },
+  {
+    "nodeId": 19,
+    "text": "불의 지옥. 회사에서 본 부정 — 너가 침묵한 것. 이번엔 증언. 통과.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "뒤늦은 증언"
+  },
+  {
+    "nodeId": 20,
+    "text": "천륜 지옥. 부모님 자리. 그들이 너를 안음. \"우리 아들.\" 통과.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "부모님의 포옹"
+  },
+  {
+    "nodeId": 21,
+    "text": "이승 친지. 누구를 영접?",
+    "choices": [
+      { "label": "어머니 — 효도 못 한 미안함", "nextNodeId": 22, "requiredItem": null, "grantItem": null, "traits": ["이타"] },
+      { "label": "친구 — 마지막 인사 못 한", "nextNodeId": 23, "requiredItem": null, "grantItem": null, "traits": ["협력"] },
+      { "label": "전 연인 — 미안하다", "nextNodeId": 24, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "후임 — 그의 아들에게 메시지", "nextNodeId": 25, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "전부 — 모두에게 한 마디씩", "nextNodeId": 26, "requiredItem": null, "grantItem": null, "traits": ["이타","협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 22,
+    "text": "어머니. \"엄마, 내가 부족했어.\" 그녀가 \"아니다, 너는 충분했다.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "어머니의 대답"
+  },
+  {
+    "nodeId": 23,
+    "text": "친구. \"미안해 — 못 갔어.\" 그가 \"이해해.\" 마지막 미소.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "친구의 이해"
+  },
+  {
+    "nodeId": 24,
+    "text": "전 연인. \"잘 지내?\" 그녀가 \"잘 지내. 너도.\" 깔끔한 끝.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "깔끔한 끝"
+  },
+  {
+    "nodeId": 25,
+    "text": "후임의 아들. \"네 아빠는 진짜 좋은 사람이었다.\" 그가 운다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "아들에게의 메시지"
+  },
+  {
+    "nodeId": 26,
+    "text": "전부. 5명에게 각자 한 마디. 모두가 평안. 환생 직전 가벼운 발걸음.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "모두에게 한 마디"
+  },
+  {
+    "nodeId": 27,
+    "text": "재판관 매수. 어떻게?",
+    "choices": [
+      { "label": "이승의 보물 약속", "nextNodeId": 28, "requiredItem": null, "grantItem": null, "traits": ["자기"] },
+      { "label": "다른 영혼의 정보 제공", "nextNodeId": 29, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "변호인을 통한 우회", "nextNodeId": 30, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "재판관의 자녀 — 인질", "nextNodeId": 31, "requiredItem": null, "grantItem": null, "traits": ["자기","독자"] },
+      { "label": "솔직 사과 — 매수 시도 자체 인정", "nextNodeId": 32, "requiredItem": null, "grantItem": null, "traits": ["원칙","회복"] }
+    ]
+  },
+  {
+    "nodeId": 28,
+    "text": "보물. 재판관 \"여기는 보물 없어.\" 거절 + 죄 가중. 49일 끝.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "매수의 무지"
+  },
+  {
+    "nodeId": 29,
+    "text": "정보. 재판관 \"배신은 더 큰 죄.\" 즉시 추방.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "배신의 추방"
+  },
+  {
+    "nodeId": 30,
+    "text": "우회. 변호인이 \"이건 안 됩니다\" 거부. 변호인까지 함께 처벌.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "변호인의 거부"
+  },
+  {
+    "nodeId": 31,
+    "text": "재판관 자녀 인질. 사후 세계의 인질은 의미 없음. 재판관 분노.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "분노의 추방"
+  },
+  {
+    "nodeId": 32,
+    "text": "솔직. \"매수 시도 죄송합니다.\" 재판관 \"그래도 솔직했어 — 통과.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "회복의 솔직"
+  },
+  {
+    "nodeId": 33,
+    "text": "환생 종류 결정.",
+    "choices": [
+      { "label": "사람 — 부유한 가정", "nextNodeId": 34, "requiredItem": null, "grantItem": null, "traits": ["자기"] },
+      { "label": "사람 — 평범한 가정", "nextNodeId": 35, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "동물 — 자유로운 새", "nextNodeId": 36, "requiredItem": null, "grantItem": null, "traits": ["독자"] },
+      { "label": "다음 생 거부 — 영원한 영혼", "nextNodeId": 37, "requiredItem": null, "grantItem": null, "traits": ["회피","독자"] },
+      { "label": "사람 — 가난한 곳, 도움이 필요한 곳", "nextNodeId": 38, "requiredItem": null, "grantItem": null, "traits": ["이타","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 34,
+    "text": "부유한 가정. 모든 것이 쉬움. 그러나 의미 ✗.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "쉬운 삶"
+  },
+  {
+    "nodeId": 35,
+    "text": "평범한 가정. 보통의 행복. 좋은 환생.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "평범의 행복"
+  },
+  {
+    "nodeId": 36,
+    "text": "새. 자유로움. 그러나 짧은 생.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "자유의 짧음"
+  },
+  {
+    "nodeId": 37,
+    "text": "거부. 영원의 영혼. 외로움이 영원.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "영원의 외로움"
+  },
+  {
+    "nodeId": 38,
+    "text": "도움이 필요한 곳. 어렵지만 의미 ✓. 다음 생도 좋은 사람.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "의미의 환생"
+  },
+  {
+    "nodeId": 39,
+    "text": "변호인이 헬멧을 벗는다. 너의 형. 그가 \"내가 너 지키려고 변호인이 됐어.\" 둘이 안음.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "형제의 변호"
   }
 ]

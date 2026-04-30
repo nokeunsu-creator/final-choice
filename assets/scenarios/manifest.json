@@ -866,8 +866,8 @@
       "icon": "🎁",
       "accent": "#fb7185",
       "category": "패러디",
-      "nodeCount": 18,
-      "endingCount": 8
+      "nodeCount": 39,
+      "endingCount": 25
     },
     {
       "id": "onepiece-wano-prep",
@@ -888,8 +888,8 @@
       "icon": "📚",
       "accent": "#a78bfa",
       "category": "패러디",
-      "nodeCount": 18,
-      "endingCount": 8
+      "nodeCount": 39,
+      "endingCount": 25
     },
     {
       "id": "office-meeting",
@@ -1262,8 +1262,8 @@
       "icon": "🦸",
       "accent": "#dc2626",
       "category": "패러디",
-      "nodeCount": 14,
-      "endingCount": 5
+      "nodeCount": 38,
+      "endingCount": 25
     },
     {
       "id": "harry-potter",
@@ -1273,8 +1273,8 @@
       "icon": "⚡",
       "accent": "#7c3aed",
       "category": "패러디",
-      "nodeCount": 14,
-      "endingCount": 5
+      "nodeCount": 38,
+      "endingCount": 25
     },
     {
       "id": "slamdunk",
@@ -1284,8 +1284,8 @@
       "icon": "🏀",
       "accent": "#dc2626",
       "category": "패러디",
-      "nodeCount": 14,
-      "endingCount": 5
+      "nodeCount": 38,
+      "endingCount": 25
     },
     {
       "id": "with-god",
@@ -1295,8 +1295,8 @@
       "icon": "⚖️",
       "accent": "#a78bfa",
       "category": "패러디",
-      "nodeCount": 14,
-      "endingCount": 4
+      "nodeCount": 39,
+      "endingCount": 25
     }
   ]
 }

@@ -5,7 +5,11 @@
     "choices": [
       { "label": "타노스에 정면 돌격", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["정면","용기"] },
       { "label": "건틀릿만 노린다", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
-      { "label": "팀 분산 — 양동작전", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력","분석"] }
+      { "label": "팀 분산 — 양동작전", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력","분석"] },
+      { "label": "각 스톤 분석 작전", "nextNodeId": 19, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "팀 내 분열 시작", "nextNodeId": 25, "requiredItem": null, "grantItem": null, "traits": ["독자"] },
+      { "label": "타노스와 협상 시도", "nextNodeId": 31, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] },
+      { "label": "시간 작전 변형", "nextNodeId": 37, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] }
     ]
   },
   {
@@ -102,5 +106,189 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "어벤져스 어셈블"
+  },
+  {
+    "nodeId": 19,
+    "text": "각 스톤 별도 분석. 6개 스톤이 부착된 건틀릿. 어떤 걸 먼저 빼낼까?",
+    "choices": [
+      { "label": "리얼리티 스톤 — 환상 무력화", "nextNodeId": 20, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "마인드 스톤 — 정신 공격", "nextNodeId": 21, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "소울 스톤 — 영혼 거래", "nextNodeId": 22, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] },
+      { "label": "파워 스톤 — 폭발", "nextNodeId": 23, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "타임 스톤 — 시간 역행", "nextNodeId": 24, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 20,
+    "text": "리얼리티 스톤. 환상 무력화 후 타노스의 진짜 모습 드러남. 그러나 그가 더 강했다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "리얼리티의 진실"
+  },
+  {
+    "nodeId": 21,
+    "text": "마인드 스톤. 완다가 직접 손대 본인이 깨진다. 그 순간 타노스 핑거스냅.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "마인드의 균열"
+  },
+  {
+    "nodeId": 22,
+    "text": "소울 스톤. 영혼 거래 — 누군가 희생해야 한다. 너가 자청. 우주는 살지만 너는 사라진다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "영혼의 거래"
+  },
+  {
+    "nodeId": 23,
+    "text": "파워 스톤. 강제 분리 시도. 폭발. 타노스 + 어벤져스 절반이 사라진다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "파워의 폭발"
+  },
+  {
+    "nodeId": 24,
+    "text": "타임 스톤. 닥터 스트레인지가 시간을 한 시간 되돌림. 모두 다시 — 이번엔 정확.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "한 시간의 되돌림"
+  },
+  {
+    "nodeId": 25,
+    "text": "팀 분열. 누가 리더가 될 것인가? 캡틴 vs 아이언맨.",
+    "choices": [
+      { "label": "캡틴의 리더십 따른다", "nextNodeId": 26, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "아이언맨의 기술 따른다", "nextNodeId": 27, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "토르 — 신의 권한", "nextNodeId": 28, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "둘이 화해 시키기", "nextNodeId": 29, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
+      { "label": "독자행동 — 너 혼자", "nextNodeId": 30, "requiredItem": null, "grantItem": null, "traits": ["독자","자기"] }
+    ]
+  },
+  {
+    "nodeId": 26,
+    "text": "캡틴 따름. 그가 \"마지막 보루는 팀워크.\" 단합. 그러나 너무 늦었다 — 핑거스냅 통과.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "단합의 늦음"
+  },
+  {
+    "nodeId": 27,
+    "text": "아이언맨 기술. 나노수트로 건틀릿 분리 시도. 50% 성공 — 3개 스톤만 회수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "절반의 회수"
+  },
+  {
+    "nodeId": 28,
+    "text": "토르 신의 권한. 스톰브레이커가 타노스 가슴 — 그러나 머리가 아니라 살아남음. \"머리를 노렸어야.\"",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "머리의 후회"
+  },
+  {
+    "nodeId": 29,
+    "text": "캡틴 + 아이언맨 화해. 둘이 합공. 묠니르 + 슈트 — 타노스 다운.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "두 리더의 합"
+  },
+  {
+    "nodeId": 30,
+    "text": "독자행동. 너 혼자 타노스 정면. 무모. 한 방.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "혼자의 한 방"
+  },
+  {
+    "nodeId": 31,
+    "text": "타노스 협상. \"우주 절반 vs 우리 모두 — 협상 가능?\" 그가 잠시 듣는다.",
+    "choices": [
+      { "label": "비전의 마인드 스톤 양보", "nextNodeId": 32, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "와칸다 자원 양도", "nextNodeId": 33, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] },
+      { "label": "타노스 자녀 양보 (가모라/네뷸라)", "nextNodeId": 34, "requiredItem": null, "grantItem": null, "traits": ["자기","독자"] },
+      { "label": "그가 협상 거부", "nextNodeId": 35, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "협상 척하면서 시간끌기", "nextNodeId": 36, "requiredItem": null, "grantItem": null, "traits": ["분석","직관"] }
+    ]
+  },
+  {
+    "nodeId": 32,
+    "text": "마인드 스톤 양보. 그가 받아 핑거스냅. 협상은 무의미했다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "양보의 무의미"
+  },
+  {
+    "nodeId": 33,
+    "text": "와칸다 자원. 그가 \"필요 없다\" 거절. 양도해도 핑거스냅 진행.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "양도의 거절"
+  },
+  {
+    "nodeId": 34,
+    "text": "자녀 양보. 가모라가 \"아빠\" 부른다. 타노스 잠시 망설임. 그 틈에 캡틴 한 방.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "가모라의 망설임"
+  },
+  {
+    "nodeId": 35,
+    "text": "거부. 그가 \"운명은 협상이 아니다.\" 핑거스냅.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "운명의 거부"
+  },
+  {
+    "nodeId": 36,
+    "text": "시간끌기. 그 사이 닥터가 14000605 미래 중 하나의 작전 발동. 30초 더 — 그것이 차이.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "30초의 차이"
+  },
+  {
+    "nodeId": 37,
+    "text": "시간 작전 변형. 5년 후 어벤져스 어셈블 대신 — 다른 시간선.",
+    "choices": [
+      { "label": "1년 후 짧은 작전", "nextNodeId": 38, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "10년 후 충분한 준비", "nextNodeId": 39, "requiredItem": null, "grantItem": null, "traits": ["신중","분석"] },
+      { "label": "과거로 — 타노스 어릴 때", "nextNodeId": 40, "requiredItem": null, "grantItem": null, "traits": ["분석","독자"] },
+      { "label": "타이머 무시 — 즉시", "nextNodeId": 41, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "다른 우주에 도움 요청", "nextNodeId": 42, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] }
+    ]
+  },
+  {
+    "nodeId": 38,
+    "text": "1년 후. 어벤져스가 회복 중 — 그러나 미완성. 작전 부분 성공. 절반 회복.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "1년의 절반"
+  },
+  {
+    "nodeId": 39,
+    "text": "10년 후. 충분한 준비. 모든 스톤 회수 + 새 건틀릿. 우주 회복 + 타노스 영원 봉인.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "10년의 완성"
+  },
+  {
+    "nodeId": 40,
+    "text": "타노스 어릴 때. 그러나 어린 그를 죽이면 시간 역설. 닥터 \"이건 안 돼\" 작전 중지.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "역설의 거부"
+  },
+  {
+    "nodeId": 41,
+    "text": "타이머 무시. 즉시 시간 여행. 닥터가 \"절제 없는 시간 — 우주가 갈라진다.\" 멀티버스 폭발.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "멀티버스 폭발"
+  },
+  {
+    "nodeId": 42,
+    "text": "다른 우주. 가디언즈 + 닥터 스트레인지가 다른 차원에서 도움. 합공.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "다중우주의 합"
   }
 ]

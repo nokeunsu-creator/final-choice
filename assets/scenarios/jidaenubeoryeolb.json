@@ -7,7 +7,11 @@
       { "label": "철학적 관점 — 의미는 우리가 만든다", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","독자"] },
       { "label": "솔직 — \"잘 모르겠다\"", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
       { "label": "위키만 보고 와서 들킴", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
-      { "label": "역사 + 철학 + 예술 + 종교 모두 동원", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["분석","협력","원칙"] }
+      { "label": "역사 + 철학 + 예술 + 종교 모두 동원", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["분석","협력","원칙"] },
+      { "label": "다른 주제 제안 — 사랑/자유/죽음", "nextNodeId": 19, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "전공자 vs 비전공자 토론 모드", "nextNodeId": 24, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] },
+      { "label": "친구의 위트 모드 — 농담 섞기", "nextNodeId": 29, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "감정 모드 — 본인의 경험 공유", "nextNodeId": 34, "requiredItem": null, "grantItem": null, "traits": ["이타","원칙"] }
     ]
   },
   {
@@ -133,5 +137,165 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "지대넓얕 게스트"
+  },
+  {
+    "nodeId": 19,
+    "text": "다른 주제. 어떤 것?",
+    "choices": [
+      { "label": "사랑 — 다양한 정의", "nextNodeId": 20, "requiredItem": null, "grantItem": null, "traits": ["이타"] },
+      { "label": "자유 — 정치 철학", "nextNodeId": 21, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "죽음 — 실존 vs 종교", "nextNodeId": 22, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "행복 — 동서양 차이", "nextNodeId": 23, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] }
+    ]
+  },
+  {
+    "nodeId": 20,
+    "text": "사랑. 4명이 각자의 사랑론. 채사장이 \"이게 진짜 깊다.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "사랑의 정의"
+  },
+  {
+    "nodeId": 21,
+    "text": "자유. 칸트 vs 밀 vs 한국적 자유. 깊은 토론.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "자유의 정치"
+  },
+  {
+    "nodeId": 22,
+    "text": "죽음. 너의 친구 아버지 장례 경험까지 공유. 모두 침묵 후 끄덕.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "죽음의 침묵"
+  },
+  {
+    "nodeId": 23,
+    "text": "행복. 동양의 \"무\" vs 서양의 \"성취\". 결론 — 둘 다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "행복의 양 측면"
+  },
+  {
+    "nodeId": 24,
+    "text": "전공자 vs 비전공자. 너는 어느 쪽?",
+    "choices": [
+      { "label": "전공자 — 학자 모드", "nextNodeId": 25, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "비전공자 — 직관 모드", "nextNodeId": 26, "requiredItem": null, "grantItem": null, "traits": ["직관"] },
+      { "label": "둘 다 — 균형", "nextNodeId": 27, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] },
+      { "label": "포기 — 너무 어려움", "nextNodeId": 28, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 25,
+    "text": "전공자. 깊은 인용 + 분석. 그러나 친구들이 \"형 너무 무거워\".",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "학자의 무거움"
+  },
+  {
+    "nodeId": 26,
+    "text": "직관. \"느낌으로 — 사랑은 자유야.\" 친구 \"이게 진짜 답이네.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "직관의 답"
+  },
+  {
+    "nodeId": 27,
+    "text": "균형. 학문 + 직관. 채사장 \"이 친구 진짜 균형 잡혔어.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "균형의 미덕"
+  },
+  {
+    "nodeId": 28,
+    "text": "포기. 친구들이 \"형 좀 더 살자.\" 분위기 어색.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "포기의 어색"
+  },
+  {
+    "nodeId": 29,
+    "text": "위트. 어떤 농담?",
+    "choices": [
+      { "label": "철학자 농담 — 칸트와 빵", "nextNodeId": 30, "requiredItem": null, "grantItem": null, "traits": ["직관"] },
+      { "label": "역사 농담 — 광종이 카톡한다면", "nextNodeId": 31, "requiredItem": null, "grantItem": null, "traits": ["직관","협력"] },
+      { "label": "현대 비유 — 밈으로 풀기", "nextNodeId": 32, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "본인 자학 — \"제가 그 칸트의 제자\"", "nextNodeId": 33, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] }
+    ]
+  },
+  {
+    "nodeId": 30,
+    "text": "칸트와 빵. 친구들 폭소. \"형 진짜 천재.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "철학 농담"
+  },
+  {
+    "nodeId": 31,
+    "text": "광종 카톡. \"노비 해방 ㄴ\" 비유. 폭소.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "역사의 카톡"
+  },
+  {
+    "nodeId": 32,
+    "text": "밈. 현대 밈으로 칸트 설명. \"이거 시청자 적합.\" 채사장이 \"오 — 좋네.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "밈의 풀이"
+  },
+  {
+    "nodeId": 33,
+    "text": "자학. \"제가 그 칸트의 제자이지만 — 제 빵은 안 사주셨어요.\" 분위기 미묘.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "자학의 미묘"
+  },
+  {
+    "nodeId": 34,
+    "text": "감정. 어떤 경험?",
+    "choices": [
+      { "label": "어린 시절 — 가난과 의미", "nextNodeId": 35, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "최근 — 직장 스트레스", "nextNodeId": 36, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "사랑 — 헤어진 연인", "nextNodeId": 37, "requiredItem": null, "grantItem": null, "traits": ["이타"] },
+      { "label": "상실 — 친구의 죽음", "nextNodeId": 38, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] },
+      { "label": "꿈 — 유년의 꿈을 잃은 것", "nextNodeId": 39, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+    ]
+  },
+  {
+    "nodeId": 35,
+    "text": "어린 시절. 가난 속에서 책 읽기. 친구들이 \"형 진짜 — 그게 시작.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "어린 시절의 책"
+  },
+  {
+    "nodeId": 36,
+    "text": "직장 스트레스. \"왜 사는지 모르겠어.\" 친구들 \"우리도.\" 4명이 한숨.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "공통의 한숨"
+  },
+  {
+    "nodeId": 37,
+    "text": "헤어진 연인. \"그녀가 떠난 후 — 의미 찾기.\" 채사장 \"이게 진짜.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "헤어짐의 의미"
+  },
+  {
+    "nodeId": 38,
+    "text": "친구의 죽음. 모두가 침묵. 그 침묵 속에서 진짜 답.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "침묵의 답"
+  },
+  {
+    "nodeId": 39,
+    "text": "꿈. \"어린 시절 화가 되고 싶었어.\" 친구들이 \"늦지 않았어.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "다시 꿈"
   }
 ]

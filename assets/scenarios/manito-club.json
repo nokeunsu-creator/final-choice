@@ -8,7 +8,11 @@
       { "label": "미션 3 — 그의 우산 챙김 (비 예보)", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["신중","이타"] },
       { "label": "PD에게 발각 — 미션 실패 선언", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
       { "label": "전원 마니또 — 서프라이즈 협업", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] },
-      { "label": "마지막 회 — 서로의 마니또", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타","협력"] }
+      { "label": "마지막 회 — 서로의 마니또", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타","협력"] },
+      { "label": "더 큰 미션 — 일주일 동안", "nextNodeId": 19, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "비밀 메모로만", "nextNodeId": 24, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "공개 — \"내가 마니또다\"", "nextNodeId": 29, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
+      { "label": "마니또를 마니또에게 떠넘김", "nextNodeId": 34, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
     ]
   },
   {
@@ -134,5 +138,165 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "서로의 마니또"
+  },
+  {
+    "nodeId": 19,
+    "text": "일주일 미션. 매일 다른 챙김.",
+    "choices": [
+      { "label": "월요일 — 아침 식사만", "nextNodeId": 20, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "수요일 — 점심 + 메모", "nextNodeId": 21, "requiredItem": null, "grantItem": null, "traits": ["이타"] },
+      { "label": "금요일 — 퇴근 길 우산", "nextNodeId": 22, "requiredItem": null, "grantItem": null, "traits": ["신중"] },
+      { "label": "주말 — 그의 가족도", "nextNodeId": 23, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 20,
+    "text": "월요일. 아침 식사. 그가 \"이거 누가\" — 잘 안다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "월요일의 단서"
+  },
+  {
+    "nodeId": 21,
+    "text": "수요일 + 메모. 그가 메모 모음. \"이 사람 — 정성스럽다.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "메모의 정성"
+  },
+  {
+    "nodeId": 22,
+    "text": "금요일 우산. 비가 와도 그는 안전. 너에게 감사 메일.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "금요일의 보답"
+  },
+  {
+    "nodeId": 23,
+    "text": "주말 가족. 그의 어머니까지 챙김. 그가 \"누군지 — 마음이 따뜻해.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "가족의 마음"
+  },
+  {
+    "nodeId": 24,
+    "text": "비밀 메모. 어떤 메시지?",
+    "choices": [
+      { "label": "응원 — \"오늘 화이팅\"", "nextNodeId": 25, "requiredItem": null, "grantItem": null, "traits": ["이타"] },
+      { "label": "농담 — \"형 너무 잘생겼어요\"", "nextNodeId": 26, "requiredItem": null, "grantItem": null, "traits": ["직관"] },
+      { "label": "진심 — \"형이 있어 다행\"", "nextNodeId": 27, "requiredItem": null, "grantItem": null, "traits": ["이타","원칙"] },
+      { "label": "수수께끼 — 누군지 추리해보세요", "nextNodeId": 28, "requiredItem": null, "grantItem": null, "traits": ["분석","직관"] }
+    ]
+  },
+  {
+    "nodeId": 25,
+    "text": "응원. 그가 매일 그 메모로 힘. 한 달 후 그가 \"제가 살린 것\" 인사.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "응원의 효과"
+  },
+  {
+    "nodeId": 26,
+    "text": "농담. 그가 폭소. 다른 멤버들도 \"누가 이런 농담?\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "농담의 폭소"
+  },
+  {
+    "nodeId": 27,
+    "text": "진심. 그가 운다. \"평생 처음 이런 말 들었어.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "진심의 눈물"
+  },
+  {
+    "nodeId": 28,
+    "text": "수수께끼. 그가 추리하다 너 직접 묻는다. 게임 시작.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "수수께끼 게임"
+  },
+  {
+    "nodeId": 29,
+    "text": "공개. \"내가 마니또다.\" 어떤 반응?",
+    "choices": [
+      { "label": "그가 안음 — 진심 감사", "nextNodeId": 30, "requiredItem": null, "grantItem": null, "traits": ["협력"] },
+      { "label": "그가 \"이미 알고 있었어\"", "nextNodeId": 31, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "그가 무뚝뚝 — 반응 없음", "nextNodeId": 32, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "그가 \"근데 룰 위반\" 호통", "nextNodeId": 33, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 30,
+    "text": "안음. \"고맙다.\" 둘 사이 진짜 우정.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "공개의 우정"
+  },
+  {
+    "nodeId": 31,
+    "text": "이미 알았다. \"근데 너의 정성이 그래도 — 고마워.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "알고도 고마움"
+  },
+  {
+    "nodeId": 32,
+    "text": "무뚝뚝. 어색. 시청률만 ↑.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "어색한 공개"
+  },
+  {
+    "nodeId": 33,
+    "text": "호통. \"왜 공개? 룰 위반!\" PD가 \"맞아 — 미션 실패.\"",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "공개의 호통"
+  },
+  {
+    "nodeId": 34,
+    "text": "마니또를 마니또에게. 누구에게 떠넘김?",
+    "choices": [
+      { "label": "박명수 — 호통 받음", "nextNodeId": 35, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "정형돈 — 부탁 받아줌", "nextNodeId": 36, "requiredItem": null, "grantItem": null, "traits": ["회피","협력"] },
+      { "label": "유재석 — 그가 \"대신 — 비결을 알려줘\"", "nextNodeId": 37, "requiredItem": null, "grantItem": null, "traits": ["협력"] },
+      { "label": "PD — 그가 \"이건 본인이\" 거절", "nextNodeId": 38, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "본인 다시 — 후회", "nextNodeId": 39, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 35,
+    "text": "박명수 호통. \"왜 나야!\" 미션 실패.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "박명수의 호통"
+  },
+  {
+    "nodeId": 36,
+    "text": "정형돈. 그가 받아줌. 의외로 잘함. 마니또 미션 통과 — 그러나 너의 점수는 0.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "떠넘김의 0점"
+  },
+  {
+    "nodeId": 37,
+    "text": "유재석. 비결 공유 후 둘이 협력. 두 마니또의 컬래버.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "두 마니또의 컬래버"
+  },
+  {
+    "nodeId": 38,
+    "text": "PD 거절. \"이건 본인 미션이야.\" 너 다시 시작.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "PD의 거절"
+  },
+  {
+    "nodeId": 39,
+    "text": "본인 다시. 회복 후 마지막 주에 진심으로 챙김. 그가 \"늦었지만 — 진심.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "회복의 마지막 주"
   }
 ]

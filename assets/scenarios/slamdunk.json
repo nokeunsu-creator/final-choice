@@ -5,7 +5,11 @@
     "choices": [
       { "label": "정대만에게 패스 — 3점", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
       { "label": "직접 골밑까지 돌파", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
-      { "label": "서태웅과 1대1 합공", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] }
+      { "label": "서태웅과 1대1 합공", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] },
+      { "label": "다른 멤버 — 채치수의 덩크", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "산왕 정우성과 직접 매치업", "nextNodeId": 21, "requiredItem": null, "grantItem": null, "traits": ["정면","용기"] },
+      { "label": "안 감독 작전 변형", "nextNodeId": 27, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "리바운드 + 인간승리 코스", "nextNodeId": 33, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
     ]
   },
   {
@@ -102,5 +106,189 @@
     "choices": [],
     "endingType": "bad",
     "endingTitle": "그 한 슛"
+  },
+  {
+    "nodeId": 15,
+    "text": "채치수. 거대 센터. 그가 \"내가 한다.\" 어떤 기술?",
+    "choices": [
+      { "label": "강력 덩크 — 골밑 돌파", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "골밑 슛 — 신현철과 충돌", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["정면"] },
+      { "label": "리바운드 우선", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "패스 — 강백호 살림", "nextNodeId": 19, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] },
+      { "label": "혼자 처리 시도", "nextNodeId": 20, "requiredItem": null, "grantItem": null, "traits": ["독자"] }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "채치수 강력 덩크. 매트가 흔들린다. 81:80. 관중 환호.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "센터의 덩크"
+  },
+  {
+    "nodeId": 17,
+    "text": "신현철과 충돌. 둘 다 다운. 골은 안 들어가. 79:80.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "거인의 충돌"
+  },
+  {
+    "nodeId": 18,
+    "text": "리바운드 우선. 채치수가 첫 리바운드 잡고 강백호에게. 강백호의 슛.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "리바운드의 가치"
+  },
+  {
+    "nodeId": 19,
+    "text": "패스. 강백호 \"채선배 — \" 그가 받아 슛. 81:80.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "채치수의 양보"
+  },
+  {
+    "nodeId": 20,
+    "text": "혼자. 신현철에게 막힘. 시간 종료. 패배.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "혼자의 한계"
+  },
+  {
+    "nodeId": 21,
+    "text": "정우성. 산왕의 에이스. 그와 직접.",
+    "choices": [
+      { "label": "스피드로 — 그를 압도", "nextNodeId": 22, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "기술 — 페이크 후 슛", "nextNodeId": 23, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "체격 차 — 몸으로 밀어", "nextNodeId": 24, "requiredItem": null, "grantItem": null, "traits": ["정면"] },
+      { "label": "정신력 — 끝까지", "nextNodeId": 25, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "심리전 — 도발", "nextNodeId": 26, "requiredItem": null, "grantItem": null, "traits": ["직관"] }
+    ]
+  },
+  {
+    "nodeId": 22,
+    "text": "스피드. 정우성보다 빠르게 — 그가 못 따라옴. 골밑 슛 성공.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "스피드의 승리"
+  },
+  {
+    "nodeId": 23,
+    "text": "페이크. 정우성이 따라오다 미끄러짐. 슛 성공.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "페이크의 정확"
+  },
+  {
+    "nodeId": 24,
+    "text": "체격. 정우성을 밀어 골밑. 그러나 파울. 자유투 2개.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "파울의 자유투"
+  },
+  {
+    "nodeId": 25,
+    "text": "정신력. 끝까지 마크. 정우성이 \"이 친구 — \" 인정. 슛 빗나감.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정신력의 인정"
+  },
+  {
+    "nodeId": 26,
+    "text": "도발. \"형 슛 들어갈 거 같아?\" 그가 흔들림 — 빗나감.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "도발의 흔들림"
+  },
+  {
+    "nodeId": 27,
+    "text": "안 감독 작전 변형. 어떤 작전?",
+    "choices": [
+      { "label": "올코트 프레스", "nextNodeId": 28, "requiredItem": null, "grantItem": null, "traits": ["협력"] },
+      { "label": "지역방어", "nextNodeId": 29, "requiredItem": null, "grantItem": null, "traits": ["신중"] },
+      { "label": "맨투맨 강화", "nextNodeId": 30, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "타임아웃 + 전술 회의", "nextNodeId": 31, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "선수 교체 — 송태섭 빼고 김수겸", "nextNodeId": 32, "requiredItem": null, "grantItem": null, "traits": ["분석","독자"] }
+    ]
+  },
+  {
+    "nodeId": 28,
+    "text": "올코트 프레스. 산왕이 당황. 5초 차로 공 빼앗기 — 강백호 덩크.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "올코트의 압박"
+  },
+  {
+    "nodeId": 29,
+    "text": "지역방어. 안전. 그러나 정우성의 3점 — 79:83.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "지역의 약점"
+  },
+  {
+    "nodeId": 30,
+    "text": "맨투맨 강화. 산왕 모든 선수가 답답. 마지막 슛 빗나감 — 우리 승리.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "맨투맨의 승리"
+  },
+  {
+    "nodeId": 31,
+    "text": "타임아웃. 안 감독: \"강백호 너에게.\" 강백호 결정타.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "타임아웃의 결정"
+  },
+  {
+    "nodeId": 32,
+    "text": "선수 교체. 김수겸의 마지막 슛 — 신예의 한 방. 81:80.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "신예의 한 방"
+  },
+  {
+    "nodeId": 33,
+    "text": "리바운드 + 인간승리. 누가 리바운드 잡나?",
+    "choices": [
+      { "label": "강백호 — \"리바운드 왕은 나야\"", "nextNodeId": 34, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "채치수 — 거인의 손", "nextNodeId": 35, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "서태웅 — 점프", "nextNodeId": 36, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "팀 합공 — 5명이 동시", "nextNodeId": 37, "requiredItem": null, "grantItem": null, "traits": ["협력"] },
+      { "label": "정대만 — 3점 후 다시", "nextNodeId": 38, "requiredItem": null, "grantItem": null, "traits": ["분석"] }
+    ]
+  },
+  {
+    "nodeId": 34,
+    "text": "강백호 리바운드. \"풋내기 슛이지만 — 들어간다.\" 그의 마지막. 81:80.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "풋내기의 슛"
+  },
+  {
+    "nodeId": 35,
+    "text": "채치수. 거인의 손. 산왕 센터를 압도. 강백호에게 패스 후 덩크.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "거인의 손"
+  },
+  {
+    "nodeId": 36,
+    "text": "서태웅. 가장 높은 점프. 리바운드 → 본인 슛 → 결승.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "서태웅의 결승"
+  },
+  {
+    "nodeId": 37,
+    "text": "5명 합공. 산왕이 압도당함. 팀의 승리.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "팀의 승리"
+  },
+  {
+    "nodeId": 38,
+    "text": "정대만. 3점 빗나감 → 본인 리바운드 → 다시 3점. 신화의 슛.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정대만의 신화"
   }
 ]

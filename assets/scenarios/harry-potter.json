@@ -6,7 +6,11 @@
       { "label": "엘더 완드를 찾는다", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["분석","용기"] },
       { "label": "호크룩스부터", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["원칙","분석"] },
       { "label": "벨라트릭스를 막는다", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["정면","용기"] },
-      { "label": "도망 — 친구들을 두고", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+      { "label": "도망 — 친구들을 두고", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "호크룩스 7개 처리 결정", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "덤블도어 군대 소환", "nextNodeId": 21, "requiredItem": null, "grantItem": null, "traits": ["협력"] },
+      { "label": "결투 다른 변형", "nextNodeId": 27, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "시간 역행 — 시간돌리개", "nextNodeId": 33, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] }
     ]
   },
   {
@@ -103,5 +107,189 @@
     "choices": [],
     "endingType": "bad",
     "endingTitle": "자비를 모르는 자"
+  },
+  {
+    "nodeId": 15,
+    "text": "호크룩스 7개 — 일기, 반지, 로켓, 잔, 왕관, 뱀, 그리고 너. 어느 것부터?",
+    "choices": [
+      { "label": "일기 — 톰 리들의 자아", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "반지 — 부활의 돌", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "로켓 — 살라자르 슬리데린", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "잔 — 헬가 후플푸프", "nextNodeId": 19, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "왕관 — 로위나 래번클로", "nextNodeId": 20, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "일기. 바실리스크 송곳니로 처리. 첫 호크룩스. 그 분이 약해진다.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "일기의 끝"
+  },
+  {
+    "nodeId": 17,
+    "text": "반지. 덤블도어가 봉인했지만 그가 사용 — 손이 검게 변함. 그러나 자녀에게 부모의 모습이.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "부활의 대가"
+  },
+  {
+    "nodeId": 18,
+    "text": "로켓. 도비가 가져옴. 그러나 그를 호위하던 죽음의 사자가 도비를 죽인다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "도비의 희생"
+  },
+  {
+    "nodeId": 19,
+    "text": "잔. 헤르미온느가 바실리스크 송곳니로. 호그와트의 끝.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "헤르미온느의 결정"
+  },
+  {
+    "nodeId": 20,
+    "text": "왕관. 악마의 불꽃 — 모든 것을 태우는 마법. 호크룩스 + 너의 일부도.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "악마의 불꽃"
+  },
+  {
+    "nodeId": 21,
+    "text": "덤블도어 군대. 네빌, 루나, 지니. 그들이 \"끝까지\" 약속.",
+    "choices": [
+      { "label": "네빌 — 그리핀도르의 검", "nextNodeId": 22, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "루나 — 디리지블 자두 — 직관", "nextNodeId": 23, "requiredItem": null, "grantItem": null, "traits": ["직관"] },
+      { "label": "지니 — 박쥐 코뼈 저주", "nextNodeId": 24, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "전원 — 합공", "nextNodeId": 25, "requiredItem": null, "grantItem": null, "traits": ["협력"] },
+      { "label": "프레드와 조지 — 위즐리 폭죽", "nextNodeId": 26, "requiredItem": null, "grantItem": null, "traits": ["직관","용기"] }
+    ]
+  },
+  {
+    "nodeId": 22,
+    "text": "네빌. 그리핀도르의 검으로 뱀 호크룩스. 그가 진짜 영웅.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "네빌의 검"
+  },
+  {
+    "nodeId": 23,
+    "text": "루나. 그녀의 직관으로 망각된 비밀의 방. 호크룩스 발견.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "루나의 직관"
+  },
+  {
+    "nodeId": 24,
+    "text": "지니. 박쥐 코뼈가 그 분의 얼굴을 막는다. 한 방의 시간.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "지니의 한 방"
+  },
+  {
+    "nodeId": 25,
+    "text": "전원. 35명이 동시에 마법. 그 분이 잠시 압도. 그 틈에 너의 엑스펠리아르무스.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "DA의 합공"
+  },
+  {
+    "nodeId": 26,
+    "text": "프레드와 조지. 위즐리 폭죽이 호그와트를 환상의 무대로. 죽음 먹는 자들 정신 못 차림.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "위즐리의 폭죽"
+  },
+  {
+    "nodeId": 27,
+    "text": "결투 다른 변형. 어떤 마법으로?",
+    "choices": [
+      { "label": "스투피파이 — 무력화", "nextNodeId": 28, "requiredItem": null, "grantItem": null, "traits": ["원칙"] },
+      { "label": "프로테고 — 방어 후 반격", "nextNodeId": 29, "requiredItem": null, "grantItem": null, "traits": ["신중"] },
+      { "label": "리도큘러스 — 보가트로 만들기", "nextNodeId": 30, "requiredItem": null, "grantItem": null, "traits": ["직관"] },
+      { "label": "윙가르디움 레비오사 — 들어올림", "nextNodeId": 31, "requiredItem": null, "grantItem": null, "traits": ["직관","용기"] },
+      { "label": "엑스펠리아르무스 — 무장해제", "nextNodeId": 32, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] }
+    ]
+  },
+  {
+    "nodeId": 28,
+    "text": "스투피파이. 그 분이 잠시 무력화. 그러나 동료가 깨워줌.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "스투피파이의 한계"
+  },
+  {
+    "nodeId": 29,
+    "text": "프로테고. 그의 아바다가 너에게 튀지 않고 그에게 반사 — 한 방.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "프로테고의 반사"
+  },
+  {
+    "nodeId": 30,
+    "text": "리도큘러스. 그 분의 형체가 거대한 코미디 광대로 변함. 죽음 먹는 자들 폭소.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "리도큘러스의 광대"
+  },
+  {
+    "nodeId": 31,
+    "text": "레비오사. 그 분을 공중으로 들어올림. 매우 어색하지만 효과적.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "공중의 그 분"
+  },
+  {
+    "nodeId": 32,
+    "text": "엑스펠리아르무스 — 너의 시그니처. 엘더 완드 회수. 그 분 무력화.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "시그니처 마법"
+  },
+  {
+    "nodeId": 33,
+    "text": "시간돌리개. 시간 역행으로 어디로?",
+    "choices": [
+      { "label": "1년 전 — 호크룩스 미리 처리", "nextNodeId": 34, "requiredItem": null, "grantItem": null, "traits": ["분석"] },
+      { "label": "5년 전 — 시리우스 살리기", "nextNodeId": 35, "requiredItem": null, "grantItem": null, "traits": ["이타"] },
+      { "label": "20년 전 — 부모님 보호", "nextNodeId": 36, "requiredItem": null, "grantItem": null, "traits": ["이타","자기"] },
+      { "label": "10년 전 — 어린 톰 리들 막기", "nextNodeId": 37, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "1초 전 — 엑스펠리아르무스 완벽 타이밍", "nextNodeId": 38, "requiredItem": null, "grantItem": null, "traits": ["직관"] }
+    ]
+  },
+  {
+    "nodeId": 34,
+    "text": "1년 전. 호크룩스 6개 미리 처리. 그러나 그 분이 새 호크룩스 만든다 — 끝없음.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "끝없는 호크룩스"
+  },
+  {
+    "nodeId": 35,
+    "text": "시리우스 살리기. 그가 \"이번엔 같이\" 한다. 그러나 시간 역설로 다른 친구가 죽는다.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "역설의 거래"
+  },
+  {
+    "nodeId": 36,
+    "text": "부모님. 너의 존재가 사라짐 — 부모님이 살았으니. 시간선 분리.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "부모님의 미래"
+  },
+  {
+    "nodeId": 37,
+    "text": "어린 톰. 그 아이의 눈을 보니 — 어쩌지 못함. 살린다. 미래가 회복 불가능.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "어린 톰의 자비"
+  },
+  {
+    "nodeId": 38,
+    "text": "1초 전. 엑스펠리아르무스 완벽 타이밍. 엘더 완드 회수. 그 분 한 방. 시간 정상.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "1초의 완벽"
   }
 ]
