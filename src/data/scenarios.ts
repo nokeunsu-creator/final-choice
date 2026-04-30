@@ -1,5 +1,5 @@
 /**
- * 무거운 시나리오 데이터 모듈 — 모든 113개 JSON을 정적 import.
+ * 무거운 시나리오 데이터 모듈 — 모든 118개 JSON을 정적 import.
  * 이 모듈은 GameScreen / EndingScreen에서만 사용. App.tsx의 React.lazy로
  * 분리되어 메인 페이지/시나리오 선택 화면에서는 로드되지 않는다.
  *
@@ -118,6 +118,11 @@ import weddingEmceeRaw from '../../assets/scenarios/wedding-emcee.json';
 import movingDayRaw from '../../assets/scenarios/moving-day.json';
 import drivingTestRaw from '../../assets/scenarios/driving-test.json';
 import funeralRaw from '../../assets/scenarios/funeral.json';
+import startupPitchRaw from '../../assets/scenarios/startup-pitch.json';
+import cryptoTradeRaw from '../../assets/scenarios/crypto-trade.json';
+import realEstateRaw from '../../assets/scenarios/real-estate.json';
+import sideHustleRaw from '../../assets/scenarios/side-hustle.json';
+import onlineShopRaw from '../../assets/scenarios/online-shop.json';
 import type { StoryNode } from './types';
 
 const DATA: Record<string, StoryNode[]> = {
@@ -234,6 +239,11 @@ const DATA: Record<string, StoryNode[]> = {
   'moving-day': movingDayRaw as StoryNode[],
   'driving-test': drivingTestRaw as StoryNode[],
   funeral: funeralRaw as StoryNode[],
+  'startup-pitch': startupPitchRaw as StoryNode[],
+  'crypto-trade': cryptoTradeRaw as StoryNode[],
+  'real-estate': realEstateRaw as StoryNode[],
+  'side-hustle': sideHustleRaw as StoryNode[],
+  'online-shop': onlineShopRaw as StoryNode[],
 };
 
 const NODE_INDEX: Record<string, Map<number, StoryNode>> = Object.fromEntries(

@@ -1,0 +1,132 @@
+[
+  {
+    "nodeId": 1,
+    "text": "직장 6년차. 월급 400. 부업 시작 — 5가지 옵션. 회사 규정상 외부 활동 금지. 월급 외 + 100만 목표.",
+    "choices": [
+      { "label": "유튜브 — 직장인 vlog", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "외주 코딩 — 주말만", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "투잡 — 새벽 배달", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "회사가 외부 활동 금지 메일", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "인스타 쇼핑몰", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["용기","실용"] },
+      { "label": "직장 + 유튜브 + 외주 + 쇼핑몰 모두", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["용기","자기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "유튜브. 첫 영상 — 직장 일상. 1주일 후 조회수 500. 1개월 후 1만.",
+    "choices": [
+      { "label": "꾸준히 — 주 1회", "nextNodeId": 5, "requiredItem": null, "grantItem": "유튜브성장", "traits": ["원칙","용기"] },
+      { "label": "회사 폭로 — 자극적", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["정면","자기"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "외주 코딩. 첫 프로젝트 200만. 주말만 풀로 일함. 6개월 후 평일 저녁도.",
+    "choices": [
+      { "label": "회사 + 외주 균형", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["원칙","분석"] },
+      { "label": "외주 우선 — 회사 일 줄임", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["자기","독자"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "새벽 배달. 4시-7시. 한 달 80만. 잠 부족. 회사에서 졸음.",
+    "choices": [
+      { "label": "그래도 버틴다", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "그만 둠", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "꾸준. 6개월 후 구독 1만. 광고 수익 50만 / 월. 1년 후 100만.",
+    "choices": [
+      { "label": "직장 + 유튜브 병행", "nextNodeId": 11, "requiredItem": "유튜브성장", "grantItem": null, "traits": ["원칙","협력"] },
+      { "label": "전업 유튜버 — 직장 퇴사", "nextNodeId": 12, "requiredItem": "유튜브성장", "grantItem": null, "traits": ["용기","독자"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "회사 폭로. 조회수 폭발 100만. 그러나 회사가 영상 발견 — 징계.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "폭로의 대가"
+  },
+  {
+    "nodeId": 7,
+    "text": "균형. 회사 평가 유지 + 외주 월 100. 1년 후 통장 1200만 추가.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "균형의 부업"
+  },
+  {
+    "nodeId": 8,
+    "text": "외주 우선. 회사 평가 ↓ — 1년 후 권고 사직. 외주만으로는 불안정.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "권고 사직"
+  },
+  {
+    "nodeId": 9,
+    "text": "버틴다. 1년 후 통장 +1000. 그러나 건강 악화 — 입원.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "건강의 대가"
+  },
+  {
+    "nodeId": 10,
+    "text": "그만 둠. 다른 부업 찾기.",
+    "choices": [
+      { "label": "유튜브로", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기"] },
+      { "label": "외주 코딩으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석"] }
+    ]
+  },
+  {
+    "nodeId": 11,
+    "text": "병행. 1년 후 월 500 (직장 400 + 유튜브 100). 통장 1억 추가.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "병행의 1억"
+  },
+  {
+    "nodeId": 12,
+    "text": "전업 유튜버. 첫 6개월 위기 — 알고리즘 변동으로 수익 -50%. 그러나 1년 후 회복 + 월 300.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "전업 유튜버"
+  },
+  {
+    "nodeId": 13,
+    "text": "회사가 \"외부 활동 금지\" 메일. 너의 활동 인지.",
+    "choices": [
+      { "label": "솔직 — 부업 인정 + 협상", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "거짓 — 부업 부인", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "솔직. 회사 \"이미 알고 있었다 — 너의 능력 인정. 부업 OK 단 회사 일 우선.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "솔직의 인정"
+  },
+  {
+    "nodeId": 15,
+    "text": "거짓. 회사가 증거 제시. 즉시 해고.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "거짓의 해고"
+  },
+  {
+    "nodeId": 16,
+    "text": "부업으로 인스타그램 쇼핑몰. 첫 달 매출 30, 한 달 50.",
+    "choices": [
+      { "label": "확장 — 광고 투자", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["용기","분석"] }
+    ]
+  },
+  {
+    "nodeId": 17,
+    "text": "직장 + 유튜브 + 외주 + 쇼핑몰 — 모든 길. 월 800. 그러나 잠 시간 4시간.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "잠 4시간의 부자"
+  }
+]

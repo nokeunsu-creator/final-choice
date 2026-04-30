@@ -1,0 +1,130 @@
+[
+  {
+    "nodeId": 1,
+    "text": "온라인 쇼핑몰 창업. 자본금 2000만. 도매 시장 동대문. 첫 결정 — 무엇을 팔까.",
+    "choices": [
+      { "label": "여성 의류 — 트렌드 빠름", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","직관"] },
+      { "label": "유아용품 — 안정적", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","신중"] },
+      { "label": "건강식품 — 마진 높음", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["분석","자기"] },
+      { "label": "재고 안 팔림 — 처분 결정", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "1년 후 권태", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
+      { "label": "고객 리뷰 4.8 — 입소문", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "여성 의류. 동대문에서 100벌 매입 800만. 인스타 광고 200만. 한 달 매출 300만 (적자).",
+    "choices": [
+      { "label": "광고 더 — 500만 추가", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "트렌드 분석 — 잘 팔리는 것만", "nextNodeId": 6, "requiredItem": null, "grantItem": "데이터분석", "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "유아용품. 매입 1000만. 안정 매출 월 500. 마진 30%. 흑자.",
+    "choices": [
+      { "label": "확장 — 카테고리 추가", "nextNodeId": 7, "requiredItem": null, "grantItem": "안정기반", "traits": ["원칙","분석"] },
+      { "label": "그대로 유지", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["신중"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "건강식품. 마진 60%. 그러나 인증 + 식약처 절차 복잡. 6개월 준비.",
+    "choices": [
+      { "label": "정식 인증 — 6개월 기다림", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "인증 없이 출시 — 위험", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "광고 500 추가. 매출 800. 그러나 ROAS 1.6 — 적자 +100. 통장 줄어듦.",
+    "choices": [
+      { "label": "데이터 분석 — 무엇이 팔리는가", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회복","분석"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "분석. 30대 여성 + 캐주얼이 잘 팔림. 카테고리 정리. 매출 500 + 마진 40%.",
+    "choices": [
+      { "label": "꾸준 — 1년", "nextNodeId": 11, "requiredItem": "데이터분석", "grantItem": null, "traits": ["원칙","분석"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "확장. 장난감 + 유아 식품 + 출산 용품. 매출 월 1000. 마진 30% = 300.",
+    "choices": [
+      { "label": "1년 후 — 사무실 + 직원", "nextNodeId": 12, "requiredItem": "안정기반", "grantItem": null, "traits": ["용기","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "유지. 1년 후 매출 동일 500. 그러나 안정 + 워라밸.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "안정의 가치"
+  },
+  {
+    "nodeId": 9,
+    "text": "정식 인증. 6개월 후 출시. 마진 60% × 매출 800 = 480 / 월.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정식 인증"
+  },
+  {
+    "nodeId": 10,
+    "text": "인증 없이. 한 달 매출 1000. 그러나 식약처 단속. 벌금 5000만 + 폐업.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "인증 없는 대가"
+  },
+  {
+    "nodeId": 11,
+    "text": "1년. 매출 500 → 1000. 마진 40% = 400 / 월. 본격 사업화.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "1년의 본격화"
+  },
+  {
+    "nodeId": 12,
+    "text": "사무실 + 직원 3명. 매출 월 3000. 그러나 인건비 + 임대료. 순익 500.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "사무실의 단계"
+  },
+  {
+    "nodeId": 13,
+    "text": "재고가 안 팔림 1000만 손실. 처분 어려움.",
+    "choices": [
+      { "label": "할인 70% — 손실 처리", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피","원칙"] },
+      { "label": "보유 — 다음 시즌 기다림", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] }
+    ]
+  },
+  {
+    "nodeId": 14,
+    "text": "할인 처리. 손실 700만. 다음 시즌 새 매입.",
+    "choices": [
+      { "label": "다시 시작", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회복"] }
+    ]
+  },
+  {
+    "nodeId": 15,
+    "text": "보유. 6개월 후 트렌드 다시 — 정가 판매. 손실 회복 + 100.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "기다림의 가치"
+  },
+  {
+    "nodeId": 16,
+    "text": "쇼핑몰 운영 1년 후 권태. \"이게 진짜 내 길인가?\" 자문.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "권태의 1년"
+  },
+  {
+    "nodeId": 17,
+    "text": "고객 리뷰 5점 만점에 4.8. 입소문 매출 자동 증가. 광고비 0.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "입소문의 가치"
+  }
+]

@@ -183,12 +183,12 @@ export function axisBalances(counts: TraitCounts): AxisBalance[] {
  */
 export const ARCHETYPE_CATEGORIES: Record<string, ScenarioCategory[]> = {
   hero: ['재난', '좀비', '원피스', '패러디'],
-  survivor: ['생존', '재난', '일상'],
-  scholar: ['미스터리', '호러', '판타지', '패러디'],
+  survivor: ['생존', '재난', '일상', '사업'],
+  scholar: ['미스터리', '호러', '판타지', '패러디', '사업'],
   warrior: ['좀비', '원피스', '재난', '패러디'],
-  diplomat: ['재난', '무한상사', '미스터리', '일상'],
-  'lone-wolf': ['호러', '생존', '판타지', '일상'],
-  explorer: ['생존', 'SF', '원피스', '무한도전', '패러디'],
+  diplomat: ['재난', '무한상사', '미스터리', '일상', '사업'],
+  'lone-wolf': ['호러', '생존', '판타지', '일상', '사업'],
+  explorer: ['생존', 'SF', '원피스', '무한도전', '패러디', '사업'],
   idealist: ['호러', '재난', '무한상사', '일상'],
 };
 

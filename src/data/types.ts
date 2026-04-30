@@ -37,6 +37,7 @@ export type ScenarioCategory =
   | '미스터리'
   | '재난'
   | '일상'
+  | '사업'
   | '패러디'
   | '무한상사'
   | '무한도전'
@@ -51,6 +52,7 @@ export const CATEGORY_ORDER: ScenarioCategory[] = [
   '미스터리',
   '재난',
   '일상',
+  '사업',
   '패러디',
   '무한상사',
   '무한도전',
@@ -66,6 +68,7 @@ export const CATEGORY_META: Record<ScenarioCategory, { icon: string; color: stri
   '미스터리': { icon: '🔍', color: '#854d0e' },
   '재난': { icon: '🚒', color: '#f97316' },
   '일상': { icon: '🍱', color: '#10b981' },
+  '사업': { icon: '💰', color: '#84cc16' },
   '패러디': { icon: '🎬', color: '#f472b6' },
   '무한상사': { icon: '💼', color: '#0ea5e9' },
   '무한도전': { icon: '🏃', color: '#fbbf24' },

@@ -1057,6 +1057,61 @@
       "endingCount": 5
     },
     {
+      "id": "startup-pitch",
+      "title": "스타트업 피칭",
+      "subtitle": "VC 5명 앞 5분",
+      "description": "비전 vs 데이터 vs 솔직",
+      "icon": "🚀",
+      "accent": "#84cc16",
+      "category": "사업",
+      "nodeCount": 17,
+      "endingCount": 7
+    },
+    {
+      "id": "crypto-trade",
+      "title": "암호화폐 거래",
+      "subtitle": "통장 5천만",
+      "description": "전액 vs 분산 vs 거절",
+      "icon": "₿",
+      "accent": "#f59e0b",
+      "category": "사업",
+      "nodeCount": 17,
+      "endingCount": 10
+    },
+    {
+      "id": "real-estate",
+      "title": "30대 첫 부동산",
+      "subtitle": "강남 4억 vs 마포 3.5억",
+      "description": "오늘 결정 안 하면 +5천",
+      "icon": "🏢",
+      "accent": "#0891b2",
+      "category": "사업",
+      "nodeCount": 17,
+      "endingCount": 9
+    },
+    {
+      "id": "side-hustle",
+      "title": "직장인 부업",
+      "subtitle": "월급 외 +100만",
+      "description": "유튜브/외주/배달",
+      "icon": "💼",
+      "accent": "#10b981",
+      "category": "사업",
+      "nodeCount": 17,
+      "endingCount": 9
+    },
+    {
+      "id": "online-shop",
+      "title": "온라인 쇼핑몰",
+      "subtitle": "자본금 2000만",
+      "description": "여성 의류/유아/건강식품",
+      "icon": "🛒",
+      "accent": "#ec4899",
+      "category": "사업",
+      "nodeCount": 17,
+      "endingCount": 8
+    },
+    {
       "id": "onepiece-eastblue",
       "title": "원피스 — 이스트블루 출항",
       "subtitle": "견습 해적의 첫날",

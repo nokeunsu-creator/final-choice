@@ -1,0 +1,130 @@
+[
+  {
+    "nodeId": 1,
+    "text": "스타트업 시리즈 A 피칭. VC 5명, 강남 회의실. 5분 발표 + 15분 Q&A. 지금까지 매출 2억, 사용자 5만. 첫 슬라이드.",
+    "choices": [
+      { "label": "비전 — 10년 후 10조 회사", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "데이터 — MAU 성장 곡선", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "솔직 — 어려움부터", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] },
+      { "label": "VC가 직접 경쟁자에 이미 투자했다 한다", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["분석","용기"] },
+      { "label": "데이터 슬라이드 잘못 띄움", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "비전 + 데이터 + 팀 모두 완벽", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙","용기"] },
+      { "label": "매출 그래프 조작 들킴", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "비전. \"3년 안에 일본, 5년 동남아.\" VC 한 명: \"근데 지금 매출은 2억뿐?\"",
+    "choices": [
+      { "label": "성장률 강조 — 월 30%", "nextNodeId": 5, "requiredItem": null, "grantItem": "성장률", "traits": ["분석","용기"] },
+      { "label": "사용자 증언 — 인터뷰 영상", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "데이터. MAU 5만 → 월 30% 성장. CAC 5천원. LTV 8만원. VC \"숫자 좋네.\"",
+    "choices": [
+      { "label": "Unit economics 더 깊이", "nextNodeId": 7, "requiredItem": null, "grantItem": "분석근거", "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "솔직. \"지금 월 적자 1000만. 그러나 — \" VC 침묵. 진심 ✓.",
+    "choices": [
+      { "label": "구체 회복 계획 — 6개월", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["원칙","분석"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "성장률 30%. VC \"근데 base가 작잖아\" 한다.",
+    "choices": [
+      { "label": "절대 숫자 + 시장 규모", "nextNodeId": 7, "requiredItem": "성장률", "grantItem": null, "traits": ["분석","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "사용자 증언. 한 사용자: \"이거 없으면 못 살아.\" VC 한 명 끄덕.",
+    "choices": [
+      { "label": "유료 전환률 어필", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "Unit economics. CAC < LTV. 5x 회수. VC 리드 \"이거 진지하게 검토하지.\"",
+    "choices": [
+      { "label": "투자금 사용 계획 — 구체", "nextNodeId": 9, "requiredItem": "분석근거", "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "팀 강조 — Why us", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] }
+    ]
+  },
+  {
+    "nodeId": 8,
+    "text": "회복 계획. \"6개월 내 흑자 — 신규 시장 + 가격 인상.\" VC \"리스크는?\"",
+    "choices": [
+      { "label": "리스크 + 대비 — 솔직", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["원칙","분석"] }
+    ]
+  },
+  {
+    "nodeId": 9,
+    "text": "구체. 50억 → 마케팅 30 + 채용 15 + 운영 5. VC \"좋다 — 30억 투자.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "시리즈 A 30억"
+  },
+  {
+    "nodeId": 10,
+    "text": "팀. \"5년 같이한 동료. 도메인 전문가.\" VC \"좋다 — 50억.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "시리즈 A 50억"
+  },
+  {
+    "nodeId": 11,
+    "text": "리스크 + 대비. VC \"솔직해서 좋네 — 20억 투자, 진척 보고.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "조건부 20억"
+  },
+  {
+    "nodeId": 12,
+    "text": "VC가 \"우리 다른 회사에 이미 투자했어\" 한다. 직접 경쟁자.",
+    "choices": [
+      { "label": "차별화 어필", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["분석","용기"] },
+      { "label": "포기", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "차별화. \"기능 ✗ — 시장 ✓ — 우리는 X세그먼트.\" VC 끄덕. \"검토 다시.\"",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "재검토 약속"
+  },
+  {
+    "nodeId": 14,
+    "text": "포기. 다른 VC로. 한 달 후 시리즈 A 실패.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "시리즈 A 실패"
+  },
+  {
+    "nodeId": 15,
+    "text": "긴장으로 데이터 슬라이드 잘못 띄움. 1분 어색.",
+    "choices": [
+      { "label": "농담으로 회복", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["회복","용기"] }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "비전 + 데이터 + 솔직 + 팀 — 모든 것이 완벽. VC 만장일치 100억 투자.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "시리즈 A 100억"
+  },
+  {
+    "nodeId": 17,
+    "text": "발표 도중 매출 그래프 조작 들킴. VC 엘리베이터 핫.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "조작의 발각"
+  }
+]

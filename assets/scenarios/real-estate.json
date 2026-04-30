@@ -1,0 +1,132 @@
+[
+  {
+    "nodeId": 1,
+    "text": "30대 첫 부동산. 통장 1억 + 대출 가능 3억 = 4억 예산. 강남 오피스텔 4억 vs 마포 빌라 3.5억. 부동산 사장: \"오늘 결정 안 하면 다음 주 +5천.\"",
+    "choices": [
+      { "label": "강남 오피스텔 — 4억", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] },
+      { "label": "마포 빌라 — 3.5억", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] },
+      { "label": "한 달 더 시장 봄", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["분석","신중"] },
+      { "label": "부동산 사장의 압박 결정", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "정부 규제 발표 — 거래 중지", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
+      { "label": "주변 권유로 전세 고려", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["분석","신중"] }
+    ]
+  },
+  {
+    "nodeId": 2,
+    "text": "강남. 4억 + 대출 3억 = 월 이자 200만. 임대료 150만. 매월 50 적자. 그러나 시세 상승 기대.",
+    "choices": [
+      { "label": "임대 — 보증금 5천 + 월 150", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "직접 거주", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["원칙","신중"] }
+    ]
+  },
+  {
+    "nodeId": 3,
+    "text": "마포 빌라. 3.5억 + 대출 2.5억. 월 이자 150만. 그러나 신축 + 학군.",
+    "choices": [
+      { "label": "직접 거주 — 5년 후 매도", "nextNodeId": 7, "requiredItem": null, "grantItem": "마포거주", "traits": ["원칙","신중"] },
+      { "label": "임대", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["분석"] }
+    ]
+  },
+  {
+    "nodeId": 4,
+    "text": "한 달 더. 시세 +5천 → 4.5억. 그러나 다음 달 폭락 -10%. 4억으로 회복.",
+    "choices": [
+      { "label": "이제 매수 — 강남", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["분석","용기"] },
+      { "label": "더 기다림", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] }
+    ]
+  },
+  {
+    "nodeId": 5,
+    "text": "임대. 보증금 5천으로 대출 일부 상환. 월 50 흑자. 1년 후 시세 +20%.",
+    "choices": [
+      { "label": "5년 보유", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["원칙","분석"] },
+      { "label": "1년 후 매도", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["용기","자기"] }
+    ]
+  },
+  {
+    "nodeId": 6,
+    "text": "직접 거주. 출퇴근 30분 단축. 그러나 매월 50 적자 부담. 1년 후 통장 6천만 사라짐.",
+    "choices": [
+      { "label": "버틴다 — 5년 보유", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기"] }
+    ]
+  },
+  {
+    "nodeId": 7,
+    "text": "마포 거주. 5년 후 시세 +60%. 5.6억. 매도. 순익 1.5억.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "마포의 5년"
+  },
+  {
+    "nodeId": 8,
+    "text": "임대. 보증금 4천 + 월 100. 안정. 5년 후 +40% 시세.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "마포 임대의 안정"
+  },
+  {
+    "nodeId": 9,
+    "text": "더 기다림. 6개월 후 시장 +30%. 매수 못 함. 영원히 못 사는 자.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "기다림의 후회"
+  },
+  {
+    "nodeId": 10,
+    "text": "5년 보유. 시세 +80%. 7.2억. 매도 후 대출 갚고 순익 4억.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "강남 5년"
+  },
+  {
+    "nodeId": 11,
+    "text": "1년 후 매도. +20% — 8천. 그러나 다음 해 +50% 더. 후회.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "조기 매도의 후회"
+  },
+  {
+    "nodeId": 12,
+    "text": "부동산 사장이 \"이거 진짜 마지막 매물\" 압박. 진실인가?",
+    "choices": [
+      { "label": "거절 — 시장 조사 더", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
+      { "label": "급매 — 즉시 매수", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] }
+    ]
+  },
+  {
+    "nodeId": 13,
+    "text": "조사. 부동산 사장 거짓말. 다음 주에도 같은 매물. 협상으로 -2천.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "협상의 가치"
+  },
+  {
+    "nodeId": 14,
+    "text": "급매. 부동산이 사실 거짓. 다음 주 같은 매물 -3천. 손해.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "압박의 함정"
+  },
+  {
+    "nodeId": 15,
+    "text": "갑자기 정부가 부동산 규제 발표. 거래 중지. 너의 매물 보류.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "규제의 보류"
+  },
+  {
+    "nodeId": 16,
+    "text": "주변에서 \"전세로 시작해\" 권유. 1억 보증금 + 월 50 전세.",
+    "choices": [
+      { "label": "그래도 매수", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] },
+      { "label": "전세로 시작", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["신중","협력"] }
+    ]
+  },
+  {
+    "nodeId": 17,
+    "text": "전세 5년. 보증금 회수 + 통장 1.5억. 그동안 시세 +60% — 매수 못 함.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "전세의 안정과 후회"
+  }
+]

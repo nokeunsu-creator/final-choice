@@ -80,6 +80,7 @@ const CATEGORY_TITLES: Record<ScenarioCategory, { icon: string; title: string }>
   '미스터리': { icon: '🔍', title: '명탐정' },
   '재난': { icon: '🚒', title: '1급 구조사' },
   '일상': { icon: '🍱', title: '하루의 달인' },
+  '사업': { icon: '💰', title: '돈 버는 자' },
   '패러디': { icon: '🎬', title: '명장면 수집가' },
   '무한상사': { icon: '💼', title: '무한사원' },
   '무한도전': { icon: '🏃', title: '무한멤버' },
