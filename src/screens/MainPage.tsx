@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useGame } from '../state/GameContext';
 import { SCENARIOS, getEndingCount } from '../data/scenariosMeta';
 import { ARCHETYPE_CATEGORIES, aggregateCounts, scoreArchetypes } from '../data/archetypes';
@@ -6,6 +6,11 @@ import { ACHIEVEMENTS, evaluateAchievements, unlockedCount } from '../data/achie
 import { PersonalityResult } from '../components/PersonalityResult';
 import type { ScenarioMeta } from '../data/types';
 import { isMuted, setMuted, playClick } from '../utils/sound';
+
+interface BeforeInstallPromptEvent extends Event {
+  prompt: () => Promise<void>;
+  userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
+}
 
 interface Props {
   onStart: () => void;
@@ -93,6 +98,37 @@ export function MainPage({ onStart, onSelectScenario, onShowStats }: Props) {
     setMuted(next);
     setMutedState(next);
     if (!next) playClick();
+  };
+
+  // PWA 설치 프롬프트
+  const [installEvent, setInstallEvent] = useState<BeforeInstallPromptEvent | null>(null);
+  const [installed, setInstalled] = useState(false);
+  useEffect(() => {
+    const handler = (e: Event) => {
+      e.preventDefault();
+      setInstallEvent(e as BeforeInstallPromptEvent);
+    };
+    const installedHandler = () => {
+      setInstalled(true);
+      setInstallEvent(null);
+    };
+    window.addEventListener('beforeinstallprompt', handler);
+    window.addEventListener('appinstalled', installedHandler);
+    // 이미 standalone 모드면 설치된 것으로 간주
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      setInstalled(true);
+    }
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handler);
+      window.removeEventListener('appinstalled', installedHandler);
+    };
+  }, []);
+  const triggerInstall = async () => {
+    if (!installEvent) return;
+    playClick();
+    await installEvent.prompt();
+    await installEvent.userChoice;
+    setInstallEvent(null);
   };
 
   return (
@@ -382,6 +418,26 @@ export function MainPage({ onStart, onSelectScenario, onShowStats }: Props) {
             {muted ? '🔇' : '🔊'}
           </button>
         </div>
+
+        {installEvent && !installed && (
+          <button
+            onClick={triggerInstall}
+            style={{
+              width: '100%',
+              padding: '12px',
+              background: '#1f2030',
+              color: '#ffaa00',
+              border: '1px solid #ffaa0033',
+              borderRadius: 8,
+              fontSize: 13,
+              cursor: 'pointer',
+              fontFamily: 'inherit',
+              fontWeight: 600,
+            }}
+          >
+            📱 앱으로 설치 (홈 화면 추가)
+          </button>
+        )}
 
         <div
           style={{
