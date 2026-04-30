@@ -79,6 +79,42 @@
           "용기",
           "원칙"
         ]
+      },
+      {
+        "label": "동료 합류 — 누구부터?",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "첫 모험 — 동네 해적",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "항해 장비 — 무엇 먼저?",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "길 결정 — 어떤 해적?",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
       }
     ]
   },
@@ -262,5 +298,339 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "삼관왕 부선장"
+  },
+  {
+    "nodeId": 15,
+    "text": "첫 동료. 누구부터 만난다?",
+    "choices": [
+      {
+        "label": "조로 — 셰리프 처치 후 합류",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "나미 — 도둑이지만 항해사",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "우솝 — 거짓말쟁이 저격수",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "상디 — 바라티에의 요리사",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "혼자 — 동료 없이",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "조로. 그가 \"내 칼 — 너의 동료.\" 첫 동료.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "조로의 합류"
+  },
+  {
+    "nodeId": 17,
+    "text": "나미. 그녀의 항해 능력. 보물 + 지도 함께.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "나미의 항해"
+  },
+  {
+    "nodeId": 18,
+    "text": "우솝. 그의 거짓말이 마을을 살림. 합류.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "우솝의 거짓말"
+  },
+  {
+    "nodeId": 19,
+    "text": "상디. \"전드의 의지로 — 모두를 먹인다.\" 합류.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "상디의 의지"
+  },
+  {
+    "nodeId": 20,
+    "text": "혼자. 외로운 항해. 그러나 자유.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "혼자의 자유"
+  },
+  {
+    "nodeId": 21,
+    "text": "첫 적. 어떤 모험?",
+    "choices": [
+      {
+        "label": "알빈다 해적단 격파",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "버기 격파 — 분리분리 열매",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "쿠로 격파 — 셰리프 발톱",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      },
+      {
+        "label": "알롱 — 어인 해적 격파",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "도망 — 첫 적에게 패배",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 22,
+    "text": "알빈다. 그녀의 철구가 빗나감 — 한 방.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "알빈다의 한 방"
+  },
+  {
+    "nodeId": 23,
+    "text": "버기. 분리된 그를 모래 상자에. 그가 \"이거 내 약점\" 발각.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "버기의 모래"
+  },
+  {
+    "nodeId": 24,
+    "text": "쿠로. 그의 발톱을 우솝이 막음. 합공.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "쿠로의 발톱"
+  },
+  {
+    "nodeId": 25,
+    "text": "알롱. 나미의 마을 해방. 둘이 \"같이 가자.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "알롱 해방"
+  },
+  {
+    "nodeId": 26,
+    "text": "도망. 첫 모험 실패. 다시 시작.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "첫 패배"
+  },
+  {
+    "nodeId": 27,
+    "text": "장비. 우선순위?",
+    "choices": [
+      {
+        "label": "메리호 — 첫 배",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "로그포스 — 그랜드라인 나침반",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "지도 — 위대한 항로",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "식량 — 1년치 비축",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 28,
+    "text": "메리. 우솝의 친구 메리가 만든 배. 출항.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "메리의 배"
+  },
+  {
+    "nodeId": 29,
+    "text": "로그포스. 그러나 그랜드라인 입구까지 못 감. 다음 단계로.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "로그포스의 부재"
+  },
+  {
+    "nodeId": 30,
+    "text": "지도. 그러나 그랜드라인은 지도가 무용. 항해사 의존.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "지도의 한계"
+  },
+  {
+    "nodeId": 31,
+    "text": "식량 1년치. 풍성한 항해. 그러나 무거움.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "풍성한 항해"
+  },
+  {
+    "nodeId": 32,
+    "text": "어떤 해적이 될까?",
+    "choices": [
+      {
+        "label": "해적왕 — 루피처럼",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "해상 보안관 — 정의",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "해군 가입 — 정의 측",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "해상 상인 — 평화로운 길",
+        "nextNodeId": 36,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용",
+          "협력"
+        ]
+      },
+      {
+        "label": "해적 마법사 — 능력 추구",
+        "nextNodeId": 37,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자",
+          "분석"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 33,
+    "text": "해적왕 도전. 그러나 너는 동료.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "해적왕의 동료"
+  },
+  {
+    "nodeId": 34,
+    "text": "해상 보안관. 그러나 해군과 별도.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "바다의 보안관"
+  },
+  {
+    "nodeId": 35,
+    "text": "해군. 군법대로. 그러나 친구 루피와 적.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "루피와 적"
+  },
+  {
+    "nodeId": 36,
+    "text": "상인. 무역으로 부자. 그러나 모험 ✗.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "상인의 길"
+  },
+  {
+    "nodeId": 37,
+    "text": "능력. 악마의 열매 찾아 평생. 그러나 외로움.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "능력의 외로움"
   }
 ]

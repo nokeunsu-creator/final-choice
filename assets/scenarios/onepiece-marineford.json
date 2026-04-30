@@ -42,6 +42,43 @@
           "협력",
           "원칙"
         ]
+      },
+      {
+        "label": "해군 7무해 — 누구를 먼저?",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "백수 해적단 — 동료",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "루피 합류 — 동생 구하기",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "용기"
+        ]
+      },
+      {
+        "label": "결과 — 마린포드 이후",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
       }
     ]
   },
@@ -236,5 +273,373 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "새로운 시대"
+  },
+  {
+    "nodeId": 15,
+    "text": "7무해 + 3대장 — 우선?",
+    "choices": [
+      {
+        "label": "쿠잔 (아오키지) — 얼음",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      },
+      {
+        "label": "사카즈키 (아카이누) — 마그마",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "보르사리노 (키자루) — 빛",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "센고쿠 — 부처",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "미호크 — 검의 길",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "아오키지. 얼음의 힘으로 바다가 얼음. 그러나 에이스 못 살림.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "얼음의 한계"
+  },
+  {
+    "nodeId": 17,
+    "text": "아카이누. 그가 에이스를 한 방. 무력.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "마그마의 한 방"
+  },
+  {
+    "nodeId": 18,
+    "text": "키자루. 빛의 속도. 너 못 따라옴.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "빛의 부재"
+  },
+  {
+    "nodeId": 19,
+    "text": "센고쿠. 그가 사형 명령 — 거대 손.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "부처의 명령"
+  },
+  {
+    "nodeId": 20,
+    "text": "미호크. 검의 결투. 너 패배.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "검의 결투"
+  },
+  {
+    "nodeId": 21,
+    "text": "백수 해적단의 누구?",
+    "choices": [
+      {
+        "label": "에드워드 뉴게이트 (흰수염)",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "이타"
+        ]
+      },
+      {
+        "label": "마르코 — 불사조",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "조즈 — 다이아몬드 신체",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "비스타 — 검술 1번대",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      },
+      {
+        "label": "에이스 직접",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 22,
+    "text": "흰수염. 그가 \"아들 살리려 죽는다.\" 그의 마지막.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "아버지의 마지막"
+  },
+  {
+    "nodeId": 23,
+    "text": "마르코. 불사조의 깃털. 동맹.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "불사조의 깃털"
+  },
+  {
+    "nodeId": 24,
+    "text": "조즈. 다이아몬드 신체로 해군 막음.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "다이아몬드의 방패"
+  },
+  {
+    "nodeId": 25,
+    "text": "비스타. 그의 검술. 1번대 합공.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "1번대의 검"
+  },
+  {
+    "nodeId": 26,
+    "text": "에이스. 그가 \"형 — 이미 늦었어.\" 마지막 미소.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "에이스의 미소"
+  },
+  {
+    "nodeId": 27,
+    "text": "루피와 함께. 어떻게?",
+    "choices": [
+      {
+        "label": "지로 함대 + 임펠다운 탈옥",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "이반코프 — 호르몬 회복",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "직접 처형대로 돌진",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "백수와 협력 작전",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "쿠마의 발길질로 사라짐",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 28,
+    "text": "지로. 임펠다운에서 함대 모음. 마린포드 입성.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "지로 함대"
+  },
+  {
+    "nodeId": 29,
+    "text": "이반코프. 호르몬으로 루피 회복. 하지만 한계.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "호르몬의 한계"
+  },
+  {
+    "nodeId": 30,
+    "text": "돌진. 처형대 위 에이스 — 한 발 늦었다.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "한 발 늦음"
+  },
+  {
+    "nodeId": 31,
+    "text": "협력. 흰수염 + 루피 + 너. 합공으로 에이스 일시 구출.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "합공의 구출"
+  },
+  {
+    "nodeId": 32,
+    "text": "쿠마. 너를 다른 섬으로. 2년 수련.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "2년의 수련"
+  },
+  {
+    "nodeId": 33,
+    "text": "전투 끝나고 어떻게?",
+    "choices": [
+      {
+        "label": "에이스 살림 + 흰수염 살림",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "이타"
+        ]
+      },
+      {
+        "label": "둘 다 잃음 — 슬픔",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "검은수염 — 흰수염 능력 흡수",
+        "nextNodeId": 36,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      },
+      {
+        "label": "신세계로 — 새 시대",
+        "nextNodeId": 37,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "2년 휴식 — 동료들과 약속",
+        "nextNodeId": 38,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "도망 — 마린포드 떠남",
+        "nextNodeId": 39,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 34,
+    "text": "둘 다. 마린포드의 기적. 새 시대.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "마린포드의 기적"
+  },
+  {
+    "nodeId": 35,
+    "text": "둘 다. 루피와 너의 마음 깊이.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "두 손실"
+  },
+  {
+    "nodeId": 36,
+    "text": "검은수염. 흰수염의 능력 흡수. 새 황제 등장.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "검은수염의 등장"
+  },
+  {
+    "nodeId": 37,
+    "text": "신세계. 너의 진짜 모험.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "새 시대의 시작"
+  },
+  {
+    "nodeId": 38,
+    "text": "2년. 모든 동료와 \"다시 만나자.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "2년의 약속"
+  },
+  {
+    "nodeId": 39,
+    "text": "도망. 너의 길은 다른 곳.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "다른 길"
   }
 ]

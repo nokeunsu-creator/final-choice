@@ -877,8 +877,8 @@
       "icon": "⚔️",
       "accent": "#dc2626",
       "category": "원피스",
-      "nodeCount": 18,
-      "endingCount": 5
+      "nodeCount": 43,
+      "endingCount": 26
     },
     {
       "id": "jidaenubeoryeolb",
@@ -954,8 +954,8 @@
       "icon": "🐪",
       "accent": "#ca8a04",
       "category": "원피스",
-      "nodeCount": 17,
-      "endingCount": 9
+      "nodeCount": 37,
+      "endingCount": 25
     },
     {
       "id": "onepiece-thriller",
@@ -965,8 +965,8 @@
       "icon": "🎻",
       "accent": "#3f3f46",
       "category": "원피스",
-      "nodeCount": 17,
-      "endingCount": 6
+      "nodeCount": 40,
+      "endingCount": 25
     },
     {
       "id": "onepiece-water7",
@@ -976,8 +976,8 @@
       "icon": "🚂",
       "accent": "#0ea5e9",
       "category": "원피스",
-      "nodeCount": 18,
-      "endingCount": 5
+      "nodeCount": 42,
+      "endingCount": 25
     },
     {
       "id": "onepiece-dressrosa",
@@ -987,8 +987,8 @@
       "icon": "🎰",
       "accent": "#ec4899",
       "category": "원피스",
-      "nodeCount": 17,
-      "endingCount": 7
+      "nodeCount": 39,
+      "endingCount": 25
     },
     {
       "id": "onepiece-egghead",
@@ -998,8 +998,8 @@
       "icon": "🤖",
       "accent": "#22d3ee",
       "category": "원피스",
-      "nodeCount": 17,
-      "endingCount": 7
+      "nodeCount": 39,
+      "endingCount": 25
     },
     {
       "id": "first-job",
@@ -1119,8 +1119,8 @@
       "icon": "🏴‍☠️",
       "accent": "#dc2626",
       "category": "원피스",
-      "nodeCount": 14,
-      "endingCount": 6
+      "nodeCount": 37,
+      "endingCount": 25
     },
     {
       "id": "onepiece-grandline",
@@ -1130,8 +1130,8 @@
       "icon": "⛵",
       "accent": "#0369a1",
       "category": "원피스",
-      "nodeCount": 14,
-      "endingCount": 9
+      "nodeCount": 34,
+      "endingCount": 25
     },
     {
       "id": "onepiece-marineford",
@@ -1141,8 +1141,8 @@
       "icon": "⚔️",
       "accent": "#b91c1c",
       "category": "원피스",
-      "nodeCount": 14,
-      "endingCount": 5
+      "nodeCount": 39,
+      "endingCount": 26
     },
     {
       "id": "onepiece-skypiea",
@@ -1152,8 +1152,8 @@
       "icon": "☁️",
       "accent": "#fcd34d",
       "category": "원피스",
-      "nodeCount": 14,
-      "endingCount": 8
+      "nodeCount": 35,
+      "endingCount": 25
     },
     {
       "id": "onepiece-impeldown",
@@ -1163,8 +1163,8 @@
       "icon": "🔒",
       "accent": "#3f3f46",
       "category": "원피스",
-      "nodeCount": 14,
-      "endingCount": 6
+      "nodeCount": 37,
+      "endingCount": 25
     },
     {
       "id": "onepiece-fishman",
@@ -1174,8 +1174,8 @@
       "icon": "🐠",
       "accent": "#0891b2",
       "category": "원피스",
-      "nodeCount": 14,
-      "endingCount": 7
+      "nodeCount": 36,
+      "endingCount": 25
     },
     {
       "id": "onepiece-wano",
@@ -1185,8 +1185,8 @@
       "icon": "🐉",
       "accent": "#dc2626",
       "category": "원피스",
-      "nodeCount": 14,
-      "endingCount": 7
+      "nodeCount": 36,
+      "endingCount": 25
     },
     {
       "id": "onepiece-laftel",
@@ -1196,8 +1196,8 @@
       "icon": "🗺️",
       "accent": "#fbbf24",
       "category": "원피스",
-      "nodeCount": 14,
-      "endingCount": 7
+      "nodeCount": 36,
+      "endingCount": 25
     },
     {
       "id": "suneung-day",

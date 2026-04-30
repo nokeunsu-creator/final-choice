@@ -3,40 +3,167 @@
     "nodeId": 1,
     "text": "와노쿠니. 카이도 토벌 D-3. 동맹 모으기 + 무기 + 작전. 너는 루피의 동료. 첫 임무: 키쿠노조의 안내로 가시나무 마을.",
     "choices": [
-      { "label": "오니가시마 정찰", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["분석","용기"] },
-      { "label": "동맹 — 라이벌 광부 합류 설득", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
-      { "label": "무기 — 카타나 단조", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["실용","원칙"] }
+      {
+        "label": "오니가시마 정찰",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "용기"
+        ]
+      },
+      {
+        "label": "동맹 — 라이벌 광부 합류 설득",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "무기 — 카타나 단조",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용",
+          "원칙"
+        ]
+      },
+      {
+        "label": "준비 — 무기 vs 정보",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "동맹 — 누구를 우선",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "정찰 — 어디부터",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "작전 — 정면 vs 우회",
+        "nextNodeId": 37,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "오니가시마 정찰. 절벽 위에서 망원경. 카이도 군 1만 + 백수 해적단. 정문 + 동굴 + 비상 통로.",
     "choices": [
-      { "label": "동굴 통로 — 야마토와 연결", "nextNodeId": 5, "requiredItem": null, "grantItem": "동굴지도", "traits": ["분석","협력"] },
-      { "label": "정문 정면 돌파 작전", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+      {
+        "label": "동굴 통로 — 야마토와 연결",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": "동굴지도",
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      },
+      {
+        "label": "정문 정면 돌파 작전",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "광부 동맹. 우두머리가 \"카이도가 우리 식량 빼앗아간다.\" 동맹 설득.",
     "choices": [
-      { "label": "이름을 말하지 않고 — 정의로 호소", "nextNodeId": 7, "requiredItem": null, "grantItem": "광부동맹", "traits": ["원칙","이타"] },
-      { "label": "이름 밝힘 — 루피의 동료", "nextNodeId": 8, "requiredItem": null, "grantItem": "광부동맹", "traits": ["용기","원칙"] }
+      {
+        "label": "이름을 말하지 않고 — 정의로 호소",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "광부동맹",
+        "traits": [
+          "원칙",
+          "이타"
+        ]
+      },
+      {
+        "label": "이름 밝힘 — 루피의 동료",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": "광부동맹",
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "카타나 단조. 호젠지의 뜨거운 망치. 5일 만에 한 자루.",
     "choices": [
-      { "label": "본인의 카타나 만든다", "nextNodeId": 9, "requiredItem": null, "grantItem": "카타나", "traits": ["원칙","실용"] },
-      { "label": "조로에게 양보", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] }
+      {
+        "label": "본인의 카타나 만든다",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "카타나",
+        "traits": [
+          "원칙",
+          "실용"
+        ]
+      },
+      {
+        "label": "조로에게 양보",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "야마토와 동굴 통로. 그녀가 \"카이도의 비밀 — 약점은 술이 깰 때.\" 정보 ✓.",
     "choices": [
-      { "label": "타이밍 정보 본부에", "nextNodeId": 11, "requiredItem": "동굴지도", "grantItem": "약점타이밍", "traits": ["분석","협력"] }
+      {
+        "label": "타이밍 정보 본부에",
+        "nextNodeId": 11,
+        "requiredItem": "동굴지도",
+        "grantItem": "약점타이밍",
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      }
     ]
   },
   {
@@ -50,44 +177,116 @@
     "nodeId": 7,
     "text": "정의 호소. 광부들 \"우리도 자유.\" 1000명 동맹.",
     "choices": [
-      { "label": "본부에 보고", "nextNodeId": 11, "requiredItem": "광부동맹", "grantItem": null, "traits": ["원칙","협력"] }
+      {
+        "label": "본부에 보고",
+        "nextNodeId": 11,
+        "requiredItem": "광부동맹",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "이름 밝힘. \"루피의 동료라면 — 우리는 함께.\" 2000명 동맹.",
     "choices": [
-      { "label": "본부에 보고 — 광부 + 야마토 정보", "nextNodeId": 11, "requiredItem": "광부동맹", "grantItem": null, "traits": ["용기","협력"] }
+      {
+        "label": "본부에 보고 — 광부 + 야마토 정보",
+        "nextNodeId": 11,
+        "requiredItem": "광부동맹",
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "본인 카타나. 손에 익숙. 그러나 5일 후 카이도와 직접 부딪칠 자신감 없음.",
     "choices": [
-      { "label": "조로에게 양도", "nextNodeId": 12, "requiredItem": "카타나", "grantItem": null, "traits": ["이타","원칙"] },
-      { "label": "끝까지 본인 사용", "nextNodeId": 13, "requiredItem": "카타나", "grantItem": null, "traits": ["자기","용기"] }
+      {
+        "label": "조로에게 양도",
+        "nextNodeId": 12,
+        "requiredItem": "카타나",
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      },
+      {
+        "label": "끝까지 본인 사용",
+        "nextNodeId": 13,
+        "requiredItem": "카타나",
+        "grantItem": null,
+        "traits": [
+          "자기",
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "조로에게 양보. 그가 받아 \"이 검 — 명검이다.\" 다음 날 그가 카타나 3자루 들고 나감.",
     "choices": [
-      { "label": "다른 무기 만든다", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["회복","실용"] }
+      {
+        "label": "다른 무기 만든다",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회복",
+          "실용"
+        ]
+      }
     ]
   },
   {
     "nodeId": 11,
     "text": "본부 회의. 루피 + 키드 + 로 3대장 동맹. 오니가시마 D-day. 9시 정각.",
     "choices": [
-      { "label": "동굴 진입 (지도 보유)", "nextNodeId": 14, "requiredItem": "동굴지도", "grantItem": null, "traits": ["분석","협력"] },
-      { "label": "정문 — 광부들과 함성", "nextNodeId": 15, "requiredItem": "광부동맹", "grantItem": null, "traits": ["용기","협력"] }
+      {
+        "label": "동굴 진입 (지도 보유)",
+        "nextNodeId": 14,
+        "requiredItem": "동굴지도",
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      },
+      {
+        "label": "정문 — 광부들과 함성",
+        "nextNodeId": 15,
+        "requiredItem": "광부동맹",
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 12,
     "text": "조로에게 양도. 그가 카이도와 정면. 너는 후방 지원.",
     "choices": [
-      { "label": "후방에서 지휘", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+      {
+        "label": "후방에서 지휘",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
@@ -101,14 +300,33 @@
     "nodeId": 14,
     "text": "동굴. 카이도 술 깬 직후. 약점 타이밍. 루피와 함께 정상 침투.",
     "choices": [
-      { "label": "타이밍 정확히 — 루피 신호", "nextNodeId": 17, "requiredItem": "약점타이밍", "grantItem": null, "traits": ["원칙","협력","용기"] }
+      {
+        "label": "타이밍 정확히 — 루피 신호",
+        "nextNodeId": 17,
+        "requiredItem": "약점타이밍",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력",
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 15,
     "text": "정문 + 광부 함성. 카이도 군 분산. 루피가 정상 진입.",
     "choices": [
-      { "label": "광부들과 함께 끝까지", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] }
+      {
+        "label": "광부들과 함께 끝까지",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      }
     ]
   },
   {
@@ -131,5 +349,379 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "광부들의 새벽"
+  },
+  {
+    "nodeId": 19,
+    "text": "준비 우선?",
+    "choices": [
+      {
+        "label": "카타나 단조 — 호젠지",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "갑옷 — 와노 정통",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "약 — 죽음 회복",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "신중"
+        ]
+      },
+      {
+        "label": "폭탄 — 일격 무기",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "아무것도 — 맨손",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "독자"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 20,
+    "text": "카타나. 호젠지의 명검. 강력.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "호젠지의 카타나"
+  },
+  {
+    "nodeId": 21,
+    "text": "갑옷. 정통 와노 갑옷.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정통 갑옷"
+  },
+  {
+    "nodeId": 22,
+    "text": "약. 죽음 직전 회복약.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "회복약"
+  },
+  {
+    "nodeId": 23,
+    "text": "폭탄. 일격 다수 처리.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "폭탄의 거리"
+  },
+  {
+    "nodeId": 24,
+    "text": "맨손. 무모. 그러나 자유.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "맨손의 한계"
+  },
+  {
+    "nodeId": 25,
+    "text": "동맹 우선순위?",
+    "choices": [
+      {
+        "label": "광부 1000명",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "키드 + 로 — 3대장 동맹",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      },
+      {
+        "label": "야마토 — 카이도 자녀",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "히요리 + 사무라이",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "혼자 — 동맹 없이",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 26,
+    "text": "광부. 1000명 합류. 인해전술.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "광부 1000"
+  },
+  {
+    "nodeId": 27,
+    "text": "키드 + 로. 3대장 합공.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "3대장 합공"
+  },
+  {
+    "nodeId": 28,
+    "text": "야마토. 그가 카이도와 정면. 너 합류.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "야마토와 합류"
+  },
+  {
+    "nodeId": 29,
+    "text": "히요리. 와노 사무라이 100명.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "와노 100"
+  },
+  {
+    "nodeId": 30,
+    "text": "혼자. 무모.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "혼자의 무모"
+  },
+  {
+    "nodeId": 31,
+    "text": "정찰 우선?",
+    "choices": [
+      {
+        "label": "오니가시마 정문",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "동굴 통로 — 야마토와",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "분석"
+        ]
+      },
+      {
+        "label": "카이도 본인 — 약점",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "오로치 — 와노 쇼군",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "정면"
+        ]
+      },
+      {
+        "label": "수도 — 시민 동원",
+        "nextNodeId": 36,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 32,
+    "text": "정문. 1만 명 카이도 군.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정문 정찰"
+  },
+  {
+    "nodeId": 33,
+    "text": "동굴. 비밀 통로 발견.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "동굴 발견"
+  },
+  {
+    "nodeId": 34,
+    "text": "약점. 술이 깰 때.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "술의 약점"
+  },
+  {
+    "nodeId": 35,
+    "text": "오로치. 그가 적. 우선 처리.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "오로치 처리"
+  },
+  {
+    "nodeId": 36,
+    "text": "수도. 시민 합류 가능성.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "수도 시민"
+  },
+  {
+    "nodeId": 37,
+    "text": "작전 결정.",
+    "choices": [
+      {
+        "label": "정면 — 9명 합공",
+        "nextNodeId": 38,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "우회 — 동굴 + 광부",
+        "nextNodeId": 39,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      },
+      {
+        "label": "내부 분열 유도",
+        "nextNodeId": 40,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "독자"
+        ]
+      },
+      {
+        "label": "협상 시도 — 카이도와",
+        "nextNodeId": 41,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "대피 — 와노 시민 우선",
+        "nextNodeId": 42,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "신중"
+        ]
+      },
+      {
+        "label": "루피 + 너 — 정상 침투",
+        "nextNodeId": 43,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 38,
+    "text": "정면. 9명. 카이도와 직접.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "9명의 정면"
+  },
+  {
+    "nodeId": 39,
+    "text": "우회. 동굴 + 광부 + 시민. 다중.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "다중 우회"
+  },
+  {
+    "nodeId": 40,
+    "text": "분열. 카이도 부하 분열 유도.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "분열의 유도"
+  },
+  {
+    "nodeId": 41,
+    "text": "협상. 그가 \"협상은 약자가\" 거절.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "협상의 거절"
+  },
+  {
+    "nodeId": 42,
+    "text": "대피. 시민 안전 우선. 그러나 카이도 그대로.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "시민 대피"
+  },
+  {
+    "nodeId": 43,
+    "text": "정상. 루피 + 너. 카이도와 직접.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정상의 둘"
   }
 ]

@@ -3,54 +3,208 @@
     "nodeId": 1,
     "text": "스릴러 바크. 거대한 유령선. 그림자 사라짐 — 모리아의 능력. 동료들 그림자 다 빼앗김. 너의 그림자는 아직.",
     "choices": [
-      { "label": "모리아 정면 — 자신의 그림자 지킴", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
-      { "label": "동료 그림자 회수 작전", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
-      { "label": "브룩 — 50년 동안 갇힌 해골", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["분석","이타"] },
-      { "label": "쿠마 등장 — 모리아 데려감", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피","신중"] }
+      {
+        "label": "모리아 정면 — 자신의 그림자 지킴",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "동료 그림자 회수 작전",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "브룩 — 50년 동안 갇힌 해골",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "이타"
+        ]
+      },
+      {
+        "label": "쿠마 등장 — 모리아 데려감",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "신중"
+        ]
+      },
+      {
+        "label": "능력자 — 누구의 그림자",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "브룩 — 영혼의 깊이",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "쿠마 — 7무해의 손",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "나이트메어 루피",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "페로나 — 부정의 유령",
+        "nextNodeId": 40,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "모리아 정면. 그가 \"네 그림자 마지막이다\" 한다. 칼 막을 시간 1초.",
     "choices": [
-      { "label": "회피", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["신중","회피"] },
-      { "label": "정면 돌파", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+      {
+        "label": "회피",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "회피"
+        ]
+      },
+      {
+        "label": "정면 돌파",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "그림자 회수. 거대한 좀비 100마리. 그 사이 동료 그림자가 갇힌 가둠통.",
     "choices": [
-      { "label": "소금 — 좀비 약점", "nextNodeId": 7, "requiredItem": null, "grantItem": "소금", "traits": ["분석","원칙"] },
-      { "label": "정면 돌파", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+      {
+        "label": "소금 — 좀비 약점",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "소금",
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "정면 돌파",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "브룩. 50년 그림자 잃은 해골. \"제 그림자만 돌아오면 — 음악도 다시.\" 그가 바이올린.",
     "choices": [
-      { "label": "그를 동료로 합류 약속", "nextNodeId": 9, "requiredItem": null, "grantItem": "브룩", "traits": ["이타","협력"] }
+      {
+        "label": "그를 동료로 합류 약속",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "브룩",
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "회피. 모리아 칼이 빗나감. 다음 기회 잡음.",
     "choices": [
-      { "label": "역공", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+      {
+        "label": "역공",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "정면. 모리아 칼이 너를 베지만 동시에 너의 주먹이 그의 가슴.",
     "choices": [
-      { "label": "동시 다운 — 무승부", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["정면","원칙"] }
+      {
+        "label": "동시 다운 — 무승부",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "소금. 좀비 100마리 입에 한 알씩. 그림자가 좀비에서 빠져나옴. 모두 자기 주인에게.",
     "choices": [
-      { "label": "동료들에게 그림자 복귀 도움", "nextNodeId": 12, "requiredItem": "소금", "grantItem": null, "traits": ["이타","협력"] }
+      {
+        "label": "동료들에게 그림자 복귀 도움",
+        "nextNodeId": 12,
+        "requiredItem": "소금",
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      }
     ]
   },
   {
@@ -64,14 +218,32 @@
     "nodeId": 9,
     "text": "브룩 합류 약속. 그가 \"5조각 카르마\" 곡 시작. 동료들 들으며 힘 회복.",
     "choices": [
-      { "label": "함께 — 모리아로", "nextNodeId": 13, "requiredItem": "브룩", "grantItem": null, "traits": ["이타","협력"] }
+      {
+        "label": "함께 — 모리아로",
+        "nextNodeId": 13,
+        "requiredItem": "브룩",
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "역공. 모리아 그림자 분리 능력. 그러나 너의 그림자가 그를 휘감음.",
     "choices": [
-      { "label": "끝까지 — 일대일", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+      {
+        "label": "끝까지 — 일대일",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {
@@ -85,14 +257,32 @@
     "nodeId": 12,
     "text": "동료들 그림자 복귀. 9명이 다 본인. 모리아 \"이건 — \" 충격.",
     "choices": [
-      { "label": "마지막 합공", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] }
+      {
+        "label": "마지막 합공",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 13,
     "text": "브룩 + 동료. 모리아 vs 10명. 그가 거대 좀비 합쳐 만든 오즈와 함께.",
     "choices": [
-      { "label": "오즈 vs 9명 합공", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] }
+      {
+        "label": "오즈 vs 9명 합공",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      }
     ]
   },
   {
@@ -122,5 +312,330 @@
     "choices": [],
     "endingType": "neutral",
     "endingTitle": "쿠마의 손길"
+  },
+  {
+    "nodeId": 18,
+    "text": "동료 그림자가 다른 사람에게 부착.",
+    "choices": [
+      {
+        "label": "루피의 그림자 — 좀비 거인 오즈",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "조로의 그림자 — 류마",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "나미의 그림자 — 사신",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "쵸파의 그림자 — 거대 코끼리",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 19,
+    "text": "오즈. 루피의 그림자. 거대 좀비.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "오즈의 거인"
+  },
+  {
+    "nodeId": 20,
+    "text": "류마. 죽은 사무라이. 그림자 회수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "류마의 결투"
+  },
+  {
+    "nodeId": 21,
+    "text": "사신. 나미의 그림자 + 사신 기술.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "사신의 그림자"
+  },
+  {
+    "nodeId": 22,
+    "text": "쵸파. 그림자가 코끼리에. 합류 후 회수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "쵸파의 거대"
+  },
+  {
+    "nodeId": 23,
+    "text": "브룩의 50년 외로움.",
+    "choices": [
+      {
+        "label": "그의 노래 — 빈크스의 술",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "동료 합류 약속",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "그의 그림자 회수 — 기억 회복",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "브룩의 음악 — 모리아도 감동",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 24,
+    "text": "노래. 빈크스의 술. 동료들 감동.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "빈크스의 술"
+  },
+  {
+    "nodeId": 25,
+    "text": "약속. 합류 + 9명.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "브룩의 약속"
+  },
+  {
+    "nodeId": 26,
+    "text": "회수. 50년의 기억 회복.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "50년의 회복"
+  },
+  {
+    "nodeId": 27,
+    "text": "음악. 모리아조차 잠시 멈춤.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "모리아의 멈춤"
+  },
+  {
+    "nodeId": 28,
+    "text": "쿠마. 그의 손.",
+    "choices": [
+      {
+        "label": "쿠마의 손길 — 다른 섬으로",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "루피 보호 — 쿠마와 협상",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "쿠마와 정면",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      },
+      {
+        "label": "쿠마 — 사실은 동맹",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 29,
+    "text": "쿠마. 9명을 다른 섬으로. 2년 수련.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "2년 분리"
+  },
+  {
+    "nodeId": 30,
+    "text": "협상. 쿠마가 루피 살림.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "쿠마의 자비"
+  },
+  {
+    "nodeId": 31,
+    "text": "정면. 그의 능력 압도.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "쿠마의 압도"
+  },
+  {
+    "nodeId": 32,
+    "text": "동맹. 그의 진짜 정체 — 혁명군.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "쿠마의 정체"
+  },
+  {
+    "nodeId": 33,
+    "text": "나이트메어 루피. 100개 그림자.",
+    "choices": [
+      {
+        "label": "100개 그림자 흡수 — 거대 루피",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "한계 — 새벽까지",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "몸 부서짐 — 너무 많은",
+        "nextNodeId": 36,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "모리아의 패배 — 나이트메어로",
+        "nextNodeId": 37,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "햇빛에 그림자 사라짐",
+        "nextNodeId": 38,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "원칙"
+        ]
+      },
+      {
+        "label": "그림자 영원 — 평생 너의 모습 변함",
+        "nextNodeId": 39,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 34,
+    "text": "거대. 100개 흡수. 모리아 압도.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "나이트메어의 거대"
+  },
+  {
+    "nodeId": 35,
+    "text": "한계. 새벽 전에 끝내야.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "새벽의 한계"
+  },
+  {
+    "nodeId": 36,
+    "text": "부서짐. 100개는 너무 많음.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "한계의 부서짐"
+  },
+  {
+    "nodeId": 37,
+    "text": "모리아. 나이트메어로 격파.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "나이트메어의 격파"
+  },
+  {
+    "nodeId": 38,
+    "text": "햇빛. 그림자 사라짐. 효과 끝.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "햇빛의 끝"
+  },
+  {
+    "nodeId": 39,
+    "text": "영원. 그림자가 너에게 영원.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "영원의 그림자"
+  },
+  {
+    "nodeId": 40,
+    "text": "페로나. 그녀의 유령이 모든 것을 부정. \"네 인생이 의미 없어.\" 그러나 우솝의 \"부정 무효\" 능력으로 무력화.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "페로나의 부정"
   }
 ]

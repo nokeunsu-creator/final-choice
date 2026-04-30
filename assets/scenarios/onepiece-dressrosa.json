@@ -3,78 +3,279 @@
     "nodeId": 1,
     "text": "드레스로사. 7무해 도플라밍고가 왕. 시민이 장난감으로 변함. 너는 루피 동료. 콜로세움에서 대회 — 우승 상품 \"멜라멜라 열매.\"",
     "choices": [
-      { "label": "콜로세움 출전 — 우승 노림", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
-      { "label": "도플라밍고 직진 — 왕궁 침투", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["용기","독자"] },
-      { "label": "장난감 시민 구출 — 지하 공장", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
-      { "label": "도플라밍고 버드케이지에 갇힘", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
-      { "label": "C블록 디아만테에게 패배", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
-      { "label": "리쿠 왕가 부활 코스", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["원칙","이타"] },
-      { "label": "콜로세움+사보+시민+도플라밍고 모두", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["용기","협력","원칙"] }
+      {
+        "label": "콜로세움 출전 — 우승 노림",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "도플라밍고 직진 — 왕궁 침투",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "독자"
+        ]
+      },
+      {
+        "label": "장난감 시민 구출 — 지하 공장",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "도플라밍고 버드케이지에 갇힘",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "C블록 디아만테에게 패배",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "자기"
+        ]
+      },
+      {
+        "label": "리쿠 왕가 부활 코스",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "이타"
+        ]
+      },
+      {
+        "label": "콜로세움+사보+시민+도플라밍고 모두",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "도플라밍고 — 어떤 능력",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "리쿠 왕가 — 부활",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "이타"
+        ]
+      },
+      {
+        "label": "사보 — 멜라멜라",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "이타"
+        ]
+      },
+      {
+        "label": "드워프 + 시민 — 봉기",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "콜로세움. C블록 결승. 사보가 옆에 있다. \"형의 의지.\" 그가 멜라멜라를 가져갈 의도.",
     "choices": [
-      { "label": "사보에게 양보", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["이타","원칙"] },
-      { "label": "정정당당 결투", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+      {
+        "label": "사보에게 양보",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      },
+      {
+        "label": "정정당당 결투",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "왕궁. 도플라밍고가 \"오, 직진하는 자.\" 그의 실. 일대 다대응.",
     "choices": [
-      { "label": "기어 4 — 정면", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
-      { "label": "후퇴 — 동맹 모음", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] }
+      {
+        "label": "기어 4 — 정면",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "후퇴 — 동맹 모음",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "지하 공장. 시저가 SAD 만드는 곳. 시민 1000명 장난감 + 노예.",
     "choices": [
-      { "label": "프랭키 + 시민 봉기", "nextNodeId": 9, "requiredItem": null, "grantItem": "시민봉기", "traits": ["협력","원칙"] }
+      {
+        "label": "프랭키 + 시민 봉기",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": "시민봉기",
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "사보 양보. 그가 멜라멜라 능력 흡수 — 에이스의 불꽃. 둘이 동맹.",
     "choices": [
-      { "label": "사보 + 너 — 도플라밍고", "nextNodeId": 10, "requiredItem": null, "grantItem": "사보동맹", "traits": ["협력","원칙"] }
+      {
+        "label": "사보 + 너 — 도플라밍고",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": "사보동맹",
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "결투. 사보의 불꽃 vs 너의 무기. 격투. 그가 \"이거 우리 형 의지\" 한다. 패배.",
     "choices": [
-      { "label": "사보 인정 — 동맹", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["회복","원칙"] }
+      {
+        "label": "사보 인정 — 동맹",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회복",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "기어 4. 도플라밍고의 \"신의 실.\" 둘 다 거대 충돌. 왕궁 부서짐.",
     "choices": [
-      { "label": "끝까지 — 한 방 더", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+      {
+        "label": "끝까지 — 한 방 더",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "후퇴. 동맹 모음 — 로 + 사보 + 시민. 7대 1.",
     "choices": [
-      { "label": "합공 — 도플라밍고 둘러쌈", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] }
+      {
+        "label": "합공 — 도플라밍고 둘러쌈",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "시민 봉기. 1000명이 일제히. 도플라밍고 군 흔들림.",
     "choices": [
-      { "label": "왕궁 진입 (시민과 함께)", "nextNodeId": 12, "requiredItem": "시민봉기", "grantItem": null, "traits": ["협력","용기"] }
+      {
+        "label": "왕궁 진입 (시민과 함께)",
+        "nextNodeId": 12,
+        "requiredItem": "시민봉기",
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "사보 + 너. 사보의 불꽃 + 너의 능력. 도플라밍고 \"이건 — \" 충격.",
     "choices": [
-      { "label": "마지막 한 방", "nextNodeId": 13, "requiredItem": "사보동맹", "grantItem": null, "traits": ["용기","원칙"] }
+      {
+        "label": "마지막 한 방",
+        "nextNodeId": 13,
+        "requiredItem": "사보동맹",
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {
@@ -125,5 +326,330 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "드레스로사의 자유"
+  },
+  {
+    "nodeId": 18,
+    "text": "실 능력.",
+    "choices": [
+      {
+        "label": "실 인형 — 시민 조종",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "정면"
+        ]
+      },
+      {
+        "label": "버드 케이지 — 도시 봉쇄",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "신의 실 — 일격 무기",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "능력 봉인 — 해수 무기",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "이타"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 19,
+    "text": "실. 시민 조종. 분석 후 격파.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "실의 분석"
+  },
+  {
+    "nodeId": 20,
+    "text": "버드. 도시 봉쇄. 1시간 안에.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "1시간의 격파"
+  },
+  {
+    "nodeId": 21,
+    "text": "신의 실. 일격 무기. 회피.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "신의 실 회피"
+  },
+  {
+    "nodeId": 22,
+    "text": "봉인. 해수. 능력 봉인 + 격파.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "해수의 봉인"
+  },
+  {
+    "nodeId": 23,
+    "text": "리쿠 왕.",
+    "choices": [
+      {
+        "label": "리쿠 왕 부활 — 시민의 박수",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "리벨라 공주 — 새 여왕",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "동맹 — 어인섬과",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "리벨라와 결혼",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 24,
+    "text": "부활. 시민 박수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "리쿠 부활"
+  },
+  {
+    "nodeId": 25,
+    "text": "리벨라. 새 여왕. 평화.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "리벨라 여왕"
+  },
+  {
+    "nodeId": 26,
+    "text": "동맹. 어인섬과 평화.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "어인 동맹"
+  },
+  {
+    "nodeId": 27,
+    "text": "결혼. 너와 리벨라. 새 시대.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "리벨라와 결혼"
+  },
+  {
+    "nodeId": 28,
+    "text": "사보. 형의 의지.",
+    "choices": [
+      {
+        "label": "사보 합류 — 혁명군",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "에이스의 의지 — 사보가 계승",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      },
+      {
+        "label": "사보 vs 콜리세움",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "사보 격파 — 너가 승리",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "자기"
+        ]
+      },
+      {
+        "label": "사보 + 너 — 동맹",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 29,
+    "text": "사보. 혁명군 동맹.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "혁명군 동맹"
+  },
+  {
+    "nodeId": 30,
+    "text": "의지. 사보가 계승. 의미.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "에이스의 계승"
+  },
+  {
+    "nodeId": 31,
+    "text": "콜리세움. 사보 우승.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "사보 우승"
+  },
+  {
+    "nodeId": 32,
+    "text": "너. 사보 격파. 멜라멜라 너.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "너의 멜라멜라"
+  },
+  {
+    "nodeId": 33,
+    "text": "동맹. 사보 + 너 평생.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "평생 동맹"
+  },
+  {
+    "nodeId": 34,
+    "text": "봉기.",
+    "choices": [
+      {
+        "label": "드워프 — 토토랜드 소국",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "시민 1만명 봉기",
+        "nextNodeId": 36,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "레오 — 작은 영웅",
+        "nextNodeId": 37,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "봉기 실패 — 도플라밍고 압도",
+        "nextNodeId": 38,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "비올라 — 그녀의 정보",
+        "nextNodeId": 39,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "분석"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 35,
+    "text": "드워프. 작은 사람들. 도움.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "드워프의 도움"
+  },
+  {
+    "nodeId": 36,
+    "text": "봉기. 1만 명 시민.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "1만명 봉기"
+  },
+  {
+    "nodeId": 37,
+    "text": "레오. 작은 영웅 활약.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "레오의 영웅"
+  },
+  {
+    "nodeId": 38,
+    "text": "실패. 압도.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "봉기 실패"
+  },
+  {
+    "nodeId": 39,
+    "text": "비올라. 그녀의 정보. 결정.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "비올라의 정보"
   }
 ]

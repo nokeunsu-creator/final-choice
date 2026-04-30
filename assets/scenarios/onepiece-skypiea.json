@@ -79,6 +79,42 @@
           "실용",
           "회피"
         ]
+      },
+      {
+        "label": "에넬 신 — 어떻게 막을까",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "구름 위 항해 — 어떻게",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "하늘 사람 — 동맹",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "황금 — 어떻게 가져갈까",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
       }
     ]
   },
@@ -244,5 +280,310 @@
     "choices": [],
     "endingType": "neutral",
     "endingTitle": "황금만 챙긴 자"
+  },
+  {
+    "nodeId": 15,
+    "text": "에넬. 번개의 신. 그러나 약점은?",
+    "choices": [
+      {
+        "label": "루피 — 고무 신체",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "황금 종 — 한 번의 일격",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "에넬과 협상 — \"달로 보내드림\"",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관",
+          "회피"
+        ]
+      },
+      {
+        "label": "도망 — 번개 한 방",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "루피. 고무는 번개 무효. 그가 직접 한 방.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "고무의 무효"
+  },
+  {
+    "nodeId": 17,
+    "text": "황금 종. 그것을 울려 4백년 만의 신호.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "황금 종의 신호"
+  },
+  {
+    "nodeId": 18,
+    "text": "협상. 그가 달로 떠남. 하늘섬 자유.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "달의 약속"
+  },
+  {
+    "nodeId": 19,
+    "text": "도망. 번개에 한 방.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "번개의 끝"
+  },
+  {
+    "nodeId": 20,
+    "text": "구름 바다. 어떤 항해?",
+    "choices": [
+      {
+        "label": "구름 끓는 — 백색 바다 통과",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "구름 가르기 — 노 비어머피",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "비행 — 쟈야 신호",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "폭풍 — 구름 바다 폭풍",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 21,
+    "text": "백색 바다. 끓는 구름. 통과.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "백색 바다"
+  },
+  {
+    "nodeId": 22,
+    "text": "노. 동료가 함께 노 저음. 협력.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "노의 협력"
+  },
+  {
+    "nodeId": 23,
+    "text": "쟈야. 4백년 전 도시의 신호. 비행.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "쟈야의 비행"
+  },
+  {
+    "nodeId": 24,
+    "text": "폭풍. 떨어짐.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "구름의 폭풍"
+  },
+  {
+    "nodeId": 25,
+    "text": "하늘 사람과 동맹.",
+    "choices": [
+      {
+        "label": "와이퍼 — 슈란디아 전사",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      },
+      {
+        "label": "코니스 — 가이드",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "간 폴 — 옛 신관",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "슈란디아 vs 하늘 사람 중재",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "이타"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 26,
+    "text": "와이퍼. 슈란디아의 전사. 동맹.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "슈란디아의 와이퍼"
+  },
+  {
+    "nodeId": 27,
+    "text": "코니스. 그녀가 안내. 안전 항해.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "코니스의 안내"
+  },
+  {
+    "nodeId": 28,
+    "text": "간 폴. 옛 신관. 진실을 알려줌.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "간 폴의 진실"
+  },
+  {
+    "nodeId": 29,
+    "text": "중재. 4백년의 갈등 해소.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "4백년의 화해"
+  },
+  {
+    "nodeId": 30,
+    "text": "하늘섬의 황금. 어떻게?",
+    "choices": [
+      {
+        "label": "전부 — 최대치",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "자기"
+        ]
+      },
+      {
+        "label": "일부만 — 적당히",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용",
+          "신중"
+        ]
+      },
+      {
+        "label": "버림 — 하늘섬에",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      },
+      {
+        "label": "비밀 — 단서만",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "독자"
+        ]
+      },
+      {
+        "label": "나미 — 그녀에게",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 31,
+    "text": "전부. 배가 무거워 침몰 직전.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "황금의 무게"
+  },
+  {
+    "nodeId": 32,
+    "text": "일부. 적당량. 안전 귀환.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "적당의 귀환"
+  },
+  {
+    "nodeId": 33,
+    "text": "버림. 하늘섬에 두고 옴. 그들의 자원.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "하늘섬의 자원"
+  },
+  {
+    "nodeId": 34,
+    "text": "단서. 다음 모험으로.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "다음의 단서"
+  },
+  {
+    "nodeId": 35,
+    "text": "나미. 그녀의 고향 재건. 우정.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "나미의 고향"
   }
 ]

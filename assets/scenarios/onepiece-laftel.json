@@ -80,6 +80,44 @@
         "traits": [
           "원칙"
         ]
+      },
+      {
+        "label": "진정한 보물 — 무엇",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "루피의 자리 — 해적왕",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "진실 — 세계와 어떻게",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "이타"
+        ]
+      },
+      {
+        "label": "귀환 — 어디로",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
       }
     ]
   },
@@ -254,5 +292,326 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "이제 그 시대"
+  },
+  {
+    "nodeId": 15,
+    "text": "원피스 — 진정한 보물?",
+    "choices": [
+      {
+        "label": "황금 — 기대대로",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용"
+        ]
+      },
+      {
+        "label": "진실의 책 — 100년 공백",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "무 — 빈 섬",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      },
+      {
+        "label": "고대 무기 — 우라누스",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "황금. 기대대로. 그러나 의외 실망.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "황금의 실망"
+  },
+  {
+    "nodeId": 17,
+    "text": "진실. 100년의 공백 기록. 세상 바꿈.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "100년의 진실"
+  },
+  {
+    "nodeId": 18,
+    "text": "무. 라프텔은 빈 섬. 보물은 여행 자체.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "여행이 보물"
+  },
+  {
+    "nodeId": 19,
+    "text": "우라누스. 고대 무기. 위험한 보물.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "고대 무기"
+  },
+  {
+    "nodeId": 20,
+    "text": "루피가 해적왕 됨.",
+    "choices": [
+      {
+        "label": "동료들과 축하",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "루피의 결단 — 해체",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "다음 황제 — 너",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "자기"
+        ]
+      },
+      {
+        "label": "평화의 시대",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "이타"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 21,
+    "text": "축하. 9명이 라프텔에서 술. 평생의 추억.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "9명의 축하"
+  },
+  {
+    "nodeId": 22,
+    "text": "해체. \"이제 각자의 길\" 루피의 마지막.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "루피의 해체"
+  },
+  {
+    "nodeId": 23,
+    "text": "너. 루피가 \"다음 황제는 너.\" 너의 길.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "다음 황제"
+  },
+  {
+    "nodeId": 24,
+    "text": "평화. 해적왕 시대 후 평화.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "평화의 시대"
+  },
+  {
+    "nodeId": 25,
+    "text": "100년의 진실. 세상에?",
+    "choices": [
+      {
+        "label": "전 세계 방송 — 베가펑크처럼",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "이타"
+        ]
+      },
+      {
+        "label": "비밀 — 너만 안다",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      },
+      {
+        "label": "혁명군과 공유 — 다음 세대",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "책으로 — 도서관에",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 26,
+    "text": "방송. 전 세계가 진실 알게 됨.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "진실의 방송"
+  },
+  {
+    "nodeId": 27,
+    "text": "비밀. 너만 알고 무덤까지.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "비밀의 무덤"
+  },
+  {
+    "nodeId": 28,
+    "text": "혁명군. 그들이 다음 세대에 전수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "혁명의 전수"
+  },
+  {
+    "nodeId": 29,
+    "text": "책. 모두가 읽을 수 있게. 공공.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "공공의 책"
+  },
+  {
+    "nodeId": 30,
+    "text": "라프텔 후 어디로?",
+    "choices": [
+      {
+        "label": "동료들의 고향 순방",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "고잉 메리 — 옛 배 추모",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "고도시 — 너의 고향",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "세계 일주 다시 — 다른 길로",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "신세계 영원 — 정착",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      },
+      {
+        "label": "쉴드 한 명 — 동료의 마지막",
+        "nextNodeId": 36,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 31,
+    "text": "순방. 9명의 고향을 방문. 평생의 여행.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "고향 순방"
+  },
+  {
+    "nodeId": 32,
+    "text": "메리. 옛 배에 절. 추모.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "메리의 추모"
+  },
+  {
+    "nodeId": 33,
+    "text": "고향. 너의 가족.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "너의 고향"
+  },
+  {
+    "nodeId": 34,
+    "text": "다시. 다른 길로 한 번 더.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "다시의 항해"
+  },
+  {
+    "nodeId": 35,
+    "text": "정착. 라프텔에 영원히.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "영원의 라프텔"
+  },
+  {
+    "nodeId": 36,
+    "text": "쉴드. 동료 한 명을 지키며 마지막.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "쉴드의 마지막"
   }
 ]

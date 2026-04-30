@@ -99,6 +99,42 @@
           "용기",
           "원칙"
         ]
+      },
+      {
+        "label": "리버스 마운틴 — 어떻게 오를까",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "7무해 — 누구와 거래?",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "동료 추가 — 누구?",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "항해 도전 — 무엇?",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
       }
     ]
   },
@@ -247,5 +283,289 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "위스키 피크"
+  },
+  {
+    "nodeId": 15,
+    "text": "리버스. 4개 바다의 물이 만나는 산.",
+    "choices": [
+      {
+        "label": "돛 정확히 — 바람 활용",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "엔진 풀가속",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "라부 고래 위에서",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "실패 — 산으로 추락",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "돛 정확. 4개 바람을 활용해 정점.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "4바람의 정점"
+  },
+  {
+    "nodeId": 17,
+    "text": "엔진. 풀가속으로 산 정상. 그러나 연료 다 씀.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "연료의 끝"
+  },
+  {
+    "nodeId": 18,
+    "text": "라부. 거대 고래 위에서 정상까지. 친구.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "라부의 등"
+  },
+  {
+    "nodeId": 19,
+    "text": "추락. 다시 시작.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "리버스의 추락"
+  },
+  {
+    "nodeId": 20,
+    "text": "7무해 중 한 명과 거래?",
+    "choices": [
+      {
+        "label": "미호크 — 검술의 길",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "징베 — 어인 해적",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "도플라밍고 거래",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "바솔로뮤 쿠마",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 21,
+    "text": "미호크. 그가 \"네 칼은 가능성.\" 제자.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "미호크의 제자"
+  },
+  {
+    "nodeId": 22,
+    "text": "징베. 어인섬 동맹. 그가 \"인간과 어인의 다리.\"",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "인간과 어인"
+  },
+  {
+    "nodeId": 23,
+    "text": "도플라밍고. 그가 \"실의 거래\" 제안. 너 거절.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "실의 거절"
+  },
+  {
+    "nodeId": 24,
+    "text": "쿠마. 그가 너를 다른 차원으로. 2년 후 만남.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "쿠마의 손"
+  },
+  {
+    "nodeId": 25,
+    "text": "추가 동료?",
+    "choices": [
+      {
+        "label": "쵸파 — 의사",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "로빈 — 고고학자",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "프랭키 — 조선공",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "실용",
+          "협력"
+        ]
+      },
+      {
+        "label": "브룩 — 음악가",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 26,
+    "text": "쵸파. 친구가 된 순록 의사.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "쵸파의 합류"
+  },
+  {
+    "nodeId": 27,
+    "text": "로빈. 그녀의 고대 문자 해독. 라프텔의 길.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "로빈의 해독"
+  },
+  {
+    "nodeId": 28,
+    "text": "프랭키. 새 배 + 사이보그. 강력한 동료.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "프랭키의 도크"
+  },
+  {
+    "nodeId": 29,
+    "text": "브룩. 50년의 외로움 후 합류.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "브룩의 음악"
+  },
+  {
+    "nodeId": 30,
+    "text": "도전?",
+    "choices": [
+      {
+        "label": "날씨 헌터 — 나미 훈련",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "바다 왕 사냥",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "에버메드 — 영원의 약",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "폭풍 한가운데",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 31,
+    "text": "날씨. 나미가 그랜드라인의 변동 패턴 마스터.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "나미의 마스터"
+  },
+  {
+    "nodeId": 32,
+    "text": "바다왕. 거대 어룡 한 마리. 식량.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "바다왕 사냥"
+  },
+  {
+    "nodeId": 33,
+    "text": "에버메드. 누군가의 병 치료. 평생 보람.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "영원의 약"
+  },
+  {
+    "nodeId": 34,
+    "text": "폭풍. 그러나 동료들이 함께 — 통과.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "폭풍 통과"
   }
 ]

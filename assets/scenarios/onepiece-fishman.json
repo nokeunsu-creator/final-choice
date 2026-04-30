@@ -51,6 +51,45 @@
           "원칙",
           "협력"
         ]
+      },
+      {
+        "label": "왕 — 누구와 동맹",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "신 인종 차별 — 어떻게",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      },
+      {
+        "label": "바다 깊이 — 어떻게 살까",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "고대 무기 — 포세이돈",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
       }
     ]
   },
@@ -227,5 +266,328 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "다리의 동맹"
+  },
+  {
+    "nodeId": 15,
+    "text": "어인섬 왕가. 누구와?",
+    "choices": [
+      {
+        "label": "넵튠 왕",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "시라호시 — 인어 공주",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "징베 — 7무해 탈퇴",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      },
+      {
+        "label": "호디 존스 — 적 측",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "넵튠. 평화의 왕. 동맹.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "넵튠의 동맹"
+  },
+  {
+    "nodeId": 17,
+    "text": "시라호시. 그녀의 능력 — 바다왕 부르기.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "시라호시의 부름"
+  },
+  {
+    "nodeId": 18,
+    "text": "징베. 7무해 탈퇴 후 합류.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "징베의 합류"
+  },
+  {
+    "nodeId": 19,
+    "text": "호디. 그러나 그가 적. 정면 결투.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "호디의 결투"
+  },
+  {
+    "nodeId": 20,
+    "text": "인간 vs 어인. 갈등.",
+    "choices": [
+      {
+        "label": "오토히메 왕비의 유언 따름",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      },
+      {
+        "label": "인간 차별 받아들임 — 부정",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      },
+      {
+        "label": "루피의 친구 발언 — \"같은 친구\"",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "평화 협정 체결",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 21,
+    "text": "오토히메. 그녀의 유언 — 평화. 따름.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "오토히메의 유언"
+  },
+  {
+    "nodeId": 22,
+    "text": "부정. 어인은 어인끼리. 분리.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "분리의 길"
+  },
+  {
+    "nodeId": 23,
+    "text": "루피. 그가 \"인간이건 어인이건 — 친구.\" 평화.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "루피의 친구"
+  },
+  {
+    "nodeId": 24,
+    "text": "협정. 인간 + 어인 정식 동맹.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "평화 협정"
+  },
+  {
+    "nodeId": 25,
+    "text": "해저 1만m. 살기?",
+    "choices": [
+      {
+        "label": "코팅 풍선 — 보호",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "구장이 — 신화 어룡",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "하트의 능력 — 로의 룸",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "직접 — 코팅 없이",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "자기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 26,
+    "text": "코팅. 풍선 안전.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "코팅의 안전"
+  },
+  {
+    "nodeId": 27,
+    "text": "구장이. 신화의 어룡. 그것 등 위.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "신화의 어룡"
+  },
+  {
+    "nodeId": 28,
+    "text": "로. 그의 룸 능력. 안전 통과.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "로의 룸"
+  },
+  {
+    "nodeId": 29,
+    "text": "직접. 압력으로 죽음.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "압력의 끝"
+  },
+  {
+    "nodeId": 30,
+    "text": "포세이돈. 시라호시의 능력.",
+    "choices": [
+      {
+        "label": "비밀 — 사용 안 함",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "이타"
+        ]
+      },
+      {
+        "label": "호디에게 빼앗기지 않기",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      },
+      {
+        "label": "루피의 약속 — \"네가 결정\"",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "능력 사용 — 바다왕 모음",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "분석"
+        ]
+      },
+      {
+        "label": "비밀 누설 — 정부에",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자",
+          "자기"
+        ]
+      },
+      {
+        "label": "시라호시 보호 평생",
+        "nextNodeId": 36,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 31,
+    "text": "비밀. 그녀의 평화 유지.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "비밀의 평화"
+  },
+  {
+    "nodeId": 32,
+    "text": "호디. 그가 시라호시 노림. 막음.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "시라호시 보호"
+  },
+  {
+    "nodeId": 33,
+    "text": "루피. \"네가 결정해.\" 그녀가 평화 결정.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "결정의 자유"
+  },
+  {
+    "nodeId": 34,
+    "text": "바다왕. 시라호시 부름. 모든 위기 해결.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "바다왕의 부름"
+  },
+  {
+    "nodeId": 35,
+    "text": "누설. 정부가 그녀를 노림.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "누설의 대가"
+  },
+  {
+    "nodeId": 36,
+    "text": "평생. 너가 그녀의 호위 기사.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "평생의 호위"
   }
 ]

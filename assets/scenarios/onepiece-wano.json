@@ -70,6 +70,43 @@
           "협력",
           "원칙"
         ]
+      },
+      {
+        "label": "카이도 — 어떤 능력",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "동맹 — 누구와",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "오니가시마 침투 — 어떻게",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "와노의 미래 — 누가 왕",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
       }
     ]
   },
@@ -235,5 +272,324 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "사무라이의 새 시대"
+  },
+  {
+    "nodeId": 15,
+    "text": "카이도. 황제. 능력은?",
+    "choices": [
+      {
+        "label": "용 형태 — 거대",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "술 + 인간 형태 — 약점",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "전쟁의 신 — 역사 ✗",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      },
+      {
+        "label": "폭주 — 약점은 \"인간성\"",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "용. 거대 형태. 압도적.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "용의 압도"
+  },
+  {
+    "nodeId": 17,
+    "text": "술. 그가 술 깨면 약함. 그 순간.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "술의 약점"
+  },
+  {
+    "nodeId": 18,
+    "text": "전쟁. 역사상 패배 ✗. 압도.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "역사의 압도"
+  },
+  {
+    "nodeId": 19,
+    "text": "인간성. 그를 인간 면 자극. 흔들림.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "인간성의 자극"
+  },
+  {
+    "nodeId": 20,
+    "text": "와노 동맹.",
+    "choices": [
+      {
+        "label": "쿄시로 — 사무라이",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "히요리 — 슈란디아 공주",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "키쿠노조 — 시노부와 함께",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "레드 헤드 — 빅맘 차감",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "분석"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 21,
+    "text": "쿄시로. 그의 사무라이. 합류.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "쿄시로의 사무라이"
+  },
+  {
+    "nodeId": 22,
+    "text": "히요리. 와노 공주. 동맹.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "히요리의 동맹"
+  },
+  {
+    "nodeId": 23,
+    "text": "키쿠. 그녀의 검 + 시노부의 능력.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "두 여인의 합공"
+  },
+  {
+    "nodeId": 24,
+    "text": "빅맘. 그녀와 임시 동맹. 카이도 vs 빅맘.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "두 황제의 격돌"
+  },
+  {
+    "nodeId": 25,
+    "text": "오니가시마 침투.",
+    "choices": [
+      {
+        "label": "정면 진입 — 정문",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "동굴 — 야마토 안내",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "분석"
+        ]
+      },
+      {
+        "label": "바다 — 어인 잠수",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "하늘 — 오로치의 비행기",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 26,
+    "text": "정문. 카이도 군 1만 vs 우리. 정면.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "정문의 1만"
+  },
+  {
+    "nodeId": 27,
+    "text": "야마토. 그의 동굴 통로. 안전.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "야마토의 동굴"
+  },
+  {
+    "nodeId": 28,
+    "text": "잠수. 어인 친구의 안내. 안전.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "잠수의 안전"
+  },
+  {
+    "nodeId": 29,
+    "text": "비행기. 그러나 격추.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "비행기의 격추"
+  },
+  {
+    "nodeId": 30,
+    "text": "와노 새 왕?",
+    "choices": [
+      {
+        "label": "히요리 — 정통",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "모모노스케 — 어린 왕",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "와노 자유 — 왕 없음",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자",
+          "원칙"
+        ]
+      },
+      {
+        "label": "국제 동맹",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "오니가시마 그대로 — 잔존 정복",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "쇼군 후보 — 모리아 합류",
+        "nextNodeId": 36,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 31,
+    "text": "히요리. 정통 와노 공주. 새 왕.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "히요리 왕"
+  },
+  {
+    "nodeId": 32,
+    "text": "모모. 어린 왕. 그러나 큰 마음.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "모모의 왕좌"
+  },
+  {
+    "nodeId": 33,
+    "text": "자유. 왕 없는 자치국가.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "자유 와노"
+  },
+  {
+    "nodeId": 34,
+    "text": "동맹. 와노가 세계와 연결. 새 시대.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "국제 와노"
+  },
+  {
+    "nodeId": 35,
+    "text": "오니가시마. 카이도 잔존이 다시. 와노 위험.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "잔존의 위협"
+  },
+  {
+    "nodeId": 36,
+    "text": "모리아. 그가 새 쇼군. 그러나 어두운 길.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "어두운 쇼군"
   }
 ]

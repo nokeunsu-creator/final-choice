@@ -3,45 +3,216 @@
     "nodeId": 1,
     "text": "알라바스타 왕국. 7무해 크로커다일이 모래 폭풍으로 나라를 무너뜨림. 비비가 \"백성을 지켜야\" 한다. 너는 루피 동료. 알루바나 광장 D-1.",
     "choices": [
-      { "label": "왕궁 직진 — 크로커다일 정면", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
-      { "label": "광장 폭탄 해체 — 비비 합류", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
-      { "label": "물 — 사막 횡단 준비", "nextNodeId": 4, "requiredItem": null, "grantItem": "물통", "traits": ["분석","신중"] },
-      { "label": "비비와 작별 코스로", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] },
-      { "label": "사막 횡단 — 물 부족", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
-      { "label": "크로커다일과 협상 시도", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["회피","독자"] },
-      { "label": "에이스 등장으로 합류", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["용기","협력"] },
-      { "label": "물+폭탄+비비+작별 모든 길", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["원칙","용기","협력"] }
+      {
+        "label": "왕궁 직진 — 크로커다일 정면",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "광장 폭탄 해체 — 비비 합류",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "물 — 사막 횡단 준비",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": "물통",
+        "traits": [
+          "분석",
+          "신중"
+        ]
+      },
+      {
+        "label": "비비와 작별 코스로",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      },
+      {
+        "label": "사막 횡단 — 물 부족",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "크로커다일과 협상 시도",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "독자"
+        ]
+      },
+      {
+        "label": "에이스 등장으로 합류",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "협력"
+        ]
+      },
+      {
+        "label": "물+폭탄+비비+작별 모든 길",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "용기",
+          "협력"
+        ]
+      },
+      {
+        "label": "바로크 워크스 — 누구를 먼저",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "비비 — 어떤 길",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "왕가 — 코브라",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "사막 — 알라바스타 미래",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "왕궁 직진. 모래 폭풍. 크로커다일이 입구에서 \"네가 왔구나.\" 모래로 변신.",
     "choices": [
-      { "label": "물통으로 모래 무력화", "nextNodeId": 5, "requiredItem": "물통", "grantItem": null, "traits": ["분석","원칙"] },
-      { "label": "주먹 직격", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+      {
+        "label": "물통으로 모래 무력화",
+        "nextNodeId": 5,
+        "requiredItem": "물통",
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "주먹 직격",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "광장 폭탄. 시계탑 위 오각형 폭탄. 1시 0분 폭발 예정. 비비가 \"5분 남음\" 외친다.",
     "choices": [
-      { "label": "비비와 함께 — 정확히 끄기", "nextNodeId": 7, "requiredItem": null, "grantItem": "폭탄해체", "traits": ["협력","원칙"] },
-      { "label": "근처 멤버에게 — 던지기", "nextNodeId": 8, "requiredItem": null, "grantItem": null, "traits": ["용기","독자"] }
+      {
+        "label": "비비와 함께 — 정확히 끄기",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "폭탄해체",
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "근처 멤버에게 — 던지기",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "독자"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "물통 준비. 사막 7일치. 크로커다일은 모래 — 물이 약점.",
     "choices": [
-      { "label": "왕궁으로", "nextNodeId": 2, "requiredItem": "물통", "grantItem": null, "traits": ["분석","원칙"] },
-      { "label": "광장 폭탄으로", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["원칙"] }
+      {
+        "label": "왕궁으로",
+        "nextNodeId": 2,
+        "requiredItem": "물통",
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "광장 폭탄으로",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "물통. 크로커다일의 모래 형체에 물. 그가 잠시 굳음. 루피의 고무 고무 피스톨!",
     "choices": [
-      { "label": "마지막 한 방 — 결정타", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+      {
+        "label": "마지막 한 방 — 결정타",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {
@@ -55,7 +226,16 @@
     "nodeId": 7,
     "text": "비비와 함께. 폭탄 해체 시퀀스. 빨간선 자르기 직전 — 크로커다일이 위에서 \"멈춰.\"",
     "choices": [
-      { "label": "그래도 자르기 — 1초 안", "nextNodeId": 10, "requiredItem": "폭탄해체", "grantItem": null, "traits": ["용기","원칙"] }
+      {
+        "label": "그래도 자르기 — 1초 안",
+        "nextNodeId": 10,
+        "requiredItem": "폭탄해체",
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {
@@ -76,7 +256,16 @@
     "nodeId": 10,
     "text": "1초 안 자르기. 폭탄 멈춤. 비비가 \"감사해\" 한다. 그러나 크로커다일이 비비를 잡음.",
     "choices": [
-      { "label": "비비 구하기 + 크로커다일 처치", "nextNodeId": 11, "requiredItem": "물통", "grantItem": null, "traits": ["이타","용기"] }
+      {
+        "label": "비비 구하기 + 크로커다일 처치",
+        "nextNodeId": 11,
+        "requiredItem": "물통",
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "용기"
+        ]
+      }
     ]
   },
   {
@@ -90,7 +279,16 @@
     "nodeId": 12,
     "text": "비비가 \"같이 가자\" 한다 (밀짚모자 합류). 그러나 그녀는 왕족.",
     "choices": [
-      { "label": "왕국에 남으라 권유", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력"] }
+      {
+        "label": "왕국에 남으라 권유",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
@@ -127,5 +325,293 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "알라바스타의 부흥"
+  },
+  {
+    "nodeId": 18,
+    "text": "바로크 멤버.",
+    "choices": [
+      {
+        "label": "미스터 0 (크로커다일)",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "미스터 1 (다즈 본즈)",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "미스 더블 핑거",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "미스터 2 — 바라 바라",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 19,
+    "text": "0. 우두머리. 정면.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "0의 무력"
+  },
+  {
+    "nodeId": 20,
+    "text": "1. 강철 신체. 조로의 대결.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "1과 조로"
+  },
+  {
+    "nodeId": 21,
+    "text": "더블. 손가락 능력. 나미.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "더블의 손가락"
+  },
+  {
+    "nodeId": 22,
+    "text": "2. 그가 동료. 우정.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "2의 우정"
+  },
+  {
+    "nodeId": 23,
+    "text": "비비의 미래.",
+    "choices": [
+      {
+        "label": "같이 가자 — 밀짚모자",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "왕국에 남기",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙"
+        ]
+      },
+      {
+        "label": "결혼 — 코자",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "양국 친선 대사",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 24,
+    "text": "같이. 그러나 그녀의 책임.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "책임의 무게"
+  },
+  {
+    "nodeId": 25,
+    "text": "왕국. 평생 헌신.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "비비의 헌신"
+  },
+  {
+    "nodeId": 26,
+    "text": "코자. 그녀의 옛 친구. 결혼.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "비비의 결혼"
+  },
+  {
+    "nodeId": 27,
+    "text": "대사. 알라바스타 + 세계.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "친선 대사"
+  },
+  {
+    "nodeId": 28,
+    "text": "코브라 왕.",
+    "choices": [
+      {
+        "label": "왕 보호 — 7무해의 위협",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "용기"
+        ]
+      },
+      {
+        "label": "왕의 비밀 — 포네그리프",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "왕의 사임 — 비비에게",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "이타"
+        ]
+      },
+      {
+        "label": "암살 시도 — 막음",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 29,
+    "text": "보호. 7무해의 위협 격퇴.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "왕 보호"
+  },
+  {
+    "nodeId": 30,
+    "text": "포네그리프. 알라바스타의 비밀.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "포네그리프 발견"
+  },
+  {
+    "nodeId": 31,
+    "text": "사임. 비비가 새 왕.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "비비 왕"
+  },
+  {
+    "nodeId": 32,
+    "text": "암살. 막음. 왕 안전.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "암살 막음"
+  },
+  {
+    "nodeId": 33,
+    "text": "알라바스타 회복.",
+    "choices": [
+      {
+        "label": "비 회복 — 댄스의 가루",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "이타"
+        ]
+      },
+      {
+        "label": "오아시스 재건",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "사막 영원 — 회복 ✗",
+        "nextNodeId": 36,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "광장 폭발 — 시계탑 파괴",
+        "nextNodeId": 37,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "자기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 34,
+    "text": "비. 댄스의 가루 회수. 비 회복.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "비의 회복"
+  },
+  {
+    "nodeId": 35,
+    "text": "오아시스. 시민 자원 재건.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "오아시스 재건"
+  },
+  {
+    "nodeId": 36,
+    "text": "영원. 비 회복 ✗.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "영원의 사막"
+  },
+  {
+    "nodeId": 37,
+    "text": "폭발. 광장 부서짐. 시민 피해.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "광장의 폭발"
   }
 ]

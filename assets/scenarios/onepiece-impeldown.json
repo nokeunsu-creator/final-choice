@@ -42,6 +42,44 @@
           "용기",
           "협력"
         ]
+      },
+      {
+        "label": "간수 — 누구를 먼저?",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "죄수 — 누구를 풀어줄까",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "탈옥 경로 — 어떻게",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "레벨 6 — 가장 깊은 곳",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
       }
     ]
   },
@@ -223,5 +261,337 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "역사상 첫 탈옥"
+  },
+  {
+    "nodeId": 15,
+    "text": "간수장 마젤란. 그러나 그 전에?",
+    "choices": [
+      {
+        "label": "한니발 — 짐승 부대",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "사디 — 채찍의 여인",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "도미노 — 부 장관",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "마젤란 직접",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 16,
+    "text": "한니발. 짐승 부대 격파.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "짐승 부대"
+  },
+  {
+    "nodeId": 17,
+    "text": "사디. 그녀의 채찍. 회피.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "채찍의 회피"
+  },
+  {
+    "nodeId": 18,
+    "text": "도미노. 부 장관. 한 방.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "도미노의 한 방"
+  },
+  {
+    "nodeId": 19,
+    "text": "마젤란. 독독 능력. 무력.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "독의 끝"
+  },
+  {
+    "nodeId": 20,
+    "text": "풀어줄 죄수?",
+    "choices": [
+      {
+        "label": "이반코프 — 혁명군",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "크로커다일 — 7무해",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "미스터 1 — 검의 사나이",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "에이스 — 사형수",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "용기"
+        ]
+      },
+      {
+        "label": "버기 — 광대",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "직관"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 21,
+    "text": "이반코프. 혁명군 합류. 동맹.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "혁명군 합류"
+  },
+  {
+    "nodeId": 22,
+    "text": "크로커다일. 그가 \"흰수염을 죽이러 가\" 합류.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "크로커다일 합류"
+  },
+  {
+    "nodeId": 23,
+    "text": "미스터 1. 강철 신체. 합류.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "미스터 1"
+  },
+  {
+    "nodeId": 24,
+    "text": "에이스. 그러나 옮겨졌다. 마린포드로.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "에이스의 이동"
+  },
+  {
+    "nodeId": 25,
+    "text": "버기. 그가 \"같이 가자.\" 합류 + 코미디.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "버기의 광대"
+  },
+  {
+    "nodeId": 26,
+    "text": "탈옥 경로?",
+    "choices": [
+      {
+        "label": "엘리베이터 — 위로",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "카프와 사냥 코스",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "잠수 — 지하 통로",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "직접 돌파 — 정문",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "독에 중독 — 실패",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 27,
+    "text": "엘리베이터. 빠르게 위로.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "엘리베이터의 속도"
+  },
+  {
+    "nodeId": 28,
+    "text": "카프와. 그것을 타고. 빠른 탈출.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "카프와의 탈출"
+  },
+  {
+    "nodeId": 29,
+    "text": "잠수. 지하 통로. 안전.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "지하의 안전"
+  },
+  {
+    "nodeId": 30,
+    "text": "정문. 무력. 그러나 동료들과 합공.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정문의 합공"
+  },
+  {
+    "nodeId": 31,
+    "text": "독. 마젤란의 독에 중독. 끝.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "독의 중독"
+  },
+  {
+    "nodeId": 32,
+    "text": "레벨 6. 가장 위험한 죄수.",
+    "choices": [
+      {
+        "label": "검은수염 일행 만남",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      },
+      {
+        "label": "시류 — 비의 시류",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "카타리나 데번",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "바스코 샷",
+        "nextNodeId": 36,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "레벨 6 — 그냥 통과",
+        "nextNodeId": 37,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 33,
+    "text": "검은수염. 그가 \"동료가 필요해.\" 거절.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "검은수염의 제안"
+  },
+  {
+    "nodeId": 34,
+    "text": "시류. 비의 능력. 무력.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "비의 끝"
+  },
+  {
+    "nodeId": 35,
+    "text": "데번. 그녀의 능력. 회피.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "데번의 회피"
+  },
+  {
+    "nodeId": 36,
+    "text": "바스코. 그러나 그가 검은수염 합류.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "바스코의 선택"
+  },
+  {
+    "nodeId": 37,
+    "text": "통과. 가만히 — 안전.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "통과의 안전"
   }
 ]

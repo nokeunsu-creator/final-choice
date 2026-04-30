@@ -3,77 +3,268 @@
     "nodeId": 1,
     "text": "에그헤드 섬. 베가펑크의 미래 도시. 그러나 5인의 예지 — 세계 정부가 베가펑크 제거 명령. 너는 루피 동료. 위성 베가펑크 6명 + 본체.",
     "choices": [
-      { "label": "베가펑크 보호 — 본체 호위", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["이타","원칙"] },
-      { "label": "정보 — 그의 비밀 알아냄", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["분석","원칙"] },
-      { "label": "탈출 — 배 준비", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["신중","협력"] },
-      { "label": "5인 직접 강림", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["회피","자기"] },
-      { "label": "베가펑크+정보+황+탈출 모두", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력","용기"] },
-      { "label": "위성 베가펑크 5명 동료로", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["이타","협력"] },
-      { "label": "정보 너무 충격 — 무방송", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
-      { "label": "에그헤드를 동맹 거점으로", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] }
+      {
+        "label": "베가펑크 보호 — 본체 호위",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      },
+      {
+        "label": "정보 — 그의 비밀 알아냄",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "탈출 — 배 준비",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중",
+          "협력"
+        ]
+      },
+      {
+        "label": "5인 직접 강림",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "자기"
+        ]
+      },
+      {
+        "label": "베가펑크+정보+황+탈출 모두",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력",
+          "용기"
+        ]
+      },
+      {
+        "label": "위성 베가펑크 5명 동료로",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "정보 너무 충격 — 무방송",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "에그헤드를 동맹 거점으로",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      },
+      {
+        "label": "베가펑크 위성 — 누구",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "5인의 강림 — 누구가 직접",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "비밀 5번 — 어떤 진실",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      },
+      {
+        "label": "탈출 — 어떻게",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "신중"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "본체 호위. 베가펑크 \"감사하오.\" 그가 \"세계 정부의 진실 — 비밀 5번\" 한다.",
     "choices": [
-      { "label": "비밀 5번 듣기", "nextNodeId": 5, "requiredItem": null, "grantItem": "비밀5번", "traits": ["분석","원칙"] }
+      {
+        "label": "비밀 5번 듣기",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": "비밀5번",
+        "traits": [
+          "분석",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "정보. 베가펑크의 일지. \"드디어 — 제로의 진실.\" 100년 공백의 기록.",
     "choices": [
-      { "label": "일지 챙김", "nextNodeId": 6, "requiredItem": null, "grantItem": "일지", "traits": ["분석","독자"] }
+      {
+        "label": "일지 챙김",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": "일지",
+        "traits": [
+          "분석",
+          "독자"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "배 준비. 썬섐버호 출항 직전. 그러나 황제 황 (요크)가 배 압수.",
     "choices": [
-      { "label": "황 직접 — 일대일", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+      {
+        "label": "황 직접 — 일대일",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "비밀 5번. \"세계 정부의 가장 큰 거짓 — 우리 모두가 — \" 그 순간 황의 공격.",
     "choices": [
-      { "label": "베가펑크 보호 + 정보 챙김", "nextNodeId": 8, "requiredItem": "비밀5번", "grantItem": null, "traits": ["이타","원칙","용기"] }
+      {
+        "label": "베가펑크 보호 + 정보 챙김",
+        "nextNodeId": 8,
+        "requiredItem": "비밀5번",
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙",
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "일지 챙김. 그러나 위성 베가펑크 (요크)가 배신. \"이 정보는 못 가져가.\"",
     "choices": [
-      { "label": "요크 격파", "nextNodeId": 9, "requiredItem": "일지", "grantItem": null, "traits": ["용기","정면"] }
+      {
+        "label": "요크 격파",
+        "nextNodeId": 9,
+        "requiredItem": "일지",
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "황과 일대일. 그가 \"베가펑크의 그림자\" 본체. 너의 능력 vs 그녀의 능력.",
     "choices": [
-      { "label": "끝까지 — 일대일", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+      {
+        "label": "끝까지 — 일대일",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "베가펑크 보호 + 정보. 황을 일격. 베가펑크가 \"고맙소 — 이 정보 세상에 알려주오.\" 임종.",
     "choices": [
-      { "label": "그의 부탁 — 정보 세상에 송신", "nextNodeId": 11, "requiredItem": "비밀5번", "grantItem": null, "traits": ["원칙","협력"] }
+      {
+        "label": "그의 부탁 — 정보 세상에 송신",
+        "nextNodeId": 11,
+        "requiredItem": "비밀5번",
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "요크 격파. 그녀의 통신실 부서짐. 그러나 황 본체가 다음 단계.",
     "choices": [
-      { "label": "황과 정면", "nextNodeId": 7, "requiredItem": null, "grantItem": null, "traits": ["용기"] }
+      {
+        "label": "황과 정면",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "일대일 끝. 황 다운. 그러나 5인의 함대가 섬을 둘러쌈.",
     "choices": [
-      { "label": "탈출 — 섬 폭발 직전", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["용기","신중"] }
+      {
+        "label": "탈출 — 섬 폭발 직전",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "신중"
+        ]
+      }
     ]
   },
   {
@@ -124,5 +315,325 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "동맹의 거점"
+  },
+  {
+    "nodeId": 18,
+    "text": "6명의 위성.",
+    "choices": [
+      {
+        "label": "식 (지능) — 그의 도움",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      },
+      {
+        "label": "리리스 (탐욕) — 위험",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "독자"
+        ]
+      },
+      {
+        "label": "아툴라스 (폭력)",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "에지 (선) — 평화의 위성",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "핏 (악) — 어두운 위성",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 19,
+    "text": "식. 모든 정보. 도움.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "식의 도움"
+  },
+  {
+    "nodeId": 20,
+    "text": "리리스. 탐욕의 위성. 위험.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "리리스 위험"
+  },
+  {
+    "nodeId": 21,
+    "text": "아툴라스. 폭력. 정면.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "아툴라스 격파"
+  },
+  {
+    "nodeId": 22,
+    "text": "에지. 평화. 동맹.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "에지의 평화"
+  },
+  {
+    "nodeId": 23,
+    "text": "핏. 악의 위성. 정면.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "핏의 어두움"
+  },
+  {
+    "nodeId": 24,
+    "text": "5인 중 누가?",
+    "choices": [
+      {
+        "label": "워큐리 — 평화의 신",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "톱맨 — 농담의 신",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "나스 — 별의 신",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "셰퍼드 — 양치기 신",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 25,
+    "text": "워큐리. 평화의 신. 그녀의 능력.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "워큐리의 강림"
+  },
+  {
+    "nodeId": 26,
+    "text": "톱맨. 농담. 회피.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "톱맨의 회피"
+  },
+  {
+    "nodeId": 27,
+    "text": "나스. 별. 무력.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "별의 무력"
+  },
+  {
+    "nodeId": 28,
+    "text": "셰퍼드. 양치기. 너를 양처럼.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "양의 길"
+  },
+  {
+    "nodeId": 29,
+    "text": "5번의 진실?",
+    "choices": [
+      {
+        "label": "세계 정부의 거짓 — 100년 공백",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "이타"
+        ]
+      },
+      {
+        "label": "천룡인 — 그들의 정체",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "바닥의 자장 — 세계의 끝",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "월의 사람들 — 외계?",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 30,
+    "text": "거짓. 100년 공백 진실.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "100년의 거짓"
+  },
+  {
+    "nodeId": 31,
+    "text": "천룡인. 정체. 충격.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "천룡인 정체"
+  },
+  {
+    "nodeId": 32,
+    "text": "자장. 세계의 끝. 미스터리.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "세계의 끝"
+  },
+  {
+    "nodeId": 33,
+    "text": "월. 외계 사람들. 충격.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "월의 사람들"
+  },
+  {
+    "nodeId": 34,
+    "text": "탈출.",
+    "choices": [
+      {
+        "label": "썬섐버 — 9명 배",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "베가펑크 비행기",
+        "nextNodeId": 36,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "스텔스 — 위성의 도움",
+        "nextNodeId": 37,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "분석"
+        ]
+      },
+      {
+        "label": "직접 정면 — 5인 통과",
+        "nextNodeId": 38,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "베가펑크 본체 함께 — 마지막",
+        "nextNodeId": 39,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "원칙"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 35,
+    "text": "썬섐버. 9명 배. 안전.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "9명의 탈출"
+  },
+  {
+    "nodeId": 36,
+    "text": "비행기. 베가펑크의 발명품.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "비행기 탈출"
+  },
+  {
+    "nodeId": 37,
+    "text": "스텔스. 위성. 안전.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "스텔스 탈출"
+  },
+  {
+    "nodeId": 38,
+    "text": "정면. 무력.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "정면의 끝"
+  },
+  {
+    "nodeId": 39,
+    "text": "본체. 그의 마지막 부탁. 함께.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "본체의 부탁"
   }
 ]

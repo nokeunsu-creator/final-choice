@@ -3,97 +3,306 @@
     "nodeId": 1,
     "text": "워터 세븐. CP9가 로빈을 잡아갔다. 사이파의 기차 — 6시간 후 정의의 문 통과. 너는 루피 동료. 7명이 분담.",
     "choices": [
-      { "label": "로빈 직접 구출 — 기차 침투", "nextNodeId": 2, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
-      { "label": "프랭키 합류 설득 — 배 새 만듦", "nextNodeId": 3, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙"] },
-      { "label": "워터 세븐 시민들 — 정보 수집", "nextNodeId": 4, "requiredItem": null, "grantItem": null, "traits": ["분석","협력"] },
-      { "label": "정의의 문 통과 — 임펠다운으로", "nextNodeId": 17, "requiredItem": null, "grantItem": null, "traits": ["회피"] },
-      { "label": "프랭키 + 우솝 + 루치 모두 격파", "nextNodeId": 18, "requiredItem": null, "grantItem": null, "traits": ["협력","원칙","용기"] }
+      {
+        "label": "로빈 직접 구출 — 기차 침투",
+        "nextNodeId": 2,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "프랭키 합류 설득 — 배 새 만듦",
+        "nextNodeId": 3,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      },
+      {
+        "label": "워터 세븐 시민들 — 정보 수집",
+        "nextNodeId": 4,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석",
+          "협력"
+        ]
+      },
+      {
+        "label": "정의의 문 통과 — 임펠다운으로",
+        "nextNodeId": 17,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피"
+        ]
+      },
+      {
+        "label": "프랭키 + 우솝 + 루치 모두 격파",
+        "nextNodeId": 18,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙",
+          "용기"
+        ]
+      },
+      {
+        "label": "CP9 — 누구를 먼저",
+        "nextNodeId": 19,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "로빈 — 그녀의 비밀",
+        "nextNodeId": 24,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "분석"
+        ]
+      },
+      {
+        "label": "프랭키 — 도크 1",
+        "nextNodeId": 29,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "실용"
+        ]
+      },
+      {
+        "label": "에니에스 로비 — 정의의 문",
+        "nextNodeId": 34,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      }
     ]
   },
   {
     "nodeId": 2,
     "text": "기차 침투. 사이파의 폭우. 비행 차량으로 추격. CP9의 칸쥬로가 막음.",
     "choices": [
-      { "label": "조로 — 칸쥬로 일대일", "nextNodeId": 5, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] },
-      { "label": "건너뛰기 — 다음 차량으로", "nextNodeId": 6, "requiredItem": null, "grantItem": null, "traits": ["회피","직관"] }
+      {
+        "label": "조로 — 칸쥬로 일대일",
+        "nextNodeId": 5,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      },
+      {
+        "label": "건너뛰기 — 다음 차량으로",
+        "nextNodeId": 6,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "회피",
+          "직관"
+        ]
+      }
     ]
   },
   {
     "nodeId": 3,
     "text": "프랭키. 그가 \"내 도크 부서졌어\" 한다. 동맹 협상.",
     "choices": [
-      { "label": "도크 1 보호 약속", "nextNodeId": 7, "requiredItem": null, "grantItem": "프랭키동맹", "traits": ["원칙","협력"] }
+      {
+        "label": "도크 1 보호 약속",
+        "nextNodeId": 7,
+        "requiredItem": null,
+        "grantItem": "프랭키동맹",
+        "traits": [
+          "원칙",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 4,
     "text": "시민. 우솝이 어디로 갔나? 시민이 \"북쪽 다리\" 알려줌.",
     "choices": [
-      { "label": "우솝 회수 — 사과 + 합류", "nextNodeId": 8, "requiredItem": null, "grantItem": "우솝", "traits": ["이타","협력"] }
+      {
+        "label": "우솝 회수 — 사과 + 합류",
+        "nextNodeId": 8,
+        "requiredItem": null,
+        "grantItem": "우솝",
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 5,
     "text": "조로 vs 칸쥬로. 1대1. 조로의 \"3검 사자가구\". 칸쥬로 다운.",
     "choices": [
-      { "label": "다음 차량 — 사이파 따라잡기", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+      {
+        "label": "다음 차량 — 사이파 따라잡기",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 6,
     "text": "건너뛰기. 칸쥬로가 추격. 그러나 너는 다음 차량.",
     "choices": [
-      { "label": "사이파 마지막 차량으로", "nextNodeId": 9, "requiredItem": null, "grantItem": null, "traits": ["용기"] }
+      {
+        "label": "사이파 마지막 차량으로",
+        "nextNodeId": 9,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 7,
     "text": "프랭키 동맹. 그가 새 배 \"썬섐버호\" 약속. 그러나 \"먼저 로빈 구출.\"",
     "choices": [
-      { "label": "기차 침투 (프랭키 합류)", "nextNodeId": 10, "requiredItem": "프랭키동맹", "grantItem": null, "traits": ["협력","원칙"] }
+      {
+        "label": "기차 침투 (프랭키 합류)",
+        "nextNodeId": 10,
+        "requiredItem": "프랭키동맹",
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 8,
     "text": "우솝. 그가 \"미안해 형들 — 같이 가자\" 한다. 다시 8명.",
     "choices": [
-      { "label": "기차 침투", "nextNodeId": 10, "requiredItem": null, "grantItem": null, "traits": ["협력"] }
+      {
+        "label": "기차 침투",
+        "nextNodeId": 10,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      }
     ]
   },
   {
     "nodeId": 9,
     "text": "사이파 마지막. CP9의 루치가 로빈을 들고. 정의의 문 직전.",
     "choices": [
-      { "label": "루피 vs 루치", "nextNodeId": 11, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] },
-      { "label": "조로 + 루피 합공", "nextNodeId": 12, "requiredItem": null, "grantItem": null, "traits": ["협력","용기"] }
+      {
+        "label": "루피 vs 루치",
+        "nextNodeId": 11,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "조로 + 루피 합공",
+        "nextNodeId": 12,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "용기"
+        ]
+      }
     ]
   },
   {
     "nodeId": 10,
     "text": "기차 침투 (8명 또는 동맹). 합공으로 사이파 차량 전부 무력화.",
     "choices": [
-      { "label": "정의의 문 도달", "nextNodeId": 13, "requiredItem": null, "grantItem": null, "traits": ["용기","원칙"] }
+      {
+        "label": "정의의 문 도달",
+        "nextNodeId": 13,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      }
     ]
   },
   {
     "nodeId": 11,
     "text": "루피 vs 루치. 기어 세컨드. 정의의 문 위에서 결투.",
     "choices": [
-      { "label": "루피 일격 — 고무고무 자이언트 피스톨", "nextNodeId": 14, "requiredItem": null, "grantItem": null, "traits": ["용기","정면"] }
+      {
+        "label": "루피 일격 — 고무고무 자이언트 피스톨",
+        "nextNodeId": 14,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      }
     ]
   },
   {
     "nodeId": 12,
     "text": "합공. 조로가 칼, 루피가 주먹. 루치 다운.",
     "choices": [
-      { "label": "로빈 구출", "nextNodeId": 15, "requiredItem": null, "grantItem": null, "traits": ["협력","이타"] }
+      {
+        "label": "로빈 구출",
+        "nextNodeId": 15,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      }
     ]
   },
   {
     "nodeId": 13,
     "text": "정의의 문 직전. 9명 동시. 로빈이 \"살고 싶어!\" 외침. 모두가 답.",
     "choices": [
-      { "label": "마지막 — 깃발 들고 진입", "nextNodeId": 16, "requiredItem": null, "grantItem": null, "traits": ["원칙","협력","용기"] }
+      {
+        "label": "마지막 — 깃발 들고 진입",
+        "nextNodeId": 16,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "원칙",
+          "협력",
+          "용기"
+        ]
+      }
     ]
   },
   {
@@ -130,5 +339,356 @@
     "choices": [],
     "endingType": "good",
     "endingTitle": "썬섐버호 출항"
+  },
+  {
+    "nodeId": 19,
+    "text": "CP9 5명.",
+    "choices": [
+      {
+        "label": "루치 — 표범 폼",
+        "nextNodeId": 20,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "정면",
+          "용기"
+        ]
+      },
+      {
+        "label": "카쿠 — 기린 폼",
+        "nextNodeId": 21,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "쿠마돌리",
+        "nextNodeId": 22,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "제프 — 칼리파",
+        "nextNodeId": 23,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 20,
+    "text": "루치. 표범. 일격.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "루치의 표범"
+  },
+  {
+    "nodeId": 21,
+    "text": "카쿠. 기린. 조로의 대결.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "기린의 조로"
+  },
+  {
+    "nodeId": 22,
+    "text": "쿠마돌리. 산디의 대결.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "쿠마돌리와 산디"
+  },
+  {
+    "nodeId": 23,
+    "text": "칼리파. 비누 능력.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "칼리파의 비누"
+  },
+  {
+    "nodeId": 24,
+    "text": "로빈의 결정.",
+    "choices": [
+      {
+        "label": "\"살고 싶어!\" — 9명의 답",
+        "nextNodeId": 25,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "오하라 — 그녀의 출신",
+        "nextNodeId": 26,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "폴 네그리프 해독 — 로빈만 가능",
+        "nextNodeId": 27,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "분석"
+        ]
+      },
+      {
+        "label": "버스터 콜 — 회피",
+        "nextNodeId": 28,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 25,
+    "text": "살고 싶어. 9명이 답. 명장면.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "9명의 답"
+  },
+  {
+    "nodeId": 26,
+    "text": "오하라. 학자의 섬. 그녀의 출신.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "오하라의 출신"
+  },
+  {
+    "nodeId": 27,
+    "text": "해독. 그녀만 가능. 진실.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "진실의 해독"
+  },
+  {
+    "nodeId": 28,
+    "text": "버스터. 함대 5척. 회피.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "버스터의 회피"
+  },
+  {
+    "nodeId": 29,
+    "text": "프랭키.",
+    "choices": [
+      {
+        "label": "썬섐버호 — 새 배",
+        "nextNodeId": 30,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "프랭키 합류 — 동료",
+        "nextNodeId": 31,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      },
+      {
+        "label": "WBC — 우람 분리분리",
+        "nextNodeId": 32,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "직관"
+        ]
+      },
+      {
+        "label": "도크 1 부서짐 — 슬픔",
+        "nextNodeId": 33,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "회피"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 30,
+    "text": "썬섐버. 그가 만든 새 배.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "썬섐버의 출항"
+  },
+  {
+    "nodeId": 31,
+    "text": "프랭키. 8번째 동료.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "프랭키 동료"
+  },
+  {
+    "nodeId": 32,
+    "text": "WBC. 콜라로 우람 분리.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "WBC"
+  },
+  {
+    "nodeId": 33,
+    "text": "도크. 부서짐. 그러나 새 시작.",
+    "choices": [],
+    "endingType": "neutral",
+    "endingTitle": "도크의 끝"
+  },
+  {
+    "nodeId": 34,
+    "text": "정의의 문.",
+    "choices": [
+      {
+        "label": "깃발 정복 — 시민 보는 앞에서",
+        "nextNodeId": 35,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "원칙"
+        ]
+      },
+      {
+        "label": "버스터 콜 회피 — 새벽",
+        "nextNodeId": 36,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "신중"
+        ]
+      },
+      {
+        "label": "루치 격파 — 마지막 한 방",
+        "nextNodeId": 37,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기",
+          "정면"
+        ]
+      },
+      {
+        "label": "메리호 — 마지막 항해",
+        "nextNodeId": 38,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타"
+        ]
+      },
+      {
+        "label": "울워 — 노인 사후",
+        "nextNodeId": 39,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "이타",
+          "협력"
+        ]
+      },
+      {
+        "label": "시민의 박수",
+        "nextNodeId": 40,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력",
+          "이타"
+        ]
+      },
+      {
+        "label": "기차 추격전 — 폴츠 대장",
+        "nextNodeId": 41,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "용기"
+        ]
+      },
+      {
+        "label": "엘리베이터 — 카쿠와 결투",
+        "nextNodeId": 42,
+        "requiredItem": null,
+        "grantItem": null,
+        "traits": [
+          "협력"
+        ]
+      }
+    ]
+  },
+  {
+    "nodeId": 35,
+    "text": "깃발. 정의의 깃발 정복.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "정의의 깃발"
+  },
+  {
+    "nodeId": 36,
+    "text": "버스터. 새벽 전 회피.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "새벽의 회피"
+  },
+  {
+    "nodeId": 37,
+    "text": "루치. 마지막. 격파.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "루치의 격파"
+  },
+  {
+    "nodeId": 38,
+    "text": "메리. 마지막 항해. 작별.",
+    "choices": [],
+    "endingType": "bad",
+    "endingTitle": "메리의 작별"
+  },
+  {
+    "nodeId": 39,
+    "text": "노인. 그의 도움. 평화 회복.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "노인의 도움"
+  },
+  {
+    "nodeId": 40,
+    "text": "시민. 워터 세븐 박수.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "시민의 박수"
+  },
+  {
+    "nodeId": 41,
+    "text": "기차. 폴츠. 격파.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "폴츠 격파"
+  },
+  {
+    "nodeId": 42,
+    "text": "엘리베이터. 카쿠. 조로 합공.",
+    "choices": [],
+    "endingType": "good",
+    "endingTitle": "엘리베이터 합공"
   }
 ]
